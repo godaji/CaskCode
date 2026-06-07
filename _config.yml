@@ -23,6 +23,11 @@ permalink: /:year/:month/:day/:title/
 defaults:
   - scope: { path: "" }
     values: { layout: "default" }
+  # CMPA-208: /apps/ = deploy/ 정적 패스스루. front-matter 없는 .html 이라 Jekyll 이
+  #   정적 파일로 그대로 복사하지만, 전역 layout 기본값이 행여 적용돼 완결형 deploy
+  #   HTML 이 블로그 레이아웃에 이중 래핑되지 않도록 apps 경로의 layout 을 비운다.
+  - scope: { path: "apps" }
+    values: { layout: null }
 exclude:
   - README.md
   - Gemfile

@@ -1,13 +1,13 @@
 ---
 layout: "default"
 title: "🥃 Cask — 위스키 전부"
-description: "면세 가성비 자동 리포트 · 시음 노트 · 위스키 데이터 분석 (오크통 숙성은 `#숙성` 태그)."
+description: "면세 가성비 자동 리포트 · 위스키 가격정보 · 시음 노트 (오크통 숙성은 `#숙성` 태그)."
 permalink: "/cask/"
 ---
 
 <span id="cask"></span>
 ## 🥃 Cask — 위스키 전부
-*면세 가성비 자동 리포트 · 시음 노트 · 위스키 데이터 분석 (오크통 숙성은 `#숙성` 태그).*
+*면세 가성비 자동 리포트 · 위스키 가격정보 · 시음 노트 (오크통 숙성은 `#숙성` 태그).*
 
 
 ### 🏷️ 이달의 면세 가성비
@@ -42,6 +42,22 @@ permalink: "/cask/"
 {% endif %}
 
 
+### 💰 위스키 가격정보
+*국내·해외 위스키 시세 — 트레이더스·코스트코·데일리샷·홍콩·일본 비교*
+
+{% assign items = site.posts | where_exp: "p", "p.categories contains 'wprice'" %}
+{% if items.size > 0 %}
+<ul class="archive">
+{% for p in items %}
+  <li><span class="when">{{ p.date | date: "%Y-%m-%d" }}</span>
+  <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+<div class="empty">아직 글이 없어요 — <code>_drafts/wprice-예시.md</code> 를 복사해 <code>_posts/</code>에 저장하면 여기 자동 표시.</div>
+{% endif %}
+
+
 ### 🥃 시음 노트
 *실제로 마셔본 기록 (오크통 숙성 실험은 `#숙성` 태그)*
 
@@ -58,28 +74,12 @@ permalink: "/cask/"
 {% endif %}
 
 
-### 📊 데이터 분석
-*가격·수상·트렌드를 코드로 파헤친다*
-
-{% assign items = site.posts | where_exp: "p", "p.categories contains 'data'" %}
-{% if items.size > 0 %}
-<ul class="archive">
-{% for p in items %}
-  <li><span class="when">{{ p.date | date: "%Y-%m-%d" }}</span>
-  <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-{% endfor %}
-</ul>
-{% else %}
-<div class="empty">아직 글이 없어요 — <code>_drafts/data-예시.md</code> 를 복사해 <code>_posts/</code>에 저장하면 여기 자동 표시.</div>
-{% endif %}
-
-
 > 📓 **일기**·🛢️ **숙성**은 따로 칸을 두지 않습니다 — 위스키 산 이야기·여정·느낀점은
 > **`#일기`**, 오크통 숙성·블렌딩 실험은 **`#숙성`** 태그로 Cask 글에 답니다
 > (예: 시음 일기 = Cask 글 + `tags: [일기]`).
 
 
-{% assign known = "price,tasting,data,dev" | split: "," %}
+{% assign known = "price,wprice,tasting,data,dev" | split: "," %}
 {% capture _extras %}{% for cat in site.categories %}{% unless known contains cat[0] %}{{ cat[0] }},{% endunless %}{% endfor %}{% endcapture %}
 {% if _extras != "" %}
 ## 🗂️ 기타 카테고리

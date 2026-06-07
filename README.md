@@ -38,17 +38,17 @@ bundle exec jekyll serve
 
 ## 카테고리(섹션)와 글 쓰기
 홈은 **브랜드 2기둥(Code / Cask)** 으로 묶여 나옵니다(CMPA-182 리브랜드):
-- **💻 Code — 직접 만든 것**: 개발(`dev`)
-- **🥃 Cask — 위스키 전부**: 면세 가성비(`price`), 시음 노트(`tasting`), 데이터 분석(`data`)
+- **🥃 Cask — 위스키 전부**: 면세 가성비(`price`), 위스키 가격정보(`wprice`), 시음 노트(`tasting`)
+- **💻 Code — 직접 만든 것**: 개발(`dev`), 데이터 분석(`data`)
 
 > 📓 **일기**·🛢️ **숙성**은 별도 칸이 아니라 **태그**입니다 — 위스키 산 이야기·여정·느낀점은
 > **`#일기`**, 오크통 숙성·블렌딩 실험은 **`#숙성`** 태그로 Cask 글에 답니다(`tags: [일기]`).
 
-새 글은 front matter 의 `categories: [<key>]` 로 스트림을 정합니다(`dev`/`price`/`tasting`/`data`).
+새 글은 front matter 의 `categories: [<key>]` 로 스트림을 정합니다(`dev`/`data`=Code, `price`/`wprice`/`tasting`=Cask).
 **새 key 를 쓰면 '기타 카테고리'에 자동으로 나타납니다**(설정 변경 불필요).
 
-### 직접 글 쓰는 법 (개발·시음·데이터 등)
-1. 템플릿 복사: `_drafts/dev-예시.md`(개발) · `_drafts/tasting-예시.md`(시음) · `_drafts/data-예시.md`(데이터분석).
+### 직접 글 쓰는 법 (개발·데이터·가격정보·시음 등)
+1. 템플릿 복사: `_drafts/dev-예시.md`(개발) · `_drafts/data-예시.md`(데이터분석, Code) · `_drafts/wprice-예시.md`(위스키 가격정보, Cask) · `_drafts/tasting-예시.md`(시음).
 2. 내용·front matter(`title`/`date`/`categories`/`tags`) 채우기.
 3. **`_posts/YYYY-MM-DD-제목.md`** 로 저장(파일명 날짜 = 발행일).
 4. 미리보기: `python3 pipelines/shilla_dutyfree/preview_blog_md.py`
