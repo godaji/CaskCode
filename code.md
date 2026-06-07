@@ -1,13 +1,13 @@
 ---
 layout: "default"
 title: "💻 Code — 직접 만든 것"
-description: "보드가 직접 개발한 소프트웨어·사이드프로젝트·코드 이야기."
+description: "CaskCode가 직접 개발한 소프트웨어·사이드프로젝트·코드 이야기."
 permalink: "/code/"
 ---
 
 <span id="code"></span>
 ## 💻 Code — 직접 만든 것
-*보드가 직접 개발한 소프트웨어·사이드프로젝트·코드 이야기.*
+*CaskCode가 직접 개발한 소프트웨어·사이드프로젝트·코드 이야기.*
 
 
 ### 💻 개발
