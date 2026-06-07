@@ -43,6 +43,10 @@ jobs:
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          # 내장 GITHUB_TOKEN(pages:write)으로 첫 실행 시 Pages 를 자동 활성화
+          # → 보드의 수동 Settings→Pages 토글 불필요(CMPA-187 CEO 자율 배포).
+          enablement: true
 
       - name: Build with Jekyll
         # configure-pages 가 주입하는 base_path(=/CaskCode)로 baseurl 을 덮어써
