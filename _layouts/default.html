@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="robots" content="{{ page.robots | default: 'noindex,nofollow' }}">
+<title>{{ page.title }} — CaskCode</title>
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+<div class="app">
+<aside class="sidebar">
+  <a class="avatar" href="{{ '/' | relative_url }}" aria-label="홈">🥃</a>
+  <a href="{{ '/' | relative_url }}" style="text-decoration:none"><div class="flap">CASK<span class="dot"> · </span>CODE</div></a>
+  <div class="handle">@codecaskcabin</div>
+  <ul class="snav">
+    <li><a href="{{ '/' | relative_url }}">🏠 홈</a></li>
+    <li><a href="{{ '/' | relative_url }}#code">💻 Code</a></li>
+    <li><a href="{{ '/' | relative_url }}#cask">🥃 Cask</a></li>
+  </ul>
+  <div class="side-foot">
+    <div class="about">마음은 개발자, 취미는 위스키. 바이브코딩으로 위스키 가격·리뷰·데이터를 직접 분석해 공유하는 블로그. #CaskCode</div>
+    <div class="gate">⚠️ 내부 스테이징본 — 외부 발행 전(보드 게이트 c7405e7d). 가격은 각 스냅샷 수집일 기준값.</div>
+  </div>
+</aside>
+<main class="content">
+{% unless page.url == '/' %}<a class="back" href="{{ '/' | relative_url }}">← 블로그 홈</a>{% endunless %}
+<div class="window">
+  <div class="titlebar"><span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span><span class="name">CaskCode</span></div>
+  <div class="post">
+{{ content }}
+  </div>
+</div>
+<div class="foot">
+  <div>CaskCode · @codecaskcabin</div>
+  <div class="about">마음은 개발자, 취미는 위스키. 바이브코딩으로 위스키 가격·리뷰·데이터를 직접 분석해 공유하는 블로그. #CaskCode</div>
+  <div class="gate">⚠️ 내부 스테이징본 — 외부 발행 전(보드 게이트 c7405e7d). 가격은 각 스냅샷 수집일 기준값.</div>
+</div>
+</main>
+</div>
+</body>
+</html>

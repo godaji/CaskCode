@@ -1,0 +1,9 @@
+---
+# go-live(게이트 c7405e7d) 전까지 색인 금지. 실효 게이트=페이지별 noindex 메타.
+# layout:none — 전역 defaults(layout:default)가 robots.txt 를 HTML 로 감싸지 않게.
+layout: none
+permalink: /robots.txt
+sitemap: false
+---
+User-agent: *
+Disallow: /
