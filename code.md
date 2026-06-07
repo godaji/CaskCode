@@ -22,7 +22,7 @@ permalink: "/code/"
 {% endfor %}
 </ul>
 {% else %}
-<div class="empty">아직 글이 없어요 — <code>_drafts/dev-예시.md</code> 를 복사해 <code>_posts/</code>에 저장하면 여기 자동 표시.</div>
+<div class="empty">아직 글이 없습니다.</div>
 {% endif %}
 
 
@@ -38,5 +38,5 @@ permalink: "/code/"
 {% endfor %}
 </ul>
 {% else %}
-<div class="empty">아직 글이 없어요 — <code>_drafts/data-예시.md</code> 를 복사해 <code>_posts/</code>에 저장하면 여기 자동 표시.</div>
+<div class="empty">아직 글이 없습니다.</div>
 {% endif %}

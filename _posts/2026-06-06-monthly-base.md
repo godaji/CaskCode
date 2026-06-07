@@ -1,11 +1,11 @@
 ---
 layout: "post"
-title: "면세점 위스키, 진짜 싼 것 vs 함정 — 예산별 정리 (신라면세 기준)"
+title: "[신라면세] 면세점 위스키, 진짜 싼 것 vs 함정 — 예산별 정리 (신라면세 기준)"
 date: "2026-06-06 08:00:00 +0900"
 categories: ["price"]
 kind: "base"
 base_date: "2026-06-06"
-description: "면세점 위스키, 진짜 싼 것 vs 함정 — 예산별 정리 (신라면세 기준) — CaskCode"
+description: "[신라면세] 면세점 위스키, 진짜 싼 것 vs 함정 — 예산별 정리 (신라면세 기준) — CaskCode"
 robots: "noindex,nofollow"
 ---
 

@@ -10,26 +10,17 @@ permalink: "/cask/"
 *면세 가성비 자동 리포트 · 위스키 가격정보 · 시음 노트 (오크통 숙성은 `#숙성` 태그).*
 
 
-### 🏷️ 이달의 면세 가성비
-*데이터로 고른 면세 위스키 본편 — 국내최저 돌파 (자동 생성)*
+### 🏷️ 신라면세 위스키 정보
+*면세 가성비 본편 + 가격 패치 — 국내최저 돌파 (자동 생성)*
 
 {% assign bases = site.posts | where_exp: "p", "p.kind == 'base'" %}
 {% assign patches = site.posts | where_exp: "p", "p.kind == 'patch'" %}
-{% if bases.size > 0 %}
+{% if bases.size > 0 or patches.size > 0 %}
 <ul class="archive">
 {% for p in bases %}
   <li><span class="when">{{ p.base_date | default: p.date | date: "%Y-%m-%d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
 {% endfor %}
-</ul>
-{% else %}
-<div class="empty">아직 본편이 없습니다.</div>
-{% endif %}
-
-### 🗞️ 가격 패치 아카이브
-*직전 대비 가격 변동 — 국내최저 돌파 알림 (자동 생성)*
-{% if patches.size > 0 %}
-<ul class="archive">
 {% for p in patches %}
   <li><span class="when">{{ p.latest_date | default: p.date | date: "%Y-%m-%d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
@@ -38,7 +29,7 @@ permalink: "/cask/"
 {% endfor %}
 </ul>
 {% else %}
-<div class="empty">아직 패치가 없습니다.</div>
+<div class="empty">아직 글이 없습니다.</div>
 {% endif %}
 
 
@@ -54,7 +45,7 @@ permalink: "/cask/"
 {% endfor %}
 </ul>
 {% else %}
-<div class="empty">아직 글이 없어요 — <code>_drafts/wprice-예시.md</code> 를 복사해 <code>_posts/</code>에 저장하면 여기 자동 표시.</div>
+<div class="empty">아직 글이 없습니다.</div>
 {% endif %}
 
 
@@ -70,7 +61,7 @@ permalink: "/cask/"
 {% endfor %}
 </ul>
 {% else %}
-<div class="empty">아직 글이 없어요 — <code>_drafts/tasting-예시.md</code> 를 복사해 <code>_posts/</code>에 저장하면 여기 자동 표시.</div>
+<div class="empty">아직 글이 없습니다.</div>
 {% endif %}
 
 

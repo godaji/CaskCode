@@ -48,7 +48,7 @@ bundle exec jekyll serve
 **새 key 를 쓰면 '기타 카테고리'에 자동으로 나타납니다**(설정 변경 불필요).
 
 ### 직접 글 쓰는 법 (개발·데이터·가격정보·시음 등)
-1. 템플릿 복사: `_drafts/dev-예시.md`(개발) · `_drafts/data-예시.md`(데이터분석, Code) · `_drafts/wprice-예시.md`(위스키 가격정보, Cask) · `_drafts/tasting-예시.md`(시음).
+1. 기존 글(예: `_posts/*-monthly-base.md`)의 front matter 구조를 참고해 새 파일을 만든다.
 2. 내용·front matter(`title`/`date`/`categories`/`tags`) 채우기.
 3. **`_posts/YYYY-MM-DD-제목.md`** 로 저장(파일명 날짜 = 발행일).
 4. 미리보기: `python3 pipelines/shilla_dutyfree/preview_blog_md.py`

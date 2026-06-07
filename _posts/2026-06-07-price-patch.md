@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "가격변동 패치 2026-06-07"
+title: "[신라면세] 가격변동 패치 2026-06-07"
 date: "2026-06-07 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
