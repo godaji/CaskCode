@@ -2,7 +2,6 @@
 # 외부 발행은 보드 게이트 c7405e7d 승인 후에만(현재 noindex 유지).
 title: "CaskCode"
 description: "마음은 개발자, 취미는 위스키. 바이브코딩으로 위스키 가격·리뷰·데이터를 직접 분석해 공유하는 블로그. #CaskCode"
-author: "@codecaskcabin"
 lang: ko
 # GitHub Pages 프로젝트 사이트(godaji/CaskCode) — https://godaji.github.io/CaskCode/ (CMPA-188).
 # Actions 빌드는 configure-pages 가 base_path 를 자동 주입해 baseurl 을 덮어쓴다.
