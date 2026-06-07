@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 에이전트로 '위스키 가성비 회사'를 차렸습니다 — Paperclip 바이브코딩 실록"
+title: "[개발] Paperclip을 이용한 위스키 데이터 분석"
 date: 2026-06-07 21:00:00 +0900
 categories: [dev]
 tags: [사이드프로젝트, AI에이전트, Paperclip, 바이브코딩, python]
