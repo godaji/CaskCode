@@ -34,6 +34,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 발행 전 게이트(CMPA-221): 손글 글이 라이브에서 깨지는 흔한 실수를 빌드 전에 차단.
+      # 생성기(build_blog_md.py)를 우회한 직접 편집/푸시도 여기서 잡힌다.
+      - name: Lint posts (baseurl/draft 가드 — CMPA-221)
+        run: |
+          set -uo pipefail
+          fail=0
+          # (1) 사이트-절대경로 링크/이미지(`](/..)`·src/href="/..") → baseurl(/CaskCode)
+          #     누락으로 404(스샷 깨짐). Liquid relative_url 로 감싸야 한다(`]({{ '/..' | relative_url }})`).
+          if grep -rnE '\]\(/[^/]|(src|href)=["'"'"']/[^/]' _posts/ 2>/dev/null; then
+            echo "::error::_posts 에 사이트-절대경로 링크/이미지가 있습니다 → baseurl(/CaskCode) 404. Liquid relative_url 로 감싸세요. (CMPA-221)"
+            fail=1
+          fi
+          # (2) _drafts 에 남은 글은 프로덕션 빌드(--drafts 미사용)에서 제외 → 라이브 미노출(경고).
+          if ls _drafts/*.md >/dev/null 2>&1; then
+            for f in _drafts/*.md; do
+              echo "::warning file=$f::_drafts 글은 라이브에 안 나옵니다 — 발행하려면 _posts/ 로 이동 (CMPA-221)"
+            done
+          fi
+          if [ "$fail" -ne 0 ]; then exit 1; fi
+          echo "발행 게이트 OK — 손글 글 링크/이미지 baseurl 안전"
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:

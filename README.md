@@ -56,7 +56,10 @@ bundle exec jekyll serve
 
 > ⚠️ `build_blog_md.py` 는 **자동 생성 포스트(`*-monthly-base.md`/`*-price-patch.md`)만**
 > 다시 만듭니다. 손으로 쓴 글은 건드리지 않으니 안심하고 `_posts/` 에 두세요.
-> 사진은 `assets/img/` 에 넣고 `![설명](/assets/img/파일.jpg)`.
+> **`_drafts/` 에 두면 라이브에 안 나옵니다**(프로덕션 빌드는 `--drafts` 미사용) — 발행하려면 `_posts/`.
+> 사진은 `assets/img/` 에 넣고 **`![설명]({{ '/assets/img/파일.jpg' | relative_url }})`** 로 삽입.
+> ⚠️ 사이트가 `baseurl: /CaskCode` 아래 있어 **절대경로 `/assets/...` 는 404**가 됩니다 —
+> 링크·이미지는 반드시 Liquid `relative_url` 로 감싸세요. (`build_blog_md.py` 가 발행 전 자동 검사 → 위반 시 빌드 실패.)
 
 ## 발행 게이트
 외부 발행은 보드 게이트(c7405e7d) 승인 후에만. 그 전까지 모든 페이지 `robots: noindex`.
