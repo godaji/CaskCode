@@ -66,8 +66,10 @@ background:rgba(0,0,0,.25);border-bottom:1px solid var(--line)}
 border-radius:8px;border:1px solid var(--line)}
 .post blockquote{background:rgba(224,168,78,.10);border-left:3px solid var(--amber);
 color:#d9d2c2;font-size:13.5px;padding:9px 12px;border-radius:6px;margin:12px 0}
-.post table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px}
-.post th,.post td{border:1px solid var(--line);padding:6px 9px;text-align:left}
+/* CMPA-256 모바일 우선: 좁은 화면(≈360px)에서 표가 넓어져도 글을 가리지 않게
+   가로 스크롤 폴백을 보장(overflow-x:auto). overflow:hidden 금지(글 잘림 금지). */
+.post table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px}
+.post th,.post td{border:1px solid var(--line);padding:6px 9px;text-align:left;word-break:keep-all}
 .post th{background:var(--panel);color:var(--amber);font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace}
 .post hr{border:0;border-top:1px solid var(--line);margin:22px 0}
 .post ul{padding-left:18px}
