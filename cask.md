@@ -1,13 +1,14 @@
 ---
 layout: "default"
 title: "🥃 Cask — 위스키 전부"
-description: "면세 가성비 자동 리포트 · 위스키 가격정보 · 시음 노트 (오크통 숙성은 `#숙성` 태그)."
+description: "면세 가성비 자동 리포트 · 위스키 가격정보 · 구매/시음 노트 (오크통 숙성은 `#숙성` 태그)."
 permalink: "/cask/"
+robots: "index,follow"
 ---
 
 <span id="cask"></span>
 ## 🥃 Cask — 위스키 전부
-*면세 가성비 자동 리포트 · 위스키 가격정보 · 시음 노트 (오크통 숙성은 `#숙성` 태그).*
+*면세 가성비 자동 리포트 · 위스키 가격정보 · 구매/시음 노트 (오크통 숙성은 `#숙성` 태그).*
 
 
 ### 🏷️ 신라면세 위스키 정보
@@ -49,8 +50,8 @@ permalink: "/cask/"
 {% endif %}
 
 
-### 🥃 시음 노트
-*실제로 마셔본 기록 (오크통 숙성 실험은 `#숙성` 태그)*
+### 🥃 구매/시음 노트
+*사서 마셔본 기록 — 구매 노트 + 시음 (오크통 숙성 실험은 `#숙성` 태그)*
 
 {% assign items = site.posts | where_exp: "p", "p.categories contains 'tasting'" %}
 {% if items.size > 0 %}
