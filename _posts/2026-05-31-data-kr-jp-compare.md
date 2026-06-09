@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[데이터분석] 한일 위스키 가격, 같은 병으로 24종 비교"
+title: "[가격비교] 한일 위스키 가격, 같은 병으로 24종 비교"
 date: 2026-05-31 20:00:00 +0900
-categories: [data]
-tags: [데이터분석, 일본, 가격비교, 반입세]
+categories: [wprice]
+tags: [가격비교, 일본, 시세비교, 반입세]
 robots: noindex,nofollow
 ---
 
