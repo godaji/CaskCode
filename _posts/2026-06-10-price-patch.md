@@ -14,15 +14,11 @@ robots: "noindex,nofollow"
 
 *직전 2026-06-09 → 최신 2026-06-10* · *환율 ₩1,529.02 (기준일 2026-06-09)*
 
-**⚡ 즉시 패치 · 국내최저 돌파**
-
-> 수집 날짜는 데이터 신뢰성의 1차 신호입니다. 아래 가격은 각 스냅샷 **수집일 기준값**이며, 변동은 두 수집일 사이의 차이입니다.
-
 ## 📊 한눈에 — 할인율 변동 요약
 
 _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
 
-**🔻 할인 심화 — 면세가가 더 싸짐 (10%p↑)**
+**🔥 오늘의 핫딜 — 면세가가 더 싸짐 (10%p↑)**
 
 <details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">PAUL JOHN PEATED 올로로소 700ml: 5%→55% (₩189,217)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 폴 존 (Paul John / John Distilleries) · 인도 고아<br><b>도수</b> 57.4% (배치별 상이)<br><b>캐스크</b> 엑스버번 배럴 약 3년 숙성 후 올로로소 셰리 캐스크 약 4년 추가 숙성(피티드 원액)<br><b>맛</b> 바닐라·스파이스의 향, 달콤한 붉은 과일·캐러멜·바닐라·아몬드의 견과향, 다크초콜릿과 은은한 오크의 길고 따뜻한 마무리. 높은 도수에도 실키하고 균형 잡힘.<br><b>스토리</b> 인도 고아의 폴 존(존 디스틸러리스)이 내는 피티드 인디언 싱글몰트의 올로로소 셰리 캐스크 표현. 높은 엔젤스 셰어로 캐스크당 약 252병만 생산되는 한정 릴리스. 단일 캐스크라 도수·세부는 자매캐스크/배치 기준.<br><span style="color:#8a8f98">출처: Paul John 공식 · Whiskybase · The Whiskey Jug (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details>
 <details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">PAUL JOHN UNPEATED 올로로소 700ml: 5%→55% (₩158,254)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 폴 존 (Paul John / John Distilleries) · 인도 고아<br><b>도수</b> 48%<br><b>캐스크</b> 퍼스트필 엑스버번 배럴 최소 5년 숙성 후 퍼스트필 올로로소 셰리 캐스크 약 2년 추가 숙성(약 7년 추정), 논칠필터<br><b>맛</b> 말린 껍질·졸인 과일·호두·크리스마스케이크의 향, 블랙베리·다크초콜릿·오렌지 오일·스파이시 오크의 입안, 코코아와 셰리 오크의 길고 우아한 마무리.<br><b>스토리</b> 인도 고아의 폴 존이 내는 언피티드 인디언 싱글몰트의 올로로소 셀렉트 캐스크. 셰리 풍미가 짙은 폴 존의 대표 셰리 캐스크 표현이다.<br><span style="color:#8a8f98">출처: Paul John 공식 · Master of Malt · The Whiskey Jug (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details>
