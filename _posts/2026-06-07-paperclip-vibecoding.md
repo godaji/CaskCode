@@ -4,7 +4,7 @@ title: "[개발] Paperclip을 이용한 위스키 데이터 분석"
 date: 2026-06-07 21:00:00 +0900
 categories: [dev]
 tags: [사이드프로젝트, AI에이전트, Paperclip, 바이브코딩, python]
-robots: noindex,nofollow
+robots: index,follow
 description: "코드 한 줄 안 짜고 위스키 가격 크롤러·면세 가성비 리포트·콜키지 식당 맵까지. AI 에이전트 오케스트레이션 도구 Paperclip으로 바이브코딩한 기록. #CaskCode"
 ---
 

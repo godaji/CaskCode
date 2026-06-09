@@ -5,7 +5,7 @@ date: 2026-06-09 20:00:00 +0900
 categories: [wprice]
 tags: [트레이더스, 데일리샷, 면세, 채널비교, 가성비, 가이드]
 kind: guide
-robots: noindex,nofollow
+robots: index,follow
 description: "마트·앱·면세 중 어디가 싼지 대표 가성비 병 3종으로 채널별 실제가를 비교했습니다. 수집일·차액 표기. CaskCode"
 ---
 
