@@ -3,6 +3,7 @@ layout: "default"
 title: "About — CaskCode"
 description: "사업을 하면서도 최신 기술을 직접 손으로 다뤄보고 싶어 만든 개인 프로젝트. 바이브코딩으로 위스키 가격·데이터를 다루는 블로그 CaskCode 소개."
 permalink: "/about/"
+robots: index,follow
 ---
 
 ## About — CaskCode
