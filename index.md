@@ -3,8 +3,6 @@ layout: "default"
 title: "CaskCode — 블로그"
 description: "마음은 개발자, 취미는 위스키. 바이브코딩으로 위스키 가격·리뷰·데이터를 직접 분석해 공유하는 블로그. #CaskCode"
 ---
-<p class="sub">마음은 개발자, 취미는 위스키. 바이브코딩으로 위스키 가격·리뷰·데이터를 직접 분석해 공유하는 블로그. #CaskCode</p>
-
 {% assign _bases = site.posts | where_exp: "p","p.kind == 'base'" %}
 {% assign _pin = _bases | first %}
 {% if _pin %}
