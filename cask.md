@@ -66,11 +66,6 @@ robots: "index,follow"
 {% endif %}
 
 
-> 📓 **일기**·🛢️ **숙성**은 따로 칸을 두지 않습니다 — 위스키 산 이야기·여정·느낀점은
-> **`#일기`**, 오크통 숙성·블렌딩 실험은 **`#숙성`** 태그로 Cask 글에 답니다
-> (예: 시음 일기 = Cask 글 + `tags: [일기]`).
-
-
 {% assign known = "price,wprice,tasting,data,dev" | split: "," %}
 {% capture _extras %}{% for cat in site.categories %}{% unless known contains cat[0] %}{{ cat[0] }},{% endunless %}{% endfor %}{% endcapture %}
 {% if _extras != "" %}
