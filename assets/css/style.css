@@ -62,7 +62,7 @@ background:rgba(0,0,0,.25);border-bottom:1px solid var(--line)}
 .post p{margin:8px 0}
 .post strong{color:var(--gold)}
 .post del{color:var(--sub)}
-.post img{display:block;max-width:100%;height:auto;margin:12px auto;
+.post img{display:block;max-width:min(100%,480px);height:auto;margin:12px auto;
 border-radius:8px;border:1px solid var(--line)}
 .post blockquote{background:rgba(224,168,78,.10);border-left:3px solid var(--amber);
 color:#d9d2c2;font-size:13.5px;padding:9px 12px;border-radius:6px;margin:12px 0}
