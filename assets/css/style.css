@@ -128,12 +128,27 @@ background:rgba(255,211,78,.08);border:1px solid rgba(224,168,78,.35)}
 .patch-strip .ps-date{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:12px;color:var(--sub)}
 .patch-strip .ps-title{color:var(--txt);font-weight:600}
 .patch-strip .ps-title:hover{color:var(--gold);text-decoration:underline}
-/* ── 홈 ③ 최신 글 통합 피드(💻/🥃 칩) — CMPA-196 ── */
-.latest-feed{list-style:none;padding:0;margin:0 0 20px}
+/* ── 홈 섹션 머리말(🆕 읽을거리 / 📊 가격 모아보기) — CMPA-294 ── */
+.sec-head{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:13px;font-weight:800;color:var(--gold);
+letter-spacing:.2px;margin:18px 0 8px}
+/* ── 홈 ② 읽을거리 피드(시음·데이터분석·개발 — 💻/🥃 칩) — CMPA-294 ── */
+.latest-feed{list-style:none;padding:0;margin:0 0 6px}
 .latest-feed li{display:flex;align-items:baseline;gap:8px;padding:8px 0;
 border-bottom:1px solid var(--line)}
 .latest-feed .chip{font-size:15px;line-height:1}
 .latest-feed .when{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;color:var(--amber);font-weight:700;font-size:12.5px}
+/* ── 홈 ③ 가격 모아보기(grouping: 신라면세 가격변동 / 위스키 가격리포트) — CMPA-294 ── */
+.price-groups{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 20px}
+.pg-card{display:flex;align-items:center;gap:11px;padding:13px 15px;
+border:1px solid rgba(224,168,78,.35);border-radius:11px;color:var(--txt);
+background:rgba(255,211,78,.06);transition:border-color .2s,transform .2s,box-shadow .2s}
+.pg-card:hover{border-color:var(--amber);transform:translateY(-2px);
+box-shadow:0 8px 22px rgba(0,0,0,.4);text-decoration:none}
+.pg-emoji{font-size:26px;line-height:1}
+.pg-body{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.pg-title{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:15px;font-weight:800;color:var(--gold)}
+.pg-meta{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:12px;color:var(--sub)}
+.pg-go{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:16px;color:var(--gold);font-weight:700}
 /* ── 반응형: 좁은 화면이면 사이드바를 상단 배너로 ── */
 @media (max-width:820px){
 .sidebar{position:static;width:auto;height:auto;bottom:auto;border-right:0;
@@ -145,4 +160,5 @@ padding:20px 16px 14px}
 .side-foot{text-align:center}
 .content{margin-left:0;padding:22px 14px 64px}
 .hub{grid-template-columns:1fr}
+.price-groups{grid-template-columns:1fr}
 }

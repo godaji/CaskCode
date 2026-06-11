@@ -2,6 +2,7 @@
 layout: "default"
 title: "CaskCode — 블로그"
 description: "마음은 개발자, 취미는 위스키. 바이브코딩으로 위스키 가격·리뷰·데이터를 직접 분석해 공유하는 블로그. #CaskCode"
+robots: "index,follow"
 ---
 {% assign _bases = site.posts | where_exp: "p","p.kind == 'base'" %}
 {% assign _pin = _bases | first %}
@@ -13,19 +14,11 @@ description: "마음은 개발자, 취미는 위스키. 바이브코딩으로 �
 </div>
 {% endif %}
 
-{% assign _patches = site.posts | where_exp: "p","p.kind == 'patch'" %}
-{% assign _patch = _patches | first %}
-{% if _patch %}
-<div class="patch-strip">
-  {% if _patch.breakthroughs > 0 %}<span class="ps-flag">⚡ 국내최저 돌파 {{ _patch.breakthroughs }}건</span>{% else %}<span class="ps-flag">⚡ 다이제스트</span>{% endif %}
-  <span class="ps-date">· {{ _patch.latest_date }}</span>
-  <a class="ps-title" href="{{ _patch.url | relative_url }}">{{ _patch.title }}</a>
-</div>
-{% endif %}
-
-{% if site.posts.size > 0 %}
+{% assign _editorial = site.posts | where_exp: "p","p.categories contains 'tasting' or p.categories contains 'data' or p.categories contains 'dev'" %}
+{% if _editorial.size > 0 %}
+<div class="sec-head">🆕 읽을거리 — 시음·데이터 분석</div>
 <ul class="latest-feed">
-{% for p in site.posts limit: 5 %}
+{% for p in _editorial limit: 5 %}
   <li><span class="chip">{% if p.categories contains 'dev' or p.categories contains 'data' %}💻{% else %}🥃{% endif %}</span>
   <span class="when">{{ p.date | date: "%Y-%m-%d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
@@ -33,11 +26,41 @@ description: "마음은 개발자, 취미는 위스키. 바이브코딩으로 �
 </ul>
 {% endif %}
 
+{% assign _patches = site.posts | where_exp: "p","p.kind == 'patch'" %}
+{% assign _patch = _patches | first %}
+{% assign _wp = site.posts | where_exp: "p","p.categories contains 'wprice'" %}
+{% assign _wp1 = _wp | first %}
+{% if _patch or _wp1 %}
+<div class="sec-head">📊 가격 모아보기</div>
+<div class="price-groups">
+{% if _patch %}
+  <a class="pg-card" href="{{ _patch.url | relative_url }}">
+    <span class="pg-emoji">📊</span>
+    <span class="pg-body">
+      <span class="pg-title">신라면세 가격변동</span>
+      <span class="pg-meta">최근 {{ _patches.size }}건 · 최신 {{ _patch.latest_date | default: _patch.date | date: "%Y-%m-%d" }}{% if _patch.breakthroughs > 0 %} · ⚡돌파 {{ _patch.breakthroughs }}건{% endif %}</span>
+    </span>
+    <span class="pg-go">→</span>
+  </a>
+{% endif %}
+{% if _wp1 %}
+  <a class="pg-card" href="{{ _wp1.url | relative_url }}">
+    <span class="pg-emoji">📈</span>
+    <span class="pg-body">
+      <span class="pg-title">위스키 가격리포트</span>
+      <span class="pg-meta">최근 {{ _wp.size }}건 · 최신 {{ _wp1.date | date: "%Y-%m-%d" }}</span>
+    </span>
+    <span class="pg-go">→</span>
+  </a>
+{% endif %}
+</div>
+{% endif %}
+
 <div class="hub">
   <a class="pillar-card" href="{{ '/cask/' | relative_url }}">
     <div class="pc-emoji">🥃</div>
     <div class="pc-head"><span class="pc-title">Cask</span><span class="pc-tag">위스키 전부</span></div>
-    <p class="pc-desc">면세 가성비 자동 리포트 · 위스키 가격정보 · 시음 노트 (오크통 숙성은 #숙성 태그).</p>
+    <p class="pc-desc">면세 가성비 자동 리포트 · 위스키 가격정보 · 구매/시음 노트 (오크통 숙성은 #숙성 태그).</p>
     {% assign posts_cask = site.posts | where_exp: "p", "p.categories contains 'price' or p.categories contains 'wprice' or p.categories contains 'tasting'" %}
     <div class="pc-count">글 {{ posts_cask.size }}편</div>
     <ul class="pc-prev">
