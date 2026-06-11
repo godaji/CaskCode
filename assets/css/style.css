@@ -160,6 +160,10 @@ border-top:1px solid rgba(42,46,56,.6);font-size:13.5px}
 .pg-list a:hover{color:var(--gold);text-decoration:underline}
 .pg-bk{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:11px;color:var(--gold);flex-shrink:0}
 /* ── 글 하단 이전/다음 글 네비 — CMPA-294 보드 후속(목록 왕복 제거) ── */
+/* CMPA-301: 시리즈(같은 카테고리) 내 이동 라벨 + 같은 시리즈 prev/next. */
+.pn-series{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:11.5px;font-weight:700;color:var(--sub);
+margin:26px 0 0;letter-spacing:.02em}
+.pn-series + .post-nav{margin-top:8px}
 .post-nav{display:flex;gap:10px;margin:26px 0 4px;flex-wrap:wrap}
 .pn-link{flex:1 1 0;min-width:180px;display:flex;flex-direction:column;gap:3px;
 padding:11px 14px;border:1px solid var(--line);border-radius:10px;
