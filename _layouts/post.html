@@ -4,3 +4,9 @@ layout: default
 <h1>{{ page.title }}</h1>
 {% if page.date %}<p class="when">{{ page.date | date: "%Y-%m-%d" }}</p>{% endif %}
 {{ content }}
+{% if page.previous or page.next %}
+<nav class="post-nav">
+  {% if page.previous %}<a class="pn-link pn-prev" href="{{ page.previous.url | relative_url }}"><span class="pn-dir">← 이전 글</span><span class="pn-t">{{ page.previous.title }}</span></a>{% else %}<span class="pn-link pn-empty"></span>{% endif %}
+  {% if page.next %}<a class="pn-link pn-next" href="{{ page.next.url | relative_url }}"><span class="pn-dir">다음 글 →</span><span class="pn-t">{{ page.next.title }}</span></a>{% else %}<span class="pn-link pn-empty"></span>{% endif %}
+</nav>
+{% endif %}

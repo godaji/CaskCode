@@ -27,31 +27,29 @@ robots: "index,follow"
 {% endif %}
 
 {% assign _patches = site.posts | where_exp: "p","p.kind == 'patch'" %}
-{% assign _patch = _patches | first %}
 {% assign _wp = site.posts | where_exp: "p","p.categories contains 'wprice'" %}
-{% assign _wp1 = _wp | first %}
-{% if _patch or _wp1 %}
+{% if _patches.size > 0 or _wp.size > 0 %}
 <div class="sec-head">📊 가격 모아보기</div>
 <div class="price-groups">
-{% if _patch %}
-  <a class="pg-card" href="{{ _patch.url | relative_url }}">
-    <span class="pg-emoji">📊</span>
-    <span class="pg-body">
-      <span class="pg-title">신라면세 가격변동</span>
-      <span class="pg-meta">최근 {{ _patches.size }}건 · 최신 {{ _patch.latest_date | default: _patch.date | date: "%Y-%m-%d" }}{% if _patch.breakthroughs > 0 %} · ⚡돌파 {{ _patch.breakthroughs }}건{% endif %}</span>
-    </span>
-    <span class="pg-go">→</span>
-  </a>
+{% if _patches.size > 0 %}
+  <details class="pg-acc">
+    <summary><span class="pg-emoji">📊</span><span class="pg-title">신라면세 가격변동</span><span class="pg-meta">최근 {{ _patches.size }}건</span><span class="pg-caret">▾</span></summary>
+    <ul class="pg-list">
+    {% for p in _patches limit: 10 %}
+      <li><span class="when">{{ p.latest_date | default: p.date | date: "%Y-%m-%d" }}</span><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.breakthroughs > 0 %} <span class="pg-bk">⚡{{ p.breakthroughs }}</span>{% endif %}</li>
+    {% endfor %}
+    </ul>
+  </details>
 {% endif %}
-{% if _wp1 %}
-  <a class="pg-card" href="{{ _wp1.url | relative_url }}">
-    <span class="pg-emoji">📈</span>
-    <span class="pg-body">
-      <span class="pg-title">위스키 가격리포트</span>
-      <span class="pg-meta">최근 {{ _wp.size }}건 · 최신 {{ _wp1.date | date: "%Y-%m-%d" }}</span>
-    </span>
-    <span class="pg-go">→</span>
-  </a>
+{% if _wp.size > 0 %}
+  <details class="pg-acc">
+    <summary><span class="pg-emoji">📈</span><span class="pg-title">위스키 가격리포트</span><span class="pg-meta">최근 {{ _wp.size }}건</span><span class="pg-caret">▾</span></summary>
+    <ul class="pg-list">
+    {% for p in _wp limit: 10 %}
+      <li><span class="when">{{ p.date | date: "%Y-%m-%d" }}</span><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </details>
 {% endif %}
 </div>
 {% endif %}
