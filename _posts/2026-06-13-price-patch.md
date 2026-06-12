@@ -44,4 +44,8 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 |---|--:|
 | 웰러 12년 1000ml | ₩214,439 |
 
+## 🆕 신규 술 설명 — 이름을 눌러 펼치기
+
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">🥃 웰러 12년 1000ml · 45% (90 proof)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 버팔로 트레이스 (Buffalo Trace) · W.L. 웰러 · 미국 켄터키 (버번)<br><b>도수</b> 45% (90 proof)<br><b>캐스크</b> 밀 함유 매시빌(휘티드 버번 · 옥수수~70%·밀~16%·맥아보리~14%, 비공개) · 새 차링 아메리칸 오크 · 12년 숙성<br><b>맛</b> 카라멜·바닐라 커스터드·꿀·체리파이·오렌지필 향. 입안엔 휘티드 특유의 부드러운 단맛—민트·꿀·초콜릿·크렘브륄레. 길고 오크감 있는 매끄러운 피니시에 정향·시나몬·다크초콜릿.<br><b>스토리</b> 휘티드 버번의 선구자 윌리엄 라루 웰러의 이름을 딴 브랜드. 버팔로 트레이스 증류소에서 파피 반 윙클과 같은 휘티드 매시빌(호밀 대신 밀)로 만든다. 12년은 표준 웰러 라인업 중 최장 숙성 연식 표기 제품으로, 부드럽고 균형 잡힌 풍미 덕에 2차 시장에서 매우 인기. (1000ml는 면세 전용 용량)<br><span style="color:#8a8f98">출처: 공식 buffalotracedistillery.com · Whisky Advocate · Difford's Guide (2026-06-13 리서치) · 수집일 2026-06-13</span></div></details>
+
 *데일리샷 최저가 = 데일리샷 국내 소매가(면세·해외 리스팅 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
