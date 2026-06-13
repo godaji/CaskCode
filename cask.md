@@ -14,8 +14,8 @@ robots: "index,follow"
 ### 🏷️ 신라면세 위스키 정보
 *면세 가성비 본편 + 가격 패치 — 국내최저 돌파 (자동 생성)*
 
-{% assign bases = site.posts | where_exp: "p", "p.kind == 'base'" %}
-{% assign patches = site.posts | where_exp: "p", "p.kind == 'patch'" %}
+{% assign bases = site.posts | where_exp: "p", "p.kind == 'base'" | sort: "date" | reverse %}
+{% assign patches = site.posts | where_exp: "p", "p.kind == 'patch'" | sort: "date" | reverse %}
 {% if bases.size > 0 or patches.size > 0 %}
 <ul class="archive">
 {% for p in bases %}
@@ -37,7 +37,7 @@ robots: "index,follow"
 ### 💰 위스키 가격정보
 *국내·해외 위스키 시세 — 트레이더스·코스트코·데일리샷·홍콩·일본 비교*
 
-{% assign items = site.posts | where_exp: "p", "p.categories contains 'wprice'" %}
+{% assign items = site.posts | where_exp: "p", "p.categories contains 'wprice'" | sort: "date" | reverse %}
 {% if items.size > 0 %}
 <ul class="archive">
 {% for p in items %}
@@ -53,7 +53,7 @@ robots: "index,follow"
 ### 🥃 구매/시음 노트
 *사서 마셔본 기록 — 구매 노트 + 시음 (오크통 숙성 실험은 `#숙성` 태그)*
 
-{% assign items = site.posts | where_exp: "p", "p.categories contains 'tasting'" %}
+{% assign items = site.posts | where_exp: "p", "p.categories contains 'tasting'" | sort: "date" | reverse %}
 {% if items.size > 0 %}
 <ul class="archive">
 {% for p in items %}
