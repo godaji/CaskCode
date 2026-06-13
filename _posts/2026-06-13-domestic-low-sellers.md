@@ -2,7 +2,7 @@
 layout: "post"
 title: "국내 상시 저가 판매처 (2026년 6월 기준)"
 date: "2026-06-13 19:30:00 +0900"
-categories: ["price"]
+categories: ["wprice"]
 kind: "seller-low"
 seller_date: "2026-06-13"
 description: "데일리샷 셀러별 데이터로 본 국내 위스키 상시 저가 판매처 — 어떤 술이 어디서 얼마에 최저인지 (2026년 6월) — CaskCode"
