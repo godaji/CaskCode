@@ -9,22 +9,11 @@ robots: "index,follow"
 {% assign _mon = _bases | first %}
 {% assign _wk = _weeklies | first %}
 {% if _mon or _wk %}
-<div class="sec-head">📅 월간·주간 리포트 — 최신</div>
-{% if _wk %}
-<div class="pin">
-  <span class="badge pin-badge">📅 이번 주 · 주간 리포트</span>
-  <a class="pin-title" href="{{ _wk.url | relative_url }}">{{ _wk.title }}</a>
-  <span class="pin-date">{{ _wk.weekly_end | default: _wk.date | date: "%Y-%m-%d" }}</span>
-</div>
-{% endif %}
-{% if _mon %}
-<div class="pin">
-  <span class="badge pin-badge">🗓️ 이번 달 · 월간 리포트</span>
-  <a class="pin-title" href="{{ _mon.url | relative_url }}">{{ _mon.title }}</a>
-  <span class="pin-date">{{ _mon.base_date | default: _mon.date | date: "%Y-%m-%d" }}</span>
-</div>
-{% endif %}
-</div>
+<div class="sec-head">📅 월간·주간 리포트</div>
+<ul class="latest-feed">
+{% if _wk %}<li><span class="chip">📅</span><span class="when">{{ _wk.weekly_end | default: _wk.date | date: "%Y-%m-%d" }}</span><a href="{{ _wk.url | relative_url }}">{{ _wk.title }}</a></li>{% endif %}
+{% if _mon %}<li><span class="chip">🗓️</span><span class="when">{{ _mon.base_date | default: _mon.date | date: "%Y-%m-%d" }}</span><a href="{{ _mon.url | relative_url }}">{{ _mon.title }}</a></li>{% endif %}
+</ul>
 {% endif %}
 
 {% assign _editorial = site.posts | where_exp: "p","p.categories contains 'tasting' or p.categories contains 'data' or p.categories contains 'dev'" %}
