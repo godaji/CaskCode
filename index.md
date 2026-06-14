@@ -5,12 +5,25 @@ description: "마음은 개발자, 취미는 위스키. 바이브코딩으로 �
 robots: "index,follow"
 ---
 {% assign _bases = site.posts | where_exp: "p","p.kind == 'base'" %}
-{% assign _pin = _bases | first %}
-{% if _pin %}
+{% assign _weeklies = site.posts | where_exp: "p","p.kind == 'weekly'" %}
+{% assign _mon = _bases | first %}
+{% assign _wk = _weeklies | first %}
+{% if _mon or _wk %}
+<div class="sec-head">📅 월간·주간 리포트 — 최신</div>
+{% if _wk %}
 <div class="pin">
-  <span class="badge pin-badge">🏆 이번 달 면세 가성비</span>
-  <a class="pin-title" href="{{ _pin.url | relative_url }}">{{ _pin.title }}</a>
-  <span class="pin-date">{{ _pin.base_date | default: _pin.date | date: "%Y-%m-%d" }}</span>
+  <span class="badge pin-badge">📅 이번 주 · 주간 리포트</span>
+  <a class="pin-title" href="{{ _wk.url | relative_url }}">{{ _wk.title }}</a>
+  <span class="pin-date">{{ _wk.weekly_end | default: _wk.date | date: "%Y-%m-%d" }}</span>
+</div>
+{% endif %}
+{% if _mon %}
+<div class="pin">
+  <span class="badge pin-badge">🗓️ 이번 달 · 월간 리포트</span>
+  <a class="pin-title" href="{{ _mon.url | relative_url }}">{{ _mon.title }}</a>
+  <span class="pin-date">{{ _mon.base_date | default: _mon.date | date: "%Y-%m-%d" }}</span>
+</div>
+{% endif %}
 </div>
 {% endif %}
 
