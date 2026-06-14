@@ -2,10 +2,10 @@
 layout: "post"
 title: "국내 상시 저가 판매처 (2026년 6월 기준)"
 date: "2026-06-13 19:30:00 +0900"
-categories: ["wprice"]
+categories: ["data"]
 kind: "seller-low"
 seller_date: "2026-06-13"
-description: "데일리샷 셀러별 데이터로 본 국내 위스키 상시 저가 판매처 — 어떤 술이 어디서 얼마에 최저인지 (2026년 6월) — CaskCode"
+description: "데일리샷 셀러별 listings 데이터를 수집·집계해 국내 위스키 상시 저가 판매처를 분석한 방법과 결과 (2026년 6월) — CaskCode"
 robots: "noindex,nofollow"
 ---
 
@@ -96,5 +96,22 @@ robots: "noindex,nofollow"
 
 면세는 별도 글에서 다룹니다 — 면세가 항상 싼 건 아니라는 점도 함께 보세요.
 
-> 집계 방법: 데일리샷 위스키 검색 결과의 셀러별 노출가를 수집(면세·해외 제외), 품목별
-> 최저가 판매처를 집계. 2026-06-13 기준. CaskCode가 직접 수집·분석했습니다.
+---
+
+## 어떻게 만들었나
+
+### 데이터 수집
+
+데일리샷(`api.dailyshot.co`) 마켓플레이스 검색 API에서 위스키 품목별로 **셀러별 listings**를 수집합니다. 각 검색 결과에는 해당 품목을 파는 판매처 목록(seller_id, 판매가, 판매 수량)이 포함돼 있습니다. 이를 품목별 1행씩 따로 `{년월}_dailyshot_listings.csv`에 적재합니다.
+
+### 면세·해외 리스팅 제외
+
+데일리샷에는 신라면세(`service_type=5`) 및 해외 셀러(USD 가격 노출) 리스팅이 섞여 들어옵니다. 면세가는 세금이 빠진 구조라 국내가와 직접 비교가 안 되므로, 수집 단계에서 `price_usd > 0` 또는 `service_type == 5`인 항목을 전부 제외합니다.
+
+### 최저가 판매처 집계
+
+품목별로 최저가 판매처를 추출한 뒤, **판매처(seller_id)를 기준으로 '몇 개 품목에서 최저가였는지'를 카운트**합니다. seller_id는 내부 ID라 별도 캐시(`sellers.py`)에서 상호명·업종으로 변환합니다.
+
+이 보고서는 **간헐적으로** 생산합니다 — 셀러 구조나 가격 경쟁이 크게 바뀌었을 때 재분석해 갱신합니다.
+
+> 수집: 2026-06-13 · 파이프라인: `pipelines/dailyshot/crawl_dailyshot.py` + `pipelines/dailyshot/sellers.py`
