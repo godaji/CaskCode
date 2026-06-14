@@ -44,7 +44,7 @@ robots: "index,follow"
 
 
 ### 📈 투자
-*위스키 데이터로 본 투자·시세 관점 (외부 기고 포함)*
+*Asset Allocation 기반 자산 투자 기록*
 
 {% assign items = site.posts | where_exp: "p", "p.categories contains 'invest'" | sort: "date" | reverse %}
 {% if items.size > 0 %}
