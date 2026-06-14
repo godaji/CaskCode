@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "국내 상시 저가 판매처 (2026년 6월 기준)"
+title: "[소매 리쿼샵 분석] 저가 판매처 (2026년 6월 기준)"
 date: "2026-06-13 19:30:00 +0900"
 categories: ["data"]
 kind: "seller-low"
