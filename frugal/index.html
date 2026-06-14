@@ -68,8 +68,14 @@
   <!-- ===== 절약 항목 버튼 그리드 (하단 엄지존) ===== -->
   <section class="grid-wrap" aria-label="절약 항목">
     <div class="grid-head">
-      <span>탭해서 적립 · 길게 눌러 단가 수정</span>
-      <button class="history-open" id="historyOpen" type="button">🧾 내역</button>
+      <span class="grid-hint">탭해서 적립 · 길게 눌러 단가 수정</span>
+      <div class="grid-head-actions">
+        <!-- 매뉴얼: 새 창(탭)으로 사용법 블로그 글 열기 -->
+        <a class="manual-open" id="manualOpen"
+           href="https://godaji.github.io/CaskCode/2026/06/14/frugal-app-guide/"
+           target="_blank" rel="noopener">📖 사용법</a>
+        <button class="history-open" id="historyOpen" type="button">🧾 내역</button>
+      </div>
     </div>
     <div class="grid" id="itemGrid"></div>
   </section>

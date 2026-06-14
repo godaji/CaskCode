@@ -124,10 +124,16 @@ strong{font-variant-numeric:tabular-nums;}
 
 /* ===== 절약 항목 그리드 (하단 엄지존) ===== */
 .grid-wrap{margin-top:auto;}            /* 화면 하단으로 밀어 엄지존에 */
-.grid-head{display:flex;justify-content:space-between;align-items:center;
+.grid-head{display:flex;justify-content:space-between;align-items:center;gap:8px;
   margin:4px 4px 8px;font-size:12px;color:var(--muted);}
+.grid-hint{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.grid-head-actions{display:flex;gap:8px;flex:none;}
 .history-open{min-height:36px;padding:0 12px;border-radius:18px;
   background:var(--card);border:1px solid var(--line);color:var(--text);font-size:13px;font-weight:600;}
+.manual-open{display:flex;align-items:center;min-height:36px;padding:0 12px;border-radius:18px;
+  background:var(--card);border:1px solid var(--gold-deep);color:var(--gold);
+  font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;}
+.manual-open:active{transform:scale(.97);background:var(--card2);}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);}
 .tile{
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
