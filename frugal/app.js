@@ -386,28 +386,44 @@
   // ── 이벤트 바인딩 ──
   function bindGridGestures(){
     const grid = $('itemGrid');
-    let pressTimer, longFired = false;
+    const MOVE_TOL = 10;   // px — 이보다 손가락이 움직이면 '탭'이 아니라 '스크롤'로 본다
+    let pressTimer, longFired = false, moved = false, pressing = false, sx = 0, sy = 0;
     const itemFromEvt = e => {
       const tile = e.target.closest('.tile'); if (!tile) return null;
       return SEED_ITEMS.find(i => i.id === tile.dataset.id) || null;
     };
+    const pt = e => (e.touches && e.touches[0]) || (e.changedTouches && e.changedTouches[0]) || e;
     const startPress = e => {
       const item = itemFromEvt(e); if (!item) return;
-      longFired = false;
-      pressTimer = setTimeout(() => { longFired = true; vibrate(20); openRateEdit(item); }, 450);
+      longFired = false; moved = false; pressing = true;
+      const p = pt(e); sx = p.clientX; sy = p.clientY;
+      pressTimer = setTimeout(() => {
+        if (moved) return;                              // 스크롤 중이면 길게누름 발동 안 함
+        longFired = true; vibrate(20); openRateEdit(item);
+      }, 450);
+    };
+    const movePress = e => {                            // 임계치 넘으면 스크롤로 간주 → 탭 취소
+      if (!pressing) return;
+      const p = pt(e);
+      if (Math.abs(p.clientX - sx) > MOVE_TOL || Math.abs(p.clientY - sy) > MOVE_TOL){
+        moved = true; clearTimeout(pressTimer);
+      }
     };
     const endPress = e => {
-      clearTimeout(pressTimer);
+      clearTimeout(pressTimer); pressing = false;
       const item = itemFromEvt(e); if (!item) return;
+      if (moved){ moved = false; return; }             // 스크롤 → 탭(적립/목표팝업) 무시
       if (longFired){ longFired = false; return; }     // 길게 누름 → 단가편집만
       if (item.prompt) promptAmount(item);
       else logSaving(item, rateOf(item));
     };
-    const cancelPress = () => clearTimeout(pressTimer);
+    const cancelPress = () => { clearTimeout(pressTimer); pressing = false; moved = false; };
     grid.addEventListener('touchstart', startPress, {passive:true});
+    grid.addEventListener('touchmove', movePress, {passive:true});
     grid.addEventListener('touchend', endPress);
-    grid.addEventListener('touchmove', cancelPress, {passive:true});
+    grid.addEventListener('touchcancel', cancelPress);
     grid.addEventListener('mousedown', startPress);
+    grid.addEventListener('mousemove', movePress);
     grid.addEventListener('mouseup', endPress);
     grid.addEventListener('mouseleave', cancelPress);
     grid.addEventListener('contextmenu', e => e.preventDefault());

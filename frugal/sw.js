@@ -1,5 +1,5 @@
 /* 캐스크 적금 서비스워커 — 설치/오프라인(앱셸 캐시) */
-const CACHE = 'dramjar-v3';  // CMPA-357: A2HS 설치 버튼 추가 — 셸 갱신 위해 캐시 버전 업
+const CACHE = 'dramjar-v4';  // CMPA-350: 그리드 스크롤=탭 오인 수정 — 셸 갱신 위해 캐시 버전 업
 const SHELL = [
   './',
   './index.html',
