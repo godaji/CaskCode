@@ -14,19 +14,21 @@ robots: "index,follow"
 ### 🏷️ 신라면세 위스키 정보
 *면세 가성비 본편 + 가격 패치 — 국내최저 돌파 (자동 생성)*
 
-{% assign bases = site.posts | where_exp: "p", "p.kind == 'base'" | sort: "date" | reverse %}
-{% assign patches = site.posts | where_exp: "p", "p.kind == 'patch'" | sort: "date" | reverse %}
-{% if bases.size > 0 or patches.size > 0 %}
+{% assign _bases = site.posts | where_exp: "p", "p.kind == 'base'" %}
+{% assign _patches = site.posts | where_exp: "p", "p.kind == 'patch'" %}
+{% assign shilla_posts = _bases | concat: _patches | sort: "date" | reverse %}
+{% if shilla_posts.size > 0 %}
 <ul class="archive">
-{% for p in bases %}
+{% for p in shilla_posts %}
+  {% if p.kind == 'base' %}
   <li><span class="when">{{ p.base_date | default: p.date | date: "%Y-%m-%d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-{% endfor %}
-{% for p in patches %}
+  {% else %}
   <li><span class="when">{{ p.latest_date | default: p.date | date: "%Y-%m-%d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
   {% if p.cadence == 'instant' %}<span class="badge instant">⚡ 돌파</span>{% else %}<span class="badge digest">다이제스트</span>{% endif %}
   {% if p.breakthroughs > 0 %}<span class="sub">· 국내최저 돌파 {{ p.breakthroughs }}건</span>{% endif %}</li>
+  {% endif %}
 {% endfor %}
 </ul>
 {% else %}
