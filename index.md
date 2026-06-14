@@ -1,7 +1,7 @@
 ---
 layout: "default"
 title: "CaskCode — 블로그"
-description: "마음은 개발자, 취미는 위스키. 바이브코딩으로 위스키 가격·리뷰·데이터를 직접 분석하고, 투자까지 다루는 블로그. #CaskCode"
+description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 마음만은 개발자, 취미로 즐기는 위스키·투자·여행을 직접 손으로(hands-on) 다룹니다. #CaskCode"
 robots: "index,follow"
 ---
 {% assign _bases = site.posts | where_exp: "p","p.kind == 'base'" %}
