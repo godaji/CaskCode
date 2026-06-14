@@ -1,14 +1,17 @@
 /* 캐스크 적금 (Dram Jar) — 핵심 로직
-   CMPA-350 / 정본 CMPA-347 plan §2~§6,§9
-   저장 = localStorage 단일 소스(가계부형, 서버/계정 0). floor = whisky_floor.json fetch.
-   ─ 핵심 루프는 타이핑 0(탭만). 입력은 단가 편집·목표 선택뿐. */
+   CMPA-350 / 정본 CMPA-347 plan §2~§6,§9 · CMPA-351 보드 피드백 반영
+   ── 목표 = '적금통(jar) 인스턴스'. 적립은 활성 적금통 안에 쌓인다.
+      목표 달성 → '구매 완료' 로 캐비닛에 보관하고 다음 목표(새 적금통)를 시작.
+   저장 = localStorage 단일 소스(가계부형, 서버/계정 0). floor = whisky_floor.json fetch. */
 
 (() => {
   'use strict';
 
-  const STORE_KEY = 'dramjar.v1';
+  const STORE_KEY = 'dramjar.v2';
+  const OLD_KEY = 'dramjar.v1';
   const KRW = new Intl.NumberFormat('ko-KR');
   const won = n => KRW.format(Math.round(n)) + '원';
+  const uid = () => 'j' + Date.now().toString(36) + Math.floor(performance.now()).toString(36);
 
   // ── 절약 항목 시드 (plan §6). amount=0 인 항목(impulse)은 탭 시 금액 입력형. ──
   const SEED_ITEMS = [
@@ -25,28 +28,49 @@
   ];
 
   // ── 상태 ──
+  // state = { activeJar:{id,productId,name,createdAt,savings:[{ts,itemId,amount}]}|null,
+  //           cabinet:[{id,productId,name,createdAt,redeemedAt,savedTotal,floorAtRedeem}],
+  //           itemRates:{} }
   let state = load();
   let floors = [];     // whisky_floor.json
   let rateEdit = null; // {itemId, value}
+  let celebrated = false;
 
   function load() {
     try {
       const raw = localStorage.getItem(STORE_KEY);
       if (raw) {
         const s = JSON.parse(raw);
-        s.savings = Array.isArray(s.savings) ? s.savings : [];
+        s.activeJar = normJar(s.activeJar);
+        s.cabinet = Array.isArray(s.cabinet) ? s.cabinet : [];
         s.itemRates = s.itemRates || {};
-        s.goal = s.goal || null;
         return s;
       }
+      // v1 → v2 마이그레이션(기존 사용자 데이터 보존)
+      const old = JSON.parse(localStorage.getItem(OLD_KEY) || 'null');
+      if (old) {
+        const jar = old.goal
+          ? { id: uid(), productId: old.goal.productId, name: old.goal.name,
+              createdAt: Date.now(), savings: Array.isArray(old.savings) ? old.savings : [] }
+          : null;
+        return { activeJar: jar, cabinet: [], itemRates: old.itemRates || {} };
+      }
     } catch (e) { /* 손상 시 초기화 */ }
-    return { savings:[], goal:null, itemRates:{} };
+    return { activeJar: null, cabinet: [], itemRates: {} };
+  }
+  function normJar(j) {
+    if (!j || !j.productId) return null;
+    j.savings = Array.isArray(j.savings) ? j.savings : [];
+    if (!j.id) j.id = uid();
+    return j;
   }
   function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); }
 
   const $ = id => document.getElementById(id);
   const rateOf = item => (state.itemRates[item.id] != null ? state.itemRates[item.id] : item.rate);
-  const total = () => state.savings.reduce((s, e) => s + e.amount, 0);
+  const jar = () => state.activeJar;
+  const jarTotal = () => (jar() ? jar().savings.reduce((s, e) => s + e.amount, 0) : 0);
+  const floorOf = pid => floors.find(f => String(f.product_id) === String(pid)) || null;
 
   function vibrate(ms){ try { navigator.vibrate && navigator.vibrate(ms); } catch(e){} }
 
@@ -75,47 +99,60 @@
     requestAnimationFrame(frame);
   }
 
-  // ── 기간 합계 ──
+  // ── 기간 합계(활성 적금통 기준) ──
   function weekStart(){ const d=new Date(); const day=(d.getDay()+6)%7; d.setHours(0,0,0,0); d.setDate(d.getDate()-day); return d.getTime(); }
   function monthStart(){ const d=new Date(); return new Date(d.getFullYear(), d.getMonth(), 1).getTime(); }
-  const sumSince = ts => state.savings.filter(e => e.ts >= ts).reduce((s,e)=>s+e.amount,0);
+  const sumSince = ts => (jar() ? jar().savings.filter(e => e.ts >= ts).reduce((s,e)=>s+e.amount,0) : 0);
 
   // ── 렌더: 합계 ──
   function renderTotal(animateFrom){
-    const tot = total();
+    const tot = jarTotal();
     if (animateFrom != null) countUp($('totalAmount'), animateFrom, tot);
     else $('totalAmount').textContent = KRW.format(tot);
     $('weekAmount').textContent = won(sumSince(weekStart()));
     $('monthAmount').textContent = won(sumSince(monthStart()));
-    $('undoLast').hidden = state.savings.length === 0;
+    $('undoLast').hidden = !(jar() && jar().savings.length);
+    $('totalLabel').textContent = jar() ? '이 적금통에 모은 돈' : '적금통을 만들어 시작하세요';
+    // 캐비닛 배지
+    const co = $('cabinetOpen');
+    co.hidden = state.cabinet.length === 0;
+    $('cabinetCount').textContent = state.cabinet.length;
   }
 
-  // ── 렌더: 목표 카드 ──
+  // ── 렌더: 목표(적금통) 카드 ──
   function renderGoal(){
-    const g = state.goal;
-    const floor = g ? floors.find(f => String(f.product_id) === String(g.productId)) : null;
-    if (!g || !floor){
-      $('goalName').textContent = g ? g.name : '목표 위스키 고르기';
+    const j = jar();
+    if (!j){
       $('goalBody').hidden = true;
-      $('goalEmpty').hidden = false;
+      $('goalCreate').hidden = false;
+      const hint = $('gcCabinetHint');
+      if (state.cabinet.length){
+        hint.hidden = false;
+        hint.innerHTML = `지금까지 <b>${state.cabinet.length}병</b> 적금 완료 🏆`;
+      } else hint.hidden = true;
       return;
     }
-    $('goalEmpty').hidden = true;
+    $('goalCreate').hidden = true;
     $('goalBody').hidden = false;
-    $('goalName').textContent = floor.name;
-    const tot = total();
-    const pct = Math.min(100, floor.floor_krw > 0 ? (tot / floor.floor_krw) * 100 : 0);
+    $('goalName').textContent = j.name;
+    const floor = floorOf(j.productId);
+    const tot = jarTotal();
+    const target = floor ? floor.floor_krw : 0;
+    const pct = Math.min(100, target > 0 ? (tot / target) * 100 : 0);
     const fill = $('progressFill');
     fill.style.width = pct.toFixed(1) + '%';
     $('goalPct').textContent = Math.floor(pct) + '%';
-    $('goalFloor').textContent = won(floor.floor_krw);
-    $('goalCollected').textContent = floor.collected_at ? `· ${floor.collected_at} 수집 기준값` : '';
-    const remain = Math.max(0, floor.floor_krw - tot);
-    const done = remain <= 0;
-    $('goalRemain').textContent = done ? '달성! 🎉' : won(remain);
+    $('goalFloor').textContent = floor ? won(target) : '가격 정보 없음';
+    $('goalCollected').textContent = floor && floor.collected_at ? `· ${floor.collected_at} 수집 기준값` : '';
+    const remain = Math.max(0, target - tot);
+    const done = target > 0 && remain <= 0;
+    $('goalRemain').textContent = !floor ? '—' : (done ? '달성! 🎉' : won(remain));
     fill.classList.toggle('done', done);
+    // 달성 → 사러가기 + 구매완료(다음 목표)
+    const row = $('goalAchieved');
+    row.hidden = !done;
     const cta = $('ctaBuy');
-    if (done && floor.dailyshot_url){ cta.hidden = false; cta.href = floor.dailyshot_url; }
+    if (done && floor && floor.dailyshot_url){ cta.hidden = false; cta.href = floor.dailyshot_url; }
     else cta.hidden = true;
   }
 
@@ -137,11 +174,16 @@
     });
   }
 
-  // ── 적립 로그 ──
+  // ── 적립 로그(활성 적금통에) ──
   function logSaving(item, amount){
     if (!amount || amount <= 0) return;
-    const before = total();
-    state.savings.push({ ts: Date.now(), itemId: item.id, amount });
+    if (!jar()){ // 목표 없으면 먼저 정하게
+      toast('먼저 목표를 정해 주세요');
+      openSheet('goalSheet'); renderGoalList();
+      return;
+    }
+    const before = jarTotal();
+    jar().savings.push({ ts: Date.now(), itemId: item.id, amount });
     save();
     renderTotal(before);
     renderGoal();
@@ -152,50 +194,91 @@
     maybeCelebrate();
   }
 
-  let celebrated = false;
   function maybeCelebrate(){
-    const g = state.goal; if (!g) return;
-    const floor = floors.find(f => String(f.product_id) === String(g.productId));
-    if (floor && total() >= floor.floor_krw && floor.floor_krw > 0){
-      if (!celebrated){ celebrated = true; vibrate([20,40,20]); toast('🎉 목표 달성! 지금 살 수 있어요'); }
+    const j = jar(); if (!j) return;
+    const floor = floorOf(j.productId);
+    if (floor && jarTotal() >= floor.floor_krw && floor.floor_krw > 0){
+      if (!celebrated){ celebrated = true; vibrate([20,40,20]); toast('🎉 목표 달성! 사러 가거나 다음 목표로'); }
     } else celebrated = false;
   }
 
-  // ── 되돌리기 ──
+  // ── 되돌리기(활성 적금통) ──
   function undoEntry(ts){
-    const before = total();
-    state.savings = state.savings.filter(e => e.ts !== ts);
-    save();
+    if (!jar()) return;
+    const before = jarTotal();
+    jar().savings = jar().savings.filter(e => e.ts !== ts);
+    celebrated = false; save();
     renderTotal(before); renderGoal(); renderHistory();
     vibrate(10); toast('↺ 되돌렸어요');
   }
   function undoLast(){
-    if (!state.savings.length) return;
-    const last = state.savings[state.savings.length - 1];
-    undoEntry(last.ts);
+    if (!jar() || !jar().savings.length) return;
+    undoEntry(jar().savings[jar().savings.length - 1].ts);
+  }
+
+  // ── 목표 설정 / 변경 (적금통 retarget — 적립금 유지) ──
+  function setGoal(f){
+    if (jar()){
+      jar().productId = f.product_id; jar().name = f.name;
+    } else {
+      state.activeJar = { id: uid(), productId: f.product_id, name: f.name, createdAt: Date.now(), savings: [] };
+    }
+    celebrated = false; save();
+    renderGoal(); renderTotal();
+    closeSheet('goalSheet'); vibrate(12); toast(`목표: ${f.name}`); maybeCelebrate();
+  }
+
+  // ── 구매 완료 → 캐비닛 보관 + 새 적금통(다음 목표) ──
+  function redeem(){
+    const j = jar(); if (!j) return;
+    const floor = floorOf(j.productId);
+    if (!window.confirm(`${j.name} 구매 완료로 처리할까요?\n이 적금통은 캐비닛에 보관되고, 새 목표를 시작합니다.`)) return;
+    state.cabinet.unshift({
+      id: j.id, productId: j.productId, name: j.name,
+      createdAt: j.createdAt, redeemedAt: Date.now(),
+      savedTotal: jarTotal(), floorAtRedeem: floor ? floor.floor_krw : null,
+    });
+    state.activeJar = null; celebrated = false; save();
+    renderGoal(); renderTotal();
+    vibrate([15,30,15]); toast('🏆 캐비닛에 보관! 다음 목표를 정하세요');
+    openSheet('goalSheet'); renderGoalList();
   }
 
   // ── 시트 헬퍼 ──
   const openSheet = id => { $(id).hidden = false; };
   const closeSheet = id => { $(id).hidden = true; };
 
-  // ── 목표 선택 ──
+  // ── 목표 선택 시트 ──
   function renderGoalList(){
     const box = $('goalList');
     box.innerHTML = '';
     if (!floors.length){ box.innerHTML = '<p class="hist-empty">floor 데이터를 불러오지 못했습니다.</p>'; return; }
+    const curId = jar() ? jar().productId : null;
     floors.forEach(f => {
       const row = document.createElement('button');
       row.type = 'button';
-      row.className = 'pick-row' + (state.goal && String(state.goal.productId)===String(f.product_id) ? ' sel' : '');
+      row.className = 'pick-row' + (String(curId)===String(f.product_id) ? ' sel' : '');
       row.innerHTML =
         `<span><span class="pr-name">${f.name}</span><br><span class="pr-date">${f.collected_at||''} 기준</span></span>` +
         `<span class="pr-floor">${won(f.floor_krw)}</span>`;
-      row.addEventListener('click', () => {
-        state.goal = { productId: f.product_id, name: f.name };
-        celebrated = false; save(); renderGoal(); closeSheet('goalSheet');
-        vibrate(12); toast(`목표: ${f.name}`); maybeCelebrate();
-      });
+      row.addEventListener('click', () => setGoal(f));
+      box.appendChild(row);
+    });
+  }
+
+  // ── 캐비닛(완료한 목표) 시트 ──
+  function renderCabinet(){
+    const box = $('cabinetList');
+    box.innerHTML = '';
+    if (!state.cabinet.length){ box.innerHTML = '<p class="hist-empty">아직 완료한 목표가 없어요.<br>첫 한 병을 채워보세요 🥃</p>'; return; }
+    state.cabinet.forEach(c => {
+      const d = new Date(c.redeemedAt);
+      const date = `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
+      const row = document.createElement('div'); row.className = 'cab-row';
+      row.innerHTML =
+        `<span class="cab-emoji">🥃</span>` +
+        `<span class="cab-main"><span class="cab-name">${c.name}</span>` +
+        `<span class="cab-meta">${date} 완료 · ${won(c.savedTotal)} 모음</span></span>`;
       box.appendChild(row);
     });
   }
@@ -220,13 +303,14 @@
     toast('단가 저장됨');
   }
 
-  // ── 히스토리 ──
+  // ── 히스토리(활성 적금통) ──
   function renderHistory(){
     const box = $('historyList');
     box.innerHTML = '';
-    if (!state.savings.length){ box.innerHTML = '<p class="hist-empty">아직 적립 내역이 없어요.<br>아래 버튼을 눌러 시작하세요.</p>'; return; }
+    const list = jar() ? jar().savings : [];
+    if (!list.length){ box.innerHTML = '<p class="hist-empty">아직 적립 내역이 없어요.<br>아래 버튼을 눌러 시작하세요.</p>'; return; }
     const byDay = {};
-    [...state.savings].reverse().forEach(e => {
+    [...list].reverse().forEach(e => {
       const d = new Date(e.ts);
       const key = `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
       (byDay[key] = byDay[key] || []).push(e);
@@ -276,25 +360,25 @@
     grid.addEventListener('touchstart', startPress, {passive:true});
     grid.addEventListener('touchend', endPress);
     grid.addEventListener('touchmove', cancelPress, {passive:true});
-    // 마우스(데스크톱 검증용)
     grid.addEventListener('mousedown', startPress);
     grid.addEventListener('mouseup', endPress);
     grid.addEventListener('mouseleave', cancelPress);
-    // 컨텍스트메뉴(데스크톱 길게누름 대체) 방지
     grid.addEventListener('contextmenu', e => e.preventDefault());
   }
 
   function bind(){
     bindGridGestures();
+    $('createGoalBtn').addEventListener('click', () => { renderGoalList(); openSheet('goalSheet'); });
     $('goalPick').addEventListener('click', () => { renderGoalList(); openSheet('goalSheet'); });
+    $('ctaRedeem').addEventListener('click', redeem);
     $('undoLast').addEventListener('click', undoLast);
     $('historyOpen').addEventListener('click', () => { renderHistory(); openSheet('historySheet'); });
+    $('cabinetOpen').addEventListener('click', () => { renderCabinet(); openSheet('cabinetSheet'); });
     $('rateMinus').addEventListener('click', () => stepRate(-500));
     $('ratePlus').addEventListener('click', () => stepRate(500));
     $('rateSave').addEventListener('click', saveRate);
     document.querySelectorAll('[data-close]').forEach(b =>
       b.addEventListener('click', () => closeSheet(b.dataset.close)));
-    // 백드롭 탭 → 닫기
     document.querySelectorAll('.sheet-backdrop').forEach(bd =>
       bd.addEventListener('click', e => { if (e.target === bd) bd.hidden = true; }));
   }
@@ -304,7 +388,7 @@
     try {
       const res = await fetch('./whisky_floor.json', { cache:'no-store' });
       const data = await res.json();
-      floors = Array.isArray(data) ? data : (data.items || data.floors || []);
+      floors = Array.isArray(data) ? data : (data.items || data.floors || data.whiskies || []);
     } catch (e) {
       floors = [];
       toast('floor 데이터를 불러오지 못했어요');

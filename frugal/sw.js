@@ -1,5 +1,5 @@
 /* 캐스크 적금 서비스워커 — 설치/오프라인(앱셸 캐시) */
-const CACHE = 'dramjar-v1';
+const CACHE = 'dramjar-v2';  // CMPA-351: 적금통(jar) 모델 개편 — 셸 갱신 위해 캐시 버전 업
 const SHELL = [
   './',
   './index.html',
