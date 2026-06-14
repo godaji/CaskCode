@@ -27,10 +27,21 @@ robots: "index,follow"
 {% endif %}
 
 {% assign _patches = site.posts | where_exp: "p","p.kind == 'patch'" %}
+{% assign _weekly = site.posts | where_exp: "p","p.kind == 'weekly'" %}
 {% assign _wp = site.posts | where_exp: "p","p.categories contains 'wprice'" %}
-{% if _patches.size > 0 or _wp.size > 0 %}
+{% if _patches.size > 0 or _weekly.size > 0 or _wp.size > 0 %}
 <div class="sec-head">📊 가격 모아보기</div>
 <div class="price-groups">
+{% if _weekly.size > 0 %}
+  <details class="pg-acc">
+    <summary><span class="pg-emoji">📅</span><span class="pg-title">신라면세 주간 리포트</span><span class="pg-meta">최근 {{ _weekly.size }}건</span><span class="pg-caret">▾</span></summary>
+    <ul class="pg-list">
+    {% for p in _weekly limit: 10 %}
+      <li><span class="when">{{ p.weekly_end | default: p.date | date: "%Y-%m-%d" }}</span><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </details>
+{% endif %}
 {% if _patches.size > 0 %}
   <details class="pg-acc">
     <summary><span class="pg-emoji">📊</span><span class="pg-title">신라면세 가격변동</span><span class="pg-meta">최근 {{ _patches.size }}건</span><span class="pg-caret">▾</span></summary>

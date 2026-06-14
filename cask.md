@@ -12,17 +12,22 @@ robots: "index,follow"
 
 
 ### 🏷️ 신라면세 위스키 정보
-*면세 가성비 본편 + 가격 패치 — 국내최저 돌파 (자동 생성)*
+*면세 가성비 본편 + 주간 리포트 + 가격 패치 — 국내최저 돌파 (자동 생성)*
 
 {% assign _bases = site.posts | where_exp: "p", "p.kind == 'base'" %}
 {% assign _patches = site.posts | where_exp: "p", "p.kind == 'patch'" %}
-{% assign shilla_posts = _bases | concat: _patches | sort: "date" | reverse %}
+{% assign _weeklies = site.posts | where_exp: "p", "p.kind == 'weekly'" %}
+{% assign shilla_posts = _bases | concat: _weeklies | concat: _patches | sort: "date" | reverse %}
 {% if shilla_posts.size > 0 %}
 <ul class="archive">
 {% for p in shilla_posts %}
   {% if p.kind == 'base' %}
   <li><span class="when">{{ p.base_date | default: p.date | date: "%Y-%m-%d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+  {% elsif p.kind == 'weekly' %}
+  <li><span class="when">{{ p.weekly_end | default: p.date | date: "%Y-%m-%d" }}</span>
+  <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+  <span class="badge digest">📅 주간</span></li>
   {% else %}
   <li><span class="when">{{ p.latest_date | default: p.date | date: "%Y-%m-%d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
