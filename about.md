@@ -1,7 +1,7 @@
 ---
 layout: "default"
 title: "About — CaskCode"
-description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 취미로 즐기는 위스키·투자·여행을 직접 손으로(hands-on) 다룹니다."
+description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 위스키·투자·여행 등을 다룹니다."
 permalink: "/about/"
 robots: index,follow
 ---
