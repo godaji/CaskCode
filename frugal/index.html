@@ -1,71 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <!-- 보드 발행 게이트 c7405e7d: 스테이징 noindex 유지 (Jekyll layout 우회 정적 파일이라 직접 명시) -->
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="theme-color" content="#1a1410">
-  <meta name="description" content="절약 1탭 → 적립 → 목표 위스키 실시간 최저가 진행률. CaskCode 위스키 데이터 기반 개인용 PWA.">
-  <title>위스키 적금 — CaskCode</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="icon-192.png">
-  <link rel="stylesheet" href="app.css">
+<meta charset="utf-8">
+<!-- 모바일 우선: 360~390px. viewport-fit=cover + safe-area, 더블탭 줌 방지 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+<!-- 보드 발행 게이트 c7405e7d: 스테이징 noindex 유지 (Jekyll layout 우회 정적 파일이라 직접 명시) -->
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#3a2a1a">
+<meta name="description" content="절약 행동을 1탭으로 적립해 목표 위스키 실시간 최저가까지 진행률로 보는 개인용 적금 앱.">
+<title>캐스크 적금 — Dram Jar</title>
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="캐스크 적금">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main id="app">
-    <!-- ① 목표 카드 -->
-    <section class="goal" id="goalCard">
-      <div class="goal-head">
-        <select id="goalSelect" aria-label="목표 위스키 선택"></select>
+<div id="app">
+  <!-- ===== 목표 카드 (상단) ===== -->
+  <section class="card goal" id="goalCard" aria-label="목표 위스키">
+    <div class="goal-head">
+      <button class="goal-pick" id="goalPick" type="button" aria-haspopup="dialog">
+        <span class="goal-name" id="goalName">목표 위스키 고르기</span>
+        <span class="goal-chev" aria-hidden="true">▾</span>
+      </button>
+    </div>
+    <div class="goal-body" id="goalBody" hidden>
+      <div class="progress-wrap" aria-hidden="true">
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+      <div class="goal-stats">
+        <div class="pct" id="goalPct">0%</div>
+        <div class="remain">남은 금액 <strong id="goalRemain">—</strong></div>
       </div>
       <div class="goal-floor">
-        <span class="floor-num" id="floorNum">—</span>
-        <span class="floor-unit">원</span>
-        <span class="floor-date" id="floorDate"></span>
+        현재 국내 최저가 <strong id="goalFloor">—</strong>
+        <span class="floor-date" id="goalCollected"></span>
       </div>
-      <div class="bar" aria-label="진행률">
-        <div class="bar-fill" id="barFill" style="width:0%"></div>
-        <span class="bar-pct" id="barPct">0%</span>
+      <a class="cta-buy" id="ctaBuy" href="#" target="_blank" rel="noopener" hidden>🥃 지금 사러 가기 →</a>
+    </div>
+    <p class="goal-empty" id="goalEmpty">사고 싶은 위스키를 골라 시작하세요.</p>
+  </section>
+
+  <!-- ===== 적립금 합계 (중단) ===== -->
+  <section class="card total" aria-label="적립금 합계">
+    <div class="total-label">모은 적립금</div>
+    <div class="total-amount"><span id="totalAmount">0</span><span class="won">원</span></div>
+    <div class="total-sub">
+      <span>이번 주 <strong id="weekAmount">0</strong></span>
+      <span>이번 달 <strong id="monthAmount">0</strong></span>
+    </div>
+    <button class="undo-last" id="undoLast" type="button" hidden>↺ 방금 적립 되돌리기</button>
+  </section>
+
+  <!-- ===== 절약 항목 버튼 그리드 (하단 엄지존) ===== -->
+  <section class="grid-wrap" aria-label="절약 항목">
+    <div class="grid-head">
+      <span>탭해서 적립 · 길게 눌러 단가 수정</span>
+      <button class="history-open" id="historyOpen" type="button">🧾 내역</button>
+    </div>
+    <div class="grid" id="itemGrid"></div>
+  </section>
+</div>
+
+<!-- ===== 토스트 ===== -->
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<!-- ===== 목표 위스키 선택 시트 ===== -->
+<div class="sheet-backdrop" id="goalSheet" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="목표 위스키 선택">
+    <div class="sheet-head"><span>목표 위스키</span><button class="sheet-close" data-close="goalSheet" type="button">✕</button></div>
+    <div class="sheet-body" id="goalList"></div>
+  </div>
+</div>
+
+<!-- ===== 단가 편집 시트 ===== -->
+<div class="sheet-backdrop" id="rateSheet" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="단가 편집">
+    <div class="sheet-head"><span id="rateTitle">단가 편집</span><button class="sheet-close" data-close="rateSheet" type="button">✕</button></div>
+    <div class="sheet-body">
+      <div class="stepper">
+        <button class="step-btn" id="rateMinus" type="button" aria-label="감소">－</button>
+        <div class="step-val"><span id="rateVal">0</span><span class="won">원</span></div>
+        <button class="step-btn" id="ratePlus" type="button" aria-label="증가">＋</button>
       </div>
-      <div class="goal-remain" id="goalRemain">목표를 선택하세요</div>
-      <a class="cta" id="buyCta" href="#" target="_blank" rel="noopener" hidden>🎉 달성! 지금 사러가기 →</a>
-    </section>
-
-    <!-- ② 적립금 합계 -->
-    <section class="purse">
-      <div class="purse-total">
-        <span class="purse-label">모은 적금</span>
-        <span class="purse-num"><span id="purseNum">0</span><span class="won">원</span></span>
-      </div>
-      <div class="purse-sub">
-        <span>이번 주 <b id="weekNum">0</b></span>
-        <span>이번 달 <b id="monthNum">0</b></span>
-        <button id="histBtn" class="hist-btn" type="button">기록 <b id="logCount">0</b></button>
-      </div>
-    </section>
-
-    <!-- ③ 절약 항목 버튼 그리드 (엄지존) -->
-    <section class="grid-wrap">
-      <div class="grid" id="grid"></div>
-      <p class="hint">탭 = 적립 · 길게 누르면 금액 수정</p>
-    </section>
-  </main>
-
-  <!-- 1탭 되돌리기 -->
-  <button id="undoBar" class="undo" type="button" hidden>↩︎ 방금 <span id="undoLabel"></span> 되돌리기</button>
-
-  <!-- 토스트 -->
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-
-  <!-- 기록 시트 -->
-  <div id="sheet" class="sheet" hidden>
-    <div class="sheet-card">
-      <div class="sheet-head"><b>적금 기록</b><button id="sheetClose" type="button">닫기</button></div>
-      <ul id="sheetList" class="sheet-list"></ul>
+      <button class="sheet-save" id="rateSave" type="button">저장</button>
     </div>
   </div>
+</div>
 
-  <script src="app.js"></script>
+<!-- ===== 히스토리 시트 ===== -->
+<div class="sheet-backdrop" id="historySheet" hidden>
+  <div class="sheet tall" role="dialog" aria-modal="true" aria-label="적립 내역">
+    <div class="sheet-head"><span>적립 내역</span><button class="sheet-close" data-close="historySheet" type="button">✕</button></div>
+    <div class="sheet-body" id="historyList"></div>
+  </div>
+</div>
+
+<script src="./app.js"></script>
 </body>
 </html>
