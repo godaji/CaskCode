@@ -1,0 +1,17 @@
+{
+  "schema": "whisky_floor.v1",
+  "collected_at": "2026-06-14",
+  "source": "데일리샷 국내 최저가(면세/해외/dirty 제외) — CaskCode whisky-price 파이프라인",
+  "note": "floor_krw 는 '수집 날짜 기준값'입니다. 지금 이 순간 값이 아니라 collected_at 기준 국내 최저가입니다.",
+  "currency": "KRW",
+  "whiskies": [
+    { "product_id": "2330",  "name": "글렌리벳 12년",           "floor_krw": 60900,  "collected_at": "2026-06-14", "dailyshot_url": "https://dailyshot.co/m/product/2330" },
+    { "product_id": "26311", "name": "글렌모렌지 오리지널 12년", "floor_krw": 78000,  "collected_at": "2026-06-14", "dailyshot_url": "https://dailyshot.co/m/product/26311" },
+    { "product_id": "2329",  "name": "글렌피딕 12년",           "floor_krw": 84900,  "collected_at": "2026-06-14", "dailyshot_url": "https://dailyshot.co/m/product/2329" },
+    { "product_id": "1961",  "name": "탈리스커 10년",           "floor_krw": 85200,  "collected_at": "2026-06-14", "dailyshot_url": "https://dailyshot.co/m/product/1961" },
+    { "product_id": "3190",  "name": "발베니 12년 더블우드",     "floor_krw": 99000,  "collected_at": "2026-06-14", "dailyshot_url": "https://dailyshot.co/m/product/3190" },
+    { "product_id": "33217", "name": "라가불린 11년 스위트 피트", "floor_krw": 99800,  "collected_at": "2026-06-14", "dailyshot_url": "https://dailyshot.co/m/product/33217" },
+    { "product_id": "29166", "name": "맥캘란 12년 더블캐스크",    "floor_krw": 109000, "collected_at": "2026-06-14", "dailyshot_url": "https://dailyshot.co/m/product/29166" },
+    { "product_id": "5749",  "name": "조니워커 블루",           "floor_krw": 350000, "collected_at": "2026-06-14", "dailyshot_url": "https://dailyshot.co/m/product/5749" }
+  ]
+}

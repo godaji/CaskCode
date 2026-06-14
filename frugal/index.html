@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- 보드 발행 게이트 c7405e7d: 스테이징 noindex 유지 (Jekyll layout 우회 정적 파일이라 직접 명시) -->
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#1a1410">
+  <meta name="description" content="절약 1탭 → 적립 → 목표 위스키 실시간 최저가 진행률. CaskCode 위스키 데이터 기반 개인용 PWA.">
+  <title>위스키 적금 — CaskCode</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <main id="app">
+    <!-- ① 목표 카드 -->
+    <section class="goal" id="goalCard">
+      <div class="goal-head">
+        <select id="goalSelect" aria-label="목표 위스키 선택"></select>
+      </div>
+      <div class="goal-floor">
+        <span class="floor-num" id="floorNum">—</span>
+        <span class="floor-unit">원</span>
+        <span class="floor-date" id="floorDate"></span>
+      </div>
+      <div class="bar" aria-label="진행률">
+        <div class="bar-fill" id="barFill" style="width:0%"></div>
+        <span class="bar-pct" id="barPct">0%</span>
+      </div>
+      <div class="goal-remain" id="goalRemain">목표를 선택하세요</div>
+      <a class="cta" id="buyCta" href="#" target="_blank" rel="noopener" hidden>🎉 달성! 지금 사러가기 →</a>
+    </section>
+
+    <!-- ② 적립금 합계 -->
+    <section class="purse">
+      <div class="purse-total">
+        <span class="purse-label">모은 적금</span>
+        <span class="purse-num"><span id="purseNum">0</span><span class="won">원</span></span>
+      </div>
+      <div class="purse-sub">
+        <span>이번 주 <b id="weekNum">0</b></span>
+        <span>이번 달 <b id="monthNum">0</b></span>
+        <button id="histBtn" class="hist-btn" type="button">기록 <b id="logCount">0</b></button>
+      </div>
+    </section>
+
+    <!-- ③ 절약 항목 버튼 그리드 (엄지존) -->
+    <section class="grid-wrap">
+      <div class="grid" id="grid"></div>
+      <p class="hint">탭 = 적립 · 길게 누르면 금액 수정</p>
+    </section>
+  </main>
+
+  <!-- 1탭 되돌리기 -->
+  <button id="undoBar" class="undo" type="button" hidden>↩︎ 방금 <span id="undoLabel"></span> 되돌리기</button>
+
+  <!-- 토스트 -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- 기록 시트 -->
+  <div id="sheet" class="sheet" hidden>
+    <div class="sheet-card">
+      <div class="sheet-head"><b>적금 기록</b><button id="sheetClose" type="button">닫기</button></div>
+      <ul id="sheetList" class="sheet-list"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

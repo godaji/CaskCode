@@ -1,0 +1,103 @@
+/* 위스키 적금 PWA — Tap-First, 360px 우선 (CMPA-347 §3.5) */
+:root{
+  --bg:#1a1410; --card:#241c16; --card2:#2e241c;
+  --gold:#e0b46c; --gold-dim:#b9924f; --txt:#f4ece0; --mut:#9a8c79;
+  --good:#6ec07a; --line:#3a2e24;
+  --tap:56px;               /* 1차 액션 최소 높이 (>48px 권장 56px+) */
+  --gap:8px;                /* 오발 방지 간격 */
+  --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-t:env(safe-area-inset-top,0px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%}
+body{
+  background:var(--bg); color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased; overscroll-behavior:none;
+}
+button,select{font-family:inherit; touch-action:manipulation} /* 더블탭 줌 방지 */
+
+#app{
+  display:flex; flex-direction:column; gap:10px;
+  max-width:480px; margin:0 auto;
+  min-height:100dvh;
+  padding:calc(10px + var(--safe-t)) 12px calc(12px + var(--safe-b));
+}
+
+/* ① 목표 카드 */
+.goal{background:linear-gradient(160deg,#2e241c,#241c16); border:1px solid var(--line);
+  border-radius:16px; padding:14px 14px 12px}
+.goal-head select{
+  width:100%; height:48px; background:var(--card2); color:var(--gold);
+  border:1px solid var(--line); border-radius:12px; font-size:17px; font-weight:700;
+  padding:0 12px; appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23e0b46c' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 14px center;
+}
+.goal-floor{margin:10px 2px 8px; display:flex; align-items:baseline; gap:4px; flex-wrap:wrap}
+.floor-num{font-size:30px; font-weight:800; letter-spacing:-.5px; color:var(--txt)}
+.floor-unit{font-size:16px; color:var(--mut)}
+.floor-date{margin-left:auto; font-size:11px; color:var(--mut)}
+.bar{position:relative; height:22px; background:#1c1510; border-radius:11px; overflow:hidden; border:1px solid var(--line)}
+.bar-fill{height:100%; background:linear-gradient(90deg,var(--gold-dim),var(--gold)); transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.bar-pct{position:absolute; right:8px; top:50%; transform:translateY(-50%); font-size:12px; font-weight:700; color:#1a1410; mix-blend-mode:screen}
+.goal-remain{margin-top:9px; font-size:14px; color:var(--gold); font-weight:600; text-align:center}
+.cta{display:block; margin-top:10px; height:var(--tap); line-height:var(--tap);
+  background:var(--good); color:#0d1f10; text-align:center; border-radius:12px;
+  font-size:17px; font-weight:800; text-decoration:none}
+
+/* ② 적립금 합계 */
+.purse{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:11px 14px}
+.purse-total{display:flex; align-items:baseline; justify-content:space-between}
+.purse-label{font-size:13px; color:var(--mut)}
+.purse-num{font-size:26px; font-weight:800; color:var(--gold)}
+.purse-num .won{font-size:15px; color:var(--mut); margin-left:2px}
+.purse-num.bump{animation:bump .4s ease}
+@keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.12)}100%{transform:scale(1)}}
+.purse-sub{display:flex; gap:14px; margin-top:6px; font-size:12px; color:var(--mut); align-items:center}
+.purse-sub b{color:var(--txt)}
+.hist-btn{margin-left:auto; height:34px; padding:0 12px; background:var(--card2);
+  color:var(--txt); border:1px solid var(--line); border-radius:10px; font-size:12px}
+
+/* ③ 절약 항목 그리드 (엄지존: 하단) */
+.grid-wrap{margin-top:auto}
+.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:var(--gap)}
+.tile{
+  min-height:var(--tap); border:1px solid var(--line); border-radius:14px;
+  background:var(--card2); color:var(--txt);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px;
+  padding:8px 4px; font-size:13px; font-weight:600; line-height:1.15; text-align:center;
+  transition:transform .06s ease, background .1s ease; user-select:none;
+}
+.tile:active{transform:scale(.94); background:#3a2c20}
+.tile .emo{font-size:21px}
+.tile .amt{font-size:11px; color:var(--gold-dim); font-weight:700}
+.hint{margin:8px 2px 0; font-size:11px; color:var(--mut); text-align:center}
+
+/* 1탭 되돌리기 (탭 직후 노출) */
+.undo{position:fixed; left:50%; transform:translateX(-50%);
+  bottom:calc(14px + var(--safe-b)); z-index:30;
+  height:46px; padding:0 20px; border-radius:23px; border:none;
+  background:#3a2e24; color:var(--gold); font-size:14px; font-weight:700;
+  box-shadow:0 6px 20px rgba(0,0,0,.45)}
+
+/* 토스트 */
+.toast{position:fixed; left:50%; transform:translateX(-50%) translateY(20px);
+  bottom:calc(70px + var(--safe-b)); z-index:40;
+  background:#0d1f10; color:#cfeccf; border:1px solid #2f5b34;
+  padding:11px 18px; border-radius:12px; font-size:15px; font-weight:700;
+  opacity:0; transition:opacity .18s, transform .18s; pointer-events:none; white-space:nowrap}
+.toast.show{opacity:1; transform:translateX(-50%) translateY(0)}
+
+/* 기록 시트 */
+.sheet{position:fixed; inset:0; z-index:50; background:rgba(0,0,0,.55); display:flex; align-items:flex-end}
+.sheet-card{width:100%; max-width:480px; margin:0 auto; background:var(--card);
+  border-radius:18px 18px 0 0; max-height:70vh; display:flex; flex-direction:column;
+  padding-bottom:var(--safe-b)}
+.sheet-head{display:flex; justify-content:space-between; align-items:center; padding:14px 16px; border-bottom:1px solid var(--line)}
+.sheet-head button{height:40px; padding:0 14px; background:var(--card2); color:var(--txt); border:1px solid var(--line); border-radius:10px}
+.sheet-list{list-style:none; margin:0; padding:6px 0; overflow:auto}
+.sheet-list li{display:flex; align-items:center; gap:10px; padding:11px 16px; border-bottom:1px solid var(--line); font-size:14px}
+.sheet-list .s-amt{margin-left:auto; color:var(--gold); font-weight:700}
+.sheet-list .s-undo{height:38px; padding:0 12px; background:#3a2e24; color:var(--gold); border:none; border-radius:9px; font-size:12px; font-weight:700}
+.sheet-list .s-date{color:var(--mut); font-size:12px; min-width:74px}
