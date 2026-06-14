@@ -73,6 +73,9 @@
     </div>
     <div class="grid" id="itemGrid"></div>
   </section>
+
+  <!-- ===== 홈 화면에 추가 (A2HS / PWA install) — 평소 숨김, 설치 가능 시 노출 ===== -->
+  <button class="install-btn" id="installBtn" type="button" hidden>📲 홈 화면에 추가</button>
 </div>
 
 <!-- ===== 토스트 ===== -->
@@ -106,6 +109,21 @@
   <div class="sheet tall" role="dialog" aria-modal="true" aria-label="완료한 목표">
     <div class="sheet-head"><span>🏆 모은 캐비닛</span><button class="sheet-close" data-close="cabinetSheet" type="button">✕</button></div>
     <div class="sheet-body" id="cabinetList"></div>
+  </div>
+</div>
+
+<!-- ===== iOS 홈 화면에 추가 안내 시트 (Safari는 beforeinstallprompt 미발생) ===== -->
+<div class="sheet-backdrop" id="iosInstallSheet" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="홈 화면에 추가 안내">
+    <div class="sheet-head"><span>📲 홈 화면에 추가</span><button class="sheet-close" data-close="iosInstallSheet" type="button">✕</button></div>
+    <div class="sheet-body">
+      <p class="ios-lead">Safari에서 두 번 탭하면 바탕화면 앱처럼 쓸 수 있어요.</p>
+      <ol class="ios-steps">
+        <li>화면 하단의 <b>공유 버튼</b> <span class="ios-share" aria-hidden="true">⬆️</span> 을 누르세요.</li>
+        <li>메뉴를 내려 <b>‘홈 화면에 추가’</b> 를 선택하세요.</li>
+        <li>오른쪽 위 <b>‘추가’</b> 를 누르면 끝.</li>
+      </ol>
+    </div>
   </div>
 </div>
 
