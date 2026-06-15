@@ -388,12 +388,20 @@
     const grid = $('itemGrid');
     const MOVE_TOL = 10;   // px — 이보다 손가락이 움직이면 '탭'이 아니라 '스크롤'로 본다
     let pressTimer, longFired = false, moved = false, pressing = false, sx = 0, sy = 0;
+    // CMPA-408: 터치스크린은 touch* 이벤트 처리 직후 호환용 합성 마우스 이벤트(mousedown/mouseup)를
+    // ~300ms 뒤에 또 쏜다. 가드 없이는 한 번 탭에 endPress 가 2회 발화 → 적립 2건(보드 신고 CMPA-407).
+    // 최근 터치 타임스탬프를 기록하고, 마우스 계열 핸들러는 직후(700ms 내)면 무시한다.
+    let lastTouchTs = 0;
+    const TOUCH_GUARD_MS = 700;
+    const isSyntheticMouse = e => e.type.startsWith('mouse') && (Date.now() - lastTouchTs) < TOUCH_GUARD_MS;
     const itemFromEvt = e => {
       const tile = e.target.closest('.tile'); if (!tile) return null;
       return SEED_ITEMS.find(i => i.id === tile.dataset.id) || null;
     };
     const pt = e => (e.touches && e.touches[0]) || (e.changedTouches && e.changedTouches[0]) || e;
     const startPress = e => {
+      if (e.type.startsWith('touch')) lastTouchTs = Date.now();
+      else if (isSyntheticMouse(e)) return;             // 합성 마우스 → 터치가 이미 처리함
       const item = itemFromEvt(e); if (!item) return;
       longFired = false; moved = false; pressing = true;
       const p = pt(e); sx = p.clientX; sy = p.clientY;
@@ -403,6 +411,7 @@
       }, 450);
     };
     const movePress = e => {                            // 임계치 넘으면 스크롤로 간주 → 탭 취소
+      if (isSyntheticMouse(e)) return;
       if (!pressing) return;
       const p = pt(e);
       if (Math.abs(p.clientX - sx) > MOVE_TOL || Math.abs(p.clientY - sy) > MOVE_TOL){
@@ -410,6 +419,7 @@
       }
     };
     const endPress = e => {
+      if (isSyntheticMouse(e)) return;                  // 합성 마우스 mouseup → 중복 적립 방지
       clearTimeout(pressTimer); pressing = false;
       const item = itemFromEvt(e); if (!item) return;
       if (moved){ moved = false; return; }             // 스크롤 → 탭(적립/목표팝업) 무시
@@ -417,7 +427,10 @@
       if (item.prompt) promptAmount(item);
       else logSaving(item, rateOf(item));
     };
-    const cancelPress = () => { clearTimeout(pressTimer); pressing = false; moved = false; };
+    const cancelPress = e => {
+      if (e && isSyntheticMouse(e)) return;
+      clearTimeout(pressTimer); pressing = false; moved = false;
+    };
     grid.addEventListener('touchstart', startPress, {passive:true});
     grid.addEventListener('touchmove', movePress, {passive:true});
     grid.addEventListener('touchend', endPress);
