@@ -1,7 +1,7 @@
 # CaskCode — Jekyll 사이트 설정 (CMPA-178/182, 내부 스테이징)
 # 외부 발행은 보드 게이트 c7405e7d 승인 후에만(현재 noindex 유지).
 title: "CaskCode"
-description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 마음만은 개발자, 취미로 즐기는 위스키·투자·여행을 직접 손으로(hands-on) 다룹니다. #CaskCode"
+description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 위스키·여행 등을 다룹니다. #CaskCode"
 lang: ko
 # GitHub Pages 프로젝트 사이트(godaji/CaskCode) — https://godaji.github.io/CaskCode/ (CMPA-188).
 # Actions 빌드는 configure-pages 가 base_path 를 자동 주입해 baseurl 을 덮어쓴다.

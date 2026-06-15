@@ -38,7 +38,7 @@ bundle exec jekyll serve
 
 ## 카테고리(섹션)와 글 쓰기
 홈은 **브랜드 2기둥(Code / Cask)** 으로 묶여 나옵니다(CMPA-182 리브랜드):
-- **🥃 Cask — 위스키 전부**: 면세 가성비(`price`), 위스키 가격정보(`wprice`), 시음 노트(`tasting`)
+- **🥃 Cask — 위스키 전부**: 면세 가성비(`price`), 위스키 가격정보(`wprice`), 구매/시음 노트(`tasting`)
 - **💻 Code — 직접 만든 것**: 개발(`dev`), 데이터 분석(`data`)
 
 > 📓 **일기**·🛢️ **숙성**은 별도 칸이 아니라 **태그**입니다 — 위스키 산 이야기·여정·느낀점은
@@ -57,9 +57,14 @@ bundle exec jekyll serve
 > ⚠️ `build_blog_md.py` 는 **자동 생성 포스트(`*-monthly-base.md`/`*-price-patch.md`)만**
 > 다시 만듭니다. 손으로 쓴 글은 건드리지 않으니 안심하고 `_posts/` 에 두세요.
 > **`_drafts/` 에 두면 라이브에 안 나옵니다**(프로덕션 빌드는 `--drafts` 미사용) — 발행하려면 `_posts/`.
-> 사진은 `assets/img/` 에 넣고 **`![설명]({{ '/assets/img/파일.jpg' | relative_url }})`** 로 삽입.
-> ⚠️ 사이트가 `baseurl: /CaskCode` 아래 있어 **절대경로 `/assets/...` 는 404**가 됩니다 —
-> 링크·이미지는 반드시 Liquid `relative_url` 로 감싸세요. (`build_blog_md.py` 가 발행 전 자동 검사 → 위반 시 빌드 실패.)
+> 사진은 **VSCode 에서 그냥 스크린샷을 붙여넣으면 됩니다**(보드 결정 에디터 — CMPA-223).
+> `.vscode/settings.json` 의 `markdown.copyFiles.destination` 가 `assets/img/<글파일명>/` 에 저장하고
+> `![](../assets/img/<글파일명>/x.png)` 같은 상대경로를 삽입합니다. `assets/img/` 에 직접 넣고
+> `![설명](assets/img/파일.jpg)`·`![설명](/assets/img/파일.jpg)` 로 써도 됩니다.
+> ✅ 사이트가 `baseurl: /CaskCode` 아래 있지만, 이제 `build_blog_md.py` 가 발행 시 절대·베어·`../` 상대 경로를
+> **자동으로 `{{ '...' | relative_url }}` 로 래핑**(CMPA-224)하므로 직접 감쌀 필요가 없습니다.
+> 이미 `relative_url` 로 감쌌거나 외부 URL(`http(s)://`)·스킴-상대(`//cdn`)는 그대로 둡니다.
+> (Obsidian 위키링크 `![[파일.png]]` 는 범위 밖 — 에디터에서 '위키링크' 옵션을 끄고 일반 마크다운으로 붙여넣으세요.)
 
 ## 발행 게이트
 외부 발행은 보드 게이트(c7405e7d) 승인 후에만. 그 전까지 모든 페이지 `robots: noindex`.

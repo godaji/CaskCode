@@ -1,7 +1,7 @@
 ---
 layout: "default"
 title: "CaskCode — 블로그"
-description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 위스키·투자·여행 등을 다룹니다. #CaskCode"
+description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 위스키·여행 등을 다룹니다. #CaskCode"
 robots: "index,follow"
 ---
 {% assign _patches = site.posts | where_exp: "p","p.kind == 'patch'" %}
@@ -19,12 +19,12 @@ robots: "index,follow"
 </ul>
 {% endif %}
 
-{% assign _editorial = site.posts | where_exp: "p","p.categories contains 'tasting' or p.categories contains 'data' or p.categories contains 'dev' or p.categories contains 'invest'" %}
+{% assign _editorial = site.posts | where_exp: "p","p.categories contains 'tasting' or p.categories contains 'data' or p.categories contains 'dev'" %}
 {% if _editorial.size > 0 %}
-<div class="sec-head">🆕 읽을거리 — 시음·데이터·투자</div>
+<div class="sec-head">🆕 읽을거리 — 시음·데이터·개발</div>
 <ul class="latest-feed">
 {% for p in _editorial limit: 5 %}
-  <li><span class="chip">{% if p.categories contains 'invest' %}📈{% elsif p.categories contains 'dev' or p.categories contains 'data' %}💻{% else %}🥃{% endif %}</span>
+  <li><span class="chip">{% if p.categories contains 'dev' or p.categories contains 'data' %}💻{% else %}🥃{% endif %}</span>
   <span class="when">{{ p.date | date: "%Y-%m-%d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
 {% endfor %}
@@ -87,8 +87,8 @@ robots: "index,follow"
   <a class="pillar-card" href="{{ '/code/' | relative_url }}">
     <div class="pc-emoji">💻</div>
     <div class="pc-head"><span class="pc-title">Code</span><span class="pc-tag">직접 만든 것</span></div>
-    <p class="pc-desc">CaskCode가 직접 개발한 소프트웨어·사이드프로젝트·코드 이야기와 위스키 데이터 분석, 그리고 투자.</p>
-    {% assign posts_code = site.posts | where_exp: "p", "p.categories contains 'dev' or p.categories contains 'data' or p.categories contains 'invest'" %}
+    <p class="pc-desc">CaskCode가 직접 개발한 소프트웨어·사이드프로젝트·코드 이야기와 위스키 데이터 분석.</p>
+    {% assign posts_code = site.posts | where_exp: "p", "p.categories contains 'dev' or p.categories contains 'data'" %}
     <div class="pc-count">글 {{ posts_code.size }}편</div>
     <ul class="pc-prev">
     {% for p in posts_code limit: 3 %}

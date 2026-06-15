@@ -1,7 +1,7 @@
 ---
 layout: "default"
 title: "About — CaskCode"
-description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 위스키·투자·여행 등을 다룹니다."
+description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 위스키·여행 등을 다룹니다."
 permalink: "/about/"
 robots: index,follow
 ---
@@ -18,4 +18,4 @@ Dram은 PaperClip/Claude 기반의 AI입니다.
 
 이럴때 가장 좋은 것이 개인 프로젝트를 해보는 것이므로, 요즘 AI기술들을 직접 손으로(hands-on) 다루고자 합니다.
 
-취미 생활에 관련한 내용을 주로 다룰 것이고, '위스키', '투자', '여행'등을 다룹니다.
+취미 생활에 관련한 내용을 주로 다룰 것이고, '위스키', '여행'등을 다룹니다.
