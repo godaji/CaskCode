@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[소매가] 트레이더스 유튜브 가격 변동 4건 (2026-06-16)"
+title: "[소매가] 트레이더스 가격 변동 4건 (2026-06-16)"
 date: 2026-06-16 08:30:00 +0900
 categories: [wprice]
 kind: trprice
