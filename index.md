@@ -7,13 +7,16 @@ robots: "index,follow"
 {% assign _patches = site.posts | where_exp: "p","p.kind == 'patch'" %}
 {% assign _weeklies = site.posts | where_exp: "p","p.kind == 'weekly'" %}
 {% assign _bases = site.posts | where_exp: "p","p.kind == 'base'" %}
+{% assign _wprices = site.posts | where_exp: "p","p.kind == 'wprice'" %}
 {% assign _day = _patches | first %}
 {% assign _wk = _weeklies | first %}
 {% assign _mon = _bases | first %}
-{% if _day or _wk or _mon %}
+{% assign _wp = _wprices | first %}
+{% if _day or _wk or _mon or _wp %}
 <div class="sec-head">🗞️ 최신 데이터 리포트</div>
 <ul class="latest-feed">
 {% if _day %}<li><span class="chip">🗞️</span><span class="when">{{ _day.latest_date | default: _day.date | date: "%Y-%m-%d" }}</span><a href="{{ _day.url | relative_url }}">{{ _day.title }}</a><span class="rail-cad">일간</span></li>{% endif %}
+{% if _wp %}<li><span class="chip">📈</span><span class="when">{{ _wp.data_date | default: _wp.date | date: "%Y-%m-%d" }}</span><a href="{{ _wp.url | relative_url }}">{{ _wp.title }}</a><span class="rail-cad">위스키시세</span></li>{% endif %}
 {% if _wk %}<li><span class="chip">📅</span><span class="when">{{ _wk.weekly_end | default: _wk.date | date: "%Y-%m-%d" }}</span><a href="{{ _wk.url | relative_url }}">{{ _wk.title }}</a><span class="rail-cad">주간</span></li>{% endif %}
 {% if _mon %}<li><span class="chip">📆</span><span class="when">{{ _mon.base_date | default: _mon.date | date: "%Y-%m-%d" }}</span><a href="{{ _mon.url | relative_url }}">{{ _mon.title }}</a><span class="rail-cad">월간</span></li>{% endif %}
 </ul>
