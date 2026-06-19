@@ -53,9 +53,9 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">주라 IE 3 1000ml: 10%→55% (₩47,700)</div>
 <div style="margin:5px 0">짐빔 놉크릭 700ml: 5%→50% (₩40,995)</div>
 <div style="margin:5px 0">짐빔 베이커스 BBN 750ml: 5%→50% (₩69,615)</div>
-<div style="margin:5px 0">짐빔 블랙 1000ml: 5%→50% (₩30,166)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">짐빔 블랙 1000ml: 5%→50% (₩30,166)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 짐빔 (Jim Beam) · 미국(켄터키)<br><b>도수</b> 43%<br><b>캐스크</b> 뉴 차르드 오크 배럴<br><b>맛</b> 캐러멜·오크·시나몬·바닐라의 깊은 향에 견과류·흑설탕·구운 캐러멜 노트가 더해진다. 팔레트는 풀바디로 묵직한 캐러멜이 균형 잡혀 풍부하다. 추가 숙성으로 화이트 라벨보다 진하고 부드러운 풍미를 낸다.<br><b>스토리</b> 짐빔은 켄터키의 대표 버번 브랜드로, 블랙(엑스트라 에이지드)은 기본 화이트 라벨보다 오래 숙성한 표현이다. 과거 8년 숙성 표기였으나 현재는 무연산 표기다.<br><span style="color:#8a8f98">출처: 공식 사이트 · Breaking Bourbon · The Whiskey Shelf (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">짐빔 블랙 7년 1000ml: 5%→50% (₩30,166)</div>
-<div style="margin:5px 0">캐나디언 클럽 12년 1000ml: 5%→50% (₩36,354)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">캐나디언 클럽 12년 1000ml: 5%→50% (₩36,354)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 캐나디언 클럽 (Canadian Club) · 캐나다<br><b>도수</b> 40%<br><b>캐스크</b> 차르드 오크 버번 배럴<br><b>맛</b> 바닐라 커스터드·캐러멜 사과의 향에 토스트한 오크와 은은한 스파이스가 더해진다. 팔레트는 부드러운 스파이스와 크리미한 바닐라가 오크·꿀과 균형을 이루고 아몬드 페이스트·캐러멜 풍미가 난다. 피니시는 길고 드라이하며 버터스카치가 남는다.<br><b>스토리</b> 캐나디언 클럽은 하이람 워커가 만든 캐나디언 위스키 브랜드로, 클래식 12년은 시즌드 차르 오크 버번 배럴에서 12년 숙성한 블렌디드 표현이다.<br><span style="color:#8a8f98">출처: 공식 사이트 · canadianwhisky.org · Connosr (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">컴파스 박스 Orchard House 700ml: 5%→50% (₩46,410)</div>
 <div style="margin:5px 0">컴파스 박스 Spice Tree 700ml: 5%→50% (₩66,521)</div>
 <div style="margin:5px 0">퍼컬렌 21년 700ml: 5%→50% (₩204,976)</div>
@@ -88,7 +88,7 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">섀클턴 1000ml: 5%→48% (₩46,556)</div>
 <div style="margin:5px 0">싱글톤 가든스 오브 어번던스 - 골든 어텀 오차드 1000ml: 5%→48% (₩79,466)</div>
 <div style="margin:5px 0">싱글톤 가든스 오브 어번던스 - 딥 포레스트 리치 700ml: 5%→48% (₩224,751)</div>
-<div style="margin:5px 0">우드포드 리저브 디스틸러 셀렉트 1000ml: 5%→48% (₩40,134)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">우드포드 리저브 디스틸러 셀렉트 1000ml: 5%→48% (₩40,134)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 우드포드 리저브 (Woodford Reserve) · 미국(켄터키)<br><b>도수</b> 45.2%<br><b>캐스크</b> 뉴 차르드 오크 배럴<br><b>맛</b> 말린 과일·민트·오렌지 껍질의 향에 코코아·바닐라·담배 스파이스가 더해진다. 팔레트는 토피·캐러멜·시나몬·다크초콜릿이 시트러스의 밝음·오크 스파이스와 어우러져 매끄럽고 풍부하다. 피니시는 길고 따뜻하며 은은한 스파이스가 남는다.<br><b>스토리</b> 우드포드 리저브는 켄터키 베르사유의 증류소가 만드는 켄터키 스트레이트 버번이다. 디스틸러 셀렉트는 브랜드의 플래그십 표현이다.<br><span style="color:#8a8f98">출처: 공식 사이트 · The Whiskey Wash · Breaking Bourbon (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">쿨일라 12년 750ml: 5%→48% (₩82,676)</div>
 <div style="margin:5px 0">탐나불린 1000ml: 10%→53% (₩40,262)</div>
 <div style="margin:5px 0">패터캐른 12년 PX 1000ml: 10%→53% (₩61,111)</div>
@@ -96,10 +96,10 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">듀어스 25년 750ml: 15%→57% (₩237,747)</div>
 <div style="margin:5px 0">듀어스 더블더블 20년 500ml: 5%→47% (₩108,698)</div>
 <div style="margin:5px 0">듀어스 더블더블 21년 미즈나라캐스크 500ml: 5%→47% (₩142,206)</div>
-<div style="margin:5px 0">잭다니엘 블랙라벨 1000ml: 5%→47% (₩28,605)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">잭다니엘 블랙라벨 1000ml: 5%→47% (₩28,605)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 잭 다니엘스 (Jack Daniel's) · 미국(테네시)<br><b>도수</b> 40%<br><b>캐스크</b> 뉴 차르드 오크 배럴(링컨 카운티 차콜 멜로잉)<br><b>맛</b> 캐러멜·바닐라·버터스카치의 부드러운 향에 진한 꿀·구운 오크·시나몬·감초가 더해진다. 팔레트는 바나나 위주의 과일과 바닐라·오크 차 노트가 매끄럽게 달콤하다. 피니시는 짧고 달며 오크·후추·호두가 남는다.<br><b>스토리</b> 잭 다니엘스 올드 No.7(블랙 라벨)은 테네시 린치버그의 증류소가 만드는 테네시 위스키로, 차콜 멜로잉(링컨 카운티 공정)을 거친 뒤 뉴 차르드 오크 배럴에서 숙성한다.<br><span style="color:#8a8f98">출처: 공식 사이트 · The Whiskey Wash · Men's Journal (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">탐나불린 SB 1000ml: 10%→52% (₩41,036)</div>
 <div style="margin:5px 0">NEW 올트모어 18년 (마데이라) 500ml: 5%→46% (₩103,984)</div>
-<div style="margin:5px 0">듀어스 12년 1000ml: 5%→46% (₩43,257)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">듀어스 12년 1000ml: 5%→46% (₩43,257)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 듀어스 (Dewar's) · 스코틀랜드 하이랜드<br><b>도수</b> 40%<br><b>캐스크</b> 엑스-버번 + 퍼스트필 버번 캐스크 피니시<br><b>맛</b> 꿀·캐러멜·말린 살구 향에 가벼운 우드스모크가 깔린다. 팔레트는 버터스카치·시리얼·부드러운 스파이스가 층을 이루고 다크초콜릿·토피의 단맛이 더해진다. 피니시는 은은한 스모크와 꿀의 온기가 남는다.<br><b>스토리</b> 듀어스는 애버펠디 증류소를 핵심으로 하는 블렌디드 스카치다. 12년 '더블 에이지드'는 블렌딩 후 한 번 더 숙성하는 2단계 숙성 공정을 거친다.<br><span style="color:#8a8f98">출처: 공식 사이트 · The Whiskey Wash · Flaviar (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">아마하간 World Malt Editon No.5 700ml: 10%→51% (₩84,367)</div>
 <div style="margin:5px 0">아마하간 World Malt Editon Yamazakura 700ml: 10%→51% (₩79,141)</div>
 <div style="margin:5px 0">아케시 케이칫수 700ml: 10%→51% (₩384,021)</div>
@@ -126,12 +126,12 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">올트모어 19년 CS 한정판 (토니포트) 700ml: 5%→45% (₩304,728)</div>
 <div style="margin:5px 0">올트모어 21년 (COLHEITA)700ml: 5%→45% (₩423,233)</div>
 <div style="margin:5px 0">우드포드 리저브 Double XO 700ml: 5%→45% (₩148,132)</div>
-<div style="margin:5px 0">잭다니엘 본디드 1000ml: 5%→45% (₩40,630)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">잭다니엘 본디드 1000ml: 5%→45% (₩40,630)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 잭 다니엘스 (Jack Daniel's) · 미국(테네시)<br><b>도수</b> 50% (100 프루프)<br><b>캐스크</b> 뉴 차르드 오크 배럴(보틀드 인 본드)<br><b>맛</b> 달콤한 캐러멜·바나나 넛 브레드의 디저트 같은 향에 시나몬 스파이스가 따른다. 팔레트는 캐러멜·진한 오크·바닐라·베이킹 스파이스가 층을 이루고 은은한 스모크가 더해진다. 피니시는 미디엄으로 오크·토피와 민트·시나몬·생강의 스파이스가 남는다.<br><b>스토리</b> 잭 다니엘스 본디드는 보틀드 인 본드 규정(단일 증류소·단일 시즌·최소 4년·100 프루프)에 따라 50% 도수로 병입한 표현으로, 2022년 슈퍼 프리미엄 라인 확장으로 출시됐다.<br><span style="color:#8a8f98">출처: The Whisky Exchange · Breaking Bourbon · Whisky Advocate (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">잭다니엘 본디드 라이 1000ml: 5%→45% (₩40,630)</div>
 <div style="margin:5px 0">잭다니엘 블랙 라벨 200ml: 5%→45% (₩10,158)</div>
 <div style="margin:5px 0">잭다니엘 시나트라 셀렉트 1000ml: 5%→45% (₩143,899)</div>
 <div style="margin:5px 0">잭다니엘 싱글배럴 100프루프 700ml: 5%→45% (₩57,560)</div>
-<div style="margin:5px 0">잭다니엘 젠틀맨 잭 1000ml: 5%→45% (₩38,937)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">잭다니엘 젠틀맨 잭 1000ml: 5%→45% (₩38,937)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 잭 다니엘스 (Jack Daniel's) · 미국(테네시)<br><b>도수</b> 40%<br><b>캐스크</b> 뉴 차르드 오크 배럴(차콜 더블 멜로잉)<br><b>맛</b> 꿀·라이 크래커·바닐라·캐러멜의 향이 부드럽게 난다. 팔레트는 매우 매끄러운 바닐라에 견과류·후추·흑설탕·메이플·시나몬·가벼운 과일이 어우러진다. 피니시는 부드럽고 버터 같으며 오크는 약하다.<br><b>스토리</b> 젠틀맨 잭은 잭 다니엘스의 '더블 멜로잉' 표현으로, 배럴에 채우기 전과 병입 전 두 번 차콜 여과를 거쳐 한층 부드러운 풍미를 낸다.<br><span style="color:#8a8f98">출처: 공식 사이트 · Master of Malt · The Whiskey Jug (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">잭다니엘 젠틀맨 잭 200ml: 10%→50% (₩11,614)</div>
 <div style="margin:5px 0">잭다니엘 테네시 허니 200ml: 5%→45% (₩10,158)</div>
 <div style="margin:5px 0">켄터키아울 더 와이즈맨 라이 버번 위스키 700ml: 5%→45% (₩60,099)</div>
@@ -162,7 +162,7 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">우드포드 리저브 더블 오크 1000ml: 5%→41% (₩67,863)</div>
 <div style="margin:5px 0">우드포드 리저브 홀리데이 에디션 1L: 5%→41% (₩54,291)</div>
 <div style="margin:5px 0">조니워커 골드 리저브 1000ml: 10%→46% (₩73,002)</div>
-<div style="margin:5px 0">토마틴 12년 1000ml: 10%→46% (₩48,115)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">토마틴 12년 1000ml: 10%→46% (₩48,115)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 토마틴 (Tomatin) · 스코틀랜드 하이랜드<br><b>도수</b> 43%<br><b>캐스크</b> 엑스-버번 캐스크 + 올로로소 셰리 캐스크<br><b>맛</b> 버터리한 향에 건포도·아몬드·오렌지가 더해지고 셰리의 달콤함이 깔린다. 팔레트는 부드럽고 달며 오크·바닐라·생강·말린 오렌지 껍질에 사과·배·망고 같은 과일이 합류한다. 피니시는 풍부하고 버터 같으며 은은한 셰리가 남는다.<br><b>스토리</b> 토마틴은 인버네스 인근 하이랜드의 증류소로, 12년은 엑스-버번 숙성 후 올로로소 셰리 캐스크에서 6~9개월 추가 숙성한다. 2014년 도수를 40%에서 43%로 변경했다.<br><span style="color:#8a8f98">출처: Master of Malt · The Whisky Exchange · Whiskybase (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">토마틴 21년 700ml: 10%→46% (₩197,437)</div>
 <div style="margin:5px 0">파이어볼 시나몬 위스키 1000ml: 5%→41% (₩19,002)</div>
 <div style="margin:5px 0">패터캐른 23년 700ml: 10%→46% (₩248,041)</div>
@@ -194,10 +194,10 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">화이트헤더 21년 700ml: 20%→53% (₩201,579)</div>
 <details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">TAMDHU Gran Reserva 700ml: 5%→37% (₩259,106)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 탐듀 (Tamdhu) · 스페이사이드<br><b>도수</b> 46%<br><b>캐스크</b> 퍼스트필 올로로소 셰리 캐스크 숙성 (비냉각여과·무착색)<br><b>맛</b> 코: 체리, 시럽에 절인 딸기, 단맥아, 망고와 멜론 등 과실향. 입안: 풍부한 셰리 단맛에 크림과 가루낸 향신료, 약한 오크의 쓴맛. 피니시: 부드럽고 달콤하며 향신료가 길게 남는다.<br><b>스토리</b> 탐듀는 1897년 스페이강 인근에 세워진 스페이사이드 증류소로, 거의 모든 원액을 올로로소 셰리 캐스크에서만 숙성하는 셰리 중심 스타일로 유명하다(현재 Ian Macleod Distillers 소유). Gran Reserva는 면세점(트래블 리테일) 라인업으로, 퍼스트필 올로로소 셰리 캐스크 숙성을 강조해 짙은 셰리 캐릭터와 46% 도수·비냉각여과·무착색을 내세운 에디션이다.<br><span style="color:#8a8f98">출처: tamdhu.com 공식, Whiskybase, Whisky.com, IWSC, finedrams.com 리테일 (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details>
 <div style="margin:5px 0">글렌알라키 10년 배치11 700ml: 20%→52% (₩101,760)</div>
-<div style="margin:5px 0">더 글렌그란트 10년 1000ml: 20%→52% (₩45,718)</div>
-<div style="margin:5px 0">와일드 터키 레어브리드 1000ml: 10%→42% (₩56,618)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 글렌그란트 10년 1000ml: 20%→52% (₩45,718)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 더 글렌그란트 (The Glen Grant) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 엑스-버번 캐스크<br><b>맛</b> 풋사과·잘 익은 배·살구의 밝은 향에 맥아 보리·바닐라의 시리얼 단맛이 더해진다. 팔레트는 부드럽고 마시기 쉬우며 꿀·보리 설탕·캐러멜에 풋사과·바나나·초콜릿·구운 아몬드가 난다. 피니시는 풋사과·풀에 은은한 후추·시나몬 스파이스가 남는다.<br><b>스토리</b> 더 글렌 그란트는 스페이사이드 로시스의 증류소로, 키가 큰 증류기와 정화기로 가볍고 깔끔한 스피릿을 낸다. 10년은 엑스-버번 캐스크 위주로 숙성한 코어 표현이다.<br><span style="color:#8a8f98">출처: The Whisky Exchange · Master of Malt · Difford's Guide (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">와일드 터키 레어브리드 1000ml: 10%→42% (₩56,618)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 와일드 터키 (Wild Turkey) · 미국(켄터키)<br><b>도수</b> 58.4% (배럴 프루프 · 배치별 상이)<br><b>캐스크</b> 뉴 차르드 오크 배럴<br><b>맛</b> 버터·정향·오크의 향에 오렌지 껍질·민트·달콤한 담배가 더해진다. 팔레트는 묵직한 캐러멜·초콜릿·바닐라에 시나몬 스파이스·구운 오크·가죽·무화과가 어우러진다. 피니시는 길고 강건하며 캐러멜·바닐라의 단맛이 남는다.<br><b>스토리</b> 와일드 터키 레어브리드는 약 6·8·12년 숙성 배럴을 혼합한 스몰배치 배럴 프루프 버번으로, 희석 없이 병입한다. 배치마다 도수가 다소 달라진다.<br><span style="color:#8a8f98">출처: Master of Malt · Dramface · 공식 정보 (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">올트모어 12년 1000ml: 25%→56% (₩70,698)</div>
-<div style="margin:5px 0">Old Pulteney 10 Years Old 1000ml: 5%→35% (₩58,552)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">Old Pulteney 10 Years Old 1000ml: 5%→35% (₩58,552)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 올드 풀트니 (Old Pulteney) · 스코틀랜드 하이랜드<br><b>도수</b> 40%<br><b>캐스크</b> 세컨드필 아메리칸 오크 엑스-버번 캐스크<br><b>맛</b> 바닐라 토피·시트러스·아삭한 사과의 향이 코를 자극한다. 팔레트는 은은한 스파이스와 꿀에 잠긴 잘 익은 과일이 따뜻함을 주며, 해안 증류소 특유의 가벼운 미네랄·소금기가 느껴진다. 가볍고 접근하기 쉬운 스타일이다.<br><b>스토리</b> 올드 풀트니는 스코틀랜드 최북단 케이스네스 위크의 해안 증류소로 '메리타임 몰트'로 불린다. 10년은 엄선한 세컨드필 아메리칸 오크 엑스-버번 캐스크에서 숙성한 입문급 코어 표현이다.<br><span style="color:#8a8f98">출처: 공식 사이트 · Whiskybase · Master of Malt (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">Old Pulteney 13 Years Old 1000ml: 5%→35% (₩86,340)</div>
 <div style="margin:5px 0">Old Pulteney 16 Years Old 700ml: 5%→35% (₩119,089)</div>
 <div style="margin:5px 0">The Lakes Equinox 700ml: 5%→35% (₩117,104)</div>
@@ -225,7 +225,7 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">와일드무어 30년 트로피칼 코스트 700ml: 5%→35% (₩385,055)</div>
 <div style="margin:5px 0">조니워커 블루 1000ml: 5%→35% (₩299,707)</div>
 <div style="margin:5px 0">조니워커 블루 750ml: 5%→35% (₩225,277)</div>
-<div style="margin:5px 0">조니워커 블루라벨 200ml: 5%→35% (₩63,514)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 블루라벨 200ml: 5%→35% (₩63,514)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 (Johnnie Walker) · 블렌디드(스코틀랜드)<br><b>도수</b> 40%<br><b>캐스크</b> 다양한 캐스크(엄선된 희소 원액 블렌드)<br><b>맛</b> 바닐라·꿀·오렌지 껍질·꽃 향에 오크 스파이스와 배경의 옅은 스모크가 은은히 더해진다. 팔레트는 오크·바닐라·꿀·오렌지 시트러스에 말린 과일·헤이즐넛·다크초콜릿·캐러멜이 어우러진다. 질감은 매우 부드럽고 기름지며 길게 이어진다.<br><b>스토리</b> 조니워커 블루 라벨은 디아지오의 울트라 프리미엄 블렌디드 스카치로, 희소하고 잘 숙성된 원액을 엄선해 블렌딩한다.<br><span style="color:#8a8f98">출처: 공식 정보 · The Whiskey Wash · 마스터 블렌더 노트 (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">조니워커 블루라벨 500ml: 5%→35% (₩158,785)</div>
 <div style="margin:5px 0">조니워커 엑스오디네어 750ml: 5%→35% (₩260,011)</div>
 <div style="margin:5px 0">조니워커 킹조지 5세 500ml: 5%→35% (₩436,660)</div>
@@ -239,10 +239,10 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">쿠라 클래식 700ml: 20%→48% (₩99,855)</div>
 <div style="margin:5px 0">하이랜드 파크 EAGLE 16년 700ml: 20%→48% (₩99,855)</div>
 <div style="margin:5px 0">GLENGOINE 15yo PX Edition 700ml: 5%→30% (₩129,597)</div>
-<div style="margin:5px 0">Scapa Glansa 700ml: 5%→30% (₩70,198)</div>
-<div style="margin:5px 0">Scapa Skiren 700ml: 5%→30% (₩65,878)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">Scapa Glansa 700ml: 5%→30% (₩70,198)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 스카파 (Scapa) · 스코틀랜드 아일랜즈(오크니)<br><b>도수</b> 40%<br><b>캐스크</b> 퍼스트필 아메리칸 오크 + 엑스-피티드 캐스크 피니시<br><b>맛</b> 부드러운 복숭아·파인애플·바닐라의 향에 은은한 모닥불 스모크가 깔린다. 팔레트는 복숭아·잘 익은 배·크리미한 캐러멜 토피·바닐라에 부드러운 스모크가 더해진다. 피니시는 비교적 짧고 가벼운 피트가 남는다.<br><b>스토리</b> 스카파는 오크니 섬의 증류소로, 글란사는 스카파 최초의 피트 표현이다. 퍼스트필 아메리칸 오크 숙성 후 엑스-피티드 위스키 캐스크에서 더블 매처링해 부드러운 스모크를 입힌다.<br><span style="color:#8a8f98">출처: Distiller · WhiskyNotes · Master of Malt (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">Scapa Skiren 700ml: 5%→30% (₩65,878)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 스카파 (Scapa) · 스코틀랜드 아일랜즈(오크니)<br><b>도수</b> 40%<br><b>캐스크</b> 퍼스트필 아메리칸 오크 캐스크<br><b>맛</b> 탠저린·사과·배·딸기·바나나의 향에 바닐라 크림·시나몬·토피가 더해진다. 팔레트는 부드럽고 실키하며 약간의 스파이스와 함께 토피·오크, 구운 사과·꿀·시트러스가 난다. 피니시는 미디엄에서 길며 토피·오크의 드라이함이 남는다.<br><b>스토리</b> 스카파는 오크니 섬의 증류소다. 스키렌은 퍼스트필 아메리칸 오크 캐스크에서만 숙성한 무연산 표현으로, 'Skiren'은 '반짝이는 맑은 하늘'을 뜻하는 노르드어다.<br><span style="color:#8a8f98">출처: The Whisky Exchange · WhiskyNotes · Master of Malt (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">글렌리벳 TGL TCM DR 1000ml: 5%→30% (₩68,038)</div>
-<div style="margin:5px 0">더 글렌리벳 14년 1000ml: 5%→30% (₩91,798)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 글렌리벳 14년 1000ml: 5%→30% (₩91,798)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 더 글렌리벳 (The Glenlivet) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 퍼스트필 아메리칸 오크 셰리 캐스크 + 코냑 캐스크 피니시<br><b>맛</b> 풍부한 배·만다린·꿀·살구잼 향에 시나몬이 더해진다. 팔레트는 탠저린·토피·대추·설타나·밀크초콜릿으로 달콤하고 매끄럽다. 피니시는 미디엄으로 설타나·캐러멜·너트멕·말린 오렌지 껍질이 남는다.<br><b>스토리</b> 더 글렌리벳은 스페이사이드의 대표 증류소다. 14년 '코냑 캐스크 셀렉션'은 미국 시장 위주 표현으로, 셰리·버번 숙성 후 코냑 캐스크에서 최소 6개월 추가 피니시한다.<br><span style="color:#8a8f98">출처: Whisky Advocate · The Scotch Noob · Caskers (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">더 글렌리벳 19년 700ml: 5%→30% (₩140,397)</div>
 <div style="margin:5px 0">더 글렌리벳 21년 700ml: 5%→30% (₩282,953)</div>
 <div style="margin:5px 0">더 글렌리벳 Caskmakers 700ml: 5%→30% (₩106,917)</div>
@@ -266,7 +266,7 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">발렌타인 30년 RESTAGE 700ml: 5%→30% (₩480,791)</div>
 <div style="margin:5px 0">시그나토리 글렌리벳 2006 캐스크 스트렝스 18년 700ml: 5%→30% (₩260,274)</div>
 <div style="margin:5px 0">시그나토리 로얄브라클라 2008 캐스크 스트렝스 16년 #2 700ml: 5%→30% (₩199,795)</div>
-<div style="margin:5px 0">시바스리갈 12년 1000ml: 5%→30% (₩51,629)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">시바스리갈 12년 1000ml: 5%→30% (₩51,629)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 시바스리갈 (Chivas Regal) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 엑스-버번 + 엑스-셰리 캐스크<br><b>맛</b> 야생 허브·헤더·과수원 과일의 향에 꿀이 어우러진다. 팔레트는 꿀·바닐라·잘 익은 사과와 배가 둥글고 크리미하게 퍼지며 헤이즐넛·버터스카치 풍미가 받친다. 피니시는 따뜻하고 길게 이어진다.<br><b>스토리</b> 시바스리갈은 페르노리카 산하의 블렌디드 스카치로, 스페이사이드의 스트라스아일라 증류소를 핵심으로 한다. 12년은 최소 12년 숙성한 기준 블렌드다.<br><span style="color:#8a8f98">출처: 공식 사이트 · The Whiskey Wash · HTFW (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">시바스리갈 12년 200ml: 5%→30% (₩11,832)</div>
 <div style="margin:5px 0">시바스리갈 엑스트라 럼 캐스크 셀렉션 1000ml: 5%→30% (₩62,385)</div>
 <div style="margin:5px 0">시크릿 스페이사이드 Glen Keith 25년 700ml: 5%→30% (₩410,390)</div>
@@ -278,8 +278,8 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">마르스 이와이 750ml: 20%→42% (₩57,517)</div>
 <div style="margin:5px 0">카미키 오리지널 500ml: 20%→42% (₩71,773)</div>
 <div style="margin:5px 0">카미키 인텐스 500ml: 20%→42% (₩75,362)</div>
-<div style="margin:5px 0">레드브레스트 12년 700ml: 5%→26% (₩72,854)</div>
-<div style="margin:5px 0">레드브레스트 15년 700ml: 5%→26% (₩116,112)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">레드브레스트 12년 700ml: 5%→26% (₩72,854)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 레드브레스트 (Redbreast) · 아일랜드<br><b>도수</b> 40%<br><b>캐스크</b> 버번 + 셰리 캐스크<br><b>맛</b> 바닐라·토피의 부드러운 단맛에 시나몬·정향 같은 베이킹 스파이스와 오렌지 시트러스가 어우러진다. 견과(호두)와 말린 살구·건포도의 풍미가 깔리며, 싱글 포트 스틸 특유의 기름지고 묵직한 질감이 특징이다. 피니시는 따뜻하고 스파이시하다.<br><b>스토리</b> 아이리시 디스틸러스(페르노리카 산하)가 만드는 싱글 포트 스틸 아이리시 위스키로, 맥아·비맥아 보리를 섞어 동 포트 스틸에서 3회 증류한다. 12년은 레드브레스트 코어 라인의 기준 표현이다.<br><span style="color:#8a8f98">출처: 공식 사이트 · Wikipedia · Tasting Table (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">레드브레스트 15년 700ml: 5%→26% (₩116,112)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 레드브레스트 (Redbreast) · 아일랜드<br><b>도수</b> 46%<br><b>캐스크</b> 버번 배럴 + 올로로소 셰리 캐스크<br><b>맛</b> 과일 콤포트·복숭아·오렌지의 향에 시나몬·정향이 더해지고, 레드브레스트 특유의 견과류 드라이함이 느껴진다. 팔레트는 망고·파인애플·바닐라·캐러멜로 부드럽고 버터 같은 질감이며, 오크와 스파이스가 자리잡는다. 피니시엔 붉은 베리와 바닐라·너트멕이 남는다.<br><b>스토리</b> 레드브레스트 15년은 버번 배럴과 올로로소 셰리 캐스크에서 15년 숙성한 싱글 포트 스틸 표현으로, 12년보다 셰리 영향과 도수(46%)가 강화된 버전이다.<br><span style="color:#8a8f98">출처: 공식 사이트 · The Whisky Exchange · The Whiskey Wash (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">니카 테일러드 700ml: 20%→40% (₩124,435)</div>
 <div style="margin:5px 0">딩글 싱글몰트위스키 배치6 700ml: 40%→60% (₩71,020)</div>
 <div style="margin:5px 0">마츠이 미즈나라 캐스크 700ml: 20%→40% (₩87,565)</div>
@@ -295,7 +295,7 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">카발란 비노바리끄 솔리스트 1000ml: 20%→40% (₩212,001)</div>
 <div style="margin:5px 0">카발란 올로로소 쉐리 오크 1000ml: 20%→40% (₩158,540)</div>
 <div style="margin:5px 0">카발란 이엑스버번 솔리스트 1000ml: 20%→40% (₩141,948)</div>
-<div style="margin:5px 0">카발란 콘서트마스터 1000ml: 20%→40% (₩81,113)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">카발란 콘서트마스터 1000ml: 20%→40% (₩81,113)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 카발란 (Kavalan) · 대만<br><b>도수</b> 40%<br><b>캐스크</b> 아메리칸 오크 숙성 + 포트 캐스크 피니시<br><b>맛</b> 붉은 와인·포트의 향에 초콜릿·라즈베리 등 베리류와 꿀·열대과일이 어우러진다. 팔레트는 붉은 베리·달콤한 사과·시나몬이 생강·말린 과일·바닐라와 균형을 이룬다. 피니시는 미디엄으로 견과류와 스파이스가 남는다.<br><b>스토리</b> 카발란은 대만 이란현에 2006년 설립된 대만 최초의 증류소다. 콘서트마스터는 아메리칸 오크 숙성 후 루비·토니·빈티지 포트 캐스크에서 피니시한 싱글 몰트다.<br><span style="color:#8a8f98">출처: The Whisky Exchange · Master of Malt · Whisky Magazine (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">카발란 클래식 1000ml: 20%→40% (₩100,470)</div>
 <div style="margin:5px 0">카발란 포트 솔리스트 1000ml: 20%→40% (₩200,940)</div>
 <div style="margin:5px 0">폴존 미니어처 세트 50ml*5: 10%→30% (₩37,745)</div>
