@@ -5,6 +5,8 @@ description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 위스키
 robots: "index,follow"
 ---
 <a class="dash-cta" href="{{ '/dashboard/' | relative_url }}">📊 위스키 가격 대시보드 →<span class="dash-sub">소매가 · 면세가 · 해외가 비교</span></a>
+<a class="dash-cta" href="{{ '/dashboard/brands/' | relative_url }}">🥃 브랜드 대시보드 →<span class="dash-sub">브랜드별 가치 추천 · 지금 사라</span></a>
+
 {% assign _reports = site.posts | where_exp: "p","p.title contains '[신라면세]' or p.title contains '[소매가]'" %}
 {% if _reports.size > 0 %}
 <div class="sec-head">🗞️ 최신 데이터 리포트</div>
