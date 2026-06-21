@@ -7,16 +7,6 @@ robots: "index,follow"
 <a class="dash-cta" href="{{ '/dashboard/' | relative_url }}">📊 위스키 가격 대시보드 →<span class="dash-sub">소매가 · 면세가 · 해외가 비교</span></a>
 <a class="dash-cta" href="{{ '/dashboard/brands/' | relative_url }}">🥃 브랜드 대시보드 →<span class="dash-sub">브랜드별 가치 추천 · 지금 사라</span></a>
 
-{% assign _reports = site.posts | where_exp: "p","p.title contains '[신라면세]' or p.title contains '[소매가]'" %}
-{% if _reports.size > 0 %}
-<div class="sec-head">🗞️ 최신 데이터 리포트</div>
-<ul class="latest-feed">
-{% for p in _reports limit: 5 %}
-  <li><span class="chip">{% if p.title contains '[신라면세]' %}✈️{% else %}🛒{% endif %}</span><span class="when">{{ p.date | date: "%Y-%m-%d" }}</span><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-{% endfor %}
-</ul>
-{% endif %}
-
 {% assign _editorial = site.posts | where_exp: "p","p.categories contains 'tasting' or p.categories contains 'data' or p.categories contains 'dev'" %}
 {% if _editorial.size > 0 %}
 <div class="sec-head">🆕 읽을거리 — 시음·데이터·개발</div>
@@ -27,45 +17,6 @@ robots: "index,follow"
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
 {% endfor %}
 </ul>
-{% endif %}
-
-{% assign _patches = site.posts | where_exp: "p","p.kind == 'patch'" %}
-{% assign _weekly = site.posts | where_exp: "p","p.kind == 'weekly'" %}
-{% assign _wp = site.posts | where_exp: "p","p.categories contains 'wprice'" %}
-{% if _patches.size > 0 or _weekly.size > 0 or _wp.size > 0 %}
-<div class="sec-head">📊 가격 모아보기</div>
-<div class="price-groups">
-{% if _weekly.size > 0 %}
-  <details class="pg-acc">
-    <summary><span class="pg-emoji">📅</span><span class="pg-title">신라면세 주간 리포트</span><span class="pg-meta">최근 {{ _weekly.size }}건</span><span class="pg-caret">▾</span></summary>
-    <ul class="pg-list">
-    {% for p in _weekly limit: 10 %}
-      <li><span class="when">{{ p.weekly_end | default: p.date | date: "%Y-%m-%d" }}</span><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-    {% endfor %}
-    </ul>
-  </details>
-{% endif %}
-{% if _patches.size > 0 %}
-  <details class="pg-acc">
-    <summary><span class="pg-emoji">📊</span><span class="pg-title">신라면세 가격변동</span><span class="pg-meta">최근 {{ _patches.size }}건</span><span class="pg-caret">▾</span></summary>
-    <ul class="pg-list">
-    {% for p in _patches limit: 10 %}
-      <li><span class="when">{{ p.latest_date | default: p.date | date: "%Y-%m-%d" }}</span><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.breakthroughs > 0 %} <span class="pg-bk">⚡{{ p.breakthroughs }}</span>{% endif %}</li>
-    {% endfor %}
-    </ul>
-  </details>
-{% endif %}
-{% if _wp.size > 0 %}
-  <details class="pg-acc">
-    <summary><span class="pg-emoji">📈</span><span class="pg-title">위스키 가격리포트</span><span class="pg-meta">최근 {{ _wp.size }}건</span><span class="pg-caret">▾</span></summary>
-    <ul class="pg-list">
-    {% for p in _wp limit: 10 %}
-      <li><span class="when">{{ p.date | date: "%Y-%m-%d" }}</span><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-    {% endfor %}
-    </ul>
-  </details>
-{% endif %}
-</div>
 {% endif %}
 
 <div class="hub">
