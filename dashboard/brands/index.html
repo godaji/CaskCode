@@ -97,15 +97,23 @@ code{word-break:break-all;overflow-wrap:anywhere}
 </div>
 <script>
 (function(){
-  window.showBrand = function(slug){
+  window.showBrand = function(slug, skipHistory){
     document.querySelectorAll('.panel').forEach(function(p){
       p.classList.toggle('active', p.id === 'b-' + slug);
     });
     document.querySelectorAll('.tab').forEach(function(t){
       t.classList.toggle('active', t.dataset.brand === slug);
     });
+    if (!skipHistory) {
+      history.replaceState(null, '', '?brand=' + encodeURIComponent(slug));
+    }
     window.scrollTo(0, 0);
   };
+  // Restore tab from URL on load
+  var initial = new URLSearchParams(location.search).get('brand');
+  if (initial && document.querySelector('.tab[data-brand="' + initial + '"]')) {
+    window.showBrand(initial, true);
+  }
 })();
 </script>
 </body>
