@@ -1,14 +1,30 @@
 ---
 layout: "default"
 title: "🥃 Cask — 위스키 전부"
-description: "면세 가성비 자동 리포트 · 위스키 가격정보 · 구매/시음 노트 (오크통 숙성은 `#숙성` 태그)."
+description: "구매/시음/숙성 노트 · 면세 가성비 자동 리포트 · 위스키 가격정보."
 permalink: "/cask/"
 robots: "index,follow"
 ---
 
 <span id="cask"></span>
 ## 🥃 Cask — 위스키 전부
-*면세 가성비 자동 리포트 · 위스키 가격정보 · 구매/시음 노트 (오크통 숙성은 `#숙성` 태그).*
+*구매/시음/숙성 노트 · 면세 가성비 자동 리포트 · 위스키 가격정보.*
+
+
+### 🥃 구매/시음/숙성 노트
+*사서 마셔본 기록 — 구매 노트 + 시음 (오크통 숙성 실험은 `#숙성` 태그)*
+
+{% assign items = site.posts | where_exp: "p", "p.categories contains 'tasting'" | sort: "date" | reverse %}
+{% if items.size > 0 %}
+<ul class="archive">
+{% for p in items %}
+  <li><span class="when">{{ p.date | date: "%Y-%m-%d" }}</span>
+  <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+<div class="empty">아직 글이 없습니다.</div>
+{% endif %}
 
 
 ### 🏷️ 신라면세 위스키 정보
@@ -45,22 +61,6 @@ robots: "index,follow"
 *국내·해외 위스키 시세 — 트레이더스·코스트코·데일리샷·홍콩·일본 비교*
 
 {% assign items = site.posts | where_exp: "p", "p.categories contains 'wprice'" | sort: "date" | reverse %}
-{% if items.size > 0 %}
-<ul class="archive">
-{% for p in items %}
-  <li><span class="when">{{ p.date | date: "%Y-%m-%d" }}</span>
-  <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-{% endfor %}
-</ul>
-{% else %}
-<div class="empty">아직 글이 없습니다.</div>
-{% endif %}
-
-
-### 🥃 구매/시음 노트
-*사서 마셔본 기록 — 구매 노트 + 시음 (오크통 숙성 실험은 `#숙성` 태그)*
-
-{% assign items = site.posts | where_exp: "p", "p.categories contains 'tasting'" | sort: "date" | reverse %}
 {% if items.size > 0 %}
 <ul class="archive">
 {% for p in items %}

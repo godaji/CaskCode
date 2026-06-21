@@ -23,8 +23,8 @@ robots: "index,follow"
   <a class="pillar-card" href="{{ '/cask/' | relative_url }}">
     <div class="pc-emoji">🥃</div>
     <div class="pc-head"><span class="pc-title">Cask</span><span class="pc-tag">위스키 전부</span></div>
-    <p class="pc-desc">면세 가성비 자동 리포트 · 위스키 가격정보 · 구매/시음 노트 (오크통 숙성은 #숙성 태그).</p>
-    {% assign posts_cask = site.posts | where_exp: "p", "p.categories contains 'price' or p.categories contains 'wprice' or p.categories contains 'tasting'" %}
+    <p class="pc-desc">구매/시음/숙성 노트 · 면세 가성비 자동 리포트 · 위스키 가격정보.</p>
+    {% assign posts_cask = site.posts | where_exp: "p", "p.categories contains 'tasting' or p.categories contains 'price' or p.categories contains 'wprice'" %}
     <div class="pc-count">글 {{ posts_cask.size }}편</div>
     <ul class="pc-prev">
     {% for p in posts_cask limit: 3 %}
