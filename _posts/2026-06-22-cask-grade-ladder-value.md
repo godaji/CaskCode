@@ -2,8 +2,8 @@
 layout: post
 title: "12년에서 멈출까, 18년까지 갈까 — 한 칸 위, 맛이 오르나 값만 오르나"
 date: 2026-06-22 14:00:00 +0900
-categories: [wprice]
-kind: wprice
+categories: [data]
+kind: data
 byline: CaskCode
 tags: [위스키, 가성비, 등급, 숙성연수, 면세, 맛평가, 글렌피딕, 발베니, 조니워커, 듀어스]
 robots: noindex,nofollow
