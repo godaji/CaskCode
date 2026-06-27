@@ -201,10 +201,21 @@ border-radius:12px;background:rgba(255,211,78,.07);color:var(--txt);text-decorat
 border-top:1px solid rgba(42,46,56,.6);font-size:12.5px;color:var(--txt);line-height:1.45}
 .hotdeal-list li:first-child{border-top:0}
 .hotdeal-list .hd-fire{flex-shrink:0}
-.hotdeal-card .hd-rare{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:11.5px;color:var(--amber);font-weight:700;
-margin:0 0 7px;padding:6px 9px;background:rgba(224,168,78,.1);border:1px solid rgba(224,168,78,.28);
-border-radius:8px;line-height:1.45}
 .hotdeal-card .hd-more{display:inline-block;font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:12px;font-weight:700;color:var(--gold)}
+/* ── 홈 최상단 🕰️ 오랜만의 큰 인하 카드 (CMPA-644 보드: 최상단) — 앰버/시계 강조 ── */
+.rare-wrap{margin:0 0 22px}
+.rare-card{display:block;padding:13px 15px;border:1.5px solid var(--amber);border-radius:12px;
+background:rgba(224,168,78,.09);color:var(--txt);text-decoration:none;transition:background .18s}
+.rare-card:hover{background:rgba(224,168,78,.16);text-decoration:none}
+.rare-card .rare-head{display:flex;align-items:baseline;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.rare-card .rare-title{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:13.5px;font-weight:800;color:var(--amber)}
+.rare-card .rare-when{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:11px;color:var(--sub);margin-left:auto;flex-shrink:0}
+.rare-list{list-style:none;padding:0;margin:0 0 8px}
+.rare-list li{display:flex;align-items:baseline;gap:6px;padding:5px 0;
+border-top:1px solid rgba(42,46,56,.6);font-size:12.5px;color:var(--txt);line-height:1.45}
+.rare-list li:first-child{border-top:0}
+.rare-list .rare-mark{flex-shrink:0}
+.rare-card .rare-more{display:inline-block;font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:12px;font-weight:700;color:var(--amber)}
 /* ── 반응형: 좁은 화면이면 사이드바를 상단 배너로 ── */
 @media (max-width:820px){
 .sidebar{position:static;width:auto;height:auto;bottom:auto;border-right:0;
