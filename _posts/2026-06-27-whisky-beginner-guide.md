@@ -31,7 +31,7 @@ excerpt: "처음 위스키를 마신다면 어디서 시작해야 할까. 준비
 
 아래 가격은 2026년 6월 기준 [CaskCode 가격 대시보드](https://godaji.github.io/CaskCode/dashboard/) 수집값입니다.
 
-[![CaskCode 가격 대시보드 (모바일 화면)](/CaskCode/assets/img/2026-06-27-whisky-beginner-guide/dashboard-mobile.png)](https://godaji.github.io/CaskCode/dashboard/)
+[![CaskCode 가격 대시보드 (모바일 화면)]({{ '/assets/img/2026-06-27-whisky-beginner-guide/dashboard-mobile.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/)
 
 | 스타일 | 위스키 | 국내 마트 최저가 | 특징 |
 |--------|--------|-----------------|------|
@@ -46,7 +46,7 @@ excerpt: "처음 위스키를 마신다면 어디서 시작해야 할까. 준비
 
 > **에버펠디 16년**은 스코틀랜드 하이랜드 위스키로, 꿀처럼 달고 과일향이 화사합니다. 발베니 12년보다 21,000원 저렴하고, 면세점(신라 124,412원/1L)보다 마트(75,800원/700ml)가 100ml당 환산 시 더 저렴한 드문 케이스입니다. 요즘 국내 마트에서 가성비 화사 싱글몰트로 주목받고 있습니다.
 
-[![에버펠디 16년 대시보드 가격 (마트 vs 면세)](/CaskCode/assets/img/2026-06-27-whisky-beginner-guide/dashboard-aberfeldy-price.png)](https://godaji.github.io/CaskCode/dashboard/)
+[![에버펠디 16년 대시보드 가격 (마트 vs 면세)]({{ '/assets/img/2026-06-27-whisky-beginner-guide/dashboard-aberfeldy-price.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/)
 
 > **탈리스커 10년**은 스코틀랜드 스카이섬 증류소 위스키입니다. 피트향이 있지만 바다·후추 느낌이 강해, '피트 입문'으로 자주 꼽힙니다. 아드벡·라프로익보다 훨씬 온화합니다.
 
@@ -70,15 +70,15 @@ excerpt: "처음 위스키를 마신다면 어디서 시작해야 할까. 준비
 
 아래는 글렌피딕 전 라인업을 면세·소매 비교로 정리한 CaskCode 브랜드 대시보드입니다.
 
-[![글렌피딕 라인업 — 면세 vs 소매 가격 비교](/CaskCode/assets/img/2026-06-27-whisky-beginner-guide/dashboard-glenf18-brand-full.png)](https://godaji.github.io/CaskCode/dashboard/brands/?brand=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95)
+[![글렌피딕 라인업 — 면세 vs 소매 가격 비교]({{ '/assets/img/2026-06-27-whisky-beginner-guide/dashboard-glenf18-brand-full.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/brands/?brand=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95)
 
 **아벨라워 아부나흐 — 면세점이 112,000원 더 쌉니다**
 
 마트(트레이더스 235,800원)와 면세점(신라 123,649원)의 가격 차이가 112,151원(48%)입니다. 같은 술을 면세에서 사면 거의 절반 가격입니다. 출국 기회가 있다면 반드시 면세에서 구매하세요.
 
-[![아벨라워 아부나흐 — 면세 vs 마트 가격 비교](/CaskCode/assets/img/2026-06-27-whisky-beginner-guide/dashboard-abelour-price.png)](https://godaji.github.io/CaskCode/dashboard/)
+[![아벨라워 아부나흐 — 면세 vs 마트 가격 비교]({{ '/assets/img/2026-06-27-whisky-beginner-guide/dashboard-abelour-price.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/)
 
-[![CaskCode 브랜드 가치 대시보드 (모바일 화면)](/CaskCode/assets/img/2026-06-27-whisky-beginner-guide/dashboard-brands-mobile.png)](https://godaji.github.io/CaskCode/dashboard/brands/)
+[![CaskCode 브랜드 가치 대시보드 (모바일 화면)]({{ '/assets/img/2026-06-27-whisky-beginner-guide/dashboard-brands-mobile.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/brands/)
 
 > **아벨라워 아부나흐**는 캐스크 스트렝스(물을 타지 않은 원액 그대로) 위스키입니다. 60도 안팎의 높은 도수지만 셰리 오크 향이 강렬합니다. 물 몇 방울을 떨어뜨려 마시면 향이 폭발적으로 열립니다.
 
