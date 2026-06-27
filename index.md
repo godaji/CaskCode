@@ -6,7 +6,7 @@ robots: "index,follow"
 ---
 {% assign _wl = site.posts | where_exp: "p","p.kind == 'patch' and p.cadence == 'weekly'" | sort: "date" | reverse %}
 {% if _wl.size > 0 and _wl[0].rare_drops_count > 0 %}{% assign _r = _wl[0] %}
-<div class="sec-head">🕰️ 오랜만의 큰 인하 — 거의 정상가였다가 모처럼 큰 폭 인하</div>
+<div class="sec-head">🕰️ 신라면세 오랜만의 큰 인하 — 거의 정상가였다가 모처럼 큰 폭 인하</div>
 <div class="rare-wrap"><a class="rare-card" href="{{ _r.url | relative_url }}"><div class="rare-head"><span class="rare-title">이번 주 {{ _r.rare_drops_count }}종 인하</span><span class="rare-when">{{ _r.latest_date | default: _r.weekly_end }} 기준</span></div><ul class="rare-list">{% for d in _r.rare_drops %}<li><span class="rare-mark">🕰️</span><span>{{ d }}</span></li>{% endfor %}</ul><span class="rare-more">자세히 보기 →</span></a></div>
 {% endif %}
 
