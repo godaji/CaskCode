@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "위린이를 위한 위스키 입문 가이드"
-date: 2026-06-27 19:00:00 +0900
+date: 2026-06-27 09:00:00 +0900
 categories: [tasting]
 kind: tasting
 byline: CaskCode
