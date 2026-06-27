@@ -9,10 +9,6 @@ robots: noindex
 excerpt: "처음 위스키를 마신다면 어디서 시작해야 할까. 준비물 두 가지와 10만 원 안팎 추천 5종."
 ---
 
-[![글렌피딕 라인업 — 숙성년수별 가격 (면세 vs 소매)]({{ '/assets/img/2026-06-27-whisky-beginner-guide/glenf18-brand-chart.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/brands/?brand=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95)
-
-*숙성년수가 오를수록 값이 오른다 — 글렌피딕 라인업을 면세·소매로 비교한 [CaskCode 브랜드 대시보드](https://godaji.github.io/CaskCode/dashboard/brands/?brand=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95). 그림을 누르면 인터랙티브 차트로 이동합니다.*
-
 위스키는 소주처럼 털어넣는 술이 아닙니다. 짠 간장이나 뜨거운 커피처럼, 조금씩 향을 음미하면서 마시는 술입니다.
 
 천천히 향부터 맡고, 입에 굴리며 음미하세요. 한 잔(20~30ml)을 30분 정도에 걸쳐 비운다는 느낌이면 충분합니다. 시간이 지나면서 향이 열리고 맛이 변하는 걸 따라가는 게 위스키의 진짜 재미입니다.
@@ -64,7 +60,10 @@ excerpt: "처음 위스키를 마신다면 어디서 시작해야 할까. 준비
 
 **글렌피딕 18년 — 면세점에서 사면 국내 마트보다 훨씬 저렴합니다**
 
-글렌피딕은 12년·15년·18년으로 갈수록 가격이 오르지만, **18년은 면세점에서 사면 완전히 다른 이야기**입니다. 국내 마트에서는 취급 자체가 드물고, 있어도 비쌉니다. 신라면세 기준 약 113,588원(06-26 수집) — 같은 돈으로 마트에서는 12년도 빠듯한 가격입니다.
+글렌피딕은 12년·15년·18년으로 갈수록 가격이 오르지만, **18년은 면세점에서 사면 완전히 다른 이야기**입니다. 신라면세 기준 약 113,588원(06-26 수집)인데 마트에서는 12년이랑 비슷한 가격입니다. 면세에서 사면 완전 좋습니다.
+
+[![글렌피딕 라인업 — 숙성년수별 가격 (면세 vs 소매)]({{ '/assets/img/2026-06-27-whisky-beginner-guide/glenf18-brand-chart.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/brands/?brand=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95)
+
 
 글렌피딕 전 라인업의 면세·소매 가격 비교는 맨 위 차트, 또는 [CaskCode 브랜드 대시보드](https://godaji.github.io/CaskCode/dashboard/brands/?brand=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95)에서 숙성년수별로 확인할 수 있습니다.
 
