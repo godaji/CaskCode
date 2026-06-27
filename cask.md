@@ -44,6 +44,11 @@ robots: "index,follow"
   <li><span class="when">{{ p.weekly_end | default: p.date | date: "%Y-%m-%d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
   <span class="badge digest">📅 주간</span></li>
+  {% elsif p.cadence == 'weekly' %}
+  <li><span class="when">{{ p.latest_date | default: p.date | date: "%Y-%m-%d" }}</span>
+  <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+  <span class="badge digest">📅 주간 로그</span>
+  {% if p.days %}<span class="sub">· {{ p.days }}일치 누적</span>{% endif %}</li>
   {% else %}
   <li><span class="when">{{ p.latest_date | default: p.date | date: "%Y-%m-%d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
