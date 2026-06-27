@@ -201,6 +201,9 @@ border-radius:12px;background:rgba(255,211,78,.07);color:var(--txt);text-decorat
 border-top:1px solid rgba(42,46,56,.6);font-size:12.5px;color:var(--txt);line-height:1.45}
 .hotdeal-list li:first-child{border-top:0}
 .hotdeal-list .hd-fire{flex-shrink:0}
+.hotdeal-card .hd-rare{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:11.5px;color:var(--amber);font-weight:700;
+margin:0 0 7px;padding:6px 9px;background:rgba(224,168,78,.1);border:1px solid rgba(224,168,78,.28);
+border-radius:8px;line-height:1.45}
 .hotdeal-card .hd-more{display:inline-block;font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:12px;font-weight:700;color:var(--gold)}
 /* ── 반응형: 좁은 화면이면 사이드바를 상단 배너로 ── */
 @media (max-width:820px){

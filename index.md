@@ -17,6 +17,7 @@ robots: "index,follow"
   {% for d in _w.hotdeals %}<li><span class="hd-fire">🔥</span><span>{{ d }}</span></li>{% endfor %}
   </ul>
   {% assign _rest = _w.hotdeals_count | minus: _w.hotdeals.size %}
+  {% if _w.rare_drops_count > 0 %}<div class="hd-rare">🕰️ 오랜만의 큰 인하 {{ _w.rare_drops_count }}종 — {{ _w.rare_drops | first }} 등 (거의 정상가였다가 첫 큰 폭 인하)</div>{% endif %}
   <span class="hd-more">{% if _rest > 0 %}+ {{ _rest }}종 더 · {% endif %}주간 로그 전체 보기 →</span>
   {% else %}
   <span class="hd-more">이번 주 가격 변동 로그 보기 →</span>

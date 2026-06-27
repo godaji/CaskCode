@@ -13,7 +13,9 @@ weekly_end: "2026-06-07"
 days: 1
 hotdeals: ["더 글렌그란트 21년 700ml — 면세 ₩257,933 · 28%↓"]
 hotdeals_count: 1
-description: "면세 위스키 가격 주간 로그 6/1~6/7 — 이번주 핫딜 1종 · 일자별 가격변동 누적(최신 2026-06-07). CaskCode"
+rare_drops: []
+rare_drops_count: 0
+description: "면세 위스키 가격 주간 로그 6/1~6/7 — 이번주 핫딜 1종 · 오랜만의 큰 인하 0종 · 최신 2026-06-07. CaskCode"
 robots: "noindex,nofollow"
 ---
 
