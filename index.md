@@ -7,6 +7,23 @@ robots: "index,follow"
 <a class="dash-cta" href="{{ '/dashboard/' | relative_url }}">📊 위스키 가격 대시보드 →<span class="dash-sub">소매가 · 면세가 · 해외가 비교</span></a>
 <a class="dash-cta" href="{{ '/dashboard/brands/' | relative_url }}">🥃 브랜드 대시보드 →<span class="dash-sub">브랜드별 가치 추천 · 지금 사라</span></a>
 
+{% assign _wlogs = site.posts | where_exp: "p","p.kind == 'patch' and p.cadence == 'weekly'" | sort: "date" | reverse %}
+{% if _wlogs.size > 0 %}{% assign _w = _wlogs[0] %}
+<div class="sec-head">🔥 이번주 핫딜 — 면세가가 국내최저보다 싼 위스키</div>
+<a class="hotdeal-card" href="{{ _w.url | relative_url }}">
+  <div class="hd-head"><span class="hd-title">{{ _w.title }}</span><span class="hd-when">{{ _w.latest_date | default: _w.weekly_end }} 기준</span></div>
+  {% if _w.hotdeals and _w.hotdeals.size > 0 %}
+  <ul class="hotdeal-list">
+  {% for d in _w.hotdeals %}<li><span class="hd-fire">🔥</span><span>{{ d }}</span></li>{% endfor %}
+  </ul>
+  {% assign _rest = _w.hotdeals_count | minus: _w.hotdeals.size %}
+  <span class="hd-more">{% if _rest > 0 %}+ {{ _rest }}종 더 · {% endif %}주간 로그 전체 보기 →</span>
+  {% else %}
+  <span class="hd-more">이번 주 가격 변동 로그 보기 →</span>
+  {% endif %}
+</a>
+{% endif %}
+
 {% assign _editorial = site.posts | where_exp: "p","p.categories contains 'tasting' or p.categories contains 'data' or p.categories contains 'dev'" %}
 {% if _editorial.size > 0 %}
 <div class="sec-head">🆕 읽을거리 — 시음·데이터·개발</div>
