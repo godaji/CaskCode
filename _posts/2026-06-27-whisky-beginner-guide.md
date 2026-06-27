@@ -9,6 +9,10 @@ robots: noindex
 excerpt: "처음 위스키를 마신다면 어디서 시작해야 할까. 준비물 두 가지와 10만 원 안팎 추천 5종."
 ---
 
+[![글렌피딕 라인업 — 숙성년수별 가격 (면세 vs 소매)]({{ '/assets/img/2026-06-27-whisky-beginner-guide/glenf18-brand-chart.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/brands/?brand=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95)
+
+*숙성년수가 오를수록 값이 오른다 — 글렌피딕 라인업을 면세·소매로 비교한 [CaskCode 브랜드 대시보드](https://godaji.github.io/CaskCode/dashboard/brands/?brand=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95). 그림을 누르면 인터랙티브 차트로 이동합니다.*
+
 위스키는 소주처럼 털어넣는 술이 아닙니다. 짠 간장이나 뜨거운 커피처럼, 조금씩 향을 음미하면서 마시는 술입니다.
 
 천천히 향부터 맡고, 입에 굴리며 음미하세요. 한 잔(20~30ml)을 30분 정도에 걸쳐 비운다는 느낌이면 충분합니다. 시간이 지나면서 향이 열리고 맛이 변하는 걸 따라가는 게 위스키의 진짜 재미입니다.
@@ -29,10 +33,6 @@ excerpt: "처음 위스키를 마신다면 어디서 시작해야 할까. 준비
 
 ## 추천 위스키 — 10만 원 안팎, 처음 시작할 때
 
-아래 가격은 2026년 6월 기준 [CaskCode 가격 대시보드](https://godaji.github.io/CaskCode/dashboard/) 수집값입니다.
-
-[![CaskCode 가격 대시보드 (모바일 화면)]({{ '/assets/img/2026-06-27-whisky-beginner-guide/dashboard-mobile.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/)
-
 | 스타일 | 위스키 | 국내 마트 최저가 | 특징 |
 |--------|--------|-----------------|------|
 | 싱글몰트 — 화사 | **발베니 12년 더블우드** | 약 96,800원<br>(트레이더스, 06-23 수집) | 꿀·과일·셰리. 달고 부드러운 입문 정석 |
@@ -45,8 +45,6 @@ excerpt: "처음 위스키를 마신다면 어디서 시작해야 할까. 준비
 > **발베니 12년 더블우드**는 오크통 두 개를 거친 위스키입니다. 버번 오크에서 12년 숙성한 뒤 올로로소 셰리 통에서 마무리해, 꿀·바닐라와 말린 과일향이 함께 납니다. 처음 위스키를 접하는 분께 가장 자주 추천하는 이유입니다.
 
 > **에버펠디 16년**은 스코틀랜드 하이랜드 위스키로, 꿀처럼 달고 과일향이 화사합니다. 발베니 12년보다 21,000원 저렴하고, 면세점(신라 124,412원/1L)보다 마트(75,800원/700ml)가 100ml당 환산 시 더 저렴한 드문 케이스입니다. 요즘 국내 마트에서 가성비 화사 싱글몰트로 주목받고 있습니다.
-
-[![에버펠디 16년 대시보드 가격 (마트 vs 면세)]({{ '/assets/img/2026-06-27-whisky-beginner-guide/dashboard-aberfeldy-price.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/)
 
 > **탈리스커 10년**은 스코틀랜드 스카이섬 증류소 위스키입니다. 피트향이 있지만 바다·후추 느낌이 강해, '피트 입문'으로 자주 꼽힙니다. 아드벡·라프로익보다 훨씬 온화합니다.
 
@@ -68,17 +66,11 @@ excerpt: "처음 위스키를 마신다면 어디서 시작해야 할까. 준비
 
 글렌피딕은 12년·15년·18년으로 갈수록 가격이 오르지만, **18년은 면세점에서 사면 완전히 다른 이야기**입니다. 국내 마트에서는 취급 자체가 드물고, 있어도 비쌉니다. 신라면세 기준 약 113,588원(06-26 수집) — 같은 돈으로 마트에서는 12년도 빠듯한 가격입니다.
 
-아래는 글렌피딕 전 라인업을 면세·소매 비교로 정리한 CaskCode 브랜드 대시보드입니다.
-
-[![글렌피딕 라인업 — 면세 vs 소매 가격 비교]({{ '/assets/img/2026-06-27-whisky-beginner-guide/dashboard-glenf18-brand-full.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/brands/?brand=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95)
+글렌피딕 전 라인업의 면세·소매 가격 비교는 맨 위 차트, 또는 [CaskCode 브랜드 대시보드](https://godaji.github.io/CaskCode/dashboard/brands/?brand=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95)에서 숙성년수별로 확인할 수 있습니다.
 
 **아벨라워 아부나흐 — 면세점이 112,000원 더 쌉니다**
 
 마트(트레이더스 235,800원)와 면세점(신라 123,649원)의 가격 차이가 112,151원(48%)입니다. 같은 술을 면세에서 사면 거의 절반 가격입니다. 출국 기회가 있다면 반드시 면세에서 구매하세요.
-
-[![아벨라워 아부나흐 — 면세 vs 마트 가격 비교]({{ '/assets/img/2026-06-27-whisky-beginner-guide/dashboard-abelour-price.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/)
-
-[![CaskCode 브랜드 가치 대시보드 (모바일 화면)]({{ '/assets/img/2026-06-27-whisky-beginner-guide/dashboard-brands-mobile.png' | relative_url }})](https://godaji.github.io/CaskCode/dashboard/brands/)
 
 > **아벨라워 아부나흐**는 캐스크 스트렝스(물을 타지 않은 원액 그대로) 위스키입니다. 60도 안팎의 높은 도수지만 셰리 오크 향이 강렬합니다. 물 몇 방울을 떨어뜨려 마시면 향이 폭발적으로 열립니다.
 
