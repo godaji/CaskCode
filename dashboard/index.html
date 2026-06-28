@@ -87,7 +87,8 @@ code{word-break:break-all;overflow-wrap:anywhere}
 
   <h2>현재 가격 상태</h2>
   <div class="filter-bar">
-    <button class="fbtn active" data-fview="df" onclick="filterView('df')">🏆 면세유리 보기</button>
+    <button class="fbtn active" data-fview="cheap" onclick="filterView('cheap')">💰 소매최저가↓</button>
+    <button class="fbtn" data-fview="df" onclick="filterView('df')">🏆 면세유리 보기</button>
     <button class="fbtn" data-fview="retail" onclick="filterView('retail')">🛒 소매유리 보기</button>
     <button class="fbtn" data-fview="mrate" onclick="filterView('mrate')">면세할인율↓</button>
     <button class="fbtn" data-fview="name" onclick="filterView('name')">이름순</button>
@@ -185,18 +186,19 @@ code{word-break:break-all;overflow-wrap:anywhere}
       b.classList.toggle('active', b.dataset.fview === view);
     });
     // 버튼은 정렬 숏컷
-    if(view === 'df') sortBy(4, false);
+    if(view === 'cheap') sortBy(1, true);  // 소매최저가 오름차순(싼값 먼저)
+    else if(view === 'df') sortBy(4, false);
     else if(view === 'retail') sortBy(4, true);
     else if(view === 'mrate') sortBy(3, false);  // 면세할인율↓ 높은순
     else if(view === 'name') sortBy(0, true);
-    else sortBy(4, false);
+    else sortBy(1, true);
   };
   ths.forEach(function(th, i) {
     th.style.cursor = 'pointer';
     th.style.userSelect = 'none';
     th.addEventListener('click', function() { sortBy(i); });
   });
-  filterView('df');  // 기본값: 면세유리 보기
+  filterView('cheap');  // 기본값: 소매최저가 오름차순(싼값 먼저) (CMPA-671)
 })();
 </script>
 </body>
