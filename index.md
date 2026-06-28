@@ -4,7 +4,8 @@ title: "CaskCode — 블로그"
 description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 위스키·여행 등을 다룹니다. #CaskCode"
 robots: "index,follow"
 ---
-<div class="sec-head">🛫 면세점에서 구매할 때</div>
+<section class="buy-section df">
+<div class="bs-head"><span class="bs-ic">🛫</span><div class="bs-txt"><div class="bs-title">면세점에서 구매할 때</div><div class="bs-sub">출국·입국 예정이라면 — 신라·롯데·신세계 면세 가격 비교</div></div></div>
 {% assign _cmp = site.posts | where_exp: "p","p.url contains 'dutyfree-whisky-compare'" | sort: "date" | reverse %}
 {% if _cmp.size > 0 %}<a class="dash-cta" href="{{ _cmp[0].url | relative_url }}">🥃 신라-롯데-신세계 면세점 가격 비교 →<span class="dash-sub">세 면세점 100ml당 최저가 비교</span></a>
 {% endif %}
@@ -21,11 +22,16 @@ robots: "index,follow"
 <div class="hotdeal-wrap"><a class="hotdeal-card" href="{{ _w.url | relative_url }}"><div class="hd-head"><span class="hd-title">{{ _w.title }}</span><span class="hd-when">{{ _w.latest_date | default: _w.weekly_end }} 기준</span></div>{% if _w.hotdeals and _w.hotdeals.size > 0 %}<ul class="hotdeal-list">{% for d in _w.hotdeals %}<li><span class="hd-fire">🔥</span><span>{{ d }}</span></li>{% endfor %}</ul>{% assign _rest = _w.hotdeals_count | minus: _w.hotdeals.size %}<span class="hd-more">{% if _rest > 0 %}+ {{ _rest }}종 더 · {% endif %}주간 로그 전체 보기 →</span>{% else %}<span class="hd-more">이번 주 가격 변동 로그 보기 →</span>{% endif %}</a></div>
 {% endif %}
 
-<div class="sec-head">🛒 마트에서 구매할 때</div>
+</section>
+
+<section class="buy-section mart">
+<div class="bs-head"><span class="bs-ic">🛒</span><div class="bs-txt"><div class="bs-title">마트에서 구매할 때</div><div class="bs-sub">트레이더스·코스트코·이마트 등 국내 소매가</div></div></div>
 <a class="dash-cta" href="{{ '/dashboard/' | relative_url }}">📊 위스키 가격 대시보드 →<span class="dash-sub">소매가 · 면세가 · 해외가 비교</span></a>
 {% assign _mart = site.posts | where_exp: "p","p.url contains 'mart-cheaper-whisky'" | sort: "date" | reverse %}
 {% if _mart.size > 0 %}<a class="dash-cta" href="{{ _mart[0].url | relative_url }}">🥃 면세점보다 싸거나 비슷한 위스키 →<span class="dash-sub">마트·국내가가 면세가 이하인 위스키</span></a>
 {% endif %}
+
+</section>
 
 <div class="sec-head">🆕 읽을거리</div>
 <a class="dash-cta" href="{{ '/dashboard/brands/' | relative_url }}">🥃 위스키 브랜드별 구매 팁 →<span class="dash-sub">브랜드별 가치 추천 · 등급 사다리</span></a>
