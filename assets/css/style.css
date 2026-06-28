@@ -216,6 +216,20 @@ border-top:1px solid rgba(42,46,56,.6);font-size:12.5px;color:var(--txt);line-he
 .rare-list li:first-child{border-top:0}
 .rare-list .rare-mark{flex-shrink:0}
 .rare-card .rare-more{display:inline-block;font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:12px;font-weight:700;color:var(--amber)}
+/* ── 🗓️ 업데이트 로그(릴리스 노트) 카드 — 홈 맨 아래(CMPA-687) ── rare/hotdeal 패턴 동형 */
+.cl-wrap{margin:0 0 22px}
+.cl-card{display:block;padding:13px 15px;border:1px solid var(--line);border-radius:12px;
+background:rgba(255,211,78,.05);color:var(--txt);text-decoration:none;transition:background .18s}
+.cl-card:hover{background:rgba(255,211,78,.11);text-decoration:none}
+.cl-card .cl-head{display:flex;align-items:baseline;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.cl-card .cl-title{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:13.5px;font-weight:800;color:var(--gold)}
+.cl-card .cl-when{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:11px;color:var(--sub);margin-left:auto;flex-shrink:0}
+.cl-list{list-style:none;padding:0;margin:0 0 8px}
+.cl-list li{display:flex;align-items:baseline;gap:6px;padding:5px 0;
+border-top:1px solid rgba(42,46,56,.6);font-size:12.5px;color:var(--txt);line-height:1.45}
+.cl-list li:first-child{border-top:0}
+.cl-list .cl-ic{flex-shrink:0}
+.cl-card .cl-more{display:inline-block;font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:12px;font-weight:700;color:var(--gold)}
 /* ── 홈 구매상황 2대 축 패널(🛫 면세점 / 🛒 마트) — CMPA-673 보드 2026-06-28 ──
    보드: 면세점/마트가 두 개의 큰 축이니 섹션을 또렷이 구분. 각 축을 색이 다른
    테두리 패널로 묶어 한눈에 두 블록으로 읽히게 한다. (면세=하늘색, 마트=초록색) */

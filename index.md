@@ -74,3 +74,10 @@ robots: "index,follow"
     <span class="pc-go">목록 보기 →</span>
   </a>
 </div>
+
+{% assign _cl = site.posts | where_exp: "p","p.kind == 'changelog'" | sort: "date" | reverse %}
+{% if _cl.size > 0 %}{% assign _c = _cl[0] %}
+<div class="sec-head">🗓️ 업데이트 로그 — 데이터가 언제 갱신됐고 무엇이 바뀌었나</div>
+<div class="cl-wrap"><a class="cl-card" href="{{ _c.url | relative_url }}"><div class="cl-head"><span class="cl-title">최근 업데이트</span><span class="cl-when">{{ _c.log_date }} 기준</span></div><ul class="cl-list">{% if _c.cl_sources %}<li><span class="cl-ic">🗂</span><span>{{ _c.cl_sources }}</span></li>{% endif %}{% if _c.cl_shilla %}<li><span class="cl-ic">🛫</span><span>{{ _c.cl_shilla }}</span></li>{% endif %}{% if _c.cl_retail %}<li><span class="cl-ic">🛒</span><span>{{ _c.cl_retail }}</span></li>{% endif %}</ul><span class="cl-more">업데이트 로그 전체 보기 →</span></a></div>
+{% endif %}
+
