@@ -23,6 +23,9 @@ robots: "index,follow"
 
 <div class="sec-head">🛒 마트에서 구매할 때</div>
 <a class="dash-cta" href="{{ '/dashboard/' | relative_url }}">📊 위스키 가격 대시보드 →<span class="dash-sub">소매가 · 면세가 · 해외가 비교</span></a>
+{% assign _mart = site.posts | where_exp: "p","p.url contains 'mart-cheaper-whisky'" | sort: "date" | reverse %}
+{% if _mart.size > 0 %}<a class="dash-cta" href="{{ _mart[0].url | relative_url }}">🥃 면세점보다 싸거나 비슷한 위스키 →<span class="dash-sub">마트·국내가가 면세가 이하인 위스키</span></a>
+{% endif %}
 
 <div class="sec-head">🆕 읽을거리</div>
 <a class="dash-cta" href="{{ '/dashboard/brands/' | relative_url }}">🥃 위스키 브랜드별 구매 팁 →<span class="dash-sub">브랜드별 가치 추천 · 등급 사다리</span></a>
