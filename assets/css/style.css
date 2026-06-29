@@ -133,10 +133,13 @@ background:rgba(255,211,78,.08);border:1px solid rgba(224,168,78,.35)}
 letter-spacing:.2px;margin:18px 0 8px}
 /* ── 홈 ② 읽을거리 피드(시음·데이터분석·개발 — 💻/🥃 칩) — CMPA-294 ── */
 .latest-feed{list-style:none;padding:0;margin:0 0 6px}
-.latest-feed li{display:flex;align-items:baseline;gap:8px;padding:8px 0;
-border-bottom:1px solid var(--line)}
-.latest-feed .chip{font-size:15px;line-height:1}
-.latest-feed .when{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;color:var(--amber);font-weight:700;font-size:12.5px}
+/* 🆕 읽을거리 피드 — 본문(16px) 상속이라 모바일에서 제목이 두 줄로 깨짐(보드 2026-06-29).
+   글꼴을 줄여 한 줄에 더 들어오게 한다(날짜는 flex-shrink:0 로 제목에 공간 양보). */
+.latest-feed li{display:flex;align-items:baseline;gap:7px;padding:7px 0;
+border-bottom:1px solid var(--line);font-size:13px;line-height:1.45}
+.latest-feed li a{color:var(--txt)}
+.latest-feed .chip{font-size:13px;line-height:1;flex-shrink:0}
+.latest-feed .when{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;color:var(--amber);font-weight:700;font-size:11px;flex-shrink:0}
 /* 최신 데이터 리포트 레일(CMPA-388) — 케이던스 꼬리표(일간/주간/월간)를 행 끝으로.
    flex-shrink:0 로 좁은 폭에서도 안 뭉개짐, margin-left:auto 로 우측 정렬. */
 .latest-feed .rail-cad{margin-left:auto;flex-shrink:0;font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:10.5px;
@@ -299,4 +302,8 @@ padding:20px 16px 14px}
 .dash-cta{flex-direction:column;align-items:flex-start;gap:5px;line-height:1.4}
 .dash-cta .dash-sub{margin-left:0;font-size:12px}
 .sec-head{font-size:13.5px;line-height:1.45}
+/* 🆕 읽을거리: 모바일에서 제목 두 줄 깨짐 완화(보드 2026-06-29) — 글꼴·여백 한 단계 더 축소. */
+.latest-feed li{font-size:12px;gap:6px;padding:6px 0}
+.latest-feed .chip{font-size:12px}
+.latest-feed .when{font-size:10.5px}
 }

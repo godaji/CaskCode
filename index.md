@@ -46,7 +46,7 @@ robots: "index,follow"
 <ul class="latest-feed">
 {% for p in _editorial limit: 5 %}
   <li><span class="chip">{% if p.categories contains 'dev' or p.categories contains 'data' %}💻{% else %}🥃{% endif %}</span>
-  <span class="when">{{ p.date | date: "%Y-%m-%d" }}</span>
+  <span class="when">{{ p.date | date: "%-m/%-d" }}</span>
   <a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
 {% endfor %}
 </ul>
