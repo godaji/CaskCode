@@ -241,17 +241,24 @@ padding:11px 14px;background:linear-gradient(180deg,rgba(255,211,78,.06),rgba(15
 .gapc{display:block;color:var(--txt);text-decoration:none}
 .gapc:hover{text-decoration:none}
 .gapc-track{list-style:none;margin:0;padding:0}
-.gapc-item{display:none;min-height:2.7em;align-items:center;font-size:13px;line-height:1.5;
-color:var(--txt);word-break:keep-all;overflow-wrap:anywhere}
-.gapc-track .gapc-item:first-child{display:flex}
-.gapc-track.gapc-on .gapc-item{display:none}
-.gapc-track.gapc-on .gapc-item.gapc-cur{display:flex;animation:gapcfade .5s ease}
+/* 회전=세로 전환(한 줄씩), 긴 줄은 marquee=가로 흐름(보드 2026-06-29). 기본 1번째 줄 정적. */
+.gapc-item{display:none;font-size:13px;line-height:1.6;color:var(--txt)}
+.gapc-txt{display:inline-block;white-space:nowrap}
+.gapc-track .gapc-item:first-child{display:block;white-space:normal}
+.gapc-track .gapc-item:first-child .gapc-txt{white-space:normal}
+.gapc-track.gapc-on .gapc-item{display:none;white-space:nowrap;overflow:hidden}
+.gapc-track.gapc-on .gapc-item.gapc-cur{display:block;animation:gapcfade .5s ease}
+.gapc-track.gapc-on .gapc-item.gapc-marq .gapc-txt{animation:gapcmarq var(--marq-dur,8s) ease-in-out infinite alternate}
 @keyframes gapcfade{from{opacity:0}to{opacity:1}}
+@keyframes gapcmarq{from{transform:translateX(0)}to{transform:translateX(var(--marq-shift,0))}}
 .gapc-more{display:inline-block;margin-top:5px;font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:11.5px;
 font-weight:700;color:var(--gold)}
+/* 모션 최소화 시 회전·marquee 끄고 전체 정적 목록(줄바꿈 허용·글 안 숨김 — CLAUDE.md). */
 @media (prefers-reduced-motion:reduce){
-.gapc-item,.gapc-track.gapc-on .gapc-item{display:flex !important;animation:none;min-height:0;
-padding:5px 0;border-top:1px solid rgba(42,46,56,.55)}
+.gapc-item,.gapc-track.gapc-on .gapc-item{display:block !important;white-space:normal !important;
+overflow:visible !important;animation:none !important;padding:5px 0;
+border-top:1px solid rgba(42,46,56,.55)}
+.gapc-txt{white-space:normal !important;animation:none !important;transform:none !important}
 .gapc-track .gapc-item:first-child{border-top:0}
 }
 /* ── 홈 구매상황 2대 축 패널(🛫 면세점 / 🛒 마트) — CMPA-673 보드 2026-06-28 ──
