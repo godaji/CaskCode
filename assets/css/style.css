@@ -54,7 +54,9 @@ background:rgba(0,0,0,.25);border-bottom:1px solid var(--line)}
 .tdot{width:12px;height:12px;border-radius:50%}
 .tdot.r{background:#f86158}.tdot.y{background:#fbbf2d}.tdot.g{background:#2acb45}
 .titlebar .name{margin-left:8px;font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:12px;color:var(--sub)}
-.post{padding:22px 24px 26px}
+/* 본문 글꼴 — 보드 2026-06-29 "글 폰트가 너무 크다" → 본문(16px 상속)을 14.5px 로 축소.
+   표(13.5)·blockquote(13.5)·제목(h1~h3 별도)·홈 카드(explicit)는 각자 크기 유지. */
+.post{padding:22px 24px 26px;font-size:14.5px;line-height:1.62}
 .sub{color:var(--sub);font-size:12.5px}
 .post h1{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:22px;margin:18px 0 6px;color:var(--txt)}
 .post h2{font-family:"JetBrains Mono","D2Coding","SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:16px;color:var(--amber);margin:26px 0 10px}
