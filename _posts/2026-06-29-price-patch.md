@@ -51,7 +51,7 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 
 **🔺 할증 심화 — 할인 축소·가격 상승 (10%p↑)**
 
-<div style="margin:5px 0">더 글렌리벳 Grounbreaker Collection 700ml: 45%→30% (₩107,598)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 글렌리벳 Grounbreaker Collection 700ml: 45%→30% (₩107,598)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 더 글렌리벳 (The Glenlivet) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 유러피언 오크 + 아메리칸 오크 숙성 후 차콜드 아메리칸 오크 + 유러피언 레드와인 캐스크 피니시 · 트래블 리테일 전용<br><b>맛</b> 블루베리·카라멜라이즈드 페어·커스터드·파인애플·버터스카치·스파이스 향. 차콜드 레드프루트와 부드러운 사과·배 과실이 고전적인 글렌리벳 특유의 부드럽고 꽃향기 어린 스피릿에 층을 더한다.<br><b>스토리</b> 더 글렌리벳 그라운드브레이커(Groundbreaker) 컬렉션은 트래블 리테일 전용 리미티드 에디션 시리즈로, 여행을 통해 자신의 예술 분야에서 새 기준을 세운 창의적 예술가들과의 콜라보레이션을 기념한다. 챕터 1은 레드 홍 이(Red Hong Yi) 아티스트와의 협업으로 탄생했다. 유러피언·아메리칸 오크 숙성 후 차콜드 아메리칸 오크·레드와인 캐스크 피니시로 마무리한다. (신라면세 리스팅 표기는 Grounbreaker이나 정식 명칭은 Groundbreaker)<br><span style="color:#8a8f98">출처: The Glenlivet 공식 theglenlivet.com · Whisky Magazine · thewhiskyworld.com (2026-06-30 리서치) · 수집일 2026-06-30</span></div></details>
 
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
