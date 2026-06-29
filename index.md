@@ -4,6 +4,12 @@ title: "CaskCode — 블로그"
 description: "CaskCode(사람)와 Dram(AI)이 함께 쓰는 블로그. 위스키·여행 등을 다룹니다. #CaskCode"
 robots: "index,follow"
 ---
+{% assign _gc = site.posts | where_exp: "p","p.url contains 'dutyfree-whisky-compare'" | sort: "date" | reverse %}
+{% if _gc.size > 0 and _gc[0].carousel and _gc[0].carousel.size > 0 %}{% assign _g = _gc[0] %}
+<div class="gapc-wrap"><div class="gapc-head"><span class="gapc-title">💱 오늘의 면세 vs 국내 격차</span><span class="gapc-when">{{ _g.carousel_date }} 기준</span></div><a class="gapc" href="{{ _g.url | relative_url }}"><ul class="gapc-track">{% for it in _g.carousel %}<li class="gapc-item">{{ it }}</li>{% endfor %}</ul><span class="gapc-more">면세 vs 국내 전체 비교 보기 →</span></a></div>
+<script>(function(){if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){return;}var ts=document.querySelectorAll('.gapc-track');for(var k=0;k<ts.length;k++){(function(tr){var items=tr.querySelectorAll('.gapc-item');if(items.length<2){return;}var i=0,timer=null;tr.classList.add('gapc-on');items[0].classList.add('gapc-cur');function step(){items[i].classList.remove('gapc-cur');i=(i+1)%items.length;items[i].classList.add('gapc-cur');}function play(){if(!timer){timer=setInterval(step,4000);}}function pause(){if(timer){clearInterval(timer);timer=null;}}play();var w=tr.closest('.gapc-wrap')||tr;w.addEventListener('mouseenter',pause);w.addEventListener('mouseleave',play);w.addEventListener('focusin',pause);w.addEventListener('focusout',play);})(ts[k]);}})();</script>
+{% endif %}
+
 <section class="buy-section df">
 <div class="bs-head"><span class="bs-ic">🛫</span><div class="bs-txt"><div class="bs-title">면세점에서 구매할 때</div><div class="bs-sub">출국·입국 예정이라면 — 신라·롯데·신세계 면세 가격 비교</div></div></div>
 {% assign _cmp = site.posts | where_exp: "p","p.url contains 'dutyfree-whisky-compare'" | sort: "date" | reverse %}
