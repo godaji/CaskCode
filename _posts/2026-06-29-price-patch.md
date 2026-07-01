@@ -5,17 +5,17 @@ date: "2026-06-29 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 7
+breakthroughs: 2
 prev_date: "2026-06-28"
-latest_date: "2026-07-01"
+latest_date: "2026-07-02"
 weekly_start: "2026-06-29"
 weekly_end: "2026-07-05"
-days: 3
+days: 4
 hotdeals: ["보모어 22년 700ml — 면세 ₩337,181 · 73%↓", "보모어 14년 700ml — 면세 ₩57,464 · 44%↓", "벤리악 트리플 디스틸드 25년 700ml — 면세 ₩441,654 · 42%↓", "보모어 19년 700ml — 면세 ₩172,393 · 42%↓", "보모어 16년 700ml — 면세 ₩92,957 · 38%↓"]
 hotdeals_count: 16
 rare_drops: []
 rare_drops_count: 0
-description: "면세 위스키 가격 주간 로그 6/29~7/5 — 이번주 핫딜 16종 · 오랜만의 큰 인하 0종 · 최신 2026-07-01. CaskCode"
+description: "면세 위스키 가격 주간 로그 6/29~7/5 — 이번주 핫딜 16종 · 오랜만의 큰 인하 0종 · 최신 2026-07-02. CaskCode"
 robots: "noindex,nofollow"
 ---
 
@@ -33,16 +33,50 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 보모어 19년 700ml | 면세 **₩172,393** · 국내최저 [₩295,000 🔗](https://dailyshot.co/m/item/25813)<br>절약 **−₩122,607 (42%↓)** · 할인 50%→45% |
 | 보모어 16년 700ml | 면세 **₩92,957** · 국내최저 [₩150,000 🔗](https://dailyshot.co/m/item/25812)<br>절약 **−₩57,043 (38%↓)** · 할인 50%→45% |
 | 잭다니엘 싱글배럴 100프루프 700ml | 면세 **₩54,022** · 국내최저 [₩85,000 🔗](https://dailyshot.co/m/item/4846)<br>절약 **−₩30,978 (36%↓)** · 할인 45%→49% |
+| 발베니 Balvenie 18년 Sherry Cask 700ml | 면세 **₩225,081** · 국내최저 [₩349,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩123,919 (36%↓)** · 할인 42%→48% |
 | 발베니 Balvenie 15년 Madeira Cask 700ml | 면세 **₩132,215** · 국내최저 [₩205,000 🔗](https://dailyshot.co/m/item/7409)<br>절약 **−₩72,785 (36%↓)** · 할인 49%→48% |
-| 발베니 Balvenie 18년 Sherry Cask 700ml | 면세 **₩248,803** · 국내최저 [₩349,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩100,197 (29%↓)** · 할인 48%→42% |
 | 글렌피딕 21년 700ml | 면세 **₩214,984** · 국내최저 [₩289,000 🔗](https://dailyshot.co/m/item/3165)<br>절약 **−₩74,016 (26%↓)** · 할인 49%→47% |
 | 시바스리갈 18년산 700ml | 면세 **₩80,923** · 국내최저 [₩104,900 🔗](https://dailyshot.co/m/item/30214)<br>절약 **−₩23,977 (23%↓)** · 할인 43%→40% |
 | 글렌드로낙 10년 1000ml | 면세 **₩74,148** · 국내최저 [₩95,000 🔗](https://dailyshot.co/m/item/5138)<br>절약 **−₩20,852 (22%↓)** · 할인 48%→40% |
 | 라가불린 16년 700ml | 면세 **₩108,628** · 국내최저 [₩135,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩26,372 (20%↓)** · 할인 48%→42% |
 | 글렌파클라스 25년 700ml | 면세 **₩348,474** · 국내최저 [₩430,000 🔗](https://dailyshot.co/m/item/4348)<br>절약 **−₩81,526 (19%↓)** · 할인 41%→40% |
-| 글렌알라키 15년 (24RB) 700ml | 면세 **₩126,803** · 국내최저 [₩147,900 🔗](https://dailyshot.co/m/item/21704)<br>절약 **−₩21,097 (14%↓)** · 할인 52% |
 | 우드포드 리저브 Kentucky Derby 적마 에디션 1000ml | 면세 **₩47,667** · 국내최저 [₩55,000 🔗](https://dailyshot.co/m/item/10438)<br>절약 **−₩7,333 (13%↓)** · 할인 41%→49% |
 | 벤리악 Quarter Cask Classic 1000ml | 면세 **₩55,611** · 국내최저 [₩59,900 🔗](https://dailyshot.co/m/item/4221)<br>절약 **−₩4,289 (7%↓)** · 할인 54%→49% |
+| 글렌알라키 15년 (24RB) 700ml | 면세 **₩138,711** · 국내최저 [₩147,900 🔗](https://dailyshot.co/m/item/21704)<br>절약 **−₩9,189 (6%↓)** · 할인 52%→47% |
+
+---
+
+## 📅 7월 2일 (목) — 돌파 2건
+
+*직전 2026-07-01 → 최신 2026-07-02* · *환율 ₩1,548.63 (기준일 2026-07-01)*
+
+### 📊 한눈에 — 할인율 변동 요약
+
+_각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 2건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">발베니 Balvenie 18년 Sherry Cask 700ml: 42%→48% (₩225,081)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 발베니 (Balvenie) · 스페이사이드<br><b>도수</b> 43% (GTR PX 셰리 캐스크)<br><b>캐스크</b> 엑스-버번 배럴 숙성 후 페드로 히메네스(PX) 셰리 캐스크 피니시 · GTR 면세 전용<br><b>맛</b> 건포도·말린 과일·오크·정향 향. 신 포도껍질·시트러스·무화과에 생기있는 오크와 오일리한 꿀 단맛. PX가 더한 다크프루트·꿀무화과·은은한 스파이스의 긴 피니시.<br><b>스토리</b> 발베니는 더프타운에서 자체 플로어 몰팅·구리 세공·쿠퍼리지를 유지하는 '핸드메이드' 정신의 증류소. 18년 PX 셰리 캐스크는 글로벌 면세(GTR) 전용 라인업으로 코어 12·14·21년과 함께 면세 매대를 채운다.<br><span style="color:#8a8f98">출처: 공식 thebalvenie.com · World Duty Free · Secret Whiskey Society (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">BLADNOCH 16YO 700ml: 45%→46% (₩154,708)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 블라드노흐 (Bladnoch) · 스코틀랜드 로우랜드<br><b>도수</b> 46.7%<br><b>캐스크</b> 올로로소 셰리 캐스크 숙성<br><b>맛</b> 올로로소 셰리가 뚜렷해 건과일·향신료·다크초콜릿·태운 캐러멜·무화과·건포도가 풍부하고, 바디는 비교적 가벼우며 실키한 질감에 오렌지 제스트·담뱃잎 뉘앙스가 이어진다.<br><b>스토리</b> 로우랜드 최남단 갤러웨이의 블라드노흐 증류소(1817년 설립, 현존 최고령급)에서 만든 16년 싱글몰트로, 올로로소 셰리 캐스크에서만 숙성한 셰리 중심 표현.<br><span style="color:#8a8f98">출처: Bladnoch 공식 · Hard To Find Whisky · A Scot on Scotch (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌알라키 15년 (24RB) 700ml: 52%→47% (₩138,711)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌알라키 (GlenAllachie) · 스페이사이드<br><b>도수</b> 46% (논칠필터·무착색)<br><b>캐스크</b> 페드로 히메네스(PX) 셰리·올로로소 셰리·버진 오크 캐스크 숙성 (2024 리배치 24RB)<br><b>맛</b> 다크체리·골든시럽·달큰한 스파이스·토피·글레이즈드 무화과·헤이즐넛 향. 히더 꿀·오렌지필·코코아·생강에 카라멜라이즈드 흑설탕의 피니시. 진한 마호가니 빛에 시나몬·바닐라 토피·다크초콜릿이 겹겹이.<br><b>스토리</b> 글렌알라키는 1967년 설립된 스페이사이드 증류소로, 2017년 빌리 워커(전 벤리악·글렌드로낙) 팀이 인수해 셰리 캐스크 중심으로 재편했다. 코어 15년은 PX·올로로소 셰리와 버진 오크에서 숙성해 46%·논칠필터·무착색으로 병입하는 셰리 가성비 대표 표현. (24RB = 2024 리배치)<br><span style="color:#8a8f98">출처: 공식 theglenallachie.com · The Whisky Exchange · Words of Whisky (2026-06-12 리서치) · 수집일 2026-06-12</span></div></details></div></details>
+
+### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
+
+| 🏆 위스키 | 상세 |
+|---|---|
+| 발베니 Balvenie 18년 Sherry Cask 700ml | 면세 **₩225,081** · 국내최저 [₩349,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩123,919 (36%↓)** · 할인 42%→48% |
+| 글렌알라키 15년 (24RB) 700ml | 면세 **₩138,711** · 국내최저 [₩147,900 🔗](https://dailyshot.co/m/item/21704)<br>절약 **−₩9,189 (6%↓)** · 할인 52%→47% |
+
+### 🆕 신규 입고 (1)
+
+| 위스키 | 현재 KRW |
+|---|--:|
+| 이에이치 테일러 스몰배치 750ml | ₩123,581 |
+
+### 🆕 신규 술 설명 — 이름을 눌러 펼치기
+
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">🥃 이에이치 테일러 스몰배치 750ml · 50% (100 proof · Bottled-in-Bond)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 버팔로 트레이스 (Buffalo Trace) · 미국 켄터키<br><b>도수</b> 50% (100 proof · Bottled-in-Bond)<br><b>캐스크</b> 신축 차링 아메리칸 화이트 오크 버번 캐스크 · 테일러가 지은 100년 된 워런하우스 C 숙성 · 칠필터 · 단일 증류시즌 4년 이상(BiB)<br><b>맛</b> 캐러멜콘·버터스카치 향. 입안은 말린 과일·은은한 리코리스에 부드러운 질감, 후추·담뱃잎의 절제된 스파이스. 바닐라 파운드케이크·블랙체리·다크 레드프루트가 이어지고, 혀끝의 크리미함이 입 뒤쪽으로 퍼지는 스파이스와 가슴이 따뜻해지는 긴 피니시로 마무리.<br><b>스토리</b> 버번 산업의 '아버지'로 불리는 에드먼드 헤인스 테일러 주니어 대령(Col. E.H. Taylor Jr.)을 기리는 버팔로 트레이스의 프리미엄 라인. 테일러가 직접 지은 100년 된 석조 워런하우스에서 숙성하고, 단일 증류시즌·단일 증류자가 만든 술만 100proof로 병입하는 Bottled-in-Bond(1897년 보틀드인본드법) 켄터키 스트레이트 버번. 통상 7~8년 숙성분으로 알려져 있으며 병입 전 칠필터.<br><span style="color:#8a8f98">출처: 공식 buffalotracedistillery.com · Sazerac · The Bourbon Culture (2026-06-29 리서치) · 수집일 2026-06-29</span></div></details>
+
+*국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
+
 
 ---
 

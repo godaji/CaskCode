@@ -11,24 +11,22 @@ latest_date: "2026-06-21"
 weekly_start: "2026-06-15"
 weekly_end: "2026-06-21"
 days: 6
-hotdeals: ["잭다니엘 젠틀맨 잭 200ml — 면세 ₩11,614 · 76%↓", "시바스리갈 12년 200ml — 면세 ₩11,832 · 76%↓", "더 글렌리벳 19년 700ml — 면세 ₩140,397 · 63%↓", "벤리악 트리플 디스틸드 25년 700ml — 면세 ₩360,478 · 53%↓", "벤리악 25년 1997 캐스크 에디션 700ml — 면세 ₩385,288 · 49%↓"]
-hotdeals_count: 64
+hotdeals: ["더 글렌리벳 19년 700ml — 면세 ₩140,397 · 63%↓", "벤리악 트리플 디스틸드 25년 700ml — 면세 ₩360,478 · 53%↓", "벤리악 25년 1997 캐스크 에디션 700ml — 면세 ₩385,288 · 49%↓", "듀어스 25년 750ml — 면세 ₩237,747 · 46%↓", "부쉬밀 버번 캐스크 15년 700ml — 면세 ₩82,749 · 44%↓"]
+hotdeals_count: 62
 rare_drops: []
 rare_drops_count: 0
-description: "면세 위스키 가격 주간 로그 6/15~6/21 — 이번주 핫딜 64종 · 오랜만의 큰 인하 0종 · 최신 2026-06-21. CaskCode"
+description: "면세 위스키 가격 주간 로그 6/15~6/21 — 이번주 핫딜 62종 · 오랜만의 큰 인하 0종 · 최신 2026-06-21. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-06-15 ~ 2026-06-21.
 
-## 🔥 이번주 핫딜 (64종)
+## 🔥 이번주 핫딜 (62종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
 | 🏆 위스키 | 상세 |
 |---|---|
-| 잭다니엘 젠틀맨 잭 200ml | 면세 **₩11,614** · 국내최저 [₩49,000 🔗](https://dailyshot.co/m/item/12152)<br>절약 **−₩37,386 (76%↓)** · 할인 10%→50% |
-| 시바스리갈 12년 200ml | 면세 **₩11,832** · 국내최저 [₩49,900 🔗](https://dailyshot.co/m/item/35748)<br>절약 **−₩38,068 (76%↓)** · 할인 5%→30% |
 | 더 글렌리벳 19년 700ml | 면세 **₩140,397** · 국내최저 [₩380,000 🔗](https://dailyshot.co/m/item/34345)<br>절약 **−₩239,603 (63%↓)** · 할인 5%→30% |
 | 벤리악 트리플 디스틸드 25년 700ml | 면세 **₩360,478** · 국내최저 [₩760,000 🔗](https://dailyshot.co/m/item/9889)<br>절약 **−₩399,522 (53%↓)** · 할인 5%→38% |
 | 벤리악 25년 1997 캐스크 에디션 700ml | 면세 **₩385,288** · 국내최저 [₩760,000 🔗](https://dailyshot.co/m/item/9889)<br>절약 **−₩374,712 (49%↓)** · 할인 5%→48% |
@@ -113,7 +111,7 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 
 ---
 
-## 📅 6월 20일 (토) — 돌파 56건
+## 📅 6월 20일 (토) — 돌파 54건
 
 *직전 2026-06-19 → 최신 2026-06-20* · *환율 ₩1,536.24 (기준일 2026-06-19)*
 
@@ -216,7 +214,7 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">글렌글라사 12yo 700ml: 5%→45% (₩53,327)</div>
 <div style="margin:5px 0">글렌스코시아 Campbeltown 1832 1000ml: 10%→50% (₩48,779)</div>
 <div style="margin:5px 0">글렌스코시아 Crosshill Loch 1000ml: 10%→50% (₩73,555)</div>
-<div style="margin:5px 0">더 글렌리벳 Grounbreaker Collection 700ml: 5%→45% (₩84,647)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 글렌리벳 Grounbreaker Collection 700ml: 5%→45% (₩84,647)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 더 글렌리벳 (The Glenlivet) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 유러피언 오크 + 아메리칸 오크 숙성 후 차콜드 아메리칸 오크 + 유러피언 레드와인 캐스크 피니시 · 트래블 리테일 전용<br><b>맛</b> 블루베리·카라멜라이즈드 페어·커스터드·파인애플·버터스카치·스파이스 향. 차콜드 레드프루트와 부드러운 사과·배 과실이 고전적인 글렌리벳 특유의 부드럽고 꽃향기 어린 스피릿에 층을 더한다.<br><b>스토리</b> 더 글렌리벳 그라운드브레이커(Groundbreaker) 컬렉션은 트래블 리테일 전용 리미티드 에디션 시리즈로, 여행을 통해 자신의 예술 분야에서 새 기준을 세운 창의적 예술가들과의 콜라보레이션을 기념한다. 챕터 1은 레드 홍 이(Red Hong Yi) 아티스트와의 협업으로 탄생했다. 유러피언·아메리칸 오크 숙성 후 차콜드 아메리칸 오크·레드와인 캐스크 피니시로 마무리한다. (신라면세 리스팅 표기는 Grounbreaker이나 정식 명칭은 Groundbreaker)<br><span style="color:#8a8f98">출처: The Glenlivet 공식 theglenlivet.com · Whisky Magazine · thewhiskyworld.com (2026-06-30 리서치) · 수집일 2026-06-30</span></div></details>
 <div style="margin:5px 0">맥네어스 럼릭 12년 700ml: 10%→50% (₩82,072)</div>
 <div style="margin:5px 0">맥네어스 럼릭 21년 700ml: 10%→50% (₩245,441)</div>
 <div style="margin:5px 0">몰트락 20년 750ml: 5%→45% (₩232,778)</div>
@@ -231,12 +229,9 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">우드포드 리저브 Double XO 700ml: 5%→45% (₩148,132)</div>
 <details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">잭다니엘 본디드 1000ml: 5%→45% (₩40,630)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 잭 다니엘스 (Jack Daniel's) · 미국(테네시)<br><b>도수</b> 50% (100 프루프)<br><b>캐스크</b> 뉴 차르드 오크 배럴(보틀드 인 본드)<br><b>맛</b> 달콤한 캐러멜·바나나 넛 브레드의 디저트 같은 향에 시나몬 스파이스가 따른다. 팔레트는 캐러멜·진한 오크·바닐라·베이킹 스파이스가 층을 이루고 은은한 스모크가 더해진다. 피니시는 미디엄으로 오크·토피와 민트·시나몬·생강의 스파이스가 남는다.<br><b>스토리</b> 잭 다니엘스 본디드는 보틀드 인 본드 규정(단일 증류소·단일 시즌·최소 4년·100 프루프)에 따라 50% 도수로 병입한 표현으로, 2022년 슈퍼 프리미엄 라인 확장으로 출시됐다.<br><span style="color:#8a8f98">출처: The Whisky Exchange · Breaking Bourbon · Whisky Advocate (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">잭다니엘 본디드 라이 1000ml: 5%→45% (₩40,630)</div>
-<div style="margin:5px 0">잭다니엘 블랙 라벨 200ml: 5%→45% (₩10,158)</div>
 <div style="margin:5px 0">잭다니엘 시나트라 셀렉트 1000ml: 5%→45% (₩143,899)</div>
 <div style="margin:5px 0">잭다니엘 싱글배럴 100프루프 700ml: 5%→45% (₩57,560)</div>
 <details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">잭다니엘 젠틀맨 잭 1000ml: 5%→45% (₩38,937)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 잭 다니엘스 (Jack Daniel's) · 미국(테네시)<br><b>도수</b> 40%<br><b>캐스크</b> 뉴 차르드 오크 배럴(차콜 더블 멜로잉)<br><b>맛</b> 꿀·라이 크래커·바닐라·캐러멜의 향이 부드럽게 난다. 팔레트는 매우 매끄러운 바닐라에 견과류·후추·흑설탕·메이플·시나몬·가벼운 과일이 어우러진다. 피니시는 부드럽고 버터 같으며 오크는 약하다.<br><b>스토리</b> 젠틀맨 잭은 잭 다니엘스의 '더블 멜로잉' 표현으로, 배럴에 채우기 전과 병입 전 두 번 차콜 여과를 거쳐 한층 부드러운 풍미를 낸다.<br><span style="color:#8a8f98">출처: 공식 사이트 · Master of Malt · The Whiskey Jug (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
-<div style="margin:5px 0">잭다니엘 젠틀맨 잭 200ml: 10%→50% (₩11,614)</div>
-<div style="margin:5px 0">잭다니엘 테네시 허니 200ml: 5%→45% (₩10,158)</div>
 <div style="margin:5px 0">켄터키아울 더 와이즈맨 라이 버번 위스키 700ml: 5%→45% (₩60,099)</div>
 <div style="margin:5px 0">켄터키아울 컨피스케이티드 버번 위스키 700ml: 5%→45% (₩132,049)</div>
 <div style="margin:5px 0">크라이겔라키 13년 1000ml: 5%→45% (₩71,103)</div>
@@ -328,7 +323,6 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">와일드무어 30년 트로피칼 코스트 700ml: 5%→35% (₩385,055)</div>
 <div style="margin:5px 0">조니워커 블루 1000ml: 5%→35% (₩299,707)</div>
 <div style="margin:5px 0">조니워커 블루 750ml: 5%→35% (₩225,277)</div>
-<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 블루라벨 200ml: 5%→35% (₩63,514)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 (Johnnie Walker) · 블렌디드(스코틀랜드)<br><b>도수</b> 40%<br><b>캐스크</b> 다양한 캐스크(엄선된 희소 원액 블렌드)<br><b>맛</b> 바닐라·꿀·오렌지 껍질·꽃 향에 오크 스파이스와 배경의 옅은 스모크가 은은히 더해진다. 팔레트는 오크·바닐라·꿀·오렌지 시트러스에 말린 과일·헤이즐넛·다크초콜릿·캐러멜이 어우러진다. 질감은 매우 부드럽고 기름지며 길게 이어진다.<br><b>스토리</b> 조니워커 블루 라벨은 디아지오의 울트라 프리미엄 블렌디드 스카치로, 희소하고 잘 숙성된 원액을 엄선해 블렌딩한다.<br><span style="color:#8a8f98">출처: 공식 정보 · The Whiskey Wash · 마스터 블렌더 노트 (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">조니워커 블루라벨 500ml: 5%→35% (₩158,785)</div>
 <div style="margin:5px 0">조니워커 엑스오디네어 750ml: 5%→35% (₩260,011)</div>
 <details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 킹조지 5세 500ml: 5%→35% (₩436,660)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 (Johnnie Walker) · 블렌디드(스코틀랜드)<br><b>도수</b> 43%<br><b>캐스크</b> 다양한 캐스크(킹조지 5세 시대 가동 증류소 원액 블렌드)<br><b>맛</b> 옅은 스모크에 신선한 과일·맥아·건포도·무화과·시나몬, 그리고 바닐라·잘 익은 사과·구운 아몬드·밀크초콜릿이 더해진 향. 팔레트는 다크초콜릿·샌달우드·절제된 피트 스모크·단 말린 과일이 층층이 쌓이고 후추·생강·넛맥 스파이스가 따른다. 벨벳처럼 풍성한 질감, 메이플 시럽 뉘앙스의 길고 따뜻한 피니시.<br><b>스토리</b> 블루라벨 프레스티지 라인(500ml). 조지 5세가 조니워커에 로열 워런트를 수여한 1934년을 기려 그 시대 가동 증류소들의 희소 원액으로 블렌딩한다.<br><span style="color:#8a8f98">출처: 공식 사이트 · Difford's Guide · Whiskybase · 수집일 2026-06-20</span></div></details>
@@ -370,12 +364,10 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <div style="margin:5px 0">시그나토리 글렌리벳 2006 캐스크 스트렝스 18년 700ml: 5%→30% (₩260,274)</div>
 <div style="margin:5px 0">시그나토리 로얄브라클라 2008 캐스크 스트렝스 16년 #2 700ml: 5%→30% (₩199,795)</div>
 <details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">시바스리갈 12년 1000ml: 5%→30% (₩51,629)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 시바스리갈 (Chivas Regal) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 엑스-버번 + 엑스-셰리 캐스크<br><b>맛</b> 야생 허브·헤더·과수원 과일의 향에 꿀이 어우러진다. 팔레트는 꿀·바닐라·잘 익은 사과와 배가 둥글고 크리미하게 퍼지며 헤이즐넛·버터스카치 풍미가 받친다. 피니시는 따뜻하고 길게 이어진다.<br><b>스토리</b> 시바스리갈은 페르노리카 산하의 블렌디드 스카치로, 스페이사이드의 스트라스아일라 증류소를 핵심으로 한다. 12년은 최소 12년 숙성한 기준 블렌드다.<br><span style="color:#8a8f98">출처: 공식 사이트 · The Whiskey Wash · HTFW (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
-<div style="margin:5px 0">시바스리갈 12년 200ml: 5%→30% (₩11,832)</div>
 <div style="margin:5px 0">시바스리갈 엑스트라 럼 캐스크 셀렉션 1000ml: 5%→30% (₩62,385)</div>
 <div style="margin:5px 0">시크릿 스페이사이드 Glen Keith 25년 700ml: 5%→30% (₩410,390)</div>
 <div style="margin:5px 0">시크릿 스페이사이드 Longmorn 23년 700ml: 5%→30% (₩313,193)</div>
 <div style="margin:5px 0">와일드터키 마스터스 킵 보야지 750ml: 5%→30% (₩187,916)</div>
-<div style="margin:5px 0">잭다니엘 FOB Set 250ml: 5%→30% (₩36,719)</div>
 <div style="margin:5px 0">쿠라 럼 캐스크 700ml: 20%→44% (₩116,139)</div>
 <div style="margin:5px 0">마르스 몰티지 코스모 700ml: 20%→42% (₩122,112)</div>
 <div style="margin:5px 0">마르스 이와이 750ml: 20%→42% (₩57,517)</div>
@@ -401,7 +393,6 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 <details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">카발란 콘서트마스터 1000ml: 20%→40% (₩81,113)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 카발란 (Kavalan) · 대만<br><b>도수</b> 40%<br><b>캐스크</b> 아메리칸 오크 숙성 + 포트 캐스크 피니시<br><b>맛</b> 붉은 와인·포트의 향에 초콜릿·라즈베리 등 베리류와 꿀·열대과일이 어우러진다. 팔레트는 붉은 베리·달콤한 사과·시나몬이 생강·말린 과일·바닐라와 균형을 이룬다. 피니시는 미디엄으로 견과류와 스파이스가 남는다.<br><b>스토리</b> 카발란은 대만 이란현에 2006년 설립된 대만 최초의 증류소다. 콘서트마스터는 아메리칸 오크 숙성 후 루비·토니·빈티지 포트 캐스크에서 피니시한 싱글 몰트다.<br><span style="color:#8a8f98">출처: The Whisky Exchange · Master of Malt · Whisky Magazine (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details>
 <div style="margin:5px 0">카발란 클래식 1000ml: 20%→40% (₩100,470)</div>
 <div style="margin:5px 0">카발란 포트 솔리스트 1000ml: 20%→40% (₩200,940)</div>
-<div style="margin:5px 0">폴존 미니어처 세트 50ml*5: 10%→30% (₩37,745)</div>
 <details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">시바스리갈 25년 700ml: 5%→23% (₩460,418)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 시바스 브라더스 · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 최소 25년 숙성 · 아메리칸·유러피언 오크 캐스크<br><b>맛</b> 몰트와 베리·감초·라즈베리·달콤한 오트밀 향에 오렌지·복숭아·마지팬·견과류가 어우러진 풍성한 향. 입에서는 부드럽게 시작해 우아한 토피와 버터, 초콜릿 오렌지, 퐁당 크림 같은 부드러움이 빌드업되고, 버터스카치의 둥글고 호화로운 여운으로 마무리된다.<br><b>스토리</b> 1909년 처음 선보인 시바스 25년은 시바스 리갈 명성의 출발점이 된 럭셔리 블렌드로, 2007년 마스터 블렌더 콜린 스콧이 옛 레시피를 복원해 재출시했다. 최소 25년 이상 숙성한 몰트·그레인만을 결혼시킨 한정 수량 프레스티지 보틀로, 짐 머리 위스키 바이블에서 블렌디드 스카치 부문 올해의 술로 선정된 이력이 있다.<br><span style="color:#8a8f98">출처: Chivas 공식·The Whisky Exchange·Caskers (2026-06-25 리서치) · 수집일 2026-06-25</span></div></details>
 <div style="margin:5px 0">글렌알라키 17Y 미즈나라 700mL: 5%→22% (₩454,757)</div>
 <div style="margin:5px 0">글렌알라키 21년 배치5 700mL: 5%→20% (₩788,264)</div>
@@ -448,8 +439,6 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 | 글렌알라키 18Y(24RB) 700mL | 면세 **₩280,808** · 국내최저 [₩324,000 🔗](https://dailyshot.co/m/item/21708)<br>절약 **−₩43,192 (13%↓)** · 할인 5%→33% |
 | 카발란 포트 솔리스트 1000ml | 면세 **₩200,940** · 국내최저 [₩242,000 🔗](https://dailyshot.co/m/item/4815)<br>절약 **−₩41,060 (17%↓)** · 할인 20%→40% |
 | 발렌타인 21년 500ml | 면세 **₩130,147** · 국내최저 [₩169,900 🔗](https://dailyshot.co/m/item/7130)<br>절약 **−₩39,753 (23%↓)** · 할인 5%→30% |
-| 시바스리갈 12년 200ml | 면세 **₩11,832** · 국내최저 [₩49,900 🔗](https://dailyshot.co/m/item/35748)<br>절약 **−₩38,068 (76%↓)** · 할인 5%→30% |
-| 잭다니엘 젠틀맨 잭 200ml | 면세 **₩11,614** · 국내최저 [₩49,000 🔗](https://dailyshot.co/m/item/12152)<br>절약 **−₩37,386 (76%↓)** · 할인 10%→50% |
 | 라가불린 10년 700ml | 면세 **₩81,013** · 국내최저 [₩115,000 🔗](https://dailyshot.co/m/item/4714)<br>절약 **−₩33,987 (30%↓)** · 할인 5%→42% |
 | 글렌드로낙 10년 1000ml | 면세 **₩64,215** · 국내최저 [₩95,000 🔗](https://dailyshot.co/m/item/5138)<br>절약 **−₩30,785 (32%↓)** · 할인 5%→48% |
 | 라가불린 16년 700ml | 면세 **₩105,049** · 국내최저 [₩135,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩29,951 (22%↓)** · 할인 5%→44% |
