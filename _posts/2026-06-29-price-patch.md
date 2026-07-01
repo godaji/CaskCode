@@ -5,23 +5,23 @@ date: "2026-06-29 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 0
+breakthroughs: 7
 prev_date: "2026-06-28"
-latest_date: "2026-06-30"
+latest_date: "2026-07-01"
 weekly_start: "2026-06-29"
 weekly_end: "2026-07-05"
-days: 2
-hotdeals: ["시바스리갈 18년 200ml — 면세 ₩23,909 · 77%↓", "보모어 22년 700ml — 면세 ₩337,181 · 73%↓", "보모어 14년 700ml — 면세 ₩57,464 · 44%↓", "보모어 19년 700ml — 면세 ₩172,393 · 42%↓", "보모어 16년 700ml — 면세 ₩92,957 · 38%↓"]
-hotdeals_count: 11
+days: 3
+hotdeals: ["시바스리갈 18년 200ml — 면세 ₩23,909 · 77%↓", "보모어 22년 700ml — 면세 ₩337,181 · 73%↓", "보모어 14년 700ml — 면세 ₩57,464 · 44%↓", "벤리악 트리플 디스틸드 25년 700ml — 면세 ₩441,654 · 42%↓", "보모어 19년 700ml — 면세 ₩172,393 · 42%↓"]
+hotdeals_count: 17
 rare_drops: []
 rare_drops_count: 0
-description: "면세 위스키 가격 주간 로그 6/29~7/5 — 이번주 핫딜 11종 · 오랜만의 큰 인하 0종 · 최신 2026-06-30. CaskCode"
+description: "면세 위스키 가격 주간 로그 6/29~7/5 — 이번주 핫딜 17종 · 오랜만의 큰 인하 0종 · 최신 2026-07-01. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-06-29 ~ 2026-07-05.
 
-## 🔥 이번주 핫딜 (11종)
+## 🔥 이번주 핫딜 (17종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
@@ -30,20 +30,75 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 시바스리갈 18년 200ml | 면세 **₩23,909** · 국내최저 [₩104,900 🔗](https://dailyshot.co/m/item/30214)<br>절약 **−₩80,991 (77%↓)** · 할인 43%→40% |
 | 보모어 22년 700ml | 면세 **₩337,181** · 국내최저 [₩1,249,000 🔗](https://dailyshot.co/m/item/19707)<br>절약 **−₩911,819 (73%↓)** · 할인 50%→45% |
 | 보모어 14년 700ml | 면세 **₩57,464** · 국내최저 [₩101,900 🔗](https://dailyshot.co/m/item/25811)<br>절약 **−₩44,436 (44%↓)** · 할인 50%→45% |
+| 벤리악 트리플 디스틸드 25년 700ml | 면세 **₩441,654** · 국내최저 [₩760,000 🔗](https://dailyshot.co/m/item/9889)<br>절약 **−₩318,346 (42%↓)** · 할인 38%→25% |
 | 보모어 19년 700ml | 면세 **₩172,393** · 국내최저 [₩295,000 🔗](https://dailyshot.co/m/item/25813)<br>절약 **−₩122,607 (42%↓)** · 할인 50%→45% |
 | 보모어 16년 700ml | 면세 **₩92,957** · 국내최저 [₩150,000 🔗](https://dailyshot.co/m/item/25812)<br>절약 **−₩57,043 (38%↓)** · 할인 50%→45% |
-| 발베니 Balvenie 18년 Sherry Cask 700ml | 면세 **₩223,315** · 국내최저 [₩349,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩125,685 (36%↓)** · 할인 50%→48% |
+| 잭다니엘 싱글배럴 100프루프 700ml | 면세 **₩54,022** · 국내최저 [₩85,000 🔗](https://dailyshot.co/m/item/4846)<br>절약 **−₩30,978 (36%↓)** · 할인 45%→49% |
 | 발베니 Balvenie 15년 Madeira Cask 700ml | 면세 **₩132,215** · 국내최저 [₩205,000 🔗](https://dailyshot.co/m/item/7409)<br>절약 **−₩72,785 (36%↓)** · 할인 49%→48% |
+| 발베니 Balvenie 18년 Sherry Cask 700ml | 면세 **₩248,803** · 국내최저 [₩349,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩100,197 (29%↓)** · 할인 48%→42% |
 | 글렌피딕 21년 700ml | 면세 **₩214,984** · 국내최저 [₩289,000 🔗](https://dailyshot.co/m/item/3165)<br>절약 **−₩74,016 (26%↓)** · 할인 49%→47% |
 | 시바스리갈 18년산 700ml | 면세 **₩80,923** · 국내최저 [₩104,900 🔗](https://dailyshot.co/m/item/30214)<br>절약 **−₩23,977 (23%↓)** · 할인 43%→40% |
+| 글렌드로낙 10년 1000ml | 면세 **₩74,148** · 국내최저 [₩95,000 🔗](https://dailyshot.co/m/item/5138)<br>절약 **−₩20,852 (22%↓)** · 할인 48%→40% |
 | 라가불린 16년 700ml | 면세 **₩108,628** · 국내최저 [₩135,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩26,372 (20%↓)** · 할인 48%→42% |
 | 글렌파클라스 25년 700ml | 면세 **₩348,474** · 국내최저 [₩430,000 🔗](https://dailyshot.co/m/item/4348)<br>절약 **−₩81,526 (19%↓)** · 할인 41%→40% |
+| 글렌알라키 15년 (24RB) 700ml | 면세 **₩126,803** · 국내최저 [₩147,900 🔗](https://dailyshot.co/m/item/21704)<br>절약 **−₩21,097 (14%↓)** · 할인 52% |
+| 우드포드 리저브 Kentucky Derby 적마 에디션 1000ml | 면세 **₩47,667** · 국내최저 [₩55,000 🔗](https://dailyshot.co/m/item/10438)<br>절약 **−₩7,333 (13%↓)** · 할인 41%→49% |
+| 벤리악 Quarter Cask Classic 1000ml | 면세 **₩55,611** · 국내최저 [₩59,900 🔗](https://dailyshot.co/m/item/4221)<br>절약 **−₩4,289 (7%↓)** · 할인 54%→49% |
+
+---
+
+## 📅 7월 1일 (수) — 돌파 7건
+
+*직전 2026-06-30 → 최신 2026-07-01* · *환율 ₩1,548.63 (기준일 2026-07-01)*
+
+### 📊 한눈에 — 할인율 변동 요약
+
+_각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
+
+**🔥 오늘의 핫딜 — 면세가가 더 싸짐 (10%p↑)**
+
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 글렌리벳 Grounbreaker Collection 700ml: 30%→45% (₩85,329)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 더 글렌리벳 (The Glenlivet) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 유러피언 오크 + 아메리칸 오크 숙성 후 차콜드 아메리칸 오크 + 유러피언 레드와인 캐스크 피니시 · 트래블 리테일 전용<br><b>맛</b> 블루베리·카라멜라이즈드 페어·커스터드·파인애플·버터스카치·스파이스 향. 차콜드 레드프루트와 부드러운 사과·배 과실이 고전적인 글렌리벳 특유의 부드럽고 꽃향기 어린 스피릿에 층을 더한다.<br><b>스토리</b> 더 글렌리벳 그라운드브레이커(Groundbreaker) 컬렉션은 트래블 리테일 전용 리미티드 에디션 시리즈로, 여행을 통해 자신의 예술 분야에서 새 기준을 세운 창의적 예술가들과의 콜라보레이션을 기념한다. 챕터 1은 레드 홍 이(Red Hong Yi) 아티스트와의 협업으로 탄생했다. 유러피언·아메리칸 오크 숙성 후 차콜드 아메리칸 오크·레드와인 캐스크 피니시로 마무리한다. (신라면세 리스팅 표기는 Grounbreaker이나 정식 명칭은 Groundbreaker)<br><span style="color:#8a8f98">출처: The Glenlivet 공식 theglenlivet.com · Whisky Magazine · thewhiskyworld.com (2026-06-30 리서치) · 수집일 2026-06-30</span></div></details>
+<div style="margin:5px 0">우드포드 리저브 Baccarat Edition 700ml: 38%→49% (₩1,350,560)</div>
+
+**🔺 할증 심화 — 할인 축소·가격 상승 (10%p↑)**
+
+<div style="margin:5px 0">잭다니엘 본디드 라이 1000ml: 45%→10% (₩66,901)</div>
+<div style="margin:5px 0">글렌알라키 10년 배치11 700ml: 52%→35% (₩138,485)</div>
+<div style="margin:5px 0">잭다니엘 시나트라 셀렉트 1000ml: 45%→28% (₩190,079)</div>
+<div style="margin:5px 0">벤리악 트리플 디스틸드 25년 700ml: 38%→25% (₩441,654)</div>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 9건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><div style="margin:5px 0">우드포드 리저브 Kentucky Derby 적마 에디션 1000ml: 41%→49% (₩47,667)</div><div style="margin:5px 0">우드포드 리저브 더블 오크 1000ml: 41%→47% (₩61,790)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">시그나토리 글렌리벳 2006 CS 19년 #901018 700ml: 20%→25% (₩279,915)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌리벳 (The Glenlivet) · 독립병입 시그나토리 빈티지 · 스페이사이드<br><b>도수</b> 캐스크 스트렝스 (병별 상이 · #901018 정확 도수 미확인 → 동 2006 빈티지·동 시리즈 자매캐스크 #901016/#901017/#901028 ≈58~61% 기준 근사 · 자매캐스크 근사치)<br><b>캐스크</b> 퍼스트필 올로로소 셰리 버트(추정 · 동 시리즈 자매캐스크 모두 1st fill Oloroso butt) · 단일 캐스크 #901018 · 2006 증류 19년 숙성 · 비냉각여과 · 무착색<br><b>맛</b> 글렌리벳의 부드러운 과일 향에 올로로소 셰리에서 오는 건과일·견과·다크초콜릿의 진한 단맛이 더해진다. (단일 캐스크 특성상 병별 편차 가능 · 자매캐스크 기준 근사)<br><b>스토리</b> 글렌리벳은 1824년 정부 면허를 받은 최초의 합법 증류소 중 하나로, 부드럽고 우아한 스페이사이드 스타일로 알려져 있다. 이 병은 시그나토리 빈티지가 2006년 증류 원액을 단일 셰리 캐스크(#901018)에서 19년 숙성해 캐스크 스트렝스로 병입한 독립병입 제품이며, 같은 빈티지 자매캐스크들은 모두 퍼스트필 올로로소 셰리 버트로 병입됐다(맛·도수는 자매캐스크 기준 근사).<br><span style="color:#8a8f98">출처: Master of Malt · The Whisky Exchange · Maison du Whisky(자매캐스크 기준) (2026-06-24 리서치) · 수집일 2026-06-24</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">시그나토리 링크우드 1995 CS 30년 #3 700ml: 10%→15% (₩737,148)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 링크우드 (Linkwood) · 독립병입 시그나토리 빈티지 · 스페이사이드<br><b>도수</b> 50.9% (캐스크 스트렝스 · 단일 캐스크 #3 실측치)<br><b>캐스크</b> 퍼스트필 올로로소 셰리 혹스헤드 단일 캐스크 #3 · 1995 증류 30년 숙성 · 비냉각여과 · 무착색 (Symington's Choice 라인)<br><b>맛</b> 건포도·무화과·다크초콜릿·당밀에 계피·정향 등 따뜻한 베이킹 스파이스가 어우러진 진한 셰리 풍미. 피니시는 길고 따뜻하며 잘 익은 오크와 셰리 단맛이 남는다.<br><b>스토리</b> 링크우드는 1821년 설립된 스페이사이드 증류소로, 가볍고 플로럴한 증류액이 셰리 캐스크 장기 숙성과 잘 맞기로 알려져 있다. 이 병은 독립병입자 시그나토리 빈티지의 'Symington's Choice' 라인으로, 1995년 증류 원액을 단일 퍼스트필 올로로소 셰리 혹스헤드(#3)에서 30년 숙성해 2025년 캐스크 스트렝스·비냉각여과·무착색으로 병입한 싱글캐스크.<br><span style="color:#8a8f98">출처: The Whisky Barrel · CaskCartel · Signatory USA (2026-06-24 리서치) · 수집일 2026-06-24</span></div></details><div style="margin:5px 0">잭다니엘 싱글배럴 100프루프 700ml: 45%→49% (₩54,022)</div><div style="margin:5px 0">잭다니엘 테네시 허니 200ml: 45%→49% (₩9,533)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">엔젤스 엔비 스몰 700ml: 37%→39% (₩92,577)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 엔젤스 엔비(Angel's Envy) · 미국(켄터키)<br><b>도수</b> 43.3%<br><b>캐스크</b> 버번 약 6년 숙성 후 루비 포트 와인 캐스크 3~6개월 피니시<br><b>맛</b> 옥수수·바닐라에 포트 와인의 건포도·대추 과일향이 더해지고, 캐러멜콘·대추·베리와 시나몬·너트메그 향신료, 메이플 시럽과 구운 견과의 풍부하고 벨벳 같은 질감이 특징이다.<br><b>스토리</b> 엔젤스 엔비는 옥수수 72%·호밀 18%·맥아 보리 10%의 매시빌로 만든 켄터키 스트레이트 버번을 루비 포트 와인 캐스크에서 마무리한 스몰배치 제품이다. 포트 캐스크 피니시 버번을 상시 제품으로 미국에 선보인 선구적 브랜드다.<br><span style="color:#8a8f98">출처: angelsenvy.com·breakingbourbon.com·bourbonveach.com (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">엔젤스 엔비 플래그십 700ml: 37%→39% (₩46,289)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 엔젤스 엔비(Angel's Envy) · 미국(켄터키)<br><b>도수</b> 43.3%<br><b>캐스크</b> 버번 약 6년 숙성 후 루비 포트 와인 캐스크 3~6개월 피니시<br><b>맛</b> 옥수수·바닐라에 포트 와인의 건포도·대추 과일향이 더해지고, 캐러멜콘·대추·베리와 시나몬·너트메그 향신료, 메이플 시럽과 구운 견과의 풍부하고 벨벳 같은 질감이 특징이다.<br><b>스토리</b> 엔젤스 엔비 플래그십은 옥수수 72%·호밀 18%·맥아 보리 10%의 매시빌 켄터키 스트레이트 버번을 8~12배럴 단위 스몰배치로 블렌딩해 루비 포트 와인 캐스크에서 마무리한 대표 제품이다. 브랜드 창립 당시 단 하나의 제품으로 출발했다.<br><span style="color:#8a8f98">출처: angelsenvy.com·breakingbourbon.com·bourbonveach.com (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">우드포드 리저브 디스틸러 셀렉트 1000ml: 48%→49% (₩39,722)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 우드포드 리저브 (Woodford Reserve) · 미국(켄터키)<br><b>도수</b> 45.2%<br><b>캐스크</b> 뉴 차르드 오크 배럴<br><b>맛</b> 말린 과일·민트·오렌지 껍질의 향에 코코아·바닐라·담배 스파이스가 더해진다. 팔레트는 토피·캐러멜·시나몬·다크초콜릿이 시트러스의 밝음·오크 스파이스와 어우러져 매끄럽고 풍부하다. 피니시는 길고 따뜻하며 은은한 스파이스가 남는다.<br><b>스토리</b> 우드포드 리저브는 켄터키 베르사유의 증류소가 만드는 켄터키 스트레이트 버번이다. 디스틸러 셀렉트는 브랜드의 플래그십 표현이다.<br><span style="color:#8a8f98">출처: 공식 사이트 · The Whiskey Wash · Breaking Bourbon (2026-06-20 리서치) · 수집일 2026-06-20</span></div></details></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 8건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><div style="margin:5px 0">글렌드로낙 10년 1000ml: 48%→40% (₩74,148)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 달 700ml: 43%→35% (₩57,377)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 '해·달·별' 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크를 사용하고 한국 기후로 빠르게 숙성한다.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반이나 '달' 개별 노트는 불명.<br><b>스토리</b> '달'은 기원의 면세 전용 '해·달·별' 라인 중 하나로, 국내 정식 시그니처 라인(호랑이·독수리·유니콘)과는 별개의 면세 전용 제품이다. 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동했고 마스터 디스틸러 앤드류 샌드·창업자 도정한이 주도한다. 동일 라인 기프트팩 표기 기준 약 35% 소매 리스팅이 있으나 공식 미확인. (면세 전용이라 사양 일부 불명)<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 듀티풀(dutyful.co.kr) · threesocieties.co.kr (2026-06-26 리서치) · 수집일 2026-06-26</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 해 700ml: 43%→35% (₩64,423)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 '해·달·별' 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크를 사용하고 한국 기후로 빠르게 숙성한다.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반이나 '해' 개별 노트는 불명.<br><b>스토리</b> '해'는 기원의 면세 전용 '해·달·별' 라인 중 하나로, 국내 정식 시그니처 라인(호랑이·독수리·유니콘)과는 별개의 면세 전용 제품이다. 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동했고 마스터 디스틸러 앤드류 샌드·창업자 도정한이 주도한다. (면세 전용이라 도수·캐스크 등 사양 일부 불명)<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 듀티풀(dutyful.co.kr) · threesocieties.co.kr (2026-06-26 리서치) · 수집일 2026-06-26</span></div></details><div style="margin:5px 0">잭다니엘 젠틀맨 잭 200ml: 50%→42% (₩13,461)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">발베니 Balvenie 18년 Sherry Cask 700ml: 48%→42% (₩248,803)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 발베니 (Balvenie) · 스페이사이드<br><b>도수</b> 43% (GTR PX 셰리 캐스크)<br><b>캐스크</b> 엑스-버번 배럴 숙성 후 페드로 히메네스(PX) 셰리 캐스크 피니시 · GTR 면세 전용<br><b>맛</b> 건포도·말린 과일·오크·정향 향. 신 포도껍질·시트러스·무화과에 생기있는 오크와 오일리한 꿀 단맛. PX가 더한 다크프루트·꿀무화과·은은한 스파이스의 긴 피니시.<br><b>스토리</b> 발베니는 더프타운에서 자체 플로어 몰팅·구리 세공·쿠퍼리지를 유지하는 '핸드메이드' 정신의 증류소. 18년 PX 셰리 캐스크는 글로벌 면세(GTR) 전용 라인업으로 코어 12·14·21년과 함께 면세 매대를 채운다.<br><span style="color:#8a8f98">출처: 공식 thebalvenie.com · World Duty Free · Secret Whiskey Society (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">벤리악 Quarter Cask Classic 1000ml: 54%→49% (₩55,611)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 벤리악 증류소 · 스코틀랜드 스페이사이드<br><b>도수</b> 46%<br><b>캐스크</b> 버번 배럴 숙성 후 쿼터 캐스크(소형통) 추가 숙성<br><b>맛</b> 캔디드 과일·풍부한 바닐라·신선한 오크 향. 설탕에 절인 배·꿀 살구의 맛. 신선한 보리 크림과 오크 향신료의 피니시.<br><b>스토리</b> 벤리악의 무연산(NAS) 언피티드 싱글몰트. 버번 배럴 숙성 후 작은 쿼터 캐스크에서 추가 숙성해 목재 접촉을 높여 풍미 깊이를 더한다. 논칠필터·무착색·46%.<br><span style="color:#8a8f98">출처: BenriachDistillery.com·finedrams.com·Whiskybase (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌피딕 23년 그랑크뤼 슬림팩 700ml: 48%→45% (₩300,666)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌피딕 (Glenfiddich) · 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 아메리칸·유러피언 오크 23년 숙성 후 희귀한 프랑스 퀴베(cuvée, 샴페인용) 캐스크에서 약 6개월 추가 피니시<br><b>맛</b> 사과꽃·갓 구운 빵·설탕에 절인 레몬 향. 입안에서 진한 바닐라 오크·스위트 브리오슈·샌들우드·서양배 셔벗·청포도가 펼쳐지고, 길고 호화로우며 달콤한 피니시로 마무리된다.<br><b>스토리</b> 글렌피딕 그랑크뤼(Grand Cru)는 샴페인(스파클링 와인) 양조에 쓰인 희귀한 프랑스 퀴베 캐스크에서 약 6개월 추가 피니시한 23년 표현으로, 축하주를 콘셉트로 한 프리미엄 라인이다. '슬림팩'은 면세/선물용 슬림 패키지 사양(원액 동일).<br><span style="color:#8a8f98">출처: 공식 glenfiddich.com · Drinkhacker · Scotch&amp;Sheen (2026-06-26 리서치) · 수집일 2026-06-26</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 달 기프트팩 700ml: 38%→35% (₩70,463)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 약 35% 표기 소매 리스팅 있으나 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크 사용, 한국 기후로 빠른 숙성.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반(달 개별 노트는 불명).<br><b>스토리</b> '달'은 기원의 면세 전용 '해·달·별' 라인 중 하나로 알려짐(2025 출시). 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동, 마스터 디스틸러 앤드류 샌드·창업자 도정한 주도. 호랑이·유니콘·배치 등 시리즈 출시, 2025 IWSC 수상. 기프트팩 구성품은 불명.<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 나무위키 '기원(위스키)' · threesocieties.co.kr · 88bamboo.co (2026-06-15 리서치) · 수집일 2026-06-15</span></div></details></div></details>
+
+### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
+
+| 🏆 위스키 | 상세 |
+|---|---|
+| 벤리악 트리플 디스틸드 25년 700ml | 면세 **₩441,654** · 국내최저 [₩760,000 🔗](https://dailyshot.co/m/item/9889)<br>절약 **−₩318,346 (42%↓)** · 할인 38%→25% |
+| 발베니 Balvenie 18년 Sherry Cask 700ml | 면세 **₩248,803** · 국내최저 [₩349,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩100,197 (29%↓)** · 할인 48%→42% |
+| 잭다니엘 싱글배럴 100프루프 700ml | 면세 **₩54,022** · 국내최저 [₩85,000 🔗](https://dailyshot.co/m/item/4846)<br>절약 **−₩30,978 (36%↓)** · 할인 45%→49% |
+| 글렌알라키 15년 (24RB) 700ml | 면세 **₩126,803** · 국내최저 [₩147,900 🔗](https://dailyshot.co/m/item/21704)<br>절약 **−₩21,097 (14%↓)** · 할인 52% |
+| 글렌드로낙 10년 1000ml | 면세 **₩74,148** · 국내최저 [₩95,000 🔗](https://dailyshot.co/m/item/5138)<br>절약 **−₩20,852 (22%↓)** · 할인 48%→40% |
+| 우드포드 리저브 Kentucky Derby 적마 에디션 1000ml | 면세 **₩47,667** · 국내최저 [₩55,000 🔗](https://dailyshot.co/m/item/10438)<br>절약 **−₩7,333 (13%↓)** · 할인 41%→49% |
+| 벤리악 Quarter Cask Classic 1000ml | 면세 **₩55,611** · 국내최저 [₩59,900 🔗](https://dailyshot.co/m/item/4221)<br>절약 **−₩4,289 (7%↓)** · 할인 54%→49% |
+
+### 🆕 신규 입고 (3)
+
+| 위스키 | 현재 KRW |
+|---|--:|
+| 제임슨 블랙배럴 1000ml | ₩47,512 |
+| 제임슨 트리플 트리플 1000ml | ₩37,121 |
+| 제임슨 Standard 1000ml | ₩30,198 |
+
+*국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
+
 
 ---
 
 ## 📅 6월 30일 (화)
 
-*직전 2026-06-29 → 최신 2026-06-30* · *환율 ₩1,536.79 (기준일 2026-06-29)*
+*직전 2026-06-29 → 최신 2026-06-30* · *환율 ₩1,548.63 (기준일 2026-07-01)*
 
 ### 📊 한눈에 — 할인율 변동 요약
 
@@ -51,7 +106,7 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 
 **🔺 할증 심화 — 할인 축소·가격 상승 (10%p↑)**
 
-<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 글렌리벳 Grounbreaker Collection 700ml: 45%→30% (₩107,598)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 더 글렌리벳 (The Glenlivet) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 유러피언 오크 + 아메리칸 오크 숙성 후 차콜드 아메리칸 오크 + 유러피언 레드와인 캐스크 피니시 · 트래블 리테일 전용<br><b>맛</b> 블루베리·카라멜라이즈드 페어·커스터드·파인애플·버터스카치·스파이스 향. 차콜드 레드프루트와 부드러운 사과·배 과실이 고전적인 글렌리벳 특유의 부드럽고 꽃향기 어린 스피릿에 층을 더한다.<br><b>스토리</b> 더 글렌리벳 그라운드브레이커(Groundbreaker) 컬렉션은 트래블 리테일 전용 리미티드 에디션 시리즈로, 여행을 통해 자신의 예술 분야에서 새 기준을 세운 창의적 예술가들과의 콜라보레이션을 기념한다. 챕터 1은 레드 홍 이(Red Hong Yi) 아티스트와의 협업으로 탄생했다. 유러피언·아메리칸 오크 숙성 후 차콜드 아메리칸 오크·레드와인 캐스크 피니시로 마무리한다. (신라면세 리스팅 표기는 Grounbreaker이나 정식 명칭은 Groundbreaker)<br><span style="color:#8a8f98">출처: The Glenlivet 공식 theglenlivet.com · Whisky Magazine · thewhiskyworld.com (2026-06-30 리서치) · 수집일 2026-06-30</span></div></details>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 글렌리벳 Grounbreaker Collection 700ml: 45%→30% (₩108,427)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 더 글렌리벳 (The Glenlivet) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 유러피언 오크 + 아메리칸 오크 숙성 후 차콜드 아메리칸 오크 + 유러피언 레드와인 캐스크 피니시 · 트래블 리테일 전용<br><b>맛</b> 블루베리·카라멜라이즈드 페어·커스터드·파인애플·버터스카치·스파이스 향. 차콜드 레드프루트와 부드러운 사과·배 과실이 고전적인 글렌리벳 특유의 부드럽고 꽃향기 어린 스피릿에 층을 더한다.<br><b>스토리</b> 더 글렌리벳 그라운드브레이커(Groundbreaker) 컬렉션은 트래블 리테일 전용 리미티드 에디션 시리즈로, 여행을 통해 자신의 예술 분야에서 새 기준을 세운 창의적 예술가들과의 콜라보레이션을 기념한다. 챕터 1은 레드 홍 이(Red Hong Yi) 아티스트와의 협업으로 탄생했다. 유러피언·아메리칸 오크 숙성 후 차콜드 아메리칸 오크·레드와인 캐스크 피니시로 마무리한다. (신라면세 리스팅 표기는 Grounbreaker이나 정식 명칭은 Groundbreaker)<br><span style="color:#8a8f98">출처: The Glenlivet 공식 theglenlivet.com · Whisky Magazine · thewhiskyworld.com (2026-06-30 리서치) · 수집일 2026-06-30</span></div></details>
 
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
