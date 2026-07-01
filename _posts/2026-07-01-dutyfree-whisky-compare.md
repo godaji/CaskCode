@@ -36,6 +36,12 @@ carousel:
     url: "/2026/07/01/dutyfree-whisky-compare/"
   - text: "✈️ 로얄브라클라 18년 — 면세가 내렸어요, 병당 15.5만원→15.3만원 · 7/1"
     url: "/2026/07/01/dutyfree-whisky-compare/"
+  - text: "🚚 트레이더스 현장가 34개 업데이트 · 6/30"
+    url: "/2026/06/23/youtube-traders-prices/"
+  - text: "🆕 1792 스몰배치 (트레이더스) 신규 입고, 4.5만원 · 6/30"
+    url: "/2026/06/23/youtube-traders-prices/"
+  - text: "🆕 글렌그란트 12년 (트레이더스) 신규 입고, 5.9만원 · 6/30"
+    url: "/2026/06/23/youtube-traders-prices/"
 ---
 
 이 글은 신라·롯데·신세계 세 면세점의 위스키 가격을 **주기적으로 수집해 아래에 쌓는 로그**입니다. 가격대별 Top 10은 매 수집 시 갱신되고, 아래 수집 로그는 최신이 맨 위입니다.
