@@ -60,29 +60,35 @@ padding:8px 10px;font-size:13px;color:var(--sub)}
 .foot{margin-top:30px;padding-top:14px;border-top:1px solid var(--line);
 color:var(--sub);font-size:12px}
 code{word-break:break-all;overflow-wrap:anywhere}
-/* 모바일 우선(CMPA-255 · CMPA-763): 카드 밀도 최대화 — 한 화면에 최대한 많은 상품 */
+/* 모바일 우선(CMPA-255 · CMPA-763): 2줄 카드 — 이름+뱃지 / 소매·면세·할인율 */
 @media(max-width:640px){
   body{font-size:13px}
-  table,thead,tbody,th,td,tr{display:block}
+  table,thead,tbody{display:block}
   thead{position:absolute;left:-9999px}
-  /* 카드: 패딩/마진 압축 */
-  tr{margin:0 0 5px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-  td{border:0;border-bottom:1px solid rgba(255,255,255,.04);padding:5px 10px;
-     display:flex;justify-content:space-between;align-items:center;gap:8px}
-  td:last-child{border-bottom:0}
-  td::before{content:attr(data-label);color:var(--sub);font-weight:700;
-     flex:0 0 auto;font-size:10px;white-space:nowrap}
-  /* 가격 셀 small(서브라인·출처·수집일 등) 숨김 → 굵은 가격만 표시 */
+  th{display:none}
+  /* tr: flex-wrap으로 2줄 배치 */
+  tr{display:flex;flex-wrap:wrap;align-items:center;
+     margin:0 0 5px;border:1px solid var(--line);border-radius:8px;
+     padding:5px 10px;gap:1px 0;overflow:hidden}
+  /* td 기본: 숨김 (필요한 것만 켬) */
+  td{display:none;border:0;padding:0}
   td small{display:none}
-  /* 소매가-면세가 행 — 100ml 비교 상세, 모바일에선 숨김 */
-  td[data-label="소매가-면세가"]{display:none}
-  /* 위스키명: 이름 + 뱃지 세로 배치, <br> 숨김 */
-  td[data-label="위스키"]{flex-direction:column;align-items:flex-start;
-    background:rgba(224,168,78,.05);padding:6px 10px;gap:2px}
+  /* 위스키명: 전체폭, 이름+뱃지 가로 한 줄 */
+  td[data-label="위스키"]{
+    display:flex;flex:0 0 100%;flex-wrap:wrap;align-items:center;gap:4px;
+    font-weight:700;color:var(--gold);font-size:13px;padding-bottom:3px}
   td[data-label="위스키"]::before{display:none}
-  td[data-label="위스키"]{font-weight:700;color:var(--gold);font-size:13px}
   td[data-label="위스키"] br{display:none}
-  .badges{margin-top:2px;display:flex;flex-wrap:wrap;gap:2px}
+  /* 소매·면세·할인율: 같은 줄, inline-flex로 <br> 무력화 */
+  td[data-label="소매최저가"],
+  td[data-label="면세최저가"],
+  td[data-label="면세할인율"]{display:inline-flex;align-items:center;font-size:12px;color:var(--txt)}
+  td[data-label="소매최저가"]::before{content:"소매 ";color:var(--sub);font-size:10px}
+  td[data-label="면세최저가"]::before{content:" · 면세 ";color:var(--sub);font-size:10px}
+  td[data-label="면세할인율"]{margin-left:auto}
+  td[data-label="면세할인율"]::before{display:none}
+  td[data-label="소매가-면세가"]{display:none}
+  .badges{display:flex;flex-wrap:wrap;gap:2px}
   .bdg{font-size:10px;padding:1px 4px}
 }
 </style>
@@ -108,6 +114,14 @@ code{word-break:break-all;overflow-wrap:anywhere}
   </div>
   <div class="search-bar">
     <input id="name-search" class="search-input" type="search" placeholder="위스키 이름 검색..." autocomplete="off">
+  </div>
+  <div class="filter-bar" id="price-filter-bar">
+    <button class="fbtn" data-pmin="0" data-pmax="50000">5만↓</button>
+    <button class="fbtn" data-pmin="50000" data-pmax="100000">5~10만</button>
+    <button class="fbtn" data-pmin="100000" data-pmax="150000">10~15만</button>
+    <button class="fbtn" data-pmin="150000" data-pmax="200000">15~20만</button>
+    <button class="fbtn" data-pmin="200000" data-pmax="300000">20~30만</button>
+    <button class="fbtn" data-pmin="300000" data-pmax="Infinity">30만+</button>
   </div>
   <table id="main-table">
     <thead><tr>
@@ -159,6 +173,7 @@ code{word-break:break-all;overflow-wrap:anywhere}
   var sortCol = 4, sortAsc = false;
   var displayCount = 20;  // 기본 20건 표시 (CMPA-763)
   var searchQuery = '';
+  var activePriceRange = null;  // [min, max] or null
   var sortedRows = [];
 
   function indicator(col, asc) {
@@ -178,11 +193,18 @@ code{word-break:break-all;overflow-wrap:anywhere}
     var tbody = tbl.querySelector('tbody');
     var q = searchQuery.trim().toLowerCase();
     var visible = sortedRows.filter(function(r) {
-      if(!q) return true;
-      return nameOf(r).toLowerCase().indexOf(q) >= 0;
+      if(q && nameOf(r).toLowerCase().indexOf(q) < 0) return false;
+      if(activePriceRange) {
+        var pc = r.children[1];  // td[소매최저가]
+        var pv = pc ? parseFloat(pc.getAttribute('data-sort-val')) : NaN;
+        if(isNaN(pv) || pv < 0) return false;  // 소매가 없으면 가격 필터에서 제외
+        if(pv < activePriceRange[0] || pv >= activePriceRange[1]) return false;
+      }
+      return true;
     });
-    // 검색 중에는 결과 전체 표시, 아니면 displayCount 제한
-    var limit = q ? visible.length : displayCount;
+    // 검색/가격필터 중에는 결과 전체 표시, 아니면 displayCount 제한
+    var hasFilter = q || activePriceRange;
+    var limit = hasFilter ? visible.length : displayCount;
     sortedRows.forEach(function(r) { r.style.display = 'none'; tbody.appendChild(r); });
     visible.forEach(function(r, i) {
       r.style.display = (i < limit) ? '' : 'none';
@@ -190,7 +212,7 @@ code{word-break:break-all;overflow-wrap:anywhere}
     var btn = document.getElementById('show-more-btn');
     if(btn) {
       var remaining = visible.length - limit;
-      if(!q && remaining > 0) {
+      if(!hasFilter && remaining > 0) {
         btn.textContent = remaining + '건 더 보기';
         btn.style.display = '';
       } else {
@@ -269,6 +291,23 @@ code{word-break:break-all;overflow-wrap:anywhere}
       applyView();
     });
   }
+
+  // 가격 필터 버튼 (CMPA-763)
+  document.querySelectorAll('#price-filter-bar .fbtn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var pmin = parseFloat(this.dataset.pmin);
+      var pmax = this.dataset.pmax === 'Infinity' ? Infinity : parseFloat(this.dataset.pmax);
+      var same = activePriceRange && activePriceRange[0]===pmin && activePriceRange[1]===pmax;
+      activePriceRange = same ? null : [pmin, pmax];
+      document.querySelectorAll('#price-filter-bar .fbtn').forEach(function(b) {
+        var bmin = parseFloat(b.dataset.pmin);
+        var bmax = b.dataset.pmax === 'Infinity' ? Infinity : parseFloat(b.dataset.pmax);
+        b.classList.toggle('active', !same && bmin===pmin && bmax===pmax);
+      });
+      displayCount = 20;
+      applyView();
+    });
+  });
 
   filterView('cheap');  // 기본값: 소매최저가 오름차순(싼값 먼저) (CMPA-671)
 })();
