@@ -60,26 +60,30 @@ padding:8px 10px;font-size:13px;color:var(--sub)}
 .foot{margin-top:30px;padding-top:14px;border-top:1px solid var(--line);
 color:var(--sub);font-size:12px}
 code{word-break:break-all;overflow-wrap:anywhere}
-/* 모바일 우선(CMPA-255): 좁은 화면은 행을 카드로 접는다(가로스크롤/숨김 없음) */
+/* 모바일 우선(CMPA-255 · CMPA-763): 카드 밀도 최대화 — 한 화면에 최대한 많은 상품 */
 @media(max-width:640px){
+  body{font-size:13px}
   table,thead,tbody,th,td,tr{display:block}
   thead{position:absolute;left:-9999px}
-  tr{margin:0 0 12px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-  td{border:0;border-bottom:1px solid var(--line);padding:8px 12px;
-     display:flex;justify-content:space-between;gap:12px}
+  /* 카드: 패딩/마진 압축 */
+  tr{margin:0 0 5px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  td{border:0;border-bottom:1px solid rgba(255,255,255,.04);padding:5px 10px;
+     display:flex;justify-content:space-between;align-items:center;gap:8px}
   td:last-child{border-bottom:0}
-  td::before{content:attr(data-label);color:var(--amber);font-weight:700;
-     flex:0 0 38%;font-size:12px}
-  /* 멀티라인 가격 셀(소매최저가·면세최저가·소매가-면세가)은 라벨을 위에 두고 값을 카드
-     전체폭으로 — 좁은 폭(360px)에서 데일리샷 보조줄·출처·수집일이 잘리지 않게(CMPA-557·CLAUDE.md). */
-  td[data-label="소매최저가"],td[data-label="면세최저가"],td[data-label="소매가-면세가"]{
-     flex-direction:column;align-items:stretch;gap:3px}
-  td[data-label="소매최저가"]::before,td[data-label="면세최저가"]::before,
-  td[data-label="소매가-면세가"]::before{flex:none;font-size:12px}
-  td[data-label="위스키"]{flex-direction:column;background:rgba(224,168,78,.06)}
+  td::before{content:attr(data-label);color:var(--sub);font-weight:700;
+     flex:0 0 auto;font-size:10px;white-space:nowrap}
+  /* 가격 셀 small(서브라인·출처·수집일 등) 숨김 → 굵은 가격만 표시 */
+  td small{display:none}
+  /* 소매가-면세가 행 — 100ml 비교 상세, 모바일에선 숨김 */
+  td[data-label="소매가-면세가"]{display:none}
+  /* 위스키명: 이름 + 뱃지 세로 배치, <br> 숨김 */
+  td[data-label="위스키"]{flex-direction:column;align-items:flex-start;
+    background:rgba(224,168,78,.05);padding:6px 10px;gap:2px}
   td[data-label="위스키"]::before{display:none}
-  td[data-label="위스키"]{font-weight:700;color:var(--gold);font-size:15px}
-  .badges{margin-top:6px}
+  td[data-label="위스키"]{font-weight:700;color:var(--gold);font-size:13px}
+  td[data-label="위스키"] br{display:none}
+  .badges{margin-top:2px;display:flex;flex-wrap:wrap;gap:2px}
+  .bdg{font-size:10px;padding:1px 4px}
 }
 </style>
 </head>
