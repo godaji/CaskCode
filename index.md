@@ -32,7 +32,7 @@ robots: "index,follow"
 
 <section class="buy-section mart">
 <div class="bs-head"><span class="bs-ic">🛒</span><div class="bs-txt"><div class="bs-title">마트에서 구매할 때</div><div class="bs-sub">트레이더스·코스트코·이마트 등 국내 소매가</div></div></div>
-<a class="dash-cta" href="{{ '/dashboard/' | relative_url }}">📊 소매기준 위스키 대시보드 →<span class="dash-sub">소매가 · 면세가 · 해외가 비교</span></a>
+<a class="dash-cta" href="{{ '/dashboard/' | relative_url }}">📊 위스키 가격 대시보드 →<span class="dash-sub">소매가 · 면세가 · 해외가 비교</span></a>
 {% assign _mart = site.posts | where_exp: "p","p.url contains 'mart-cheaper-whisky'" | sort: "date" | reverse %}
 {% if _mart.size > 0 %}<a class="dash-cta" href="{{ _mart[0].url | relative_url }}">🥃 면세점보다 싸거나 비슷한 위스키 →<span class="dash-sub">마트·국내가가 면세가 이하인 위스키</span></a>
 {% endif %}
@@ -86,4 +86,9 @@ robots: "index,follow"
 <div class="sec-head">🗓️ 업데이트 로그 — 데이터가 언제 갱신됐고 무엇이 바뀌었나</div>
 <div class="cl-wrap"><a class="cl-card" href="{{ _c.url | relative_url }}"><div class="cl-head"><span class="cl-title">최근 업데이트</span><span class="cl-when">{{ _c.log_date }} 기준</span></div><ul class="cl-list">{% if _c.cl_sources %}<li><span class="cl-ic">🗂</span><span>{{ _c.cl_sources }}</span></li>{% endif %}{% if _c.cl_shilla %}<li><span class="cl-ic">🛫</span><span>{{ _c.cl_shilla }}</span></li>{% endif %}{% if _c.cl_retail %}<li><span class="cl-ic">🛒</span><span>{{ _c.cl_retail }}</span></li>{% endif %}</ul><span class="cl-more">업데이트 로그 전체 보기 →</span></a></div>
 {% endif %}
+
+<div class="sec-head">🗂️ 개인 팁 모음</div>
+<ul class="latest-feed">
+  <li><span class="chip">🚌</span><a href="{{ '/bus6004' | relative_url }}">6004번 공항버스 시간표</a></li>
+</ul>
 
