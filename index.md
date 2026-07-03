@@ -32,7 +32,7 @@ robots: "index,follow"
 
 <section class="buy-section mart">
 <div class="bs-head"><span class="bs-ic">🛒</span><div class="bs-txt"><div class="bs-title">마트에서 구매할 때</div><div class="bs-sub">트레이더스·코스트코·이마트 등 국내 소매가</div></div></div>
-<a class="dash-cta" href="{{ '/dashboard/' | relative_url }}">📊 위스키 가격 대시보드 →<span class="dash-sub">소매가 · 면세가 · 해외가 비교</span></a>
+<a class="dash-cta" href="{{ '/dashboard/' | relative_url }}">📊 소매기준 위스키 대시보드 →<span class="dash-sub">소매가 · 면세가 · 해외가 비교</span></a>
 {% assign _mart = site.posts | where_exp: "p","p.url contains 'mart-cheaper-whisky'" | sort: "date" | reverse %}
 {% if _mart.size > 0 %}<a class="dash-cta" href="{{ _mart[0].url | relative_url }}">🥃 면세점보다 싸거나 비슷한 위스키 →<span class="dash-sub">마트·국내가가 면세가 이하인 위스키</span></a>
 {% endif %}

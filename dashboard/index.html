@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>위스키 가격 대시보드 — CaskCode</title>
+<title>소매기준 위스키 대시보드 — CaskCode</title>
 <style>
 :root{--bg:#0f1115;--panel:#161922;--line:#2a2e38;--txt:#f2efe6;--sub:#9aa0aa;
 --amber:#e0a84e;--gold:#ffd34e;--green:#34c759;--red:#ff6b6b}
@@ -103,7 +103,7 @@ code{word-break:break-all;overflow-wrap:anywhere}
 </head>
 <body>
 <div class="wrap">
-  <h1>🥃 위스키 가격 대시보드</h1>
+  <h1>🥃 소매기준 위스키 대시보드</h1>
   <p class="sub">📅 소매 최신 수집: <b>2026-06-30</b>
   · 신라면세 수집: <b>2026-07-03</b>
   · 표시 166종 (소매 수집 99종 /
@@ -112,9 +112,9 @@ code{word-break:break-all;overflow-wrap:anywhere}
 
   <h2>현재 가격 상태</h2>
   <div class="filter-bar">
-    <button class="fbtn active" data-fview="cheap" onclick="filterView('cheap')">💰 소매최저가↓</button>
+    <button class="fbtn" data-fview="cheap" onclick="filterView('cheap')">💰 소매최저가↓</button>
     <button class="fbtn" data-fview="df" onclick="filterView('df')">🏆 면세유리 보기</button>
-    <button class="fbtn" data-fview="retail" onclick="filterView('retail')">🛒 소매유리 보기</button>
+    <button class="fbtn active" data-fview="retail" onclick="filterView('retail')">🛒 소매유리 보기</button>
     <button class="fbtn" data-fview="mrate" onclick="filterView('mrate')">면세할인율↓</button>
     <button class="fbtn" data-fview="name" onclick="filterView('name')">이름순</button>
   </div>
@@ -323,7 +323,7 @@ code{word-break:break-all;overflow-wrap:anywhere}
     if(url) window.open(url, '_blank', 'noopener');
   });
 
-  filterView('cheap');  // 기본값: 소매최저가 오름차순(싼값 먼저) (CMPA-671)
+  filterView('retail');  // 기본값: 소매유리 보기 (CMPA-762)
 })();
 </script>
 </body>
