@@ -63,6 +63,13 @@
     "product_id": "w009"
   },
   {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 70000,
+    "name": "아벨라워 12년 더블캐스크",
+    "product_id": "w010"
+  },
+  {
     "collected_at": "2026-05-27",
     "dailyshot_url": null,
     "floor_krw": 235800,
@@ -693,6 +700,13 @@
     "product_id": "w100"
   },
   {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 69400,
+    "name": "글렌파클라스 12년",
+    "product_id": "w101"
+  },
+  {
     "collected_at": "2026-06-30",
     "dailyshot_url": "https://dailyshot.co/m/item/26316",
     "floor_krw": 47500,
@@ -812,6 +826,13 @@
     "product_id": "w118"
   },
   {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 16800,
+    "name": "그란츠 트리플 우드",
+    "product_id": "w119"
+  },
+  {
     "collected_at": "2026-04-23",
     "dailyshot_url": null,
     "floor_krw": 74000,
@@ -861,6 +882,13 @@
     "product_id": "w126"
   },
   {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 45800,
+    "name": "스카치블루 17년",
+    "product_id": "w127"
+  },
+  {
     "collected_at": "2026-04-23",
     "dailyshot_url": null,
     "floor_krw": 27900,
@@ -887,6 +915,237 @@
     "floor_krw": 144900,
     "name": "달모어 12년 셰리캐스크",
     "product_id": "w146"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 120000,
+    "name": "글렌버기 15년",
+    "product_id": "w147"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 40000,
+    "name": "코퍼독",
+    "product_id": "w148"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 80000,
+    "name": "발블레어 12년",
+    "product_id": "w149"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 90000,
+    "name": "믹터스 US1 아메리칸",
+    "product_id": "w150"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 45000,
+    "name": "제퍼슨 버번",
+    "product_id": "w151"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 80000,
+    "name": "베이커스 7년",
+    "product_id": "w152"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 30000,
+    "name": "글렌터너 헤리티지 더블우드",
+    "product_id": "w153"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 35000,
+    "name": "글렌모레이 10년",
+    "product_id": "w154"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 45000,
+    "name": "닛카 프론티어",
+    "product_id": "w155"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 80000,
+    "name": "마쓰이 산인",
+    "product_id": "w156"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 35000,
+    "name": "올드파 12년",
+    "product_id": "w157"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 60000,
+    "name": "하이랜드파크 12년",
+    "product_id": "w158"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 100000,
+    "name": "레드브레스트 15년",
+    "product_id": "w159"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 100000,
+    "name": "스트라스밀 12년",
+    "product_id": "w160"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 200000,
+    "name": "카발란 솔리스트",
+    "product_id": "w161"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 100000,
+    "name": "아드벡 우가달",
+    "product_id": "w162"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 30000,
+    "name": "탐나불린 셰리캐스크",
+    "product_id": "w163"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 30000,
+    "name": "탐나불린 소비뇽블랑",
+    "product_id": "w164"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 40000,
+    "name": "제임슨 블랙배럴",
+    "product_id": "w165"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 40000,
+    "name": "포 로지스 버번",
+    "product_id": "w166"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 80000,
+    "name": "오큰토션 쓰리우드",
+    "product_id": "w167"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 20000,
+    "name": "부쉬밀 오리지널",
+    "product_id": "w168"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 150000,
+    "name": "글렌드로낙 18년",
+    "product_id": "w169"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 400000,
+    "name": "맥캘란 셰리오크 18년",
+    "product_id": "w170"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 90000,
+    "name": "아벨라워 16년",
+    "product_id": "w171"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 250000,
+    "name": "로얄 브라클라 21년",
+    "product_id": "w172"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 200000,
+    "name": "에버펠디 21년",
+    "product_id": "w173"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 80000,
+    "name": "시바스 리갈 18년",
+    "product_id": "w174"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 90000,
+    "name": "조니워커 18년",
+    "product_id": "w175"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 150000,
+    "name": "보모어 18년",
+    "product_id": "w176"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 100000,
+    "name": "벤로막 15년",
+    "product_id": "w177"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 300000,
+    "name": "몰트락 20년",
+    "product_id": "w178"
+  },
+  {
+    "collected_at": "",
+    "dailyshot_url": null,
+    "floor_krw": 115900,
+    "name": "발베니 12년 아메리칸 오크",
+    "product_id": "w284"
   },
   {
     "collected_at": "2026-06-30",
