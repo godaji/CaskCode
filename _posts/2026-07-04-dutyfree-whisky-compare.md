@@ -8,23 +8,37 @@ data_date: "2026-07-04"
 robots: "index,follow"
 carousel_date: "2026-07-04"
 carousel:
-  - text: "🟢 베리 올드 세인트 닉 윈터 라이 — 국내 소매가 59만원인데 면세 26.4만원, 약 32.6만원 싸요 (58% 할인) · 7/4"
+  - text: "🟢 베리 올드 세인트 닉 윈터 라이 — 국내 소매가 59만원인데 면세 26.2만원, 약 32.8만원 싸요 (59% 할인) · 7/4"
     url: "/2026/07/04/dutyfree-whisky-compare/"
-  - text: "🟢 글렌모렌지 시그넷 — 국내 소매가 52만원인데 면세 26만원, 약 26만원 싸요 (50% 할인) · 7/4"
+  - text: "🟢 글렌모렌지 시그넷 — 국내 소매가 52만원인데 면세 25.8만원, 약 26.2만원 싸요 (50% 할인) · 7/4"
     url: "/2026/07/04/dutyfree-whisky-compare/"
-  - text: "🟢 더 글렌리벳 21년 — 국내 소매가 52만원인데 면세 28.4만원, 약 23.6만원 싸요 (45% 할인) · 7/4"
+  - text: "🟢 더 글렌리벳 21년 — 국내 소매가 52만원인데 면세 28.2만원, 약 23.8만원 싸요 (46% 할인) · 7/4"
     url: "/2026/07/04/dutyfree-whisky-compare/"
-  - text: "🟢 더 글렌리벳 19년 — 국내 소매가 34만원인데 면세 14만원, 약 19.9만원 싸요 (59% 할인) · 7/4"
+  - text: "🟢 더 글렌리벳 19년 — 국내 소매가 34만원인데 면세 13.9만원, 약 20만원 싸요 (59% 할인) · 7/4"
     url: "/2026/07/04/dutyfree-whisky-compare/"
-  - text: "🟢 글렌드로낙 16년 — 국내 소매가 35만원인데 면세 16만원, 약 19만원 싸요 (54% 할인) · 7/4"
+  - text: "🟢 글렌드로낙 16년 — 국내 소매가 35만원인데 면세 15.9만원, 약 19.1만원 싸요 (54% 할인) · 7/4"
     url: "/2026/07/04/dutyfree-whisky-compare/"
-  - text: "🔴 로얄살루트 21년 빈티지 — 면세 22.8만원인데 국내가 18.5만원, 약 4.3만원 더 싸요 · 7/4"
+  - text: "🔴 로얄살루트 21년 빈티지 — 면세 22.6만원인데 국내가 18.5만원, 약 4.1만원 더 싸요 · 7/4"
     url: "/2026/07/04/dutyfree-whisky-compare/"
-  - text: "🔴 달모어 12년 — 면세 17.2만원인데 국내가 9.9만원, 약 7.3만원 더 싸요 · 7/4"
+  - text: "🔴 달모어 12년 — 면세 17만원인데 국내가 9.9만원, 약 7.1만원 더 싸요 · 7/4"
     url: "/2026/07/04/dutyfree-whisky-compare/"
-  - text: "🔴 발렌타인 21년 — 면세 18.4만원인데 국내가 17만원, 약 1.4만원 더 싸요 · 7/4"
+  - text: "🔴 발렌타인 21년 — 면세 18.2만원인데 국내가 17만원, 약 1.2만원 더 싸요 · 7/4"
     url: "/2026/07/04/dutyfree-whisky-compare/"
-  - text: "🏆 오늘 면세 최저가가 가장 많은 곳은 신라예요 (51종) · 7/4"
+  - text: "🔀 시바스리갈 15년, 면세가 더 싸져서 지금 노릴 만해요 · 7/4"
+    url: "/2026/07/04/dutyfree-whisky-compare/"
+  - text: "🔀 블라드녹 삼사라, 면세가 더 싸져서 지금 노릴 만해요 · 7/4"
+    url: "/2026/07/04/dutyfree-whisky-compare/"
+  - text: "🔀 에버펠디 16년 마데이라 캐스크, 면세가 더 싸져서 지금 노릴 만해요 · 7/4"
+    url: "/2026/07/04/dutyfree-whisky-compare/"
+  - text: "🏆 오늘 면세 최저가가 가장 많은 곳은 신라예요 (52종) · 7/4"
+    url: "/2026/07/04/dutyfree-whisky-compare/"
+  - text: "✈️ 듀어스 더블더블 27년 — 면세가 내렸어요, 병당 23.3만원→23.1만원 · 7/4"
+    url: "/2026/07/04/dutyfree-whisky-compare/"
+  - text: "✈️ 로얄살루트 25년 더 트레저드 블렌드 — 면세가 내렸어요, 병당 28.5만원→28.3만원 · 7/4"
+    url: "/2026/07/04/dutyfree-whisky-compare/"
+  - text: "✈️ 글렌모렌지 19년 — 오늘 면세 이득 순위권 새로 진입, 국내보다 약 7.1만원 싸요 · 7/4"
+    url: "/2026/07/04/dutyfree-whisky-compare/"
+  - text: "✈️ 조니워커 블루 — 오늘 면세 이득 순위권 새로 진입, 국내보다 약 2.8만원 싸요 · 7/4"
     url: "/2026/07/04/dutyfree-whisky-compare/"
   - text: "🚚 트레이더스 현장가 5개 업데이트 · 7/3"
     url: "/2026/06/23/youtube-traders-prices/"
@@ -60,7 +74,7 @@ carousel:
 
 ### 15~20만원
 
-<table><thead><tr><th>제품</th><th>최저가 (면세점)</th><th>절약(100ml당)</th><th>국내 소매가</th><th>신라</th><th>롯데</th><th>신세계</th><th>용량</th></tr></thead><tbody><tr><td><details><summary style="cursor:pointer">글렌드로낙 16년 700ml</summary><div style="font-weight:400;font-size:.92em;line-height:1.55;padding:6px 2px 2px;white-space:normal;max-width:min(78vw,440px)"><b>글렌드로낙 증류소 · 스코틀랜드 하이랜드 · 46% · PX·올로로소 셰리 캐스크 + 포트 캐스크 결합 (Boynsmill)</b><br>🥃 자두 푸딩·체리·살구 브랜디 향에 너트메그·샌들우드, 모과 단맛. 베이크드 살구·체리·자두 껍질이 프루트케이크처럼 풍부하고, 오렌지·호두 크림. 대추·살구·호두의 벨벳 피니시.<br>📖 현행 16년 표현은 글로벌 면세 전용 'Boynsmill(보인즈밀)'로, 안달루시아산 PX·올로로소 셰리와 두로 밸리 포트 캐스크를 결합 숙성한다. 1826년 창립자 제임스 알라다이스의 글렌드로낙 본거지였던 보인즈밀 에스테이트에서 이름을 따왔다. 논칠필터·내추럴 컬러.<br><small>출처: GlenDronachDistillery.com·Moodie Davitt Report·ScotchWhisky.com (2026-06-09 리서치)</small></div></details></td><td><strong>$103.95 / ₩160,633</strong> (신라면세)</td><td>+₩27,052</td><td>₩350,000 <a href="https://dailyshot.co/m/item/12948" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$103.95</strong></td><td>—</td><td>$108.00</td><td>700ml</td></tr><tr><td>토마틴 21년 700ml</td><td><strong>$126.14 / ₩194,924</strong> (신세계면세)</td><td>+₩23,440</td><td>₩359,000 <a href="https://dailyshot.co/m/item/11354" target="_blank" rel="noopener">(데일리샷)</a></td><td>$128.52</td><td>—</td><td><strong>$126.14</strong></td><td>700ml</td></tr><tr><td><details><summary style="cursor:pointer">보모어 19년 700ml</summary><div style="font-weight:400;font-size:.92em;line-height:1.55;padding:6px 2px 2px;white-space:normal;max-width:min(78vw,440px)"><b>보모어 (Bowmore) · 아일라 (Islay) · 43% · 엑스-버번 숙성 후 피노누아(부르고뉴) 캐스크 피니시 · GTR 면세 전용(Appellations)</b><br>🥃 피노누아의 우아한 붉은베리·체리에 보모어의 부드러운 피트 스모크, 트로피컬 프루트의 긴 여운.<br>📖 Appellations 컬렉션의 19년 표현으로 부르고뉴 피노누아 캐스크 피니시. 보모어는 1779년 설립된 아일라 最古 증류소.<br><small>출처: 공식 bowmore.com · Moodie Davitt Report · Whisky Advocate (2026-06-12 리서치)</small></div></details></td><td><strong>$102.00 / ₩157,620</strong> (신라면세)</td><td>+₩19,626</td><td>₩295,000 <a href="https://dailyshot.co/m/item/25813" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$102.00</strong></td><td>$143.41</td><td>$108.53</td><td>700ml</td></tr><tr><td>더 글렌그란트 18년 1000ml</td><td><strong>$115.78 / ₩178,914</strong> (신라면세)</td><td>+₩10,680</td><td>₩200,000 <a href="https://dailyshot.co/m/item/2350" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$115.78</strong></td><td>—</td><td>$163.20</td><td>1000ml</td></tr><tr><td>로얄브라클라 18년 700ml</td><td><strong>$98.65 / ₩152,443</strong> (롯데면세)</td><td>+₩7,793</td><td>₩207,000 <a href="https://dailyshot.co/m/item/11632" target="_blank" rel="noopener">(데일리샷)</a></td><td>$112.35</td><td><strong>$98.65</strong></td><td>$116.95</td><td>700ml</td></tr><tr><td>달모어 트리오 1000ml</td><td><strong>$99.75 / ₩154,143</strong> (신라/신세계)</td><td>+₩5,086</td><td>₩205,000 <a href="https://dailyshot.co/m/item/4981" target="_blank" rel="noopener">(데일리샷)</a></td><td>$99.75</td><td>—</td><td>$99.75</td><td>1000ml</td></tr><tr><td>NEW 올트모어 21년 (깔바도스) 500ml</td><td><strong>$103.98 / ₩160,680</strong> (신라면세)</td><td>+₩2,435</td><td>₩242,000 <a href="https://dailyshot.co/m/item/6909" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$103.98</strong></td><td>—</td><td>$103.98</td><td>500ml</td></tr><tr><td><details><summary style="cursor:pointer">조니워커 블루라벨 500ml</summary><div style="font-weight:400;font-size:.92em;line-height:1.55;padding:6px 2px 2px;white-space:normal;max-width:min(78vw,440px)"><b>조니워커 (Johnnie Walker) · 블렌디드(스코틀랜드) · 40% · 다양한 캐스크(엄선된 희소 원액 블렌드)</b><br>🥃 바닐라·꿀·오렌지 껍질·꽃 향에 오크 스파이스와 배경의 옅은 스모크가 은은히 더해진다. 팔레트는 오크·바닐라·꿀·오렌지 시트러스에 말린 과일·헤이즐넛·다크초콜릿·캐러멜이 어우러진다. 질감은 매우 부드럽고 기름지며 길게 이어진다.<br>📖 조니워커 블루 라벨은 디아지오의 울트라 프리미엄 블렌디드 스카치로, 희소하고 잘 숙성된 원액을 엄선해 블렌딩한다.<br><small>출처: 공식 정보 · The Whiskey Wash · 마스터 블렌더 노트 (2026-06-20 리서치)</small></div></details></td><td><strong>$103.36 / ₩159,722</strong> (신라면세)</td><td>+₩723</td><td>₩245,000·750ml <a href="https://dailyshot.co/m/item/3183" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$103.36</strong></td><td>$103.68</td><td>$104.00</td><td>500ml</td></tr><tr><td>발렌타인 21년 아티스트 에디션 5 700ml</td><td><strong>$116.90 / ₩180,645</strong> (신세계면세)</td><td>+₩479</td><td>₩184,000 <a href="https://dailyshot.co/m/item/29448" target="_blank" rel="noopener">(데일리샷)</a></td><td>$116.93</td><td>—</td><td><strong>$116.90</strong></td><td>700ml</td></tr><tr><td>로얄살루트 21년 루나 뉴이어 2026 700ml</td><td><strong>$123.23 / ₩190,427</strong> (신라면세)</td><td>−₩775</td><td>₩185,000 <a href="https://dailyshot.co/m/item/3208" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$123.23</strong></td><td>—</td><td>$140.80</td><td>700ml</td></tr></tbody></table>
+<table><thead><tr><th>제품</th><th>최저가 (면세점)</th><th>절약(100ml당)</th><th>국내 소매가</th><th>신라</th><th>롯데</th><th>신세계</th><th>용량</th></tr></thead><tbody><tr><td><details><summary style="cursor:pointer">글렌드로낙 16년 700ml</summary><div style="font-weight:400;font-size:.92em;line-height:1.55;padding:6px 2px 2px;white-space:normal;max-width:min(78vw,440px)"><b>글렌드로낙 증류소 · 스코틀랜드 하이랜드 · 46% · PX·올로로소 셰리 캐스크 + 포트 캐스크 결합 (Boynsmill)</b><br>🥃 자두 푸딩·체리·살구 브랜디 향에 너트메그·샌들우드, 모과 단맛. 베이크드 살구·체리·자두 껍질이 프루트케이크처럼 풍부하고, 오렌지·호두 크림. 대추·살구·호두의 벨벳 피니시.<br>📖 현행 16년 표현은 글로벌 면세 전용 'Boynsmill(보인즈밀)'로, 안달루시아산 PX·올로로소 셰리와 두로 밸리 포트 캐스크를 결합 숙성한다. 1826년 창립자 제임스 알라다이스의 글렌드로낙 본거지였던 보인즈밀 에스테이트에서 이름을 따왔다. 논칠필터·내추럴 컬러.<br><small>출처: GlenDronachDistillery.com·Moodie Davitt Report·ScotchWhisky.com (2026-06-09 리서치)</small></div></details></td><td><strong>$103.95 / ₩160,633</strong> (신라면세)</td><td>+₩27,052</td><td>₩350,000 <a href="https://dailyshot.co/m/item/12948" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$103.95</strong></td><td>—</td><td>$108.00</td><td>700ml</td></tr><tr><td>토마틴 21년 700ml</td><td><strong>$126.14 / ₩194,924</strong> (신세계면세)</td><td>+₩23,440</td><td>₩359,000 <a href="https://dailyshot.co/m/item/11354" target="_blank" rel="noopener">(데일리샷)</a></td><td>$128.52</td><td>—</td><td><strong>$126.14</strong></td><td>700ml</td></tr><tr><td><details><summary style="cursor:pointer">보모어 19년 700ml</summary><div style="font-weight:400;font-size:.92em;line-height:1.55;padding:6px 2px 2px;white-space:normal;max-width:min(78vw,440px)"><b>보모어 (Bowmore) · 아일라 (Islay) · 43% · 엑스-버번 숙성 후 피노누아(부르고뉴) 캐스크 피니시 · GTR 면세 전용(Appellations)</b><br>🥃 피노누아의 우아한 붉은베리·체리에 보모어의 부드러운 피트 스모크, 트로피컬 프루트의 긴 여운.<br>📖 Appellations 컬렉션의 19년 표현으로 부르고뉴 피노누아 캐스크 피니시. 보모어는 1779년 설립된 아일라 最古 증류소.<br><small>출처: 공식 bowmore.com · Moodie Davitt Report · Whisky Advocate (2026-06-12 리서치)</small></div></details></td><td><strong>$102.00 / ₩157,620</strong> (신라면세)</td><td>+₩19,626</td><td>₩295,000 <a href="https://dailyshot.co/m/item/25813" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$102.00</strong></td><td>$143.41</td><td>$108.53</td><td>700ml</td></tr><tr><td>더 글렌그란트 18년 1000ml</td><td><strong>$115.78 / ₩178,914</strong> (신라면세)</td><td>+₩10,680</td><td>₩200,000 <a href="https://dailyshot.co/m/item/2350" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$115.78</strong></td><td>—</td><td>$163.20</td><td>1000ml</td></tr><tr><td>글렌모렌지 19년 700ml</td><td><strong>$112.50 / ₩173,846</strong> (롯데면세)</td><td>+₩9,879</td><td>₩243,000 <a href="https://dailyshot.co/m/item/4808" target="_blank" rel="noopener">(데일리샷)</a></td><td>—</td><td><strong>$112.50</strong></td><td>$120.00</td><td>700ml</td></tr><tr><td>로얄브라클라 18년 700ml</td><td><strong>$98.65 / ₩152,443</strong> (롯데면세)</td><td>+₩7,793</td><td>₩207,000 <a href="https://dailyshot.co/m/item/11632" target="_blank" rel="noopener">(데일리샷)</a></td><td>$112.35</td><td><strong>$98.65</strong></td><td>$116.95</td><td>700ml</td></tr><tr><td>달모어 트리오 1000ml</td><td><strong>$99.75 / ₩154,143</strong> (신라/신세계)</td><td>+₩5,086</td><td>₩205,000 <a href="https://dailyshot.co/m/item/4981" target="_blank" rel="noopener">(데일리샷)</a></td><td>$99.75</td><td>—</td><td>$99.75</td><td>1000ml</td></tr><tr><td>NEW 올트모어 21년 (깔바도스) 500ml</td><td><strong>$103.98 / ₩160,680</strong> (신라면세)</td><td>+₩2,435</td><td>₩242,000 <a href="https://dailyshot.co/m/item/6909" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$103.98</strong></td><td>—</td><td>$103.98</td><td>500ml</td></tr><tr><td><details><summary style="cursor:pointer">조니워커 블루라벨 500ml</summary><div style="font-weight:400;font-size:.92em;line-height:1.55;padding:6px 2px 2px;white-space:normal;max-width:min(78vw,440px)"><b>조니워커 (Johnnie Walker) · 블렌디드(스코틀랜드) · 40% · 다양한 캐스크(엄선된 희소 원액 블렌드)</b><br>🥃 바닐라·꿀·오렌지 껍질·꽃 향에 오크 스파이스와 배경의 옅은 스모크가 은은히 더해진다. 팔레트는 오크·바닐라·꿀·오렌지 시트러스에 말린 과일·헤이즐넛·다크초콜릿·캐러멜이 어우러진다. 질감은 매우 부드럽고 기름지며 길게 이어진다.<br>📖 조니워커 블루 라벨은 디아지오의 울트라 프리미엄 블렌디드 스카치로, 희소하고 잘 숙성된 원액을 엄선해 블렌딩한다.<br><small>출처: 공식 정보 · The Whiskey Wash · 마스터 블렌더 노트 (2026-06-20 리서치)</small></div></details></td><td><strong>$103.36 / ₩159,722</strong> (신라면세)</td><td>+₩723</td><td>₩245,000·750ml <a href="https://dailyshot.co/m/item/3183" target="_blank" rel="noopener">(데일리샷)</a></td><td><strong>$103.36</strong></td><td>$103.68</td><td>$104.00</td><td>500ml</td></tr><tr><td>발렌타인 21년 아티스트 에디션 5 700ml</td><td><strong>$116.90 / ₩180,645</strong> (신세계면세)</td><td>+₩479</td><td>₩184,000 <a href="https://dailyshot.co/m/item/29448" target="_blank" rel="noopener">(데일리샷)</a></td><td>$116.93</td><td>—</td><td><strong>$116.90</strong></td><td>700ml</td></tr></tbody></table>
 
 ### 20~30만원
 
@@ -77,17 +91,61 @@ carousel:
 ---
 
 
-## 📅 2026-07-04 — 수집 (2026-07-04 신라 · 2026-07-04 롯데 · 2026-07-04 신세계)
+## 📅 2026-07-04 — 수집 (2026-07-05 신라 · 2026-07-05 롯데 · 2026-07-05 신세계)
 
 ### 수집 결과
 
 | 면세점 | 수집 종수 | 수집일 |
 |---|---|---|
-| 신라면세 | 658종 | 2026-07-04 |
-| 롯데면세 | 386종 | 2026-07-04 |
-| 신세계면세 | 721종 | 2026-07-04 |
+| 신라면세 | 658종 | 2026-07-05 |
+| 롯데면세 | 386종 | 2026-07-05 |
+| 신세계면세 | 721종 | 2026-07-05 |
 
 - 세 면세점 동시 비교 가능: **338종** (3곳 모두 있는 제품: 101종)
 - 가격차 10% 초과 제품: 위 가격대별 Top 10 표 참고
 
+**🔼 Top 10 새 진입 (직전: 2026-07-03)**
+
+- [15~20만원] 글렌모렌지 19년 700ml
+
+**🔽 Top 10 아웃 (직전: 2026-07-03)**
+
+- [15~20만원] 로얄살루트 21년 루나 뉴이어 2026 700ml
 *by Dram · CaskCode*
+
+
+## 📅 2026-07-03 — 과거 로그
+
+**🔼 Top 10 새 진입 (직전: 2026-07-02)**
+
+- [20~30만원] 글렌피딕 21년 700ml
+
+**🔽 Top 10 아웃 (직전: 2026-07-02)**
+
+- [20~30만원] 듀어스 더블더블 27년 500ml
+
+
+## 📅 2026-07-01 — 과거 로그
+
+**🔼 Top 10 새 진입 (직전: 2026-06-30)**
+
+- [15~20만원] 로얄살루트 21년 루나 뉴이어 2026 700ml
+- [20~30만원] 화이트헤더 21년 700ml
+
+**🔽 Top 10 아웃 (직전: 2026-06-30)**
+
+- [15~20만원] 화이트헤더 21년 700ml
+- [20~30만원] 글렌피딕 21년 700ml
+
+
+## 📅 2026-06-29 — 과거 로그
+
+**🔼 Top 10 새 진입 (직전: 2026-06-28)**
+
+- [10만원 이하] 듀어스 18년 1000ml
+- [10~15만원] NEW 올트모어 18년 (마데이라) 500ml
+
+**🔽 Top 10 아웃 (직전: 2026-06-28)**
+
+- [10만원 이하] NEW 올트모어 18년 (마데이라) 500ml
+- [10~15만원] 아드벡 우거다일 700ml
