@@ -650,10 +650,56 @@
     $('rateMinus').addEventListener('click', () => stepRate(-500));
     $('ratePlus').addEventListener('click', () => stepRate(500));
     $('rateSave').addEventListener('click', saveRate);
+    $('exportBtn').addEventListener('click', exportData);
+    $('importBtn').addEventListener('click', importData);
+    $('importFile').addEventListener('change', e => {
+      handleImportFile(e.target.files[0]);
+      e.target.value = '';
+    });
     document.querySelectorAll('[data-close]').forEach(b =>
       b.addEventListener('click', () => closeSheet(b.dataset.close)));
     document.querySelectorAll('.sheet-backdrop').forEach(bd =>
       bd.addEventListener('click', e => { if (e.target === bd) bd.hidden = true; }));
+  }
+
+  // ── 데이터 내보내기 ──
+  function exportData(){
+    const raw = localStorage.getItem(STORE_KEY);
+    if (!raw){ toast('내보낼 데이터가 없어요'); return; }
+    const d = new Date();
+    const date = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    const blob = new Blob([raw], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = `dramjar-backup-${date}.json`;
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+    toast('백업 파일을 저장했습니다');
+  }
+
+  // ── 데이터 가져오기 ──
+  function importData(){ $('importFile').click(); }
+
+  function handleImportFile(file){
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => {
+      let parsed;
+      try { parsed = JSON.parse(e.target.result); }
+      catch(err){ toast('파일을 읽을 수 없어요 (JSON 오류)'); return; }
+      if (!parsed || typeof parsed !== 'object' ||
+          !('activeJar' in parsed) || !('cabinet' in parsed) || !('itemRates' in parsed)){
+        toast('올바른 백업 파일이 아니에요'); return;
+      }
+      if (!window.confirm('현재 데이터가 교체됩니다. 계속할까요?')) return;
+      localStorage.setItem(STORE_KEY, JSON.stringify(parsed));
+      state = load(); celebrated = false;
+      renderGrid(); renderTotal(); renderGoal();
+      _syncFilterBtn(); _syncSettingsCount(); renderSettingsSheet();
+      toast('데이터를 불러왔어요');
+    };
+    reader.onerror = () => { toast('파일 읽기에 실패했어요'); };
+    reader.readAsText(file);
   }
 
   // ── floor 데이터 로드 ──

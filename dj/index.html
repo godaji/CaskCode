@@ -174,9 +174,17 @@
       </div>
       <input class="sett-search" id="settSearch" type="search" placeholder="위스키 이름 검색…" autocomplete="off">
       <div id="settTriedList"></div>
+      <div class="sett-section-head sett-data-head">
+        <span class="sett-section-title">데이터</span>
+      </div>
+      <div class="sett-data-actions">
+        <button id="exportBtn" class="sett-data-btn" type="button">📤 데이터 내보내기</button>
+        <button id="importBtn" class="sett-data-btn sett-data-btn-import" type="button">📥 데이터 가져오기</button>
+      </div>
     </div>
   </div>
 </div>
+<input type="file" id="importFile" accept=".json" hidden>
 
 <!-- ===== 히스토리 시트 ===== -->
 <div class="sheet-backdrop" id="historySheet" hidden>

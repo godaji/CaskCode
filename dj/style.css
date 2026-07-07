@@ -308,3 +308,15 @@ strong{font-variant-numeric:tabular-nums;}
   background:var(--card2);border:1px solid var(--line);color:var(--muted);font-size:13px;font-weight:700;}
 .sett-row .sr-tried.on{border-color:var(--ok);color:var(--ok);}
 .sett-row .sr-tried:active{transform:scale(.92);}
+
+/* ===== 설정 시트: 데이터 Export / Import ===== */
+.sett-data-head{margin-top:16px;}
+.sett-data-actions{display:flex;flex-direction:column;gap:8px;margin-top:8px;}
+.sett-data-btn{
+  width:100%;min-height:44px;border-radius:12px;
+  background:var(--card);border:1px solid var(--line);
+  color:var(--text);font-size:15px;font-weight:600;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.sett-data-btn:active{transform:scale(.97);background:var(--card2);}
+.sett-data-btn-import{border-color:var(--gold-deep);color:var(--gold);}
