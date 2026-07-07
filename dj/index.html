@@ -43,7 +43,7 @@
         <div class="remain">남은 금액 <strong id="goalRemain">—</strong></div>
       </div>
       <div class="goal-floor">
-        현재 국내 최저가 <strong id="goalFloor">—</strong>
+        <span id="goalFloorLabel">현재 국내 최저가 </span><strong id="goalFloor">—</strong>
         <span class="floor-date" id="goalCollected"></span>
       </div>
       <div class="goal-cta-row" id="goalAchieved" hidden>
@@ -98,7 +98,27 @@
         <button class="sheet-close" data-close="goalSheet" type="button">✕</button>
       </div>
     </div>
-    <div class="sheet-body" id="goalList"></div>
+    <div class="sheet-body">
+      <!-- 직접 입력 폼 (기본 숨김) -->
+      <div id="customForm" class="custom-form" hidden>
+        <div class="cf-field">
+          <label class="cf-label" for="customName">위스키 이름</label>
+          <input id="customName" class="cf-input" type="text" placeholder="예: 아녹 12년" autocomplete="off" maxlength="60">
+        </div>
+        <div class="cf-field">
+          <label class="cf-label" for="customPrice">목표 금액</label>
+          <div class="cf-price-wrap">
+            <input id="customPrice" class="cf-input cf-input-price" type="number" placeholder="70000" min="1" inputmode="numeric">
+            <span class="cf-won">원</span>
+          </div>
+        </div>
+        <div class="cf-btns">
+          <button id="customCancel" class="cf-cancel" type="button">취소</button>
+          <button id="customSave" class="cf-save" type="button">등록</button>
+        </div>
+      </div>
+      <div id="goalList"></div>
+    </div>
   </div>
 </div>
 
