@@ -391,6 +391,18 @@
     openSheet('settingsSheet');
   });
 
+  $('userChangeBtn').addEventListener('click', () => {
+    const newId = $('settUserId').value.trim();
+    if (!newId) { toast('사용자 ID를 입력하세요.'); return; }
+    if (newId === userId) { toast('현재 사용자와 같습니다.'); return; }
+    userId = newId;
+    localStorage.setItem(KEY_USER_ID, userId);
+    cachedJars = [];
+    closeSheet('settingsSheet');
+    initApp();
+    toast('사용자 전환 완료');
+  });
+
   $('settSaveBtn').addEventListener('click', () => {
     const newId  = $('settUserId').value.trim();
     const newUrl = $('settScriptUrl').value.trim();

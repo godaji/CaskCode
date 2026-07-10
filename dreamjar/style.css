@@ -423,6 +423,8 @@ input, select { font-family: inherit; }
 .sett-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
 .sett-field:last-child { margin-bottom: 0; }
 .sett-label { font-size: 13px; font-weight: 700; color: var(--muted); }
+.sett-input-row { display: flex; gap: 8px; align-items: center; }
+.sett-input-row .sett-input { flex: 1; min-width: 0; }
 .sett-input {
   width: 100%; min-height: 50px;
   background: var(--bg2); border: 1px solid var(--line); border-radius: 12px;
