@@ -408,6 +408,14 @@
     for (const u of (allUsers || [])) usersMap[u.user_id] = u;
     const jarsMap = {};
     for (const j of jars) jarsMap[j.jarId] = j;
+    // Fetch foreign jar names (from donation senders/receivers not in user's jars)
+    const foreignJarIds = new Set();
+    for (const d of (allDonIn || [])) { if (d.from_jar_id && !jarsMap[d.from_jar_id]) foreignJarIds.add(d.from_jar_id); }
+    for (const d of (allDonOut || [])) { if (d.to_jar_id && !jarsMap[d.to_jar_id]) foreignJarIds.add(d.to_jar_id); }
+    if (foreignJarIds.size > 0) {
+      const { data: foreignJars } = await supabase.from('jars').select('jar_id, name, owner_id').in('jar_id', [...foreignJarIds]);
+      for (const fj of (foreignJars || [])) jarsMap[fj.jar_id] = { jarId: fj.jar_id, name: fj.name, ownerId: fj.owner_id };
+    }
     const donOutMap = {};
     for (const d of (allDonOut || [])) donOutMap[d.donation_id] = d;
 
@@ -566,6 +574,14 @@
     for (const u of (users || [])) usersMap[u.user_id] = u;
     const jarsMap = {};
     for (const j of (jarsData || [])) jarsMap[j.jar_id] = j;
+    // Fetch foreign jar names (donation senders/receivers not yet in jarsMap)
+    const foreignJarIds = new Set();
+    for (const d of (dIn || [])) { if (d.from_jar_id && !jarsMap[d.from_jar_id]) foreignJarIds.add(d.from_jar_id); }
+    for (const d of (dOut || [])) { if (d.to_jar_id && !jarsMap[d.to_jar_id]) foreignJarIds.add(d.to_jar_id); }
+    if (foreignJarIds.size > 0) {
+      const { data: foreignJars } = await supabase.from('jars').select('jar_id, name, owner_id').in('jar_id', [...foreignJarIds]);
+      for (const fj of (foreignJars || [])) jarsMap[fj.jar_id] = fj;
+    }
     const donOutMap = {};
     for (const d of (dOut || [])) donOutMap[d.donation_id] = d;
 
