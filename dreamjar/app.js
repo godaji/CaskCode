@@ -484,11 +484,17 @@
   });
 
   // ── 서버 동기화 ──
+  let _bgSyncTimer = null;
+  let _syncInProgress = false;
+
   async function syncWithServer(silent = false) {
     if (isMock()) {
       if (!silent) toast('샘플 데이터 모드에서는 동기화가 지원되지 않습니다.');
       return;
     }
+    // Guard against re-entrancy (background sync + manual sync overlap)
+    if (_syncInProgress && silent) return;
+    _syncInProgress = true;
 
     const syncBtn = $('syncBtn');
     if (syncBtn) { syncBtn.disabled = true; syncBtn.textContent = '동기화 중…'; }
@@ -691,10 +697,45 @@
       if (!silent) toast('동기화 실패: ' + err.message);
       throw err;
     } finally {
+      _syncInProgress = false;
       if (syncBtn) { syncBtn.disabled = false; syncBtn.textContent = '서버 동기화'; }
       if (hdrSync) { hdrSync.classList.remove('syncing'); hdrSync.disabled = false; }
     }
   }
+
+  // ── Background Sync ──
+
+  /** Debounced background sync — call after any local mutation that creates divergence. */
+  function scheduleBackgroundSync() {
+    if (isMock()) return;
+    if (_bgSyncTimer) clearTimeout(_bgSyncTimer);
+    _bgSyncTimer = setTimeout(async () => {
+      _bgSyncTimer = null;
+      if (_syncInProgress) return;
+      try { await syncWithServer(true); }
+      catch { /* silent — manual sync still works */ }
+    }, 1500);
+  }
+
+  // Sync on visibility change (app comes back to foreground)
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState !== 'visible') return;
+    if (isMock()) return;
+    // Check if there are pending local changes
+    const allE = JSON.parse(localStorage.getItem(KEY_ENTRIES) || '{}');
+    const hasUnsynced = Object.values(allE).some(entries => entries.some(e => !e.synced));
+    const hasPending = hasUnsynced ||
+      localPendingDel().length > 0 ||
+      localPendingCtrl().length > 0 ||
+      localPendingArchive().length > 0;
+    if (hasPending) { scheduleBackgroundSync(); return; }
+    // If no pending changes, sync if stale (>5 min since last sync)
+    const lastSync = localStorage.getItem(KEY_LAST_SYNC);
+    const staleMs = 5 * 60 * 1000;
+    if (!lastSync || (Date.now() - new Date(lastSync).getTime()) > staleMs) {
+      scheduleBackgroundSync();
+    }
+  });
 
   // ── Jar 선택 시트 ──
   $('jarChangeBtn').addEventListener('click', openJarPicker);
@@ -1120,6 +1161,7 @@
     closeSheet('controlPickerSheet');
     renderControlSection(jar, entryRows);
     toast('Control을 설정했어요.');
+    scheduleBackgroundSync();
   }
 
   // ── localStorage-first 적립 ──
@@ -1165,6 +1207,7 @@
     renderHistorySection(jar.jarId);
 
     showUndoToast(jar.jarId, entry.entryId, amount);
+    scheduleBackgroundSync();
   }
 
   function deleteEntryLocal(jarId, entryId) {
@@ -1200,6 +1243,7 @@
     }
 
     toast('삭제됐어요.');
+    scheduleBackgroundSync();
   }
 
   // ── Jar 아카이브 (삭제) ──
@@ -1240,6 +1284,7 @@
     }
 
     toast('Jar를 삭제했어요.');
+    scheduleBackgroundSync();
   }
 
   // 삭제 확인 시트 핸들러
