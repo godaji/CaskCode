@@ -166,7 +166,10 @@
       .eq('jar_id', jar.jar_id).eq('user_id', p.userId || '')
       .limit(1);
 
-    if (existing && existing.length > 0) throw new Error('이미 참여 중인 Jar입니다');
+    if (existing && existing.length > 0) {
+      // Already a member — return success silently instead of error
+      return { memberId: existing[0].member_id, jarName: jar.name || '', alreadyJoined: true };
+    }
 
     const memberId = newId('m');
     const { error } = await supabase.from('jar_members').insert({
