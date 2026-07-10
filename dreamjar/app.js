@@ -468,6 +468,8 @@
       const result = await apiFetch({ action: 'joinJar', params: { jarId, userId } });
       $('joinJarId').value = '';
       toast(result.alreadyJoined ? '이미 참여 중! 데이터를 새로고침합니다…' : '참여 완료! 데이터를 불러옵니다…');
+      // Clear checkSync cache so full pull includes the new jar
+      localStorage.removeItem(KEY_SERVER_MODIFIED);
       await syncWithServer(true);
       // Switch to the joined jar if found in cached jars
       const joinedJar = cachedJars.find(j =>
