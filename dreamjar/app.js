@@ -7,7 +7,6 @@
 
   // ── 스토리지 키 ──
   const KEY_USER_ID    = 'dreamjar.userId';
-  const KEY_SCRIPT_URL = 'dreamjar.scriptUrl';
   const KEY_ACTIVE_JAR = 'dreamjar.activeJarId';
   const KEY_JARS       = 'dreamjar.jars';       // JSON: [{jarId, name, goalAmount, currentAmount, ...}]
   const KEY_ENTRIES    = 'dreamjar.entries';     // JSON: {jarId: [{entryId, amount, note, createdAt, synced}]}
@@ -41,8 +40,6 @@
 
   // ── 상태 ──
   let userId    = localStorage.getItem(KEY_USER_ID) || '';
-  const DEFAULT_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx1SF3djcB9kEnpbI_MltdPvtYS7p7ADZ1tnXVKoVTqUtsEgFFy2l11Qxo1TQc0DuSc/exec';
-  let scriptUrl = localStorage.getItem(KEY_SCRIPT_URL) || DEFAULT_SCRIPT_URL;
 
   // 캐시
   let cachedJars   = [];   // [{jarId, name, currentAmount, goalAmount, ...}]
@@ -119,7 +116,8 @@
   const $ = id => document.getElementById(id);
   const KRW = new Intl.NumberFormat('ko-KR');
   const won = n => KRW.format(Math.round(n || 0)) + '원';
-  const isMock = () => !scriptUrl;
+  const hasSupabase = () => typeof window.DreamJarSupabase !== 'undefined';
+  const isMock = () => !hasSupabase();
 
   function todayStr() {
     const d = new Date();
@@ -198,30 +196,12 @@
   }
 
   async function apiFetchReal({ action, query, params = {} }) {
-    if (!scriptUrl) throw new Error('Apps Script URL이 설정되지 않았어요.');
+    // CMPA-893: Supabase backend
+    if (!hasSupabase()) throw new Error('Supabase가 로드되지 않았어요.');
     try {
-      if (action) {
-        const res = await fetch(scriptUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'text/plain' },
-          body: JSON.stringify({ action, ...params }),
-        });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const json = await res.json();
-        if (!json.ok) throw new Error(json.error || '서버 오류');
-        return json.data;
-      } else {
-        const url = new URL(scriptUrl);
-        url.searchParams.set('query', query);
-        Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
-        const res = await fetch(url.toString());
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const json = await res.json();
-        if (!json.ok) throw new Error(json.error || '서버 오류');
-        return json.data;
-      }
+      return await DreamJarSupabase.api({ action, query, params });
     } catch (err) {
-      console.error('[DreamJar] apiFetch 오류:', err);
+      console.error('[DreamJar] Supabase 오류:', err);
       throw err;
     }
   }
@@ -382,7 +362,6 @@
     $('setupScreen').hidden = false;
     $('mainApp').hidden = true;
     $('setupUserId').value  = userId;
-    $('setupScriptUrl').value = scriptUrl;
     $('setupUserId').focus();
   }
   function hideSetup() {
@@ -394,9 +373,7 @@
     const newId = $('setupUserId').value.trim();
     if (!newId) { toast('사용자 ID를 입력하세요.'); $('setupUserId').focus(); return; }
     userId    = newId;
-    scriptUrl = $('setupScriptUrl').value.trim();
     localStorage.setItem(KEY_USER_ID, userId);
-    localStorage.setItem(KEY_SCRIPT_URL, scriptUrl);
     hideSetup();
     initApp();
   });
@@ -414,8 +391,7 @@
 
   // ── 설정 시트 ──
   $('settingsBtn').addEventListener('click', () => {
-    $('settUserId').value    = userId;
-    $('settScriptUrl').value = scriptUrl;
+    $('settUserId').value = userId;
     loadSettJarList();
     updateLastSyncDisplay();
     openSheet('settingsSheet');
@@ -424,7 +400,7 @@
   $('logoutBtn').addEventListener('click', () => {
     if (!confirm('로그아웃하시겠습니까?\n로컬 데이터가 모두 삭제됩니다.')) return;
     // localStorage에서 dreamjar 관련 키 모두 삭제
-    [KEY_USER_ID, KEY_SCRIPT_URL, KEY_ACTIVE_JAR, KEY_JARS, KEY_ENTRIES,
+    [KEY_USER_ID, KEY_ACTIVE_JAR, KEY_JARS, KEY_ENTRIES,
      KEY_PENDING_DEL, KEY_PENDING_CTRL, KEY_PENDING_ARCHIVE, KEY_LAST_SYNC,
      KEY_SERVER_MODIFIED
     ].forEach(k => localStorage.removeItem(k));
@@ -433,7 +409,6 @@
     currentJar = null;
     entryRows  = [];
     userId     = '';
-    scriptUrl  = DEFAULT_SCRIPT_URL;
     // 설정 시트 닫고 초기 설정 화면으로
     closeSheet('settingsSheet');
     showSetup();
@@ -442,13 +417,10 @@
 
   $('settSaveBtn').addEventListener('click', () => {
     const newId  = $('settUserId').value.trim();
-    const newUrl = $('settScriptUrl').value.trim();
     if (!newId) { toast('사용자 ID를 입력하세요.'); return; }
-    const changed = (newId !== userId) || (newUrl !== scriptUrl);
+    const changed = (newId !== userId);
     userId    = newId;
-    scriptUrl = newUrl;
     localStorage.setItem(KEY_USER_ID, userId);
-    localStorage.setItem(KEY_SCRIPT_URL, scriptUrl);
     toast('저장됐어요.');
     if (changed) { cachedJars = []; closeSheet('settingsSheet'); initApp(); }
     else { closeSheet('settingsSheet'); }
@@ -515,10 +487,6 @@
   async function syncWithServer(silent = false) {
     if (isMock()) {
       if (!silent) toast('샘플 데이터 모드에서는 동기화가 지원되지 않습니다.');
-      return;
-    }
-    if (!scriptUrl) {
-      if (!silent) toast('Apps Script URL이 설정되지 않았어요.');
       return;
     }
 
@@ -809,7 +777,7 @@
     renderHistorySection(jar.jarId);
 
     // Pull server history for selected jar (merge with local unsynced)
-    if (scriptUrl && !isMock()) {
+    if (!isMock()) {
       try {
         const histData = await apiFetchReal({ query: 'getJarHistory', params: { jarId: jar.jarId } });
         const serverEntries = (histData.history || [])
@@ -1776,7 +1744,8 @@
 
   // ── 앱 초기화 (localStorage-first) ──
   async function initApp() {
-    if (isMock()) console.info('[DreamJar] Apps Script URL 미설정 → 샘플 데이터 모드');
+    if (hasSupabase()) console.info('[DreamJar] Supabase 백엔드 연동됨');
+    else console.info('[DreamJar] Supabase 미로드 → 샘플 데이터 모드');
 
     $('jarLoading').hidden = false;
     $('jarDisplay').hidden = true;
@@ -1799,7 +1768,7 @@
           saveLocalEntries(jarId, entries);
         });
         cachedJars = activeJars(mockJars);
-      } else if (scriptUrl) {
+      } else if (hasSupabase()) {
         // 로컬 데이터 없음 — 서버에서 한 번 자동 로드
         toast('로컬 데이터 없음. 서버에서 불러오는 중…');
         try { await syncWithServer(true); return; } catch { /* fall through to empty */ }
