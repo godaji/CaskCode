@@ -663,7 +663,13 @@
         const filteredServerEntries = serverEntries.filter(e => !stillPendingDelIds.has(e.entryId));
         const localE = allEntriesMap[jarId] || [];
         const stillUnsynced = localE.filter(e => !e.synced);
+        // 기부 완료 플래그 보존: 로컬에 donated=true였던 entryId 집합
+        const localDonatedIds = new Set(localE.filter(e => e.donated).map(e => e.entryId));
         const merged = [...filteredServerEntries, ...stillUnsynced].sort((a, b) => (b.createdAt > a.createdAt ? 1 : -1));
+        // 기부 완료 플래그 복원
+        if (localDonatedIds.size > 0) {
+          merged.forEach(e => { if (localDonatedIds.has(e.entryId)) e.donated = true; });
+        }
         saveLocalEntries(jarId, merged);
 
         // Active jar: update display + detect new donations
@@ -844,7 +850,12 @@
             sourceNotes: e.sourceNotes || '',
           }));
         const stillUnsynced = entryRows.filter(e => !e.synced);
+        // 기부 완료 플래그 보존
+        const localDonatedIds = new Set(entryRows.filter(e => e.donated).map(e => e.entryId));
         const merged = [...serverEntries, ...stillUnsynced].sort((a, b) => (b.createdAt > a.createdAt ? 1 : -1));
+        if (localDonatedIds.size > 0) {
+          merged.forEach(e => { if (localDonatedIds.has(e.entryId)) e.donated = true; });
+        }
         saveLocalEntries(jar.jarId, merged);
         entryRows = merged;
         renderControlSection(jar, entryRows);
@@ -1421,9 +1432,19 @@
     const myJar = cachedJars.find(j => j.ownerId === userId);
     if (!myJar) { listEl.innerHTML = '<p class="hist-empty">내 Jar가 없어요.</p>'; return; }
 
-    const entries = localEntries(myJar.jarId).filter(e => {
+    const allMyEntries = localEntries(myJar.jarId);
+    // donation_out의 sourceNotes로 이미 기부된 항목 식별 (서버 동기화 후에도 유지)
+    const donatedNotes = new Set();
+    allMyEntries.forEach(e => {
+      if (e.type === 'donation_out' && e.sourceNotes) donatedNotes.add(e.sourceNotes);
+    });
+    const entries = allMyEntries.filter(e => {
       const type = e.type || 'entry';
-      return type === 'entry' && (Number(e.amount) || 0) > 0 && !e.donated;
+      if (type !== 'entry' || (Number(e.amount) || 0) <= 0) return false;
+      if (e.donated) return false;
+      // sourceNotes 매칭: 기부 발신 기록에 이 항목의 note가 있으면 이미 기부됨
+      if (e.note && donatedNotes.has(e.note)) return false;
+      return true;
     });
 
     if (entries.length === 0) {
@@ -1536,6 +1557,7 @@
           note: '기부 발신 (수수료 ' + feePct + '%)',
           createdAt: ts, synced: true,
           type: 'donation_out', icon: '↗️', contributorName: currentJar.name || '',
+          sourceNotes: item.note || '',
         });
         toEntries.unshift({
           entryId: item.donationId + '_in', amount: item.netAmount,

@@ -447,6 +447,7 @@
           userId: '', contributorName: toJar.name || d.to_jar_id || '(알 수 없음)',
           label: '기부 발신 (수수료 ' + Math.round((Number(d.fee_rate) || 0) * 100) + '%)',
           amount: -(Number(d.request_amount) || 0), icon: '↗️',
+          sourceNotes: d.source_notes || '',
         };
       });
 
@@ -600,6 +601,7 @@
         userId: '', contributorName: toJar.name || d.to_jar_id || '(알 수 없음)',
         label: '기부 발신 (수수료 ' + Math.round((Number(d.fee_rate) || 0) * 100) + '%)',
         amount: -(Number(d.request_amount) || 0), icon: '↗️',
+        sourceNotes: d.source_notes || '',
       };
     });
 
