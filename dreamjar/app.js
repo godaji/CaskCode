@@ -603,7 +603,7 @@
           const newDonations = filteredServerEntries.filter(
             e => (e.type === 'donation_in' || e.type === 'donation') && !prevDonationIds.has(e.entryId)
           );
-          if (newDonations.length > 0) {
+          if (newDonations.length > 0 && currentJar.ownerId === userId) {
             showDonationReceivedPopup(newDonations);
           }
         } catch { /* use existing local */ }
