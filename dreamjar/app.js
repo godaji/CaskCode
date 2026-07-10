@@ -795,7 +795,7 @@
     updateJarDisplay(jar);
 
     const isOwned = jar.ownerId === userId;
-    $('historyBtn').hidden = !isOwned;
+    $('historyBtn').hidden = false;
     $('donateBtn').hidden  = isOwned;
 
     // Show sync info for joined jars
@@ -1357,7 +1357,8 @@
       const amt = Number(e.amount) || 0;
       const amtSign = amt >= 0 ? '+' : '';
       const amtClass = amt < 0 ? ' hist-amount-neg' : '';
-      const delBtn = !isDonation
+      const isOwnedJar = currentJar && currentJar.ownerId === userId;
+      const delBtn = !isDonation && isOwnedJar
         ? `<button class="hist-del-btn" data-entry-id="${escHtml(e.entryId)}" data-jar-id="${escHtml(jarId)}" type="button" aria-label="삭제">🗑️</button>`
         : '';
       // 기부 수신 내역: "기부(원래금액, 수수료N%)" 형식으로 표시
