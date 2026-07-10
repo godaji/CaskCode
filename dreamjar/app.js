@@ -15,6 +15,7 @@
   const KEY_PENDING_CTRL = 'dreamjar.pendingCtrl'; // JSON: [{jarId, memberId, controlId}]
   const KEY_PENDING_ARCHIVE = 'dreamjar.pendingArchive'; // JSON: [{jarId}]
   const KEY_LAST_SYNC  = 'dreamjar.lastSync';    // ISO timestamp string
+  const KEY_SERVER_MODIFIED = 'dreamjar.serverModified'; // 서버 lastModified (CMPA-888)
 
   // ── localStorage 헬퍼 ──
   function localJars() { return JSON.parse(localStorage.getItem(KEY_JARS) || '[]'); }
@@ -395,7 +396,8 @@
     if (!confirm('로그아웃하시겠습니까?\n로컬 데이터가 모두 삭제됩니다.')) return;
     // localStorage에서 dreamjar 관련 키 모두 삭제
     [KEY_USER_ID, KEY_SCRIPT_URL, KEY_ACTIVE_JAR, KEY_JARS, KEY_ENTRIES,
-     KEY_PENDING_DEL, KEY_PENDING_CTRL, KEY_PENDING_ARCHIVE, KEY_LAST_SYNC
+     KEY_PENDING_DEL, KEY_PENDING_CTRL, KEY_PENDING_ARCHIVE, KEY_LAST_SYNC,
+     KEY_SERVER_MODIFIED
     ].forEach(k => localStorage.removeItem(k));
     // 캐시 초기화
     cachedJars = [];
@@ -497,66 +499,119 @@
     if (hdrSync) { hdrSync.classList.add('syncing'); hdrSync.disabled = true; }
 
     try {
-      // 1. Push all unsynced entries
+      // 0. Check if there are any pending local changes
       const allEntriesMap = JSON.parse(localStorage.getItem(KEY_ENTRIES) || '{}');
+      const pendingCtrl = localPendingCtrl();
+      const pendingArchive = localPendingArchive();
+      const pendingDel = localPendingDel();
+
+      const hasUnsynced = Object.values(allEntriesMap).some(entries => entries.some(e => !e.synced));
+      const hasPending = hasUnsynced || pendingCtrl.length > 0 || pendingArchive.length > 0 || pendingDel.length > 0;
+
+      // If no local changes, check per-jar dirty bits (lightweight — sync_meta only)
+      if (!hasPending) {
+        try {
+          // 로컬에 알고 있는 jarIds를 보내서 sync_meta만 조회 (jar_members/jars 안 읽음)
+          const localJarMod = JSON.parse(localStorage.getItem(KEY_SERVER_MODIFIED) || '{}');
+          const knownJarIds = Object.keys(localJarMod);
+          if (knownJarIds.length > 0) {
+            const checkResult = await apiFetchReal({ query: 'checkSync', params: { jarIds: knownJarIds.join(',') } });
+            const serverJarMod = (checkResult && checkResult.jarModified) || {};
+            const serverKeys = Object.keys(serverJarMod);
+            const allClean = serverKeys.length === knownJarIds.length &&
+              knownJarIds.every(k => serverJarMod[k] === localJarMod[k]);
+            if (allClean) {
+              if (!silent) toast('이미 최신 상태예요!');
+              return;
+            }
+          }
+        } catch { /* checkSync 실패 시 full pull 진행 */ }
+      }
+
+      // 1. Push all pending mutations in PARALLEL (was sequential)
+
+      // Collect all push promises
+      const pushPromises = [];
+
+      // 1a. Unsynced entries — all in parallel
+      const unsyncedRefs = []; // [{jarId, idx}] to mark synced after
       for (const jarId of Object.keys(allEntriesMap)) {
         const entries = allEntriesMap[jarId];
-        let changed = false;
         for (let i = 0; i < entries.length; i++) {
           if (!entries[i].synced) {
-            try {
-              const res = await apiFetchReal({
-                action: 'addEntry',
-                params: { jarId, userId, amount: entries[i].amount, note: entries[i].note },
-              });
-              entries[i] = { ...entries[i], entryId: (res && res.entryId) || entries[i].entryId, synced: true };
-              changed = true;
-            } catch { /* keep as unsynced */ }
+            const ref = { jarId, idx: i };
+            unsyncedRefs.push(ref);
+            pushPromises.push(
+              apiFetchReal({ action: 'addEntry', params: { jarId, userId, amount: entries[i].amount, note: entries[i].note } })
+                .then(res => { ref.result = res; ref.ok = true; })
+                .catch(() => { ref.ok = false; })
+            );
           }
         }
-        if (changed) allEntriesMap[jarId] = entries;
+      }
+
+      // 1b. Pending control changes — parallel
+      const ctrlResults = pendingCtrl.map(pc =>
+        apiFetchReal({ action: 'setControl', params: { memberId: pc.memberId, controlId: pc.controlId, jarId: pc.jarId, userId } })
+          .then(() => ({ pc, ok: true }))
+          .catch(() => ({ pc, ok: false }))
+      );
+      pushPromises.push(...ctrlResults);
+
+      // 1c. Pending archives — parallel
+      const archResults = pendingArchive.map(pa =>
+        apiFetchReal({ action: 'archiveJar', params: { jarId: pa.jarId } })
+          .then(() => ({ pa, ok: true }))
+          .catch(() => ({ pa, ok: false }))
+      );
+      pushPromises.push(...archResults);
+
+      // 1d. Pending deletes — parallel
+      const delResults = pendingDel.map(pd =>
+        apiFetchReal({ action: 'deleteEntry', params: { jarId: pd.jarId, entryId: pd.entryId } })
+          .then(() => ({ pd, ok: true }))
+          .catch(() => ({ pd, ok: false }))
+      );
+      pushPromises.push(...delResults);
+
+      // Wait for ALL push operations at once
+      await Promise.all(pushPromises);
+
+      // Process results: mark synced entries
+      for (const ref of unsyncedRefs) {
+        if (ref.ok) {
+          const entry = allEntriesMap[ref.jarId][ref.idx];
+          allEntriesMap[ref.jarId][ref.idx] = { ...entry, entryId: (ref.result && ref.result.entryId) || entry.entryId, synced: true };
+        }
       }
       localStorage.setItem(KEY_ENTRIES, JSON.stringify(allEntriesMap));
 
-      // 1b. Push pending control changes
-      const pendingCtrl = localPendingCtrl();
-      const remainingCtrl = [];
-      for (const pc of pendingCtrl) {
-        try {
-          await apiFetchReal({ action: 'setControl', params: { memberId: pc.memberId, controlId: pc.controlId, jarId: pc.jarId, userId } });
-        } catch { remainingCtrl.push(pc); }
-      }
+      // Process ctrl/archive/del results
+      const remainingCtrl = (await Promise.all(ctrlResults)).filter(r => !r.ok).map(r => r.pc);
       savePendingCtrl(remainingCtrl);
-
-      // 1c. Push pending archive (jar deletions)
-      const pendingArchive = localPendingArchive();
-      const remainingArchive = [];
-      for (const pa of pendingArchive) {
-        try {
-          await apiFetchReal({ action: 'archiveJar', params: { jarId: pa.jarId } });
-        } catch { remainingArchive.push(pa); }
-      }
+      const remainingArchive = (await Promise.all(archResults)).filter(r => !r.ok).map(r => r.pa);
       savePendingArchive(remainingArchive);
-
-      // 2. Execute pending deletes
-      const pendingDel = localPendingDel();
-      const remainingDel = [];
-      for (const { entryId, jarId } of pendingDel) {
-        try { await apiFetchReal({ action: 'deleteEntry', params: { jarId, entryId } }); }
-        catch { remainingDel.push({ entryId, jarId }); }
-      }
+      const remainingDel = (await Promise.all(delResults)).filter(r => !r.ok).map(r => r.pd);
       savePendingDel(remainingDel);
 
-      // 3. Pull fresh jars from server & merge with local state
-      const freshJars = await apiFetchReal({ query: 'getJarsByUser', params: { userId } }) || [];
+      // 2. Pull ALL data in ONE call (was getJarsByUser + getJarHistory = 2 calls × 5-6 readAll each)
+      const fullSync = await apiFetchReal({ query: 'getFullSync', params: { userId } }) || {};
+      const freshJars = fullSync.jars || [];
+      const serverHistories = fullSync.histories || {};
 
-      // Re-apply pending archive flags: if a jar was locally deleted but
-      // the server hasn't processed it yet, keep it archived locally.
+      // Save per-jar lastModified for future checkSync comparison
+      // If server returned empty jarModified (no mutations yet), generate defaults
+      // so checkSync has jarIds to send next time (prevents infinite getFullSync loop)
+      let jarMod = fullSync.jarModified || {};
+      if (Object.keys(jarMod).length === 0 && freshJars.length > 0) {
+        freshJars.forEach(j => { jarMod[j.jarId] = 'init'; });
+      }
+      localStorage.setItem(KEY_SERVER_MODIFIED, JSON.stringify(jarMod));
+
+      // Re-apply pending archive flags
       const stillPendingArchive = localPendingArchive();
       const pendingArchiveIds = new Set(stillPendingArchive.map(p => p.jarId));
 
-      // Merge: preserve local archived state for jars with pending archive,
-      // and preserve pending control changes not yet pushed.
       const prevLocal = localJars();
       const mergedJars = freshJars.map(sj => {
         if (pendingArchiveIds.has(sj.jarId)) {
@@ -573,42 +628,43 @@
       saveLocalJars(mergedJars);
       cachedJars = activeJars(mergedJars);
 
-      // 4. For active jar, pull server history and merge
-      if (currentJar) {
-        try {
-          // Snapshot existing donation IDs before pull (to detect new ones)
-          const localE = allEntriesMap[currentJar.jarId] || [];
+      // 3. Merge server histories for ALL jars (no extra getJarHistory call needed)
+      const stillPendingDelIds = new Set(localPendingDel().map(p => p.entryId));
+
+      for (const jarInfo of mergedJars) {
+        const jarId = jarInfo.jarId;
+        const histData = serverHistories[jarId];
+        if (!histData) continue;
+
+        const serverEntries = (histData.history || []).map(e => ({
+          entryId: e.id, amount: e.amount, note: e.label, createdAt: e.date, synced: true,
+          type: e.type || 'entry', icon: e.icon || '💰', contributorName: e.contributorName || '',
+          requestAmount: e.requestAmount || 0, feeRate: e.feeRate || 0, feeAmount: e.feeAmount || 0,
+        }));
+        const filteredServerEntries = serverEntries.filter(e => !stillPendingDelIds.has(e.entryId));
+        const localE = allEntriesMap[jarId] || [];
+        const stillUnsynced = localE.filter(e => !e.synced);
+        const merged = [...filteredServerEntries, ...stillUnsynced].sort((a, b) => (b.createdAt > a.createdAt ? 1 : -1));
+        saveLocalEntries(jarId, merged);
+
+        // Active jar: update display + detect new donations
+        if (currentJar && currentJar.jarId === jarId) {
           const prevDonationIds = new Set(
             localE.filter(e => e.type === 'donation_in' || e.type === 'donation').map(e => e.entryId)
           );
-
-          const histData = await apiFetchReal({ query: 'getJarHistory', params: { jarId: currentJar.jarId } });
-          const serverEntries = (histData.history || [])
-            .map(e => ({
-              entryId: e.id, amount: e.amount, note: e.label, createdAt: e.date, synced: true,
-              type: e.type || 'entry', icon: e.icon || '💰', contributorName: e.contributorName || '',
-              requestAmount: e.requestAmount || 0, feeRate: e.feeRate || 0, feeAmount: e.feeAmount || 0,
-            }));
-          // Filter out entries that are pending local deletion (not yet confirmed by server)
-          const stillPendingDel = localPendingDel();
-          const pendingDelIds = new Set(stillPendingDel.map(p => p.entryId));
-          const filteredServerEntries = serverEntries.filter(e => !pendingDelIds.has(e.entryId));
-          // Merge: filtered server entries + still-unsynced local entries (not yet pushed)
-          const stillUnsynced = localE.filter(e => !e.synced);
-          const merged = [...filteredServerEntries, ...stillUnsynced].sort((a, b) => (b.createdAt > a.createdAt ? 1 : -1));
-          saveLocalEntries(currentJar.jarId, merged);
           entryRows = merged;
 
-          // Detect new donation_in entries and show fun popup
           const newDonations = filteredServerEntries.filter(
             e => (e.type === 'donation_in' || e.type === 'donation') && !prevDonationIds.has(e.entryId)
           );
           if (newDonations.length > 0 && currentJar.ownerId === userId) {
             showDonationReceivedPopup(newDonations);
           }
-        } catch { /* use existing local */ }
+        }
+      }
 
-        // Update currentJar from merged data
+      // Update currentJar display
+      if (currentJar) {
         const fresh = mergedJars.find(j => j.jarId === currentJar.jarId);
         if (fresh && !fresh.archived) {
           const unsyncedSum = localEntries(currentJar.jarId)
@@ -630,7 +686,6 @@
       if (!currentJar && cachedJars.length > 0) {
         await initApp();
       } else if (!currentJar && cachedJars.length === 0) {
-        // 서버에도 jar가 없음 — 빈 상태 표시
         $('jarLoading').hidden = true;
         $('jarEmpty').hidden   = false;
       }
