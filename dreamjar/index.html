@@ -14,7 +14,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="DreamJar">
-<link rel="stylesheet" href="./style.css?v=20260710g">
+<link rel="stylesheet" href="./style.css?v=20260711b">
 </head>
 <body>
 
@@ -412,12 +412,29 @@
         <div class="donate-arrow">→</div>
         <div class="donate-to" id="donateTo"></div>
       </div>
-      <div class="cj-field">
-        <label class="cj-label" for="donateAmount">기부 금액 <span class="cj-unit">원</span></label>
-        <input id="donateAmount" class="cj-input" type="number" placeholder="예: 10000" min="1" inputmode="numeric">
+      <!-- 탭 바 -->
+      <div class="donate-tab-bar">
+        <button class="donate-tab-btn active" data-donate-tab="amount" type="button">금액 입력</button>
+        <button class="donate-tab-btn" data-donate-tab="entries" type="button">내역 선택</button>
       </div>
-      <p class="sett-hint">🦝 너구리사장이 0~50% 수수료를 랜덤으로 떼갑니다.</p>
-      <button id="donateSubmitBtn" class="btn-cta" type="button">기부하기</button>
+      <!-- 금액 입력 탭 -->
+      <div class="donate-tab-content" data-donate-tab="amount">
+        <div class="cj-field">
+          <label class="cj-label" for="donateAmount">기부 금액 <span class="cj-unit">원</span></label>
+          <input id="donateAmount" class="cj-input" type="number" placeholder="예: 10000" min="1" inputmode="numeric">
+        </div>
+        <p class="sett-hint">🦝 너구리사장이 0~50% 수수료를 랜덤으로 떼갑니다.</p>
+        <button id="donateSubmitBtn" class="btn-cta" type="button">기부하기</button>
+      </div>
+      <!-- 내역 선택 탭 -->
+      <div class="donate-tab-content" data-donate-tab="entries" hidden>
+        <div id="donateBulkList" class="donate-bulk-list"></div>
+        <div class="donate-bulk-summary" id="donateBulkSummary" hidden>
+          <span id="donateBulkCount">0건</span> 선택 · <span id="donateBulkTotal">0원</span>
+        </div>
+        <p class="sett-hint">🦝 너구리사장이 각 항목마다 0~50% 수수료를 개별 적용합니다.</p>
+        <button id="donateBulkSubmitBtn" class="btn-cta" type="button">선택 항목 기부하기</button>
+      </div>
     </div>
   </div>
 </div>
@@ -431,6 +448,7 @@
     </div>
     <div class="sheet-body">
       <div id="donateResultBody"></div>
+      <div id="donateResultBulk" hidden></div>
       <button class="btn-cta sheet-close" data-close="donateResultSheet" type="button" style="margin-top:16px">확인</button>
     </div>
   </div>
@@ -466,6 +484,6 @@
   </div>
 </div>
 
-<script src="./app.js?v=20260710g"></script>
+<script src="./app.js?v=20260711b"></script>
 </body>
 </html>
