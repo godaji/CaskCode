@@ -257,6 +257,7 @@
           type: 'donation_in', id: d.donationId, date: d.createdAt,
           userId: '', contributorName: '(기부 Jar)',
           label: '기부', amount: Number(d.netAmount) || 0, icon: '🦝',
+          requestAmount: Number(d.requestAmount) || 0, feeRate: d.feeRate || 0, feeAmount: Number(d.feeAmount) || 0,
         })),
         ...dOut.map(d => {
           const toJar = MOCK_JARS.find(j => j.jarId === d.toJarId);
@@ -554,22 +555,36 @@
       // 4. For active jar, pull server history and merge
       if (currentJar) {
         try {
+          // Snapshot existing donation IDs before pull (to detect new ones)
+          const localE = allEntriesMap[currentJar.jarId] || [];
+          const prevDonationIds = new Set(
+            localE.filter(e => e.type === 'donation_in' || e.type === 'donation').map(e => e.entryId)
+          );
+
           const histData = await apiFetchReal({ query: 'getJarHistory', params: { jarId: currentJar.jarId } });
           const serverEntries = (histData.history || [])
             .map(e => ({
               entryId: e.id, amount: e.amount, note: e.label, createdAt: e.date, synced: true,
               type: e.type || 'entry', icon: e.icon || '💰', contributorName: e.contributorName || '',
+              requestAmount: e.requestAmount || 0, feeRate: e.feeRate || 0, feeAmount: e.feeAmount || 0,
             }));
           // Filter out entries that are pending local deletion (not yet confirmed by server)
           const stillPendingDel = localPendingDel();
           const pendingDelIds = new Set(stillPendingDel.map(p => p.entryId));
           const filteredServerEntries = serverEntries.filter(e => !pendingDelIds.has(e.entryId));
           // Merge: filtered server entries + still-unsynced local entries (not yet pushed)
-          const localE = allEntriesMap[currentJar.jarId] || [];
           const stillUnsynced = localE.filter(e => !e.synced);
           const merged = [...filteredServerEntries, ...stillUnsynced].sort((a, b) => (b.createdAt > a.createdAt ? 1 : -1));
           saveLocalEntries(currentJar.jarId, merged);
           entryRows = merged;
+
+          // Detect new donation_in entries and show fun popup
+          const newDonations = filteredServerEntries.filter(
+            e => (e.type === 'donation_in' || e.type === 'donation') && !prevDonationIds.has(e.entryId)
+          );
+          if (newDonations.length > 0) {
+            showDonationReceivedPopup(newDonations);
+          }
         } catch { /* use existing local */ }
 
         // Update currentJar from merged data
@@ -690,6 +705,7 @@
           .map(e => ({
             entryId: e.id, amount: e.amount, note: e.label, createdAt: e.date, synced: true,
             type: e.type || 'entry', icon: e.icon || '💰', contributorName: e.contributorName || '',
+            requestAmount: e.requestAmount || 0, feeRate: e.feeRate || 0, feeAmount: e.feeAmount || 0,
           }));
         const stillUnsynced = entryRows.filter(e => !e.synced);
         const merged = [...serverEntries, ...stillUnsynced].sort((a, b) => (b.createdAt > a.createdAt ? 1 : -1));
@@ -1195,6 +1211,42 @@
     openSheet('historySheet');
   });
 
+  // ── 기부 수신 팝업 (동기화 시 새 기부가 감지되면 표시) ──
+  let _donationQueue = [];
+  function showDonationReceivedPopup(donations) {
+    _donationQueue = donations.slice();
+    _showNextDonation();
+  }
+  function _showNextDonation() {
+    if (_donationQueue.length === 0) return;
+    const d = _donationQueue.shift();
+    const net = Number(d.amount) || 0;
+    const req = Number(d.requestAmount) || 0;
+    const fee = Number(d.feeAmount) || 0;
+    const feePct = Math.round((Number(d.feeRate) || 0) * 100);
+    const from = d.contributorName || '(알 수 없음)';
+    // If we have requestAmount info, show the full breakdown
+    const hasDetail = req > 0;
+    let html = `<div class="dr-recv-from">💌 <strong>${from}</strong> 에서 기부가 왔어요!</div>`;
+    if (hasDetail) {
+      html += `<div class="dr-row"><span>보낸 금액</span><span>${won(req)}</span></div>`;
+      html += `<div class="dr-row dr-fee"><span>🦝 너구리사장 수수료 (${feePct}%)</span><span>-${won(fee)}</span></div>`;
+      html += `<div class="dr-row dr-net"><span>내 Jar에 도착한 금액</span><span>${won(net)}</span></div>`;
+    } else {
+      html += `<div class="dr-row dr-net"><span>받은 금액</span><span>${won(net)}</span></div>`;
+    }
+    const remaining = _donationQueue.length;
+    if (remaining > 0) {
+      html += `<p class="dr-remaining">${remaining}건의 기부가 더 있어요!</p>`;
+    }
+    $('donateReceivedBody').innerHTML = html;
+    openSheet('donateReceivedSheet');
+  }
+  $('donateReceivedNextBtn').addEventListener('click', () => {
+    closeSheet('donateReceivedSheet');
+    setTimeout(_showNextDonation, 300);
+  });
+
   // ── 기부 버튼 ──
   $('donateBtn').addEventListener('click', () => {
     if (!currentJar) return;
@@ -1474,6 +1526,54 @@
 
     updateLastSyncDisplay();
   }
+
+  // ── 홈 화면에 추가 (A2HS / PWA install) — CMPA-872 ──
+  const isStandalone = () =>
+    (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
+    window.navigator.standalone === true;
+  const isIOS = () =>
+    /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+
+  let deferredPrompt = null;
+  function showInstallBtn(show){
+    const btn = $('installBtn'); const div = $('settInstallDivider'); const sec = $('settInstallSection');
+    if (btn) btn.hidden = !show;
+    if (div) div.hidden = !show;
+    if (sec) sec.hidden = !show;
+  }
+  (function setupInstall(){
+    const btn = $('installBtn');
+    if (!btn) return;
+    if (isStandalone()) { showInstallBtn(false); return; }
+
+    window.addEventListener('beforeinstallprompt', e => {
+      e.preventDefault();
+      deferredPrompt = e;
+      showInstallBtn(true);
+    });
+
+    if (isIOS()) showInstallBtn(true);
+
+    btn.addEventListener('click', async () => {
+      if (deferredPrompt){
+        deferredPrompt.prompt();
+        let outcome = 'dismissed';
+        try { ({ outcome } = await deferredPrompt.userChoice); } catch(e){}
+        deferredPrompt = null;
+        showInstallBtn(false);
+        if (outcome === 'accepted') toast('홈 화면에 추가했어요');
+      } else if (isIOS()){
+        openSheet('iosInstallSheet');
+      }
+    });
+
+    window.addEventListener('appinstalled', () => {
+      deferredPrompt = null;
+      showInstallBtn(false);
+      closeSheet('iosInstallSheet');
+      toast('홈 화면에 추가됐어요');
+    });
+  })();
 
   // ── 진입점 ──
   if (!userId) {
