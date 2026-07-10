@@ -40,7 +40,7 @@
 
   // ── 상태 ──
   let userId    = localStorage.getItem(KEY_USER_ID) || '';
-  const DEFAULT_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzrf9M_9x2m8cA2nvv0b0CWKEGNp5Ym2SLV2rJ7ADx79t1ePRbY0yF4wyLdcDU4_nMS/exec';
+  const DEFAULT_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx1SF3djcB9kEnpbI_MltdPvtYS7p7ADZ1tnXVKoVTqUtsEgFFy2l11Qxo1TQc0DuSc/exec';
   let scriptUrl = localStorage.getItem(KEY_SCRIPT_URL) || DEFAULT_SCRIPT_URL;
 
   // 캐시
@@ -246,6 +246,7 @@
       const jarId = params.jarId;
       const entries = MOCK_ENTRIES[jarId] || [];
       const dIn = MOCK_DONATIONS_IN.filter(d => d.toJarId === jarId);
+      const dOut = MOCK_DONATIONS_OUT.filter(d => d.fromJarId === jarId);
       const history = [
         ...entries.map(e => ({
           type: 'entry', id: e.entryId, date: e.createdAt,
@@ -253,10 +254,19 @@
           label: e.note || '적립', amount: Number(e.amount) || 0, icon: '💰',
         })),
         ...dIn.map(d => ({
-          type: 'donation', id: d.donationId, date: d.createdAt,
+          type: 'donation_in', id: d.donationId, date: d.createdAt,
           userId: '', contributorName: '(기부 Jar)',
           label: '기부', amount: Number(d.netAmount) || 0, icon: '🦝',
         })),
+        ...dOut.map(d => {
+          const toJar = MOCK_JARS.find(j => j.jarId === d.toJarId);
+          return {
+            type: 'donation_out', id: d.donationId, date: d.createdAt,
+            userId: '', contributorName: (toJar && toJar.name) || d.toJarId || '(알 수 없음)',
+            label: '기부 발신 (수수료 ' + Math.round((d.feeRate || 0) * 100) + '%)',
+            amount: -(Number(d.requestAmount) || 0), icon: '↗️',
+          };
+        }),
       ].sort((a, b) => (b.date > a.date ? 1 : -1));
       return Promise.resolve({ history, memberSubtotals: [] });
     }
@@ -326,7 +336,12 @@
       if (mj) { mj.archived = true; mj.archivedAt = new Date().toISOString(); }
       return Promise.resolve({ archived: true });
     }
-    if (action === 'joinJar') return Promise.resolve({ memberId: 'm-' + Date.now() });
+    if (action === 'joinJar') {
+      const input = params.jarId || '';
+      const jar = MOCK_JARS.find(j => j.jarId === input) || MOCK_JARS.find(j => j.name === input);
+      if (!jar) return Promise.reject(new Error('존재하지 않는 Jar입니다: ' + input));
+      return Promise.resolve({ memberId: 'm-' + Date.now(), jarName: jar.name || '' });
+    }
     if (action === 'registerUser') return Promise.resolve({ userId: params.userId || userId });
     return Promise.resolve({});
   }
@@ -541,8 +556,10 @@
         try {
           const histData = await apiFetchReal({ query: 'getJarHistory', params: { jarId: currentJar.jarId } });
           const serverEntries = (histData.history || [])
-            .filter(r => r.type === 'entry')
-            .map(e => ({ entryId: e.id, amount: e.amount, note: e.label, createdAt: e.date, synced: true }));
+            .map(e => ({
+              entryId: e.id, amount: e.amount, note: e.label, createdAt: e.date, synced: true,
+              type: e.type || 'entry', icon: e.icon || '💰', contributorName: e.contributorName || '',
+            }));
           // Filter out entries that are pending local deletion (not yet confirmed by server)
           const stillPendingDel = localPendingDel();
           const pendingDelIds = new Set(stillPendingDel.map(p => p.entryId));
@@ -670,8 +687,10 @@
       try {
         const histData = await apiFetchReal({ query: 'getJarHistory', params: { jarId: jar.jarId } });
         const serverEntries = (histData.history || [])
-          .filter(r => r.type === 'entry')
-          .map(e => ({ entryId: e.id, amount: e.amount, note: e.label, createdAt: e.date, synced: true }));
+          .map(e => ({
+            entryId: e.id, amount: e.amount, note: e.label, createdAt: e.date, synced: true,
+            type: e.type || 'entry', icon: e.icon || '💰', contributorName: e.contributorName || '',
+          }));
         saveLocalEntries(jar.jarId, serverEntries);
         entryRows = serverEntries;
         renderControlSection(jar, entryRows);
@@ -1225,22 +1244,31 @@
     const entries = localEntries(jarId);
 
     if (!entries || entries.length === 0) {
-      listEl.innerHTML = '<p class="hist-empty">적립 내역이 없어요.</p>';
+      listEl.innerHTML = '<p class="hist-empty">내역이 없어요.</p>';
       return;
     }
 
-    listEl.innerHTML = entries.map(e =>
-      `<div class="hist-row">
+    listEl.innerHTML = entries.map(e => {
+      const type = e.type || 'entry';
+      const isDonation = type === 'donation' || type === 'donation_in' || type === 'donation_out';
+      const icon = e.icon || (type === 'donation_out' ? '↗️' : type === 'donation' || type === 'donation_in' ? '🦝' : '💰');
+      const amt = Number(e.amount) || 0;
+      const amtSign = amt >= 0 ? '+' : '';
+      const amtClass = amt < 0 ? ' hist-amount-neg' : '';
+      const delBtn = !isDonation
+        ? `<button class="hist-del-btn" data-entry-id="${escHtml(e.entryId)}" data-jar-id="${escHtml(jarId)}" type="button" aria-label="삭제">🗑️</button>`
+        : '';
+      return `<div class="hist-row${isDonation ? ' hist-donation' : ''}">
         <div class="hist-left">
-          <div class="hist-label">${escHtml(displayNote(e.note))}</div>
-          <div class="hist-date">${fmtDate(e.createdAt)}${!e.synced ? ' <span class="hist-pending">●</span>' : ''}</div>
+          <div class="hist-label">${icon} ${escHtml(displayNote(e.note))}</div>
+          <div class="hist-date">${fmtDate(e.createdAt)}${!e.synced ? ' <span class="hist-pending">●</span>' : ''}${e.contributorName ? ' · ' + escHtml(e.contributorName) : ''}</div>
         </div>
         <div class="hist-right">
-          <div class="hist-amount">+${won(e.amount)}</div>
-          <button class="hist-del-btn" data-entry-id="${escHtml(e.entryId)}" data-jar-id="${escHtml(jarId)}" type="button" aria-label="삭제">🗑️</button>
+          <div class="hist-amount${amtClass}">${amtSign}${won(Math.abs(amt))}</div>
+          ${delBtn}
         </div>
-      </div>`
-    ).join('');
+      </div>`;
+    }).join('');
 
     listEl.querySelectorAll('.hist-del-btn').forEach(btn => {
       btn.addEventListener('click', () => {
