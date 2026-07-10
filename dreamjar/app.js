@@ -883,13 +883,16 @@
     return note.replace(/^\[[\w]+\]\s*/, '');
   }
 
-  function renderHistorySection(jarId) {
-    const sec = $('historySection');
-    const listEl = $('historyList');
-    if (!jarId) { sec.hidden = true; return; }
+  // ── 내역 시트 ──
+  $('historyBtn').addEventListener('click', () => {
+    if (!currentJar) return;
+    renderHistoryList(currentJar.jarId);
+    openSheet('historySheet');
+  });
 
+  function renderHistoryList(jarId) {
+    const listEl = $('historyList');
     const entries = localEntries(jarId);
-    sec.hidden = false;
 
     if (!entries || entries.length === 0) {
       listEl.innerHTML = '<p class="hist-empty">적립 내역이 없어요.</p>';
@@ -910,8 +913,15 @@
     ).join('');
 
     listEl.querySelectorAll('.hist-del-btn').forEach(btn => {
-      btn.addEventListener('click', () => deleteEntryLocal(btn.dataset.jarId, btn.dataset.entryId));
+      btn.addEventListener('click', () => {
+        deleteEntryLocal(btn.dataset.jarId, btn.dataset.entryId);
+        renderHistoryList(btn.dataset.jarId);
+      });
     });
+  }
+
+  function renderHistorySection(jarId) {
+    // no-op: history is now in a sheet, not a section
   }
 
   // per_day 길게 누르기 → 루틴 옵션 시트

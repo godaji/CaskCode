@@ -183,6 +183,14 @@ input, select { font-family: inherit; }
   color: #f5d47b;
   background: rgba(245, 212, 123, .12);
 }
+.btn-history {
+  display: block; width: 100%; margin-top: 10px;
+  padding: 9px 0; border-radius: 10px;
+  background: var(--card2); border: 1px solid var(--line);
+  font-size: 13px; font-weight: 600; color: var(--accent2);
+  text-align: center;
+}
+.btn-history:active { opacity: .8; }
 .jar-empty-msg {
   font-size: 14px; color: var(--muted); margin: 0 0 14px; text-align: center;
 }

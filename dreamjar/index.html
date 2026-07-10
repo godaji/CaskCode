@@ -70,6 +70,7 @@
           <span class="jar-progress-pct" id="mainJarProgressPct">0%</span>
         </div>
         <div class="jar-prediction" id="mainJarPrediction"></div>
+        <button class="btn-history" id="historyBtn" type="button">내역보기</button>
       </div>
 
       <!-- Jar 없음 -->
@@ -103,12 +104,6 @@
       <div id="controlEmpty" hidden>
         <p class="ctrl-empty-msg">먼저 Jar를 선택하세요.</p>
       </div>
-    </div>
-
-    <!-- HISTORY 섹션 -->
-    <div class="section-card" id="historySection" hidden>
-      <div class="section-label">내역</div>
-      <div id="historyList"></div>
     </div>
 
   </div><!-- /main-scroll -->
@@ -328,6 +323,19 @@
         <div class="ec-amount" id="confirmAmount"></div>
       </div>
       <button id="entryConfirmBtn" class="btn-cta" type="button">적립하기</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 내역 시트 ===== -->
+<div class="sheet-backdrop" id="historySheet" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="내역">
+    <div class="sheet-head">
+      <span>내역</span>
+      <button class="sheet-close" data-close="historySheet" type="button">✕</button>
+    </div>
+    <div class="sheet-body">
+      <div id="historyList"></div>
     </div>
   </div>
 </div>
