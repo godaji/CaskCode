@@ -629,6 +629,10 @@
       // If we were in empty state, now we have data — re-init
       if (!currentJar && cachedJars.length > 0) {
         await initApp();
+      } else if (!currentJar && cachedJars.length === 0) {
+        // 서버에도 jar가 없음 — 빈 상태 표시
+        $('jarLoading').hidden = true;
+        $('jarEmpty').hidden   = false;
       }
     } catch (err) {
       if (!silent) toast('동기화 실패: ' + err.message);
