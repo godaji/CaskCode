@@ -407,6 +407,7 @@
 
   // 동기화 버튼
   $('syncBtn').addEventListener('click', () => syncWithServer(false));
+  $('headerSyncBtn').addEventListener('click', () => syncWithServer(false));
 
   function updateLastSyncDisplay() {
     const el = $('lastSyncText');

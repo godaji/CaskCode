@@ -97,6 +97,9 @@ input, select { font-family: inherit; }
   padding-left: 16px; padding-right: 10px;
   z-index: 20;
 }
+.app-header-actions {
+  display: flex; align-items: center; gap: 4px;
+}
 .app-header-title {
   font-size: 18px; font-weight: 800;
   background: linear-gradient(90deg, var(--accent), var(--accent2));
