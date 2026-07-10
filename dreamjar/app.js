@@ -44,8 +44,9 @@
   const ADMIN_CONTROLS = [
     {
       controlId: 'ctrl_ca',
-      name: 'Ca — 아이 적립',
+      name: 'DaeunControl',
       emoji: '⭐',
+      isDefault: true,
       items: [
         { id:'ca_eal',        label:'EAL 졸업',          type:'milestone',   subtype:'tier',
           tiers:[{label:'상위 달성',amount:500000},{label:'달성',amount:300000}], once:true },
@@ -71,8 +72,9 @@
     },
     {
       controlId: 'ctrl_cb',
-      name: 'Cb — 절약 적립',
+      name: 'DadControl',
       emoji: '💰',
+      isDefault: true,
       items: [
         { id:'cb_coffee',   label:'드립커피',     type:'routine', subtype:'per_day', amount:4500 },
         { id:'cb_tumbler',  label:'텀블러',        type:'routine', subtype:'per_day', amount:1200 },
@@ -126,7 +128,7 @@
         // POST
         const res = await fetch(scriptUrl, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'text/plain' },
           body: JSON.stringify({ action, ...params }),
         });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
