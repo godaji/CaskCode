@@ -1227,7 +1227,8 @@
     const from = d.contributorName || '(알 수 없음)';
     // If we have requestAmount info, show the full breakdown
     const hasDetail = req > 0;
-    let html = `<div class="dr-recv-from">💌 <strong>${from}</strong> 에서 기부가 왔어요!</div>`;
+    let html = `<div class="dr-recv-img"><img src="./raccoon_boss.jpg" alt="너구리사장"></div>`;
+    html += `<div class="dr-recv-from">💌 <strong>${from}</strong> 에서 기부가 왔어요!</div>`;
     if (hasDetail) {
       html += `<div class="dr-row"><span>보낸 금액</span><span>${won(req)}</span></div>`;
       html += `<div class="dr-row dr-fee"><span>🦝 너구리사장 수수료 (${feePct}%)</span><span>-${won(fee)}</span></div>`;

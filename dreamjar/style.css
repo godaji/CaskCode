@@ -680,6 +680,13 @@ input, select { font-family: inherit; }
 .dr-row:last-child { border-bottom: none; }
 .dr-fee { color: var(--muted); }
 .dr-net { font-weight: 800; font-size: 16px; color: var(--accent2); }
+.dr-recv-img {
+  text-align: center; padding: 8px 0 4px;
+}
+.dr-recv-img img {
+  width: 120px; height: 120px; border-radius: 50%;
+  object-fit: cover; border: 3px solid var(--accent2);
+}
 .dr-recv-from {
   text-align: center; font-size: 16px; font-weight: 700;
   color: var(--text); padding: 12px 0 16px;
