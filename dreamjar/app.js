@@ -682,8 +682,8 @@
     renderControlSection(jar, entryRows);
     renderHistorySection(jar.jarId);
 
-    // If no local entries for this jar and scriptUrl configured, try loading from server
-    if (entryRows.length === 0 && scriptUrl && !isMock()) {
+    // Pull server history for selected jar (merge with local unsynced)
+    if (scriptUrl && !isMock()) {
       try {
         const histData = await apiFetchReal({ query: 'getJarHistory', params: { jarId: jar.jarId } });
         const serverEntries = (histData.history || [])
@@ -691,11 +691,13 @@
             entryId: e.id, amount: e.amount, note: e.label, createdAt: e.date, synced: true,
             type: e.type || 'entry', icon: e.icon || '💰', contributorName: e.contributorName || '',
           }));
-        saveLocalEntries(jar.jarId, serverEntries);
-        entryRows = serverEntries;
+        const stillUnsynced = entryRows.filter(e => !e.synced);
+        const merged = [...serverEntries, ...stillUnsynced].sort((a, b) => (b.createdAt > a.createdAt ? 1 : -1));
+        saveLocalEntries(jar.jarId, merged);
+        entryRows = merged;
         renderControlSection(jar, entryRows);
         renderHistorySection(jar.jarId);
-      } catch { /* ignore */ }
+      } catch { /* use existing local */ }
     }
   }
 
@@ -1225,6 +1227,24 @@
         `<div class="dr-row dr-fee"><span>🦝 너구리사장 수수료 (${feePct}%)</span><span>-${won(res.feeAmount)}</span></div>` +
         `<div class="dr-row dr-net"><span>실제 전달 금액</span><span>${won(res.netAmount)}</span></div>`;
       openSheet('donateResultSheet');
+      // Add donation_out to sender's local history
+      const donOutEntry = {
+        entryId: res.donationId, amount: -amount, note: '기부 발신 (수수료 ' + feePct + '%)',
+        createdAt: new Date().toISOString(), synced: true,
+        type: 'donation_out', icon: '↗️', contributorName: currentJar.name || '',
+      };
+      const myEntries = localEntries(myJar.jarId);
+      myEntries.unshift(donOutEntry);
+      saveLocalEntries(myJar.jarId, myEntries);
+      // Add donation_in to receiver's local history
+      const donInEntry = {
+        entryId: res.donationId + '_in', amount: res.netAmount, note: '기부',
+        createdAt: new Date().toISOString(), synced: true,
+        type: 'donation_in', icon: '🦝', contributorName: myJar.name || '',
+      };
+      const toEntries = localEntries(currentJar.jarId);
+      toEntries.unshift(donInEntry);
+      saveLocalEntries(currentJar.jarId, toEntries);
       // Update my jar's local amount
       myJar.currentAmount = Math.max(0, (Number(myJar.currentAmount) || 0) - amount);
       const jars = localJars();
