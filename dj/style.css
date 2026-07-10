@@ -150,14 +150,15 @@ strong{font-variant-numeric:tabular-nums;}
 .tile .label{font-size:12px;font-weight:600;line-height:1.15;}
 .tile .rate{font-size:11px;color:var(--gold);font-variant-numeric:tabular-nums;}
 
-/* ===== 홈 화면에 추가 (A2HS) 버튼 — 담백하게, 엄지존 하단 ===== */
-.install-btn{
+/* ===== 홈 화면에 추가 (A2HS) 버튼 — 설정 시트 내 ===== */
+.sett-install-head{margin-top:6px;}
+.sett-install-btn{
   width:100%;min-height:var(--tap);border-radius:14px;padding:12px;
   background:var(--card);border:1px solid var(--gold-deep);color:var(--gold);
   font-size:15px;font-weight:700;
   display:flex;align-items:center;justify-content:center;gap:6px;
 }
-.install-btn:active{transform:scale(.98);background:var(--card2);}
+.sett-install-btn:active{transform:scale(.98);background:var(--card2);}
 
 /* iOS 설치 안내 시트 */
 .ios-lead{margin:2px 0 12px;font-size:15px;color:var(--text);line-height:1.5;}

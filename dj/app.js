@@ -289,20 +289,25 @@
     /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
 
   let deferredPrompt = null;                          // beforeinstallprompt 보관
+  function showInstallBtn(show){
+    const btn = $('installBtn'); const hd = $('settInstallHead');
+    if (btn) btn.hidden = !show;
+    if (hd)  hd.hidden  = !show;
+  }
   function setupInstall(){
     const btn = $('installBtn');
     if (!btn) return;
-    if (isStandalone()) { btn.hidden = true; return; } // 이미 설치/실행 → 버튼 불필요
+    if (isStandalone()) { showInstallBtn(false); return; }
 
     // Android/Chrome: 설치 가능 신호가 오면 버튼 노출
     window.addEventListener('beforeinstallprompt', e => {
       e.preventDefault();
       deferredPrompt = e;
-      btn.hidden = false;
+      showInstallBtn(true);
     });
 
     // iOS Safari: beforeinstallprompt 미발생 → 수동 안내 버튼 노출
-    if (isIOS()) btn.hidden = false;
+    if (isIOS()) showInstallBtn(true);
 
     btn.addEventListener('click', async () => {
       vibrate(8);
@@ -311,17 +316,17 @@
         let outcome = 'dismissed';
         try { ({ outcome } = await deferredPrompt.userChoice); } catch(e){}
         deferredPrompt = null;
-        btn.hidden = true;                            // 프롬프트는 1회성
+        showInstallBtn(false);
         if (outcome === 'accepted') toast('홈 화면에 추가했어요');
       } else if (isIOS()){
-        openSheet('iosInstallSheet');                 // 수동 안내 모달
+        openSheet('iosInstallSheet');
       }
     });
 
     // 설치 완료 → 버튼/안내 정리 + 토스트
     window.addEventListener('appinstalled', () => {
       deferredPrompt = null;
-      btn.hidden = true;
+      showInstallBtn(false);
       closeSheet('iosInstallSheet');
       vibrate([20,40,20]);
       toast('홈 화면에 추가됐어요');
