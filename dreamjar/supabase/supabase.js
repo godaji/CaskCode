@@ -85,6 +85,18 @@
     throw new Error('알 수 없는 action/query: ' + (action || query));
   }
 
+  // ── Auto-ensure user exists (avoids FK violations) ─────────
+  async function ensureUser(userId) {
+    if (!userId) return;
+    const { error } = await supabase.from('users').upsert({
+      user_id:    userId,
+      name:       '',
+      email:      '',
+      created_at: new Date().toISOString(),
+    }, { onConflict: 'user_id', ignoreDuplicates: true });
+    if (error) console.warn('[DreamJar] ensureUser:', error.message);
+  }
+
   // ── POST actions ───────────────────────────────────────────
 
   async function registerUser(p) {
@@ -104,6 +116,9 @@
   async function createJar(p) {
     const jarId = p.jarId || newId('jar');
     const ts = new Date().toISOString();
+
+    // Ensure owner exists in users table (FK constraint)
+    await ensureUser(p.ownerId);
 
     const { error: jarErr } = await supabase.from('jars').insert({
       jar_id:      jarId,
@@ -134,6 +149,7 @@
   async function joinJar(p) {
     const input = (p.jarId || '').trim();
     if (!input) throw new Error('Jar ID 또는 이름을 입력하세요');
+    await ensureUser(p.userId);
 
     // Find jar by ID or name
     let { data: jar } = await supabase
@@ -220,6 +236,7 @@
   }
 
   async function addEntry(p) {
+    await ensureUser(p.userId);
     const entryId = newId('ent');
     const { error } = await supabase.from('entries').insert({
       entry_id:   entryId,
