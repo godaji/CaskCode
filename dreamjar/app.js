@@ -1547,6 +1547,7 @@
       if (lj) { lj.currentAmount = myJar.currentAmount; saveLocalJars(jars); }
       if (currentJar.jarId === myJar.jarId) updateJarDisplay(myJar);
       cachedJars = activeJars(localJars());
+      scheduleBackgroundSync();
     } catch (err) {
       toast('기부 실패: ' + err.message);
     } finally {
@@ -1617,6 +1618,7 @@
       if (lj) { lj.currentAmount = myJar.currentAmount; saveLocalJars(jars); }
       if (currentJar.jarId === myJar.jarId) updateJarDisplay(myJar);
       cachedJars = activeJars(localJars());
+      scheduleBackgroundSync();
     } catch (err) {
       toast('기부 실패: ' + err.message);
     } finally {
