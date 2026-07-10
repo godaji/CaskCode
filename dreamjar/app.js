@@ -878,6 +878,11 @@
   }
 
   // ── 내역 섹션 렌더 ──
+  function displayNote(note) {
+    if (!note) return '적립';
+    return note.replace(/^\[[\w]+\]\s*/, '');
+  }
+
   function renderHistorySection(jarId) {
     const sec = $('historySection');
     const listEl = $('historyList');
@@ -894,7 +899,7 @@
     listEl.innerHTML = entries.map(e =>
       `<div class="hist-row">
         <div class="hist-left">
-          <div class="hist-label">${escHtml(e.note || '적립')}</div>
+          <div class="hist-label">${escHtml(displayNote(e.note))}</div>
           <div class="hist-date">${fmtDate(e.createdAt)}${!e.synced ? ' <span class="hist-pending">●</span>' : ''}</div>
         </div>
         <div class="hist-right">
