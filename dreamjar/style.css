@@ -542,3 +542,37 @@ input, select { font-family: inherit; }
 }
 .hist-del-btn:active { opacity: .7; }
 .hist-empty { font-size: 13px; color: var(--muted); text-align: center; padding: 12px 0; margin: 0; }
+
+/* ── 기부 ── */
+.btn-donate {
+  display: block; width: 100%; margin-top: 10px;
+  padding: 11px 0; border-radius: 12px;
+  background: linear-gradient(90deg, #8b6914, #c49a2a);
+  font-size: 15px; font-weight: 700; color: #fff;
+  text-align: center;
+}
+.btn-donate:active { transform: scale(.98); }
+.jar-sync-info {
+  font-size: 11px; color: var(--muted); margin-top: 8px;
+}
+.donate-info {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 18px; padding: 14px;
+  background: var(--card); border-radius: 12px;
+}
+.donate-from, .donate-to {
+  flex: 1; font-size: 14px; font-weight: 600; color: var(--text);
+  text-align: center;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.donate-arrow {
+  flex: none; font-size: 20px; color: var(--accent2);
+}
+.dr-row {
+  display: flex; justify-content: space-between; padding: 10px 0;
+  font-size: 14px; color: var(--text);
+  border-bottom: 1px solid var(--line);
+}
+.dr-row:last-child { border-bottom: none; }
+.dr-fee { color: var(--muted); }
+.dr-net { font-weight: 800; font-size: 16px; color: var(--accent2); }

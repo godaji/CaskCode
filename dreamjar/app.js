@@ -292,6 +292,26 @@
       if (j) j.controlId = params.controlId || '';
       return Promise.resolve({ updated: true });
     }
+    if (action === 'donate') {
+      const requestAmt = Number(params.amount) || 0;
+      const feeRate = Math.random() * 0.5;
+      const feeAmount = Math.round(requestAmt * feeRate);
+      const netAmount = requestAmt - feeAmount;
+      const donation = {
+        donationId: 'don-' + Date.now(),
+        fromJarId: params.fromJarId, toJarId: params.toJarId,
+        requestAmount: requestAmt, feeRate, feeAmount, netAmount,
+        createdAt: new Date().toISOString(),
+      };
+      MOCK_DONATIONS_OUT.push(donation);
+      MOCK_DONATIONS_IN.push(donation);
+      // Update mock jar amounts
+      const fromJar = MOCK_JARS.find(j => j.jarId === params.fromJarId);
+      if (fromJar) fromJar.currentAmount = Math.max(0, (fromJar.currentAmount || 0) - requestAmt);
+      const toJar = MOCK_JARS.find(j => j.jarId === params.toJarId);
+      if (toJar) toJar.currentAmount = (toJar.currentAmount || 0) + netAmount;
+      return Promise.resolve({ donationId: donation.donationId, feeRate, feeAmount, netAmount });
+    }
     if (action === 'joinJar') return Promise.resolve({ memberId: 'm-' + Date.now() });
     if (action === 'registerUser') return Promise.resolve({ userId: params.userId || userId });
     return Promise.resolve({});
@@ -646,6 +666,27 @@
     $('jarDisplay').hidden = false;
     $('mainJarName').textContent = jar.name || '(이름 없음)';
     updateJarDisplay(jar);
+
+    const isOwned = jar.ownerId === userId;
+    $('historyBtn').hidden = !isOwned;
+    $('donateBtn').hidden  = isOwned;
+
+    // Show sync info for joined jars
+    const syncInfo = $('jarSyncInfo');
+    if (!isOwned) {
+      const ts = localStorage.getItem(KEY_LAST_SYNC);
+      if (ts) {
+        try {
+          const d = new Date(ts);
+          syncInfo.textContent = `마지막 동기화: ${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,'0')}`;
+        } catch { syncInfo.textContent = ''; }
+      } else {
+        syncInfo.textContent = '아직 동기화하지 않음';
+      }
+      syncInfo.hidden = false;
+    } else {
+      syncInfo.hidden = true;
+    }
   }
 
   function updateJarDisplay(jar) {
@@ -687,8 +728,24 @@
     if (!jar) {
       $('controlDisplay').hidden = true;
       $('controlEmpty').hidden   = false;
+      const emptyMsg0 = $('controlEmpty').querySelector('.ctrl-empty-msg');
+      if (emptyMsg0) emptyMsg0.textContent = '먼저 Jar를 선택하세요.';
       return;
     }
+
+    // Joined jar: hide controls, show message
+    if (jar.ownerId !== userId) {
+      $('controlDisplay').hidden = true;
+      $('controlEmpty').hidden   = false;
+      const emptyMsg = $('controlEmpty').querySelector('.ctrl-empty-msg');
+      if (emptyMsg) emptyMsg.textContent = '참여 중인 Jar입니다.';
+      return;
+    }
+
+    // Reset message for own jars
+    const emptyMsg2 = $('controlEmpty').querySelector('.ctrl-empty-msg');
+    if (emptyMsg2) emptyMsg2.textContent = '먼저 Jar를 선택하세요.';
+
     const ctrl = ADMIN_CONTROLS.find(c => c.controlId === jar.controlId);
     $('controlEmpty').hidden   = true;
     $('controlDisplay').hidden = false;
@@ -907,6 +964,52 @@
     openSheet('historySheet');
   });
 
+  // ── 기부 버튼 ──
+  $('donateBtn').addEventListener('click', () => {
+    if (!currentJar) return;
+    const myJar = cachedJars.find(j => j.ownerId === userId);
+    if (!myJar) { toast('내 Jar가 없어 기부할 수 없어요.'); return; }
+    $('donateFrom').textContent = myJar.name;
+    $('donateTo').textContent = currentJar.name;
+    $('donateAmount').value = '';
+    openSheet('donateSheet');
+    setTimeout(() => $('donateAmount').focus(), 300);
+  });
+
+  $('donateSubmitBtn').addEventListener('click', async () => {
+    const amount = Number(String($('donateAmount').value).replace(/[^0-9]/g, ''));
+    if (!amount || amount <= 0) { toast('금액을 입력하세요.'); return; }
+    const myJar = cachedJars.find(j => j.ownerId === userId);
+    if (!myJar) return;
+    $('donateSubmitBtn').disabled = true;
+    try {
+      const res = await apiFetch({ action: 'donate', params: {
+        fromJarId: myJar.jarId,
+        toJarId: currentJar.jarId,
+        amount,
+      }});
+      closeSheet('donateSheet');
+      // Show result
+      const feePct = Math.round((res.feeRate || 0) * 100);
+      $('donateResultBody').innerHTML =
+        `<div class="dr-row"><span>기부 요청</span><span>${won(amount)}</span></div>` +
+        `<div class="dr-row dr-fee"><span>🦝 너구리사장 수수료 (${feePct}%)</span><span>-${won(res.feeAmount)}</span></div>` +
+        `<div class="dr-row dr-net"><span>실제 전달 금액</span><span>${won(res.netAmount)}</span></div>`;
+      openSheet('donateResultSheet');
+      // Update my jar's local amount
+      myJar.currentAmount = Math.max(0, (Number(myJar.currentAmount) || 0) - amount);
+      const jars = localJars();
+      const lj = jars.find(j => j.jarId === myJar.jarId);
+      if (lj) { lj.currentAmount = myJar.currentAmount; saveLocalJars(jars); }
+      if (currentJar.jarId === myJar.jarId) updateJarDisplay(myJar);
+      cachedJars = localJars();
+    } catch (err) {
+      toast('기부 실패: ' + err.message);
+    } finally {
+      $('donateSubmitBtn').disabled = false;
+    }
+  });
+
   function renderHistoryList(jarId) {
     const listEl = $('historyList');
     const entries = localEntries(jarId);
@@ -1069,7 +1172,7 @@
     $('jarEmpty').hidden   = true;
     $('controlDisplay').hidden = true;
     $('controlEmpty').hidden   = false;
-    $('historySection').hidden = true;
+    // historySection removed (history is now in a sheet)
 
     cachedJars = localJars();
 
