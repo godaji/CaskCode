@@ -397,7 +397,17 @@
     if (newId === userId) { toast('현재 사용자와 같습니다.'); return; }
     userId = newId;
     localStorage.setItem(KEY_USER_ID, userId);
+    // 이전 사용자의 로컬 데이터 초기화 — 새 사용자 서버 동기화로 채움
+    localStorage.removeItem(KEY_JARS);
+    localStorage.removeItem(KEY_ENTRIES);
+    localStorage.removeItem(KEY_ACTIVE_JAR);
+    localStorage.removeItem(KEY_PENDING_DEL);
+    localStorage.removeItem(KEY_PENDING_CTRL);
+    localStorage.removeItem(KEY_PENDING_ARCHIVE);
+    localStorage.removeItem(KEY_LAST_SYNC);
     cachedJars = [];
+    currentJar = null;
+    entryRows = [];
     closeSheet('settingsSheet');
     initApp();
     toast('사용자 전환 완료');
