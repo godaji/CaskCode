@@ -97,6 +97,7 @@
         </div>
         <div id="mainRewardSection" hidden>
           <div class="reward-list" id="mainRewardList"></div>
+          <button class="btn-manual-entry" id="manualEntryBtn" type="button">✏️ 직접 입력하기</button>
         </div>
       </div>
 
@@ -323,6 +324,27 @@
         <div class="ec-amount" id="confirmAmount"></div>
       </div>
       <button id="entryConfirmBtn" class="btn-cta" type="button">적립하기</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 직접 입력 시트 ===== -->
+<div class="sheet-backdrop" id="manualEntrySheet" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="직접 입력">
+    <div class="sheet-head">
+      <span>직접 입력</span>
+      <button class="sheet-close" data-close="manualEntrySheet" type="button">✕</button>
+    </div>
+    <div class="sheet-body">
+      <div class="cj-field">
+        <label class="cj-label" for="meNote">항목 이름</label>
+        <input id="meNote" class="cj-input" type="text" placeholder="예: 아침 운동" maxlength="80" autocomplete="off">
+      </div>
+      <div class="cj-field">
+        <label class="cj-label" for="meAmount">금액 <span class="cj-unit">원</span></label>
+        <input id="meAmount" class="cj-input" type="number" placeholder="예: 5000" min="1" inputmode="numeric">
+      </div>
+      <button id="meSubmitBtn" class="btn-cta" type="button">적립하기</button>
     </div>
   </div>
 </div>

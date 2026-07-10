@@ -883,6 +883,23 @@
     return note.replace(/^\[[\w]+\]\s*/, '');
   }
 
+  // ── 직접 입력 ──
+  $('manualEntryBtn').addEventListener('click', () => {
+    $('meNote').value = '';
+    $('meAmount').value = '';
+    openSheet('manualEntrySheet');
+    setTimeout(() => $('meNote').focus(), 300);
+  });
+
+  $('meSubmitBtn').addEventListener('click', () => {
+    const note = $('meNote').value.trim();
+    const amount = Number(String($('meAmount').value).replace(/[^0-9]/g, ''));
+    if (!note) { toast('항목 이름을 입력하세요.'); $('meNote').focus(); return; }
+    if (!amount || amount <= 0) { toast('금액을 입력하세요.'); $('meAmount').focus(); return; }
+    closeSheet('manualEntrySheet');
+    addEntryLocal(amount, note);
+  });
+
   // ── 내역 시트 ──
   $('historyBtn').addEventListener('click', () => {
     if (!currentJar) return;
