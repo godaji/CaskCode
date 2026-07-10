@@ -1423,7 +1423,7 @@
 
     const entries = localEntries(myJar.jarId).filter(e => {
       const type = e.type || 'entry';
-      return type === 'entry' && (Number(e.amount) || 0) > 0;
+      return type === 'entry' && (Number(e.amount) || 0) > 0 && !e.donated;
     });
 
     if (entries.length === 0) {
@@ -1484,6 +1484,14 @@
       });
     });
 
+    // 잔액 체크: 기부 총액이 잔액을 초과하면 차단
+    const totalDonateAmt = items.reduce((s, i) => s + i.amount, 0);
+    const curBalance = Number(myJar.currentAmount) || 0;
+    if (totalDonateAmt > curBalance) {
+      toast(`잔액 부족! 잔액 ${won(curBalance)}, 기부 ${won(totalDonateAmt)}`);
+      return;
+    }
+
     $('donateBulkSubmitBtn').disabled = true;
     try {
       const res = await apiFetch({ action: 'donateBulk', params: {
@@ -1538,6 +1546,9 @@
           sourceNotes: item.note || '',
         });
       });
+      // 기부한 원본 항목을 donated로 마킹 (재기부 방지)
+      const donatedIds = new Set(items.map(i => i.entryId));
+      myEntries.forEach(e => { if (donatedIds.has(e.entryId)) e.donated = true; });
       saveLocalEntries(myJar.jarId, myEntries);
       saveLocalEntries(currentJar.jarId, toEntries);
       // Update my jar amount
@@ -1573,6 +1584,10 @@
     const amount = Number(String($('donateAmount').value).replace(/[^0-9]/g, ''));
     if (!amount || amount <= 0) { toast('금액을 입력하세요.'); return; }
     const myJar = cachedJars.find(j => j.ownerId === userId);
+    if (myJar && amount > (Number(myJar.currentAmount) || 0)) {
+      toast(`잔액 부족! 잔액 ${won(Number(myJar.currentAmount) || 0)}`);
+      return;
+    }
     if (!myJar) return;
     $('donateSubmitBtn').disabled = true;
     try {
