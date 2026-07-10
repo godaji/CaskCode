@@ -391,26 +391,22 @@
     openSheet('settingsSheet');
   });
 
-  $('userChangeBtn').addEventListener('click', () => {
-    const newId = $('settUserId').value.trim();
-    if (!newId) { toast('사용자 ID를 입력하세요.'); return; }
-    if (newId === userId) { toast('현재 사용자와 같습니다.'); return; }
-    userId = newId;
-    localStorage.setItem(KEY_USER_ID, userId);
-    // 이전 사용자의 로컬 데이터 초기화 — 새 사용자 서버 동기화로 채움
-    localStorage.removeItem(KEY_JARS);
-    localStorage.removeItem(KEY_ENTRIES);
-    localStorage.removeItem(KEY_ACTIVE_JAR);
-    localStorage.removeItem(KEY_PENDING_DEL);
-    localStorage.removeItem(KEY_PENDING_CTRL);
-    localStorage.removeItem(KEY_PENDING_ARCHIVE);
-    localStorage.removeItem(KEY_LAST_SYNC);
+  $('logoutBtn').addEventListener('click', () => {
+    if (!confirm('로그아웃하시겠습니까?\n로컬 데이터가 모두 삭제됩니다.')) return;
+    // localStorage에서 dreamjar 관련 키 모두 삭제
+    [KEY_USER_ID, KEY_SCRIPT_URL, KEY_ACTIVE_JAR, KEY_JARS, KEY_ENTRIES,
+     KEY_PENDING_DEL, KEY_PENDING_CTRL, KEY_PENDING_ARCHIVE, KEY_LAST_SYNC
+    ].forEach(k => localStorage.removeItem(k));
+    // 캐시 초기화
     cachedJars = [];
     currentJar = null;
-    entryRows = [];
+    entryRows  = [];
+    userId     = '';
+    scriptUrl  = DEFAULT_SCRIPT_URL;
+    // 설정 시트 닫고 초기 설정 화면으로
     closeSheet('settingsSheet');
-    initApp();
-    toast('사용자 전환 완료');
+    showSetup();
+    toast('로그아웃했어요.');
   });
 
   $('settSaveBtn').addEventListener('click', () => {

@@ -138,10 +138,11 @@
         <div class="sett-field">
           <label class="sett-label" for="settUserId">사용자 ID</label>
           <div class="sett-input-row">
-            <input id="settUserId" class="sett-input" type="text" autocomplete="off" maxlength="40">
-            <button id="userChangeBtn" class="btn-change" type="button">변경하기</button>
+            <input id="settUserId" class="sett-input" type="text" autocomplete="off" maxlength="40" readonly>
           </div>
         </div>
+        <button id="logoutBtn" class="btn-cta btn-danger" type="button" style="margin-top:10px">로그아웃</button>
+        <p class="sett-hint">로그아웃하면 로컬 데이터가 삭제됩니다. 서버 데이터는 유지됩니다.</p>
       </div>
       <div class="sett-section">
         <div class="sett-section-title">연동</div>
