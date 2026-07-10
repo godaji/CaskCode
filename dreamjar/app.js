@@ -46,6 +46,9 @@
   let _pendingItem  = null;
   let _pendingEntry = null;
 
+  // 탭 상태 (DaeunControl 이벤트/루틴 탭)
+  let _activeRewardTab = 'routine'; // 'routine' | 'event'
+
   // ── Mock 데이터 (Apps Script URL 없을 때) ──
   const MOCK_JARS = [
     { jarId: 'mock-1', name: '제주 여행 경비', description: '2026년 가을 제주 3박 4일', ownerId: '__me__', controlId: 'ctrl_ca', memberId: 'm-mock-1', goalAmount: 500000, currentAmount: 127000, recentSevenDayTotal: 35000, entryCount: 8 },
@@ -71,25 +74,25 @@
       emoji: '⭐',
       items: [
         { id:'ca_eal',        label:'EAL 졸업',          type:'milestone',   subtype:'tier',
-          tiers:[{label:'상위 달성',amount:500000},{label:'달성',amount:300000}], once:true },
+          tiers:[{label:'상위 달성',amount:500000},{label:'달성',amount:300000}], once:true, tab:'event' },
         { id:'ca_barracudas', label:'바라쿠다스 합격',   type:'milestone',   subtype:'once',
-          amount:200000, once:true },
+          amount:200000, once:true, tab:'event' },
         { id:'ca_math',       label:'수학 성적',          type:'academic',    subtype:'threshold',
-          thresholds:[{min:95,amount:200000},{min:80,amount:100000}] },
+          thresholds:[{min:95,amount:200000},{min:80,amount:100000}], tab:'event' },
         { id:'ca_sci',        label:'과학 성적',          type:'academic',    subtype:'threshold',
-          thresholds:[{min:95,amount:200000},{min:80,amount:100000}] },
+          thresholds:[{min:95,amount:200000},{min:80,amount:100000}], tab:'event' },
         { id:'ca_swim_perf',  label:'수영 1초 단축',     type:'performance', subtype:'session',
-          amount:50000 },
-        { id:'ca_commute',    label:'등하교',             type:'routine', subtype:'per_day', amount:1000 },
-        { id:'ca_eng_hw',     label:'영어 과제',          type:'routine', subtype:'per_day', amount:1000 },
-        { id:'ca_book',       label:'독후감',             type:'routine', subtype:'per_day', amount:5000 },
-        { id:'ca_eng_class',  label:'영어학원',           type:'routine', subtype:'per_day', amount:1000 },
-        { id:'ca_math_class', label:'수학학원',           type:'routine', subtype:'per_day', amount:1000 },
-        { id:'ca_art_class',  label:'미술학원',           type:'routine', subtype:'per_day', amount:1000 },
-        { id:'ca_swim_class', label:'수영학원',           type:'routine', subtype:'per_day', amount:1000 },
-        { id:'ca_morn_swim',  label:'아침수영',           type:'routine', subtype:'per_day', amount:1000 },
+          amount:50000, tab:'event' },
+        { id:'ca_commute',    label:'등하교',             type:'routine', subtype:'per_day', amount:1000, tab:'routine' },
+        { id:'ca_eng_hw',     label:'영어 과제',          type:'routine', subtype:'per_day', amount:1000, tab:'routine' },
+        { id:'ca_book',       label:'독후감',             type:'routine', subtype:'per_day', amount:5000, tab:'routine' },
+        { id:'ca_eng_class',  label:'영어학원',           type:'routine', subtype:'per_day', amount:1000, tab:'routine' },
+        { id:'ca_math_class', label:'수학학원',           type:'routine', subtype:'per_day', amount:1000, tab:'routine' },
+        { id:'ca_art_class',  label:'미술학원',           type:'routine', subtype:'per_day', amount:1000, tab:'routine' },
+        { id:'ca_swim_class', label:'수영학원',           type:'routine', subtype:'per_day', amount:1000, tab:'routine' },
+        { id:'ca_morn_swim',  label:'아침수영',           type:'routine', subtype:'per_day', amount:1000, tab:'routine' },
         { id:'ca_math_test',  label:'수학학원 시험 90↑',  type:'academic', subtype:'threshold',
-          thresholds:[{min:90,amount:10000}] },
+          thresholds:[{min:90,amount:10000}], tab:'routine' },
       ],
     },
     {
@@ -769,8 +772,23 @@
       if (m) claimedIds.add(m[1]);
     });
 
+    // 탭이 있는 control인지 확인
+    const hasTabs = ctrl.items.some(i => i.tab);
+    const visibleItems = hasTabs
+      ? ctrl.items.filter(i => i.tab === _activeRewardTab)
+      : ctrl.items;
+
     const ICONS = { milestone: '🏆', academic: '📝', performance: '🏊', routine: '📅' };
-    const html = ctrl.items.map(item => {
+
+    let tabBarHtml = '';
+    if (hasTabs) {
+      tabBarHtml = `<div class="reward-tab-bar">` +
+        `<button class="reward-tab-btn${_activeRewardTab === 'routine' ? ' active' : ''}" data-reward-tab="routine" type="button">루틴</button>` +
+        `<button class="reward-tab-btn${_activeRewardTab === 'event' ? ' active' : ''}" data-reward-tab="event" type="button">이벤트</button>` +
+        `</div>`;
+    }
+
+    const buttonsHtml = visibleItems.map(item => {
       const claimed = item.once && claimedIds.has(item.id);
       let amtStr = '';
       if (item.amount) {
@@ -791,7 +809,15 @@
         `</button>`;
     }).join('');
 
-    listEl.innerHTML = html;
+    listEl.innerHTML = tabBarHtml + `<div class="reward-grid">${buttonsHtml}</div>`;
+
+    // 탭 버튼 클릭 핸들러
+    listEl.querySelectorAll('.reward-tab-btn').forEach(tbtn => {
+      tbtn.addEventListener('click', () => {
+        _activeRewardTab = tbtn.dataset.rewardTab;
+        renderRewardButtons(ctrl, entries, listEl);
+      });
+    });
 
     listEl.querySelectorAll('.reward-btn:not([disabled])').forEach(btn => {
       const item = ctrl.items.find(i => i.id === btn.dataset.itemId);

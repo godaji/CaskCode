@@ -212,8 +212,36 @@ input, select { font-family: inherit; }
   font-size: 14px; color: var(--muted); text-align: center; padding: 8px 0;
 }
 
+/* ── 보상 탭 바 (이벤트/루틴) ── */
+.reward-tab-bar {
+  display: flex;
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 3px;
+  margin-bottom: 10px;
+  gap: 3px;
+}
+.reward-tab-btn {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  text-align: center;
+  transition: background .15s, color .15s;
+}
+.reward-tab-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+.reward-tab-btn:active { opacity: .8; }
+
 /* ── 보상 항목 그리드 ── */
 .reward-list {
+  /* container — no grid here, grid is on .reward-grid */
+}
+.reward-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
