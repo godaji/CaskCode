@@ -1295,7 +1295,8 @@
       saveLocalEntries(myJar.jarId, myEntries);
       // Add donation_in to receiver's local history
       const donInEntry = {
-        entryId: res.donationId + '_in', amount: res.netAmount, note: '기부',
+        entryId: res.donationId + '_in', amount: res.netAmount,
+        note: `기부(${won(amount)}, 수수료${Math.round((res.feeRate || 0) * 100)}%)`,
         createdAt: new Date().toISOString(), synced: true,
         type: 'donation_in', icon: '🦝', contributorName: myJar.name || '',
         requestAmount: amount, feeRate: res.feeRate || 0, feeAmount: res.feeAmount || 0,
