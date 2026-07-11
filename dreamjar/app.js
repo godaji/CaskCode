@@ -126,6 +126,8 @@
         { id:'cc_tumbler',  label:'텀블러',        type:'routine', subtype:'per_day', amount:1200, tab:'routine' },
         { id:'cc_transit',  label:'도보/대중교통', type:'routine', subtype:'per_day', amount:5000, tab:'routine' },
         { id:'cc_homemeal', label:'집밥',          type:'routine', subtype:'per_day', amount:5000, tab:'routine' },
+        { id:'cc_kr_read',  label:'한국책읽기30분', type:'routine', subtype:'per_day', amount:1000, tab:'routine' },
+        { id:'cc_en_read',  label:'영어책읽기30분', type:'routine', subtype:'per_day', amount:1000, tab:'routine' },
         { id:'cc_ielts',    label:'IELTS',         type:'academic', subtype:'threshold',
           thresholds:[{min:7.0,amount:2000000},{min:6.5,amount:1000000}], once:true, tab:'event' },
       ],
@@ -1482,13 +1484,16 @@
       const isActive = c.controlId === activeCtrlId;
       const desc = c.controlId === 'ctrl_ca' ? '학업·루틴·마일스톤 달성 보상'
                  : c.controlId === 'ctrl_cb' ? '일상 절약 행동 보상' : '';
-      html += `<button class="cp-item${isActive ? ' active' : ''}" data-control-id="${escHtml(c.controlId)}" type="button">
-        <span class="cp-emoji">${c.emoji}</span>
-        <span class="cp-body">
-          <span class="cp-name">${escHtml(c.name)}</span>
-          <span class="cp-desc">${escHtml(desc)}</span>
-        </span>
-      </button>`;
+      html += `<div class="cp-custom-row">
+        <button class="cp-item${isActive ? ' active' : ''}" data-control-id="${escHtml(c.controlId)}" type="button">
+          <span class="cp-emoji">${c.emoji}</span>
+          <span class="cp-body">
+            <span class="cp-name">${escHtml(c.name)}</span>
+            <span class="cp-desc">${escHtml(desc)}</span>
+          </span>
+        </button>
+        <button class="cp-fork-btn" data-fork-ctrl-id="${escHtml(c.controlId)}" type="button" title="복제하여 내 컨트롤 만들기">📋</button>
+      </div>`;
     });
 
     // Custom controls
@@ -1523,6 +1528,14 @@
         openCustomCtrlEditor(el.dataset.editCtrlId);
       });
     });
+    // Bind fork (clone built-in template as new custom control)
+    listEl.querySelectorAll('.cp-fork-btn').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeSheet('controlPickerSheet');
+        forkControlAsCustom(el.dataset.forkCtrlId);
+      });
+    });
   }
 
   // "내 컨트롤 만들기" 버튼
@@ -1530,6 +1543,27 @@
     closeSheet('controlPickerSheet');
     openCustomCtrlEditor(null);
   });
+
+  // Fork: 기존 템플릿을 복제하여 내 컨트롤로 만들기
+  function forkControlAsCustom(controlId) {
+    const src = allControls().find(c => c.controlId === controlId);
+    if (!src) return;
+    _editingCtrlId = null; // create mode
+    $('customCtrlSheetTitle').textContent = '템플릿에서 만들기';
+    $('ccName').value = src.name + ' (내 버전)';
+    setPickedEmoji(src.emoji || '🎯');
+    $('ccDesc').value = src.description || '';
+    // Deep-clone items with new IDs to avoid conflicts
+    _editingCtrlItems = (src.items || []).map(item => ({
+      ...item,
+      id: 'ci_' + Date.now() + '_' + Math.floor(Math.random() * 1e6),
+    }));
+    $('ccDeleteBtn').hidden = true;
+    $('ccSaveBtn').textContent = '만들기';
+    renderCCItemList();
+    closeEmojiPicker();
+    openSheet('customCtrlSheet');
+  }
 
   // ── 커스텀 컨트롤 에디터 ──
   function openCustomCtrlEditor(controlId) {
@@ -2172,7 +2206,10 @@
     if (!myJar) { toast('내 Jar가 없어 기부할 수 없어요.'); return; }
     $('donateFrom').textContent = myJar.name;
     $('donateTo').textContent = currentJar.name;
+    const bal = Number(myJar.currentAmount) || 0;
+    $('donateBalance').textContent = `잔액: ${won(bal)}`;
     $('donateAmount').value = '';
+    $('donateAmount').max = bal;
     _donateBulkSelected = new Set();
     switchDonateTab('amount');
     openSheet('donateSheet');
