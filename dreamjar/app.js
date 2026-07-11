@@ -15,6 +15,8 @@
   const KEY_PENDING_ARCHIVE = 'dreamjar.pendingArchive'; // JSON: [{jarId}]
   const KEY_LAST_SYNC  = 'dreamjar.lastSync';    // ISO timestamp string
   const KEY_SERVER_MODIFIED = 'dreamjar.serverModified'; // 서버 lastModified (CMPA-888)
+  const KEY_CUSTOM_CTRLS   = 'dreamjar.customControls'; // JSON: [{controlId, name, emoji, description, items}]
+  const KEY_PENDING_CTRL_SYNC = 'dreamjar.pendingCtrlSync'; // JSON: [{controlId, action:'create'|'update'|'delete', data}]
 
   // ── localStorage 헬퍼 ──
   function localJars() { return JSON.parse(localStorage.getItem(KEY_JARS) || '[]'); }
@@ -34,6 +36,10 @@
   function savePendingCtrl(list) { localStorage.setItem(KEY_PENDING_CTRL, JSON.stringify(list)); }
   function localPendingArchive() { return JSON.parse(localStorage.getItem(KEY_PENDING_ARCHIVE) || '[]'); }
   function savePendingArchive(list) { localStorage.setItem(KEY_PENDING_ARCHIVE, JSON.stringify(list)); }
+  function localCustomControls() { return JSON.parse(localStorage.getItem(KEY_CUSTOM_CTRLS) || '[]'); }
+  function saveCustomControls(list) { localStorage.setItem(KEY_CUSTOM_CTRLS, JSON.stringify(list)); }
+  function localPendingCtrlSync() { return JSON.parse(localStorage.getItem(KEY_PENDING_CTRL_SYNC) || '[]'); }
+  function savePendingCtrlSync(list) { localStorage.setItem(KEY_PENDING_CTRL_SYNC, JSON.stringify(list)); }
 
   /** 활성(아카이브되지 않은) Jar만 반환 */
   function activeJars(jars) { return jars.filter(j => !j.archived); }
@@ -111,6 +117,39 @@
       ],
     },
   ];
+
+  /** All controls = built-in + custom */
+  function allControls() {
+    return [...ADMIN_CONTROLS, ...localCustomControls()];
+  }
+
+  function findControl(controlId) {
+    return allControls().find(c => c.controlId === controlId) || null;
+  }
+
+  // ── 커스텀 컨트롤 CRUD (localStorage-first) ──
+  let _editingCtrlId = null; // null = create, string = edit
+  let _editingCtrlItems = []; // temp items array for create/edit sheet
+
+  function saveCustomControl(ctrl) {
+    const list = localCustomControls();
+    const idx = list.findIndex(c => c.controlId === ctrl.controlId);
+    if (idx >= 0) list[idx] = ctrl;
+    else list.push(ctrl);
+    saveCustomControls(list);
+    // Queue sync
+    const pending = localPendingCtrlSync().filter(p => p.controlId !== ctrl.controlId);
+    pending.push({ controlId: ctrl.controlId, action: idx >= 0 ? 'update' : 'create', data: ctrl });
+    savePendingCtrlSync(pending);
+  }
+
+  function deleteCustomControl(controlId) {
+    const list = localCustomControls().filter(c => c.controlId !== controlId);
+    saveCustomControls(list);
+    const pending = localPendingCtrlSync().filter(p => p.controlId !== controlId);
+    pending.push({ controlId, action: 'delete', data: null });
+    savePendingCtrlSync(pending);
+  }
 
   // ── DOM 헬퍼 ──
   const $ = id => document.getElementById(id);
@@ -353,29 +392,72 @@
       if (!jar) return Promise.reject(new Error('존재하지 않는 Jar입니다: ' + input));
       return Promise.resolve({ memberId: 'm-' + Date.now(), jarName: jar.name || '' });
     }
+    if (query === 'searchJars') {
+      const q = (params.query || '').toLowerCase();
+      const results = MOCK_JARS.filter(j => !j.archived && j.name && j.name.toLowerCase().includes(q));
+      return Promise.resolve(results.map(j => ({ jarId: j.jarId, name: j.name, ownerName: j.ownerId || '', alreadyJoined: false })));
+    }
     if (action === 'registerUser') return Promise.resolve({ userId: params.userId || userId });
+    if (action === 'createControl') return Promise.resolve({ controlId: params.controlId || 'ctrl_mock_' + Date.now() });
+    if (action === 'updateControl') return Promise.resolve({ updated: true });
+    if (action === 'deleteControl') return Promise.resolve({ deleted: true });
+    if (query === 'getCustomControls') return Promise.resolve([]);
     return Promise.resolve({});
   }
 
   // ── 설정 화면 ──
-  function showSetup() {
-    $('setupScreen').hidden = false;
+  // ── 로그인 화면 (CMPA-913) ──
+  function showLogin() {
+    $('loginScreen').hidden = false;
     $('mainApp').hidden = true;
-    $('setupUserId').value  = userId;
-    $('setupUserId').focus();
+    $('loginError').hidden = true;
+    $('loginUserId').value = '';
+    $('loginPassword').value = '';
+    $('loginUserId').focus();
   }
-  function hideSetup() {
-    $('setupScreen').hidden = true;
+  function hideLogin() {
+    $('loginScreen').hidden = true;
     $('mainApp').hidden = false;
   }
 
-  $('setupSaveBtn').addEventListener('click', () => {
-    const newId = $('setupUserId').value.trim();
-    if (!newId) { toast('사용자 ID를 입력하세요.'); $('setupUserId').focus(); return; }
-    userId    = newId;
-    localStorage.setItem(KEY_USER_ID, userId);
-    hideSetup();
-    initApp();
+  $('loginBtn').addEventListener('click', async () => {
+    const inputUserId = $('loginUserId').value.trim();
+    const password = $('loginPassword').value;
+    if (!inputUserId) { $('loginUserId').focus(); return; }
+    if (!password) { $('loginPassword').focus(); return; }
+
+    const btn = $('loginBtn');
+    btn.disabled = true;
+    btn.textContent = '로그인 중…';
+    $('loginError').hidden = true;
+
+    try {
+      if (!hasSupabase()) throw new Error('서버에 연결할 수 없습니다.');
+      await DreamJarSupabase.auth.signInWithPassword(inputUserId, password);
+      const authUserId = await DreamJarSupabase.auth.getAuthUserId();
+      userId = authUserId || inputUserId;
+      localStorage.setItem(KEY_USER_ID, userId);
+      hideLogin();
+      initApp();
+    } catch (err) {
+      console.error('[DreamJar] 로그인 실패:', err);
+      const errEl = $('loginError');
+      errEl.textContent = err.message === 'Invalid login credentials'
+        ? '사용자 ID 또는 비밀번호가 올바르지 않습니다.'
+        : '로그인 실패: ' + (err.message || '알 수 없는 오류');
+      errEl.hidden = false;
+    } finally {
+      btn.disabled = false;
+      btn.textContent = '로그인';
+    }
+  });
+
+  // Enter key submits login
+  $('loginPassword').addEventListener('keydown', e => {
+    if (e.key === 'Enter') $('loginBtn').click();
+  });
+  $('loginUserId').addEventListener('keydown', e => {
+    if (e.key === 'Enter') $('loginPassword').focus();
   });
 
   // ── 시트 공통 ──
@@ -397,21 +479,23 @@
     openSheet('settingsSheet');
   });
 
-  $('logoutBtn').addEventListener('click', () => {
+  $('logoutBtn').addEventListener('click', async () => {
     if (!confirm('로그아웃하시겠습니까?\n로컬 데이터가 모두 삭제됩니다.')) return;
+    // Supabase Auth 로그아웃
+    try { if (hasSupabase()) await DreamJarSupabase.auth.signOut(); } catch {}
     // localStorage에서 dreamjar 관련 키 모두 삭제
     [KEY_USER_ID, KEY_ACTIVE_JAR, KEY_JARS, KEY_ENTRIES,
      KEY_PENDING_DEL, KEY_PENDING_CTRL, KEY_PENDING_ARCHIVE, KEY_LAST_SYNC,
-     KEY_SERVER_MODIFIED
+     KEY_SERVER_MODIFIED, KEY_CUSTOM_CTRLS, KEY_PENDING_CTRL_SYNC
     ].forEach(k => localStorage.removeItem(k));
     // 캐시 초기화
     cachedJars = [];
     currentJar = null;
     entryRows  = [];
     userId     = '';
-    // 설정 시트 닫고 초기 설정 화면으로
+    // 설정 시트 닫고 로그인 화면으로
     closeSheet('settingsSheet');
-    showSetup();
+    showLogin();
     toast('로그아웃했어요.');
   });
 
@@ -459,21 +543,23 @@
     }).join('');
   }
 
-  // 다른 Jar 참여
-  $('joinJarBtn').addEventListener('click', async () => {
-    const jarId = $('joinJarId').value.trim();
-    if (!jarId) { toast('Jar ID를 입력하세요'); return; }
-    $('joinJarBtn').disabled = true;
+  // 다른 Jar 참여 — 검색 → 리스트 → 선택
+  const joinResultsEl = $('joinSearchResults');
+
+  // Detect jar_id format (prefix + underscore + digits)
+  function looksLikeJarId(s) { return /^jar_\d+/.test(s); }
+
+  // Direct join by jar_id
+  async function directJoinJar(jarId) {
     try {
       const result = await apiFetch({ action: 'joinJar', params: { jarId, userId } });
       $('joinJarId').value = '';
+      joinResultsEl.hidden = true;
       toast(result.alreadyJoined ? '이미 참여 중! 데이터를 새로고침합니다…' : '참여 완료! 데이터를 불러옵니다…');
-      // Clear checkSync cache so full pull includes the new jar
       localStorage.removeItem(KEY_SERVER_MODIFIED);
       await syncWithServer(true);
-      // Switch to the joined jar if found in cached jars
       const joinedJar = cachedJars.find(j =>
-        j.jarId === jarId || j.name === jarId || (result.jarName && j.name === result.jarName)
+        j.jarId === jarId || (result.jarName && j.name === result.jarName)
       );
       if (joinedJar) {
         currentJar = joinedJar;
@@ -487,9 +573,62 @@
       toast(result.alreadyJoined ? '이미 참여 중인 Jar입니다.' : '참여했습니다!');
     } catch (err) {
       toast('참여 실패: ' + err.message);
+    }
+  }
+
+  $('joinJarBtn').addEventListener('click', async () => {
+    const input = $('joinJarId').value.trim();
+    if (!input) { toast('검색어를 입력하세요'); return; }
+
+    // If it looks like a jar_id, join directly
+    if (looksLikeJarId(input)) {
+      $('joinJarBtn').disabled = true;
+      await directJoinJar(input);
+      $('joinJarBtn').disabled = false;
+      return;
+    }
+
+    // Otherwise, search
+    $('joinJarBtn').disabled = true;
+    try {
+      const results = await apiFetch({ query: 'searchJars', params: { query: input, userId } });
+      if (!results || results.length === 0) {
+        joinResultsEl.innerHTML = '<p class="join-no-result">검색 결과 없음</p>';
+        joinResultsEl.hidden = false;
+        return;
+      }
+      joinResultsEl.innerHTML = results.map(r => {
+        const badge = r.alreadyJoined ? '<span class="join-badge-joined">참여중</span>' : '';
+        return `<div class="join-result-item" data-jar-id="${r.jarId}">
+          <div class="join-result-info">
+            <span class="join-result-name">${r.name}</span>
+            <span class="join-result-owner">소유자: ${r.ownerName || '—'}</span>
+          </div>
+          <div class="join-result-action">
+            ${badge}
+            <button class="btn-join-select" type="button" data-jar-id="${r.jarId}"${r.alreadyJoined ? ' disabled' : ''}>
+              ${r.alreadyJoined ? '참여중' : '참여'}
+            </button>
+          </div>
+        </div>`;
+      }).join('');
+      joinResultsEl.hidden = false;
+    } catch (err) {
+      toast('검색 실패: ' + err.message);
     } finally {
       $('joinJarBtn').disabled = false;
     }
+  });
+
+  // Delegate click on search result "참여" buttons
+  joinResultsEl.addEventListener('click', async (e) => {
+    const btn = e.target.closest('.btn-join-select');
+    if (!btn || btn.disabled) return;
+    const jarId = btn.dataset.jarId;
+    btn.disabled = true;
+    btn.textContent = '…';
+    await directJoinJar(jarId);
+    btn.disabled = false;
   });
 
   // 설정 시트 내 "새 Jar 만들기"
@@ -523,8 +662,9 @@
       const pendingArchive = localPendingArchive();
       const pendingDel = localPendingDel();
 
+      const pendingCtrlSync = localPendingCtrlSync();
       const hasUnsynced = Object.values(allEntriesMap).some(entries => entries.some(e => !e.synced));
-      const hasPending = hasUnsynced || pendingCtrl.length > 0 || pendingArchive.length > 0 || pendingDel.length > 0;
+      const hasPending = hasUnsynced || pendingCtrl.length > 0 || pendingArchive.length > 0 || pendingDel.length > 0 || pendingCtrlSync.length > 0;
 
       // If no local changes, check per-jar dirty bits (lightweight — sync_meta only)
       if (!hasPending) {
@@ -592,6 +732,22 @@
       );
       pushPromises.push(...delResults);
 
+      // 1e. Pending custom control sync — parallel
+      const ctrlSyncResults = pendingCtrlSync.map(pcs => {
+        if (pcs.action === 'create' && pcs.data) {
+          return apiFetchReal({ action: 'createControl', params: { controlId: pcs.controlId, name: pcs.data.name, emoji: pcs.data.emoji, description: pcs.data.description, ownerId: userId, type: 'custom', items: pcs.data.items } })
+            .then(() => ({ pcs, ok: true })).catch(() => ({ pcs, ok: false }));
+        } else if (pcs.action === 'update' && pcs.data) {
+          return apiFetchReal({ action: 'updateControl', params: { controlId: pcs.controlId, name: pcs.data.name, emoji: pcs.data.emoji, description: pcs.data.description, items: pcs.data.items } })
+            .then(() => ({ pcs, ok: true })).catch(() => ({ pcs, ok: false }));
+        } else if (pcs.action === 'delete') {
+          return apiFetchReal({ action: 'deleteControl', params: { controlId: pcs.controlId } })
+            .then(() => ({ pcs, ok: true })).catch(() => ({ pcs, ok: false }));
+        }
+        return Promise.resolve({ pcs, ok: true });
+      });
+      pushPromises.push(...ctrlSyncResults);
+
       // Wait for ALL push operations at once
       await Promise.all(pushPromises);
 
@@ -611,11 +767,28 @@
       savePendingArchive(remainingArchive);
       const remainingDel = (await Promise.all(delResults)).filter(r => !r.ok).map(r => r.pd);
       savePendingDel(remainingDel);
+      const remainingCtrlSync = (await Promise.all(ctrlSyncResults)).filter(r => !r.ok).map(r => r.pcs);
+      savePendingCtrlSync(remainingCtrlSync);
 
       // 2. Pull ALL data in ONE call (was getJarsByUser + getJarHistory = 2 calls × 5-6 readAll each)
-      const fullSync = await apiFetchReal({ query: 'getFullSync', params: { userId } }) || {};
+      const [fullSync, serverCustomCtrls] = await Promise.all([
+        apiFetchReal({ query: 'getFullSync', params: { userId } }).then(r => r || {}),
+        apiFetchReal({ query: 'getCustomControls', params: { userId } }).catch(() => []),
+      ]);
       const freshJars = fullSync.jars || [];
       const serverHistories = fullSync.histories || {};
+
+      // Merge custom controls from server (server wins unless pending local sync)
+      const pendingCtrlSyncIds = new Set(localPendingCtrlSync().map(p => p.controlId));
+      const localCtrls = localCustomControls();
+      const mergedCtrls = serverCustomCtrls.filter(sc => !pendingCtrlSyncIds.has(sc.controlId));
+      // Keep local-only controls that are pending create
+      localCtrls.forEach(lc => {
+        if (pendingCtrlSyncIds.has(lc.controlId) && !mergedCtrls.find(m => m.controlId === lc.controlId)) {
+          mergedCtrls.push(lc);
+        }
+      });
+      saveCustomControls(mergedCtrls);
 
       // Save per-jar lastModified for future checkSync comparison
       // If server returned empty jarModified (no mutations yet), generate defaults
@@ -748,7 +921,8 @@
     const hasPending = hasUnsynced ||
       localPendingDel().length > 0 ||
       localPendingCtrl().length > 0 ||
-      localPendingArchive().length > 0;
+      localPendingArchive().length > 0 ||
+      localPendingCtrlSync().length > 0;
     if (hasPending) { scheduleBackgroundSync(); return; }
     // If no pending changes, sync if stale (>5 min since last sync)
     const lastSync = localStorage.getItem(KEY_LAST_SYNC);
@@ -869,6 +1043,10 @@
     $('cjName').value = '';
     $('cjGoal').value = '';
     $('cjDesc').value = '';
+    $('cjImagePreview').hidden = true;
+    $('cjImagePreviewImg').src = '';
+    $('cjImageAddBtn').hidden = false;
+    $('cjImageFile').value = '';
     openSheet('createJarSheet');
     setTimeout(() => $('cjName').focus(), 300);
   }
@@ -884,13 +1062,28 @@
     const desc = $('cjDesc').value.trim();
     if (!name) { toast('Jar 이름을 입력하세요.'); $('cjName').focus(); return; }
     if (!goal || goal <= 0) { toast('목표금액을 입력하세요.'); $('cjGoal').focus(); return; }
+    const existingJars = cachedJars || localJars();
+    if (existingJars.some(j => j.name === name)) {
+      if (!confirm('이미 같은 이름의 Jar가 있습니다. 계속 만드시겠습니까?')) return;
+    }
     $('cjSaveBtn').disabled = true;
     try {
       const res = await apiFetch({ action: 'createJar', params: { name, description: desc, goalAmount: goal, ownerId: userId } });
+      // Upload jar image if selected
+      let imageUrl = '';
+      const imageFile = $('cjImageFile').files[0];
+      if (imageFile && hasSupabase()) {
+        try {
+          imageUrl = await window.DreamJarSupabase.uploadJarImage(res.jarId, imageFile);
+          await apiFetch({ action: 'updateJarImage', params: { jarId: res.jarId, imageUrl } });
+        } catch (imgErr) {
+          console.warn('[DreamJar] Image upload failed:', imgErr);
+        }
+      }
       closeSheet('createJarSheet');
       toast('Jar를 만들었어요!');
       // 새 Jar를 로컬에 추가
-      const newJar = { jarId: res.jarId, name, description: desc, goalAmount: goal, currentAmount: 0, ownerId: userId, controlId: '', memberId: '' };
+      const newJar = { jarId: res.jarId, name, description: desc, goalAmount: goal, currentAmount: 0, ownerId: userId, controlId: '', memberId: '', imageUrl };
       const jars = localJars();
       jars.unshift(newJar);
       saveLocalJars(jars);
@@ -907,6 +1100,51 @@
   // "Jar 만들기" 버튼 (Jar 없을 때 표시)
   $('jarCreateBtnEmpty').addEventListener('click', openCreateJar);
 
+  // ── Jar 사진 업로드 (만들기) ──
+  $('cjImageAddBtn').addEventListener('click', () => $('cjImageFile').click());
+  $('cjImageFile').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    if (file.size > 5 * 1024 * 1024) { toast('사진은 5MB 이하만 가능합니다.'); return; }
+    const reader = new FileReader();
+    reader.onload = () => {
+      $('cjImagePreviewImg').src = reader.result;
+      $('cjImagePreview').hidden = false;
+      $('cjImageAddBtn').hidden = true;
+    };
+    reader.readAsDataURL(file);
+  });
+  $('cjImageRemoveBtn').addEventListener('click', () => {
+    $('cjImagePreview').hidden = true;
+    $('cjImagePreviewImg').src = '';
+    $('cjImageAddBtn').hidden = false;
+    $('cjImageFile').value = '';
+  });
+
+  // ── Jar 사진 변경 (기존 Jar) ──
+  $('jarImageEditBtn').addEventListener('click', () => $('jarImageFileEdit').click());
+  $('jarImageFileEdit').addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    if (file.size > 5 * 1024 * 1024) { toast('사진은 5MB 이하만 가능합니다.'); return; }
+    if (!currentJar || !hasSupabase()) return;
+    toast('사진 업로드 중…');
+    try {
+      const imageUrl = await window.DreamJarSupabase.uploadJarImage(currentJar.jarId, file);
+      await apiFetch({ action: 'updateJarImage', params: { jarId: currentJar.jarId, imageUrl } });
+      currentJar.imageUrl = imageUrl;
+      // Update local cache
+      const jars = localJars();
+      const idx = jars.findIndex(j => j.jarId === currentJar.jarId);
+      if (idx >= 0) { jars[idx].imageUrl = imageUrl; saveLocalJars(jars); }
+      renderJarSection(currentJar);
+      toast('사진이 변경되었어요!');
+    } catch (err) {
+      toast('사진 업로드 실패: ' + err.message);
+    }
+    $('jarImageFileEdit').value = '';
+  });
+
   // ── JAR 섹션 렌더 ──
   function renderJarSection(jar) {
     $('jarLoading').hidden = true;
@@ -918,6 +1156,18 @@
     const isOwned = jar.ownerId === userId;
     $('historyBtn').hidden = false;
     $('donateBtn').hidden  = isOwned;
+
+    // Show jar image
+    const imgDisplay = $('mainJarImage');
+    const imgEl = $('mainJarImageImg');
+    if (jar.imageUrl) {
+      imgEl.src = jar.imageUrl;
+      imgDisplay.hidden = false;
+      $('jarImageEditBtn').hidden = !isOwned;
+    } else {
+      imgDisplay.hidden = true;
+      imgEl.src = '';
+    }
 
     // Show sync info for joined jars
     const syncInfo = $('jarSyncInfo');
@@ -1058,7 +1308,7 @@
     const emptyMsg2 = $('controlEmpty').querySelector('.ctrl-empty-msg');
     if (emptyMsg2) emptyMsg2.textContent = '먼저 Jar를 선택하세요.';
 
-    const ctrl = ADMIN_CONTROLS.find(c => c.controlId === jar.controlId);
+    const ctrl = findControl(jar.controlId);
     $('controlEmpty').hidden   = true;
     $('controlDisplay').hidden = false;
 
@@ -1160,14 +1410,213 @@
   $('ctrlChangeBtn').addEventListener('click', openControlPicker);
 
   function openControlPicker() {
-    document.querySelectorAll('.cp-item').forEach(el => {
-      el.classList.toggle('active', el.dataset.controlId === (currentJar && currentJar.controlId));
-    });
+    renderControlPickerList();
     openSheet('controlPickerSheet');
   }
 
-  document.querySelectorAll('.cp-item').forEach(el => {
-    el.addEventListener('click', () => onControlSelect(el.dataset.controlId));
+  function renderControlPickerList() {
+    const listEl = $('controlPickerList');
+    const activeCtrlId = currentJar && currentJar.controlId;
+    const builtIn = ADMIN_CONTROLS;
+    const custom = localCustomControls();
+
+    let html = '';
+    // Built-in controls
+    builtIn.forEach(c => {
+      const isActive = c.controlId === activeCtrlId;
+      const desc = c.controlId === 'ctrl_ca' ? '학업·루틴·마일스톤 달성 보상'
+                 : c.controlId === 'ctrl_cb' ? '일상 절약 행동 보상' : '';
+      html += `<button class="cp-item${isActive ? ' active' : ''}" data-control-id="${escHtml(c.controlId)}" type="button">
+        <span class="cp-emoji">${c.emoji}</span>
+        <span class="cp-body">
+          <span class="cp-name">${escHtml(c.name)}</span>
+          <span class="cp-desc">${escHtml(desc)}</span>
+        </span>
+      </button>`;
+    });
+
+    // Custom controls
+    if (custom.length > 0) {
+      html += '<div class="cp-section-title">내 컨트롤</div>';
+      custom.forEach(c => {
+        const isActive = c.controlId === activeCtrlId;
+        html += `<div class="cp-custom-row">
+          <button class="cp-item${isActive ? ' active' : ''}" data-control-id="${escHtml(c.controlId)}" type="button">
+            <span class="cp-emoji">${escHtml(c.emoji || '🎯')}</span>
+            <span class="cp-body">
+              <span class="cp-name">${escHtml(c.name)}</span>
+              <span class="cp-desc">${escHtml(c.description || '')}</span>
+            </span>
+          </button>
+          <button class="cp-edit-btn" data-edit-ctrl-id="${escHtml(c.controlId)}" type="button" title="편집">✏️</button>
+        </div>`;
+      });
+    }
+
+    listEl.innerHTML = html;
+
+    // Bind select
+    listEl.querySelectorAll('.cp-item').forEach(el => {
+      el.addEventListener('click', () => onControlSelect(el.dataset.controlId));
+    });
+    // Bind edit
+    listEl.querySelectorAll('.cp-edit-btn').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeSheet('controlPickerSheet');
+        openCustomCtrlEditor(el.dataset.editCtrlId);
+      });
+    });
+  }
+
+  // "내 컨트롤 만들기" 버튼
+  $('createCustomCtrlBtn').addEventListener('click', () => {
+    closeSheet('controlPickerSheet');
+    openCustomCtrlEditor(null);
+  });
+
+  // ── 커스텀 컨트롤 에디터 ──
+  function openCustomCtrlEditor(controlId) {
+    if (controlId) {
+      // Edit mode
+      _editingCtrlId = controlId;
+      const ctrl = localCustomControls().find(c => c.controlId === controlId);
+      if (!ctrl) return;
+      $('customCtrlSheetTitle').textContent = '컨트롤 편집';
+      $('ccName').value = ctrl.name || '';
+      $('ccEmoji').value = ctrl.emoji || '';
+      $('ccDesc').value = ctrl.description || '';
+      _editingCtrlItems = (ctrl.items || []).map(i => ({ ...i }));
+      $('ccDeleteBtn').hidden = false;
+      $('ccSaveBtn').textContent = '저장';
+    } else {
+      // Create mode
+      _editingCtrlId = null;
+      $('customCtrlSheetTitle').textContent = '내 컨트롤 만들기';
+      $('ccName').value = '';
+      $('ccEmoji').value = '';
+      $('ccDesc').value = '';
+      _editingCtrlItems = [];
+      $('ccDeleteBtn').hidden = true;
+      $('ccSaveBtn').textContent = '만들기';
+    }
+    renderCCItemList();
+    openSheet('customCtrlSheet');
+  }
+
+  function renderCCItemList() {
+    const listEl = $('ccItemList');
+    if (_editingCtrlItems.length === 0) {
+      listEl.innerHTML = '<p class="cc-item-empty">아이템이 없어요. 추가해 보세요.</p>';
+      return;
+    }
+    listEl.innerHTML = _editingCtrlItems.map((item, idx) => {
+      const typeLabel = item.type === 'milestone' ? '마일스톤' : '루틴';
+      return `<div class="cc-item-row">
+        <div class="cc-item-info">
+          <span class="cc-item-name">${escHtml(item.label)}</span>
+          <span class="cc-item-meta">${typeLabel} · ${won(item.amount)}</span>
+        </div>
+        <button class="cc-item-edit-btn" data-cc-idx="${idx}" type="button">✏️</button>
+        <button class="cc-item-del-btn" data-cc-idx="${idx}" type="button">🗑️</button>
+      </div>`;
+    }).join('');
+    listEl.querySelectorAll('.cc-item-edit-btn').forEach(btn => {
+      btn.addEventListener('click', () => openCCItemEditor(Number(btn.dataset.ccIdx)));
+    });
+    listEl.querySelectorAll('.cc-item-del-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        _editingCtrlItems.splice(Number(btn.dataset.ccIdx), 1);
+        renderCCItemList();
+      });
+    });
+  }
+
+  // Add item button
+  $('ccAddItemBtn').addEventListener('click', () => openCCItemEditor(-1));
+
+  let _editingItemIdx = -1; // -1 = new, >= 0 = editing existing
+  function openCCItemEditor(idx) {
+    _editingItemIdx = idx;
+    if (idx >= 0 && _editingCtrlItems[idx]) {
+      const item = _editingCtrlItems[idx];
+      $('ccItemSheetTitle').textContent = '아이템 편집';
+      $('cciLabel').value = item.label || '';
+      $('cciAmount').value = item.amount || '';
+      $('cciType').value = item.type === 'milestone' ? 'milestone' : 'routine';
+      $('cciSaveBtn').textContent = '저장';
+    } else {
+      $('ccItemSheetTitle').textContent = '아이템 추가';
+      $('cciLabel').value = '';
+      $('cciAmount').value = '';
+      $('cciType').value = 'routine';
+      $('cciSaveBtn').textContent = '추가';
+    }
+    openSheet('ccItemSheet');
+    setTimeout(() => $('cciLabel').focus(), 300);
+  }
+
+  $('cciSaveBtn').addEventListener('click', () => {
+    const label = $('cciLabel').value.trim();
+    const amount = Number(String($('cciAmount').value).replace(/[^0-9]/g, ''));
+    const type = $('cciType').value;
+    if (!label) { toast('이름을 입력하세요.'); return; }
+    if (!amount || amount <= 0) { toast('금액을 입력하세요.'); return; }
+    const item = {
+      id: (_editingItemIdx >= 0 && _editingCtrlItems[_editingItemIdx])
+        ? _editingCtrlItems[_editingItemIdx].id
+        : 'ci_' + Date.now() + '_' + Math.floor(Math.random() * 1e4),
+      label,
+      amount,
+      type,
+      subtype: type === 'milestone' ? 'once' : 'per_day',
+      once: type === 'milestone',
+    };
+    if (_editingItemIdx >= 0) {
+      _editingCtrlItems[_editingItemIdx] = item;
+    } else {
+      _editingCtrlItems.push(item);
+    }
+    closeSheet('ccItemSheet');
+    renderCCItemList();
+  });
+
+  // Save custom control
+  $('ccSaveBtn').addEventListener('click', () => {
+    const name = $('ccName').value.trim();
+    const emoji = $('ccEmoji').value.trim() || '🎯';
+    const desc = $('ccDesc').value.trim();
+    if (!name) { toast('이름을 입력하세요.'); $('ccName').focus(); return; }
+    if (_editingCtrlItems.length === 0) { toast('아이템을 하나 이상 추가하세요.'); return; }
+
+    const controlId = _editingCtrlId || ('ctrl_' + Date.now() + '_' + Math.floor(Math.random() * 1e6));
+    const ctrl = { controlId, name, emoji, description: desc, items: _editingCtrlItems, type: 'custom' };
+    saveCustomControl(ctrl);
+    closeSheet('customCtrlSheet');
+    toast(_editingCtrlId ? '컨트롤을 수정했어요.' : '컨트롤을 만들었어요.');
+    // If this control is active on current jar, re-render
+    if (currentJar && currentJar.controlId === controlId) {
+      renderControlSection(currentJar, entryRows);
+    }
+    scheduleBackgroundSync();
+  });
+
+  // Delete custom control
+  $('ccDeleteBtn').addEventListener('click', () => {
+    if (!_editingCtrlId) return;
+    if (!confirm('이 컨트롤을 삭제할까요?')) return;
+    deleteCustomControl(_editingCtrlId);
+    // If active on current jar, clear it
+    if (currentJar && currentJar.controlId === _editingCtrlId) {
+      currentJar.controlId = '';
+      const jars = localJars();
+      const lj = jars.find(j => j.jarId === currentJar.jarId);
+      if (lj) { lj.controlId = ''; saveLocalJars(jars); }
+      renderControlSection(currentJar, entryRows);
+    }
+    closeSheet('customCtrlSheet');
+    toast('컨트롤을 삭제했어요.');
+    scheduleBackgroundSync();
   });
 
   function onControlSelect(controlId) {
@@ -1944,12 +2393,36 @@
     });
   })();
 
-  // ── 진입점 ──
-  if (!userId) {
-    showSetup();
-  } else {
-    hideSetup();
-    initApp();
-  }
+  // ── 진입점 (CMPA-913: auth session 확인) ──
+  (async function boot() {
+    if (hasSupabase()) {
+      try {
+        const session = await DreamJarSupabase.auth.getSession();
+        if (session && session.user) {
+          // 유효한 세션이 있으면 userId 복원 후 앱 진입
+          const authUserId = await DreamJarSupabase.auth.getAuthUserId();
+          if (authUserId) {
+            userId = authUserId;
+            localStorage.setItem(KEY_USER_ID, userId);
+          }
+          hideLogin();
+          initApp();
+
+          // 세션 변경 감지 (토큰 만료 → 자동 갱신, 로그아웃 감지)
+          DreamJarSupabase.auth.onAuthStateChange((event) => {
+            if (event === 'SIGNED_OUT') {
+              // 세션 만료 등으로 로그아웃됨
+              userId = '';
+              localStorage.removeItem(KEY_USER_ID);
+              showLogin();
+            }
+          });
+          return;
+        }
+      } catch {}
+    }
+    // 세션 없음 → 로그인 화면
+    showLogin();
+  })();
 
 })();
