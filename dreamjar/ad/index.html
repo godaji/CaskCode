@@ -6,194 +6,47 @@
 <title>쭉심 ZZUKSIM — Ho Chi Minh City</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    width: 100vw; height: 100vh; overflow: hidden;
-    background: #000; font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  body { width: 100%; height: 100%; overflow: hidden; background: #000; }
+  .ad { position: relative; width: 100%; height: 100%; overflow: hidden; }
+  .slide {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
   }
-
-  .ad {
-    position: relative; width: 100%; height: 100%;
-    overflow: hidden;
+  .s1 {
+    background-image: url('slide1.png');
+    animation: fadeOut 5s ease forwards;
   }
-
-  /* ── Background images ── */
-  .bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
-
-  .bg-exterior {
-    background-image: url('exterior.png');
-    animation: fadeExterior 5s ease forwards;
-  }
-  .bg-food {
-    background-image: url('food.png');
+  .s2 {
+    background-image: url('slide2.png');
     opacity: 0;
-    animation: fadeFoodIn 5s ease forwards;
+    animation: fadeIn 5s ease forwards;
   }
-
-  @keyframes fadeExterior {
+  @keyframes fadeOut {
     0%   { opacity: 1; transform: scale(1); }
-    40%  { opacity: 1; transform: scale(1.06); }
-    55%  { opacity: 0; transform: scale(1.08); }
+    45%  { opacity: 1; transform: scale(1.04); }
+    60%  { opacity: 0; transform: scale(1.06); }
     100% { opacity: 0; }
   }
-
-  @keyframes fadeFoodIn {
-    0%   { opacity: 0; transform: scale(1.1); }
-    40%  { opacity: 0; transform: scale(1.1); }
-    55%  { opacity: 1; transform: scale(1.05); }
+  @keyframes fadeIn {
+    0%   { opacity: 0; transform: scale(1.06); }
+    45%  { opacity: 0; transform: scale(1.06); }
+    60%  { opacity: 1; transform: scale(1.03); }
     100% { opacity: 1; transform: scale(1); }
   }
-
-  /* ── Dark gradient overlay ── */
-  .overlay {
-    position: absolute; inset: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0,0,0,0.15) 0%,
-      rgba(0,0,0,0.05) 30%,
-      rgba(0,0,0,0.3) 70%,
-      rgba(0,0,0,0.75) 100%
-    );
-    z-index: 2;
-  }
-
-  /* ── Content layer ── */
-  .content {
-    position: absolute; inset: 0; z-index: 3;
-    display: flex; flex-direction: column;
-    justify-content: flex-end; align-items: center;
-    padding: 0 24px 15vh 24px;
-    text-align: center; color: #fff;
-  }
-
-  /* Logo / restaurant name */
-  .logo {
-    font-size: 42px; font-weight: 900;
-    letter-spacing: 3px;
-    text-shadow: 0 2px 20px rgba(220,60,30,0.7), 0 0 40px rgba(220,60,30,0.3);
-    opacity: 0;
-    animation: riseIn 0.8s ease 0.3s forwards;
-  }
-  .logo .kr { display: block; font-size: 28px; letter-spacing: 6px; margin-bottom: 4px; }
-  .logo .en { display: block; font-size: 14px; letter-spacing: 8px; font-weight: 500; opacity: 0.8; margin-top: 2px; }
-
-  /* Tagline */
-  .tagline {
-    margin-top: 14px;
-    font-size: 15px; font-weight: 500; letter-spacing: 1px; line-height: 1.6;
-    text-shadow: 0 1px 8px rgba(0,0,0,0.8);
-    opacity: 0;
-    animation: riseIn 0.7s ease 1s forwards;
-  }
-
-  /* Location badge */
-  .location {
-    margin-top: 18px;
-    display: inline-flex; align-items: center; gap: 6px;
-    background: rgba(255,255,255,0.13);
-    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 8px 18px;
-    font-size: 12px; font-weight: 500; letter-spacing: 0.5px;
-    opacity: 0;
-    animation: riseIn 0.6s ease 1.5s forwards;
-  }
-  .location svg { width: 14px; height: 14px; fill: #ff6b4a; flex-shrink: 0; }
-
-  /* CTA that appears in second half */
-  .cta {
-    margin-top: 20px;
-    background: linear-gradient(135deg, #e8432a, #ff6b4a);
-    color: #fff; font-size: 14px; font-weight: 700;
-    letter-spacing: 1px;
-    padding: 12px 32px; border-radius: 24px;
-    box-shadow: 0 4px 20px rgba(232,67,42,0.5);
-    opacity: 0;
-    animation: ctaPop 0.5s ease 3s forwards, ctaPulse 0.8s ease 3.5s 3;
-  }
-
-  /* ── Top accent bar ── */
-  .accent-bar {
-    position: absolute; top: 0; left: 0; right: 0; height: 3px; z-index: 4;
+  .bar {
+    position: absolute; top: 0; left: 0; right: 0; height: 3px; z-index: 2;
     background: linear-gradient(90deg, #e8432a, #ff6b4a, #e8432a);
     transform: scaleX(0); transform-origin: left;
-    animation: barGrow 5s linear forwards;
+    animation: grow 5s linear forwards;
   }
-
-  /* ── Animations ── */
-  @keyframes riseIn {
-    from { opacity: 0; transform: translateY(18px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes ctaPop {
-    from { opacity: 0; transform: scale(0.8); }
-    to   { opacity: 1; transform: scale(1); }
-  }
-  @keyframes ctaPulse {
-    0%, 100% { transform: scale(1); }
-    50%      { transform: scale(1.05); }
-  }
-  @keyframes barGrow {
-    from { transform: scaleX(0); }
-    to   { transform: scaleX(1); }
-  }
-
-  /* ── Floating particles (subtle) ── */
-  .particle {
-    position: absolute; z-index: 1;
-    width: 4px; height: 4px; border-radius: 50%;
-    background: rgba(255,107,74,0.5);
-  }
-  .p1 { left: 15%; bottom: 30%; animation: float 3s ease-in-out 0.5s infinite; }
-  .p2 { right: 20%; bottom: 45%; animation: float 2.5s ease-in-out 1s infinite; }
-  .p3 { left: 40%; bottom: 55%; animation: float 3.5s ease-in-out 0.2s infinite; width: 3px; height: 3px; }
-  .p4 { right: 35%; bottom: 25%; animation: float 2.8s ease-in-out 1.5s infinite; width: 5px; height: 5px; opacity: 0.3; }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0) scale(1); opacity: 0.4; }
-    50%      { transform: translateY(-30px) scale(1.3); opacity: 0.8; }
-  }
+  @keyframes grow { to { transform: scaleX(1); } }
 </style>
 </head>
 <body>
 <div class="ad">
-  <!-- Progress bar -->
-  <div class="accent-bar"></div>
-
-  <!-- Background layers -->
-  <div class="bg bg-exterior"></div>
-  <div class="bg bg-food"></div>
-
-  <!-- Subtle particles -->
-  <div class="particle p1"></div>
-  <div class="particle p2"></div>
-  <div class="particle p3"></div>
-  <div class="particle p4"></div>
-
-  <!-- Dark overlay -->
-  <div class="overlay"></div>
-
-  <!-- Text content -->
-  <div class="content">
-    <div class="logo">
-      <span class="kr">쭉심</span>
-      ZZUKSIM
-      <span class="en">HO CHI MINH CITY</span>
-    </div>
-
-    <div class="tagline">
-      정통 한국식 매운 낙지 &amp; 한상차림<br>
-      호치민에서 만나는 본격 한식
-    </div>
-
-    <div class="location">
-      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
-      2 Vo Truong Toan, Thu Duc
-    </div>
-
-    <div class="cta">방문 예약하기</div>
-  </div>
+  <div class="bar"></div>
+  <div class="slide s1"></div>
+  <div class="slide s2"></div>
 </div>
 </body>
 </html>
