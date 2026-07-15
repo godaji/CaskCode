@@ -113,12 +113,12 @@
       type: 'default',
       items: [
         // 루틴 탭
-        { id:'cb_swap_water', label:'💧 음료수 대신 물 마시기',              type:'routine',     subtype:'per_day',  amount:1500,  tab:'routine' },
-        { id:'cb_swap_meat',  label:'🍖 가공육/튀김 대신 고기 먹기',        type:'routine',     subtype:'per_day',  amount:1500,  tab:'routine' },
-        { id:'cb_swap_grain', label:'🍚 빵/흰밥 대신 갈색밥 먹기',          type:'routine',     subtype:'per_day',  amount:1500,  tab:'routine' },
-        { id:'cb_swap_sweet', label:'🍇 사탕/아이스크림 대신 얼린 과일 먹기', type:'routine',     subtype:'per_day',  amount:1500,  tab:'routine' },
-        { id:'cb_outdoor',    label:'🏃 바깥 놀이 30분',                    type:'routine',     subtype:'per_day',  amount:2000,  tab:'routine' },
-        { id:'cb_earlybed',   label:'🌙 일찍 자기 (10시 전)',               type:'routine',     subtype:'per_day',  amount:500,   tab:'routine' },
+        { id:'cb_swap_water', label:'💧 음료수 대신 물 마시기',              type:'routine',     subtype:'per_day',  amount:500,   tab:'routine' },
+        { id:'cb_swap_meat',  label:'🍖 가공육 대신 고기 먹기',              type:'routine',     subtype:'per_day',  amount:500,   tab:'routine' },
+        { id:'cb_swap_grain', label:'🍚 빵/흰밥 대신 갈색밥 먹기',          type:'routine',     subtype:'per_day',  amount:500,   tab:'routine' },
+        { id:'cb_swap_sweet', label:'🍇 사탕/아이스크림 대신 얼린 과일 먹기', type:'routine',     subtype:'per_day',  amount:1000,  tab:'routine' },
+        { id:'cb_outdoor',    label:'🏃 바깥 놀이',                         type:'routine',     subtype:'per_day',  amount:500,   tab:'routine' },
+        { id:'cb_earlybed',   label:'🌙 일찍 자기 (9시)',                   type:'routine',     subtype:'per_day',  amount:500,   tab:'routine' },
         // 이벤트 탭
         { id:'cb_newplay',      label:'🆕 새 운동 도전',           type:'performance', subtype:'session', amount:5000,  tab:'event' },
         { id:'cb_cook',         label:'👩‍🍳 건강 간식 만들기',       type:'performance', subtype:'session', amount:3000,  tab:'event' },
