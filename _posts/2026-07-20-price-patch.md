@@ -5,23 +5,23 @@ date: "2026-07-20 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 1
+breakthroughs: 3
 prev_date: "2026-07-19"
 latest_date: "2026-07-23"
 weekly_start: "2026-07-20"
 weekly_end: "2026-07-26"
 days: 4
-hotdeals: ["보모어 22년 700ml — 면세 ₩326,129 · 74%↓", "더 글렌리벳 16년 1000ml — 면세 ₩119,725 · 68%↓", "보모어 14년 700ml — 면세 ₩55,581 · 45%↓", "보모어 16년 700ml — 면세 ₩89,910 · 40%↓", "발베니 Balvenie 15년 Madeira Cask 700ml — 면세 ₩128,643 · 37%↓"]
-hotdeals_count: 19
+hotdeals: ["보모어 22년 700ml — 면세 ₩326,129 · 74%↓", "더 글렌리벳 16년 1000ml — 면세 ₩119,725 · 68%↓", "보모어 14년 700ml — 면세 ₩55,581 · 45%↓", "보모어 16년 700ml — 면세 ₩89,910 · 40%↓", "글렌피딕 18년 벳4 퍼페츄얼 IGL CNY 700ml — 면세 ₩118,032 · 38%↓"]
+hotdeals_count: 21
 rare_drops: ["패터캐른 28년 700ml → ₩689,945 (−47%)", "주라 1993 700ml → ₩712,844 (−46%)", "달모어 포트폴리오 시리즈 2007년 700ml → ₩719,089 (−45%)", "부쉬밀 포트캐스크 25년 700ml → ₩802,953 (−37%)", "와일드무어 30년 트로피칼 코스트 700ml → ₩367,174 (−33%)"]
 rare_drops_count: 7
-description: "면세 위스키 가격 주간 로그 7/20~7/26 — 이번주 핫딜 19종 · 오랜만의 큰 인하 7종 · 최신 2026-07-23. CaskCode"
+description: "면세 위스키 가격 주간 로그 7/20~7/26 — 이번주 핫딜 21종 · 오랜만의 큰 인하 7종 · 최신 2026-07-23. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-07-20 ~ 2026-07-26.
 
-## 🔥 이번주 핫딜 (19종)
+## 🔥 이번주 핫딜 (21종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
@@ -31,10 +31,12 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 더 글렌리벳 16년 1000ml | 면세 **₩119,725** · 국내최저 [₩370,000 🔗](https://dailyshot.co/m/item/21907)<br>절약 **−₩250,275 (68%↓)** · 할인 49%→30% |
 | 보모어 14년 700ml | 면세 **₩55,581** · 국내최저 [₩101,000 🔗](https://dailyshot.co/m/item/25811)<br>절약 **−₩45,419 (45%↓)** · 할인 50%→45% |
 | 보모어 16년 700ml | 면세 **₩89,910** · 국내최저 [₩150,000 🔗](https://dailyshot.co/m/item/25812)<br>절약 **−₩60,090 (40%↓)** · 할인 50%→45% |
+| 글렌피딕 18년 벳4 퍼페츄얼 IGL CNY 700ml | 면세 **₩118,032** · 국내최저 [₩189,000 🔗](https://dailyshot.co/m/item/23280)<br>절약 **−₩70,968 (38%↓)** · 할인 49%→45% |
 | 발베니 Balvenie 15년 Madeira Cask 700ml | 면세 **₩128,643** · 국내최저 [₩205,000 🔗](https://dailyshot.co/m/item/7409)<br>절약 **−₩76,357 (37%↓)** · 할인 49%→47% |
 | 발베니 Balvenie 19년 Week of Peat 700ml | 면세 **₩248,246** · 국내최저 [₩395,000 🔗](https://dailyshot.co/m/item/13773)<br>절약 **−₩146,754 (37%↓)** · 할인 48%→47% |
 | 글렌피딕 18년 Vat4 Perpetual 700ml | 면세 **₩129,365** · 국내최저 [₩189,000 🔗](https://dailyshot.co/m/item/23280)<br>절약 **−₩59,635 (32%↓)** · 할인 45%→40% |
 | 발베니 Balvenie 18년 Sherry Cask 700ml | 면세 **₩243,012** · 국내최저 [₩349,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩105,988 (30%↓)** · 할인 47%→41% |
+| 글렌피딕 21년 CNY 2026 리미티드 에디션 700ml | 면세 **₩214,899** · 국내최저 [₩297,000 🔗](https://dailyshot.co/m/item/28392)<br>절약 **−₩82,101 (28%↓)** · 할인 49%→45% |
 | 발베니 18년 페드로 히메네즈(PX) 셰리 캐스크 빅토 응아이 에디션 700ml | 면세 **₩259,488** · 국내최저 [₩349,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩89,512 (26%↓)** · 할인 39%→37% |
 | 발베니 15년 마데이라 캐스크 빅토 응아이 에디션 700ml | 면세 **₩153,632** · 국내최저 [₩205,000 🔗](https://dailyshot.co/m/item/7409)<br>절약 **−₩51,368 (25%↓)** · 할인 39%→37% |
 | 발베니 12년 Golden Cask 700ml | 면세 **₩71,374** · 국내최저 [₩93,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩21,626 (23%↓)** · 할인 43%→40% |
@@ -65,7 +67,7 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 
 ---
 
-## 📅 7월 23일 (목) — 돌파 1건
+## 📅 7월 23일 (목) — 돌파 3건
 
 *직전 2026-07-22 → 최신 2026-07-23* · *환율 ₩1,480.02 (기준일 2026-07-22)*
 
@@ -75,13 +77,15 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 
 <details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌피딕 23년 그랑크뤼 슬림팩 700ml: 45%→48% (₩271,673)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌피딕 (Glenfiddich) · 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 아메리칸·유러피언 오크 23년 숙성 후 희귀한 프랑스 퀴베(cuvée, 샴페인용) 캐스크에서 약 6개월 추가 피니시<br><b>맛</b> 사과꽃·갓 구운 빵·설탕에 절인 레몬 향. 입안에서 진한 바닐라 오크·스위트 브리오슈·샌들우드·서양배 셔벗·청포도가 펼쳐지고, 길고 호화로우며 달콤한 피니시로 마무리된다.<br><b>스토리</b> 글렌피딕 그랑크뤼(Grand Cru)는 샴페인(스파클링 와인) 양조에 쓰인 희귀한 프랑스 퀴베 캐스크에서 약 6개월 추가 피니시한 23년 표현으로, 축하주를 콘셉트로 한 프리미엄 라인이다. '슬림팩'은 면세/선물용 슬림 패키지 사양(원액 동일).<br><span style="color:#8a8f98">출처: 공식 glenfiddich.com · Drinkhacker · Scotch&amp;Sheen (2026-06-26 리서치) · 수집일 2026-06-26</span></div></details></div></details>
 
-<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">발베니 Balvenie 15년 Madeira Cask 700ml: 49%→47% (₩128,643)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 발베니 (Balvenie) · 스페이사이드<br><b>도수</b> 43%<br><b>캐스크</b> 엑스-버번 캐스크 숙성 후 마데이라 와인 캐스크 피니시 · GTR 면세 전용<br><b>맛</b> 견과류·체리·레드커런트·라즈베리 등 베리 믹스 향. 다크프루트·블랙체리·시트러스·시나몬·토스티 오크·바닐라·헤이즐넛, 풍부하고 부드러운 피니시. 발베니다운 꿀·바닐라에 새콤달콤 과일이 더해짐.<br><b>스토리</b> 발베니 15년 마데이라 캐스크는 12년 골든·18년 PX 셰리와 함께 글로벌 면세(GTR) 전용 라인. 포르투갈 마데이라 섬 와인 캐스크 피니시로 너티함과 베리 풍미를 입혔다.<br><span style="color:#8a8f98">출처: The Whisky Edition · Secret Whiskey Society · whisky.com (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details></div></details>
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 5건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><div style="margin:5px 0">글렌피딕 18년 벳4 퍼페츄얼 IGL CNY 700ml: 49%→45% (₩118,032)</div><div style="margin:5px 0">글렌피딕 21년 CNY 2026 리미티드 에디션 700ml: 49%→45% (₩214,899)</div><div style="margin:5px 0">GF LIQU Glenfiddich 40 700ml: 47%→45% (₩4,465,667)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">발베니 Balvenie 15년 Madeira Cask 700ml: 49%→47% (₩128,643)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 발베니 (Balvenie) · 스페이사이드<br><b>도수</b> 43%<br><b>캐스크</b> 엑스-버번 캐스크 숙성 후 마데이라 와인 캐스크 피니시 · GTR 면세 전용<br><b>맛</b> 견과류·체리·레드커런트·라즈베리 등 베리 믹스 향. 다크프루트·블랙체리·시트러스·시나몬·토스티 오크·바닐라·헤이즐넛, 풍부하고 부드러운 피니시. 발베니다운 꿀·바닐라에 새콤달콤 과일이 더해짐.<br><b>스토리</b> 발베니 15년 마데이라 캐스크는 12년 골든·18년 PX 셰리와 함께 글로벌 면세(GTR) 전용 라인. 포르투갈 마데이라 섬 와인 캐스크 피니시로 너티함과 베리 풍미를 입혔다.<br><span style="color:#8a8f98">출처: The Whisky Edition · Secret Whiskey Society · whisky.com (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><div style="margin:5px 0">글렌피딕 XX 700ml: 46%→45% (₩74,889)</div></div></details>
 
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
 | 🏆 위스키 | 상세 |
 |---|---|
+| 글렌피딕 21년 CNY 2026 리미티드 에디션 700ml | 면세 **₩214,899** · 국내최저 [₩297,000 🔗](https://dailyshot.co/m/item/28392)<br>절약 **−₩82,101 (28%↓)** · 할인 49%→45% |
 | 발베니 Balvenie 15년 Madeira Cask 700ml | 면세 **₩128,643** · 국내최저 [₩205,000 🔗](https://dailyshot.co/m/item/7409)<br>절약 **−₩76,357 (37%↓)** · 할인 49%→47% |
+| 글렌피딕 18년 벳4 퍼페츄얼 IGL CNY 700ml | 면세 **₩118,032** · 국내최저 [₩189,000 🔗](https://dailyshot.co/m/item/23280)<br>절약 **−₩70,968 (38%↓)** · 할인 49%→45% |
 
 ### 📦 품절/내림 (1)
 
