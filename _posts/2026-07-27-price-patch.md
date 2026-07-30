@@ -5,23 +5,23 @@ date: "2026-07-27 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 0
+breakthroughs: 1
 prev_date: "2026-07-26"
 latest_date: "2026-07-30"
 weekly_start: "2026-07-27"
 weekly_end: "2026-08-02"
 days: 4
 hotdeals: ["보모어 22년 700ml — 면세 ₩321,010 · 74%↓", "벤리악 트리플 디스틸드 25년 700ml — 면세 ₩358,303 · 53%↓", "보모어 14년 700ml — 면세 ₩54,708 · 46%↓", "보모어 16년 700ml — 면세 ₩88,499 · 41%↓", "발베니 Balvenie 19년 Week of Peat 700ml — 면세 ₩253,429 · 36%↓"]
-hotdeals_count: 16
+hotdeals_count: 17
 rare_drops: []
 rare_drops_count: 0
-description: "면세 위스키 가격 주간 로그 7/27~8/2 — 이번주 핫딜 16종 · 오랜만의 큰 인하 0종 · 최신 2026-07-30. CaskCode"
+description: "면세 위스키 가격 주간 로그 7/27~8/2 — 이번주 핫딜 17종 · 오랜만의 큰 인하 0종 · 최신 2026-07-30. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-07-27 ~ 2026-08-02.
 
-## 🔥 이번주 핫딜 (16종)
+## 🔥 이번주 핫딜 (17종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
@@ -39,6 +39,7 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 듀어스 15년 (New Edition) 1000ml | 면세 **₩47,922** · 국내최저 [₩64,000 🔗](https://dailyshot.co/m/item/6778)<br>절약 **−₩16,078 (25%↓)** · 할인 50%→49% |
 | 발베니 12년 Golden Cask 700ml | 면세 **₩71,229** · 국내최저 [₩93,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩21,771 (23%↓)** · 할인 40%→39% |
 | 라가불린 16년 700ml | 면세 **₩103,418** · 국내최저 [₩135,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩31,582 (23%↓)** · 할인 44%→42% |
+| 발베니 Stories Creation Classic 700ml | 면세 **₩88,326** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩19,674 (18%↓)** · 할인 39%→40% |
 | 글렌알라키 8년 700ml | 면세 **₩63,888** · 국내최저 [₩72,000 🔗](https://dailyshot.co/m/item/7639)<br>절약 **−₩8,112 (11%↓)** · 할인 62%→52% |
 | 글렌피딕 15년 Vat3 Perpetual 700ml | 면세 **₩79,649** · 국내최저 [₩89,000 🔗](https://dailyshot.co/m/item/1650)<br>절약 **−₩9,351 (11%↓)** · 할인 47%→45% |
 | 발베니 21년 포트우드 700ml | 면세 **₩421,285** · 국내최저 [₩459,000 🔗](https://dailyshot.co/m/item/3222)<br>절약 **−₩37,715 (8%↓)** · 할인 25%→20% |
@@ -46,7 +47,7 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 
 ---
 
-## 📅 7월 30일 (목)
+## 📅 7월 30일 (목) — 돌파 1건
 
 *직전 2026-07-29 → 최신 2026-07-30* · *환율 ₩1,457.52 (기준일 2026-07-29)*
 
@@ -54,11 +55,36 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 
 _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
 
-<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">브룩라디 블랙아트 사페로 700ml: 38%→40% (₩208,134)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 브룩라디 (Bruichladdich) · 아일라 (Islay)<br><b>도수</b> 46% (추정 · 병 표기 미확인)<br><b>캐스크</b> 비공개(Black Art 시리즈 전통 — 캐스크 레시피를 비밀로 유지)<br><b>맛</b> 피트 없는 아일라 싱글몰트. Black Art 시리즈 특유의 검은 과일·다크초콜릿·트로피컬·오크 스파이스·허브·시트러스 필 복합미. 긴 크리미 피니시. (동일 시리즈 기준 추정 노트 · Sapero 에디션 공식 노트 미확인)<br><b>스토리</b> 브룩라디는 1881년 아일라 서해안에 설립된 논피트 싱글몰트 증류소. Black Art 시리즈는 헤드 디스틸러(아담 하넷→짐 맥이완 후임)가 캐스크 레시피를 비공개로 유지하는 프리미엄 한정판 라인이다. Sapero 에디션은 면세(트래블 리테일) 채널 전용 표현으로 추정. 시리즈 전통상 다양한 와인·셰리·버번 캐스크 배팅 후 비밀 레시피로 완성한다.<br><span style="color:#8a8f98">출처: bruichladdich.com (시리즈 정보) · 신라면세 리스팅 (2026-07-30 리서치 · Sapero 에디션 공식 상세 미공개) · 수집일 2026-07-30</span></div></details></div></details>
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 6건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">발베니 11년 헝가리안 캐스크 700ml: 42%→45% (₩88,180)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 발베니 (The Balvenie) · 윌리엄 그랜트 앤 선즈 · 더프타운 · 스페이사이드 (Speyside)<br><b>도수</b> 47.4% (논칠필터)<br><b>캐스크</b> 전통 캐스크 11년 숙성 후 헝가리안(토카이산) 레드와인 오크 캐스크 피니시 · '스토리즈(A Collection of Curious Casks)' 라인 · 글로벌 면세(GTR) 전용<br><b>맛</b> 구운 오크·은은한 스파이스에 실키한 캐러멜과 잘 익은 베리 향. 풀바디한 단맛 위로 스파이스가 겹겹이, 크리미한 바닐라·꿀에 부드러운 우디 타닌. 흙내음 오크 타닌이 은은한 단맛과 또렷한 시트러스 엣지를 드러내는 피니시.<br><b>스토리</b> 발베니 'Hungarian Red Wine Cask' 11년은 발베니 '스토리즈' 컬렉션 중 면세(GTR) 전용판으로, 전통 캐스크 11년 숙성 후 헝가리(토카이 지역) 레드와인을 담았던 오크 캐스크에 추가 숙성했다. 발베니 기본 라인보다 높은 47.4% 도수·논칠필터가 특징.<br><span style="color:#8a8f98">출처: 공식 thebalvenie.com · The Dram Barron · Whiskybase (2026-06-12 리서치) · 수집일 2026-06-12</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로크로몬드 8년 Madeira 1000ml: 58%→60% (₩30,316)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로크로몬드 (Loch Lomond) · 하이랜드<br><b>도수</b> 46% (caskcartel·dutyfreepoints·whisky.com 일치, 1L 트래블리테일 2022 릴리스)<br><b>캐스크</b> 아메리칸 오크 숙성 후 마데이라 캐스크 피니시<br><b>맛</b> 코에서 오렌지·너트맥·아몬드 마지팬. 입에서는 복숭아·배·무화과에 너트맥과 마지팬, 호두의 견과 풍미. 마데이라 피니시가 과수원 과일 캐릭터와 향신료를 더한다.<br><b>스토리</b> 로크로몬드는 스완넥 포트스틸과 독특한 스트레이트넥(직선목) 포트스틸을 함께 운용해 다양한 스타일을 한 증류소에서 만드는 하이랜드 증류소다. 이 8년 마데이라 우드 피니시는 글로벌 트래블리테일(면세) 전용 라인업의 1L 보틀로, 2022년 릴리스되었다. 아메리칸 오크에서 숙성한 뒤 마데이라 캐스크로 추가 숙성해 과실미와 스파이스를 강조했다.<br><span style="color:#8a8f98">출처: lochlomondwhiskies.com(Global Travel Retail), caskcartel.com, dutyfreepoints.com, whisky.com 위스키 데이터베이스 (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">브룩라디 블랙아트 사페로 700ml: 38%→40% (₩208,134)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 브룩라디 (Bruichladdich) · 아일라 (Islay)<br><b>도수</b> 46% (추정 · 병 표기 미확인)<br><b>캐스크</b> 비공개(Black Art 시리즈 전통 — 캐스크 레시피를 비밀로 유지)<br><b>맛</b> 피트 없는 아일라 싱글몰트. Black Art 시리즈 특유의 검은 과일·다크초콜릿·트로피컬·오크 스파이스·허브·시트러스 필 복합미. 긴 크리미 피니시. (동일 시리즈 기준 추정 노트 · Sapero 에디션 공식 노트 미확인)<br><b>스토리</b> 브룩라디는 1881년 아일라 서해안에 설립된 논피트 싱글몰트 증류소. Black Art 시리즈는 헤드 디스틸러(아담 하넷→짐 맥이완 후임)가 캐스크 레시피를 비공개로 유지하는 프리미엄 한정판 라인이다. Sapero 에디션은 면세(트래블 리테일) 채널 전용 표현으로 추정. 시리즈 전통상 다양한 와인·셰리·버번 캐스크 배팅 후 비밀 레시피로 완성한다.<br><span style="color:#8a8f98">출처: bruichladdich.com (시리즈 정보) · 신라면세 리스팅 (2026-07-30 리서치 · Sapero 에디션 공식 상세 미공개) · 수집일 2026-07-30</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 12년 1000ml: 50%→51% (₩69,276)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 (Royal Brackla) · 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 버번 캐스크 숙성 후 올로로소 셰리 캐스크 피니시 · 논칠필터<br><b>맛</b> 토피·무화과·프루트케이크 향에 육두구·계피·호두. 입안엔 잘 익은 복숭아·블랙체리·초콜릿·아몬드, 무스코바도 설탕의 따뜻한 단맛 피니시.<br><b>스토리</b> 1812년 설립, 1835년 윌리엄 4세에게 'The King's Own Whisky' 칭호를 받은 첫 증류소. 현재 듀어스(바카디) 소유. 12년은 올로로소 셰리 피니시 코어레인지.<br><span style="color:#8a8f98">출처: 공식 royalbrackla.com · Master of Malt · The Whiskey Wash (2026-06-12 리서치) · 수집일 2026-06-12</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">발베니 Stories Creation Classic 700ml: 39%→40% (₩88,326)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 발베니 (The Balvenie) · 스코틀랜드 스페이사이드<br><b>도수</b> 43%<br><b>캐스크</b> 아메리칸 오크(엑스버번) 숙성 후 올로로소 셰리 캐스크 피니시 (NAS)<br><b>맛</b> 바닐라·생강·캐러멜·정향·차이 스파이스의 향긋한 향, 오트시럽·캐러멜·은은한 스파이스에 셰리 유래 다크프루트가 겹치고 드라이한 오크로 마무리.<br><b>스토리</b> 발베니 'Stories' 컬렉션의 'The Creation of a Classic'(무연산·글로벌 면세 전용). 1983년 세계 최초 캐스크 피니시를 창안한 몰트 마스터 데이비드 스튜어트를 기린다. ⚠️ 같은 Stories 라인 'A Day of Dark Barley'와는 다른 제품이니 라벨 확인 권장.<br><span style="color:#8a8f98">출처: The Balvenie 공식 · The Whisky Exchange · Drinkhacker (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details><div style="margin:5px 0">잭다니엘 Tennessee Apple 1000ml: 51%→52% (₩24,716)</div></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 7건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><div style="margin:5px 0">더글라스랭 BIG PEAT 12년 700ml: 48%→43% (₩61,478)</div><div style="margin:5px 0">더글라스랭 DOUGLAS OP GLEN GARIOCH 12년 700ml: 48%→43% (₩93,048)</div><div style="margin:5px 0">더글라스랭 OP LEDAIG 13년 700ml: 48%→43% (₩110,494)</div><div style="margin:5px 0">더글라스랭 SCALLYWAG 10년 700ml: 48%→43% (₩57,324)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 21년 700ml: 52%→51% (₩248,536)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 증류소 · 스코틀랜드 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 올로로소·팔로 코르타도·PX 셰리 캐스크 피니시<br><b>맛</b> 크렘 브륄레와 신선한 베리, 바닐라 빈의 향. 크리미하고 매끄러운 입안에 잉글리시 토피·잘 익은 무화과·가죽·정향. 코냑과 초콜릿 케이크를 연상시키는 길고 진한 피니시.<br><b>스토리</b> 나폴레옹 시대 윌리엄 4세로부터 'Royal' 칭호를 받은 하이랜드 증류소. 21년은 세 가지 셰리 캐스크(올로로소·팔로 코르타도·PX)로 피니시한 셰리 풍미 중심 표현으로, 무착색·논칠필터.<br><span style="color:#8a8f98">출처: TheWhiskeyWash·Whisky Magazine·Drinkhacker (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">미클토어 오리지널 700ml: 55%→54% (₩61,682)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌알라키 (GlenAllachie) — Meikle Tòir · 스코틀랜드 스페이사이드<br><b>도수</b> 50% (피트 35ppm)<br><b>캐스크</b> 퍼스트필 버번 배럴·토스티드 버진 아메리칸 오크·라이 배럴 숙성, 5년, 자연색·논칠필터<br><b>맛</b> 베이킹 스파이스·꿀·에스프레소·헤이즐넛·스모크 아몬드·버터스카치의 향, 달콤한 피트·다크초콜릿·헤더꿀·시나몬·생강의 입안, 가볍고 달콤하게 스모크가 잦아드는 마무리.<br><b>스토리</b> 빌리 워커가 글렌알라키 증류소에서 만든 피티드 스페이사이드 싱글몰트 브랜드 'Meikle Tòir'(스코트어 '큰 추구')의 코어 The Original. 본토 세인트퍼거스 피트로 달콤한 스모크가 특징인 피티드 싱글몰트.<br><span style="color:#8a8f98">출처: Meikle Tòir 공식 · The Whiskey Wash · Words of Whisky (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details><div style="margin:5px 0">와일드무어 40년 블랙 마운틴 700ml: 33%→32% (₩892,001)</div></div></details>
 
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
-이번 패치엔 국내최저 돌파 항목이 없습니다.
+| 🏆 위스키 | 상세 |
+|---|---|
+| 발베니 Stories Creation Classic 700ml | 면세 **₩88,326** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩19,674 (18%↓)** · 할인 39%→40% |
+
+### 🆕 신규 입고 (10)
+
+| 위스키 | 현재 KRW |
+|---|--:|
+| 패터캐른 200주년 세트 (700ml*6병) | ₩103,848,145 |
+| 패터캐른 46년 700ml | ₩10,820,612 |
+| [면세전용] 달모어 19년 PX 700ml | ₩484,625 |
+| [면세전용] 달모어 16년 PX 700ml | ₩228,466 |
+| 달모어 시가몰트 리저브 700ml | ₩173,080 |
+| [면세전용] 달모어 13년 PX 700ml | ₩110,771 |
+| 주라 19년 700ml | ₩98,697 |
+| 주라 16년 700ml | ₩68,041 |
+| 주라 13년 1000ml | ₩59,069 |
+| 주라 화이트 오크 1000ml | ₩38,161 |
+
+### 📦 품절/내림 (1)
+
+| 위스키 |
+|---|
+| 고든앤맥패일 코노세어초이스 토민타울 2001 22년 700ml |
 
 *국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
 
