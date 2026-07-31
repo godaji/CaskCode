@@ -5,23 +5,23 @@ date: "2026-07-27 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 7
+breakthroughs: 2
 prev_date: "2026-07-26"
-latest_date: "2026-07-31"
+latest_date: "2026-08-01"
 weekly_start: "2026-07-27"
 weekly_end: "2026-08-02"
-days: 5
+days: 6
 hotdeals: ["보모어 22년 700ml — 면세 ₩321,010 · 74%↓", "벤리악 트리플 디스틸드 25년 700ml — 면세 ₩358,303 · 53%↓", "보모어 14년 700ml — 면세 ₩49,266 · 52%↓", "보모어 16년 700ml — 면세 ₩79,694 · 50%↓", "발베니 Balvenie 19년 Week of Peat 700ml — 면세 ₩253,429 · 36%↓"]
-hotdeals_count: 20
-rare_drops: []
-rare_drops_count: 0
-description: "면세 위스키 가격 주간 로그 7/27~8/2 — 이번주 핫딜 20종 · 오랜만의 큰 인하 0종 · 최신 2026-07-31. CaskCode"
+hotdeals_count: 21
+rare_drops: ["듀어스 DEWARS 18년 1000ml → ₩75,764 (−47%)"]
+rare_drops_count: 1
+description: "면세 위스키 가격 주간 로그 7/27~8/2 — 이번주 핫딜 21종 · 오랜만의 큰 인하 1종 · 최신 2026-08-01. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-07-27 ~ 2026-08-02.
 
-## 🔥 이번주 핫딜 (20종)
+## 🔥 이번주 핫딜 (21종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
@@ -32,6 +32,7 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 보모어 14년 700ml | 면세 **₩49,266** · 국내최저 [₩102,000 🔗](https://dailyshot.co/m/item/25811)<br>절약 **−₩52,734 (52%↓)** · 할인 45%→50% |
 | 보모어 16년 700ml | 면세 **₩79,694** · 국내최저 [₩159,000 🔗](https://dailyshot.co/m/item/25812)<br>절약 **−₩79,306 (50%↓)** · 할인 45%→50% |
 | 발베니 Balvenie 19년 Week of Peat 700ml | 면세 **₩253,429** · 국내최저 [₩395,000 🔗](https://dailyshot.co/m/item/13773)<br>절약 **−₩141,571 (36%↓)** · 할인 47%→45% |
+| 듀어스 DEWARS 18년 1000ml | 면세 **₩75,764** · 국내최저 [₩118,000 🔗](https://dailyshot.co/m/item/4781)<br>절약 **−₩42,236 (36%↓)** · 할인 48%→50% |
 | 발베니 12년 Golden Cask 700ml | 면세 **₩69,551** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩38,449 (36%↓)** · 할인 39%→40% |
 | 발베니 Balvenie 15년 Madeira Cask 700ml | 면세 **₩131,944** · 국내최저 [₩200,000 🔗](https://dailyshot.co/m/item/7409)<br>절약 **−₩68,056 (34%↓)** · 할인 49%→45% |
 | 아드벡 우거다일 700ml | 면세 **₩93,949** · 국내최저 [₩139,000 🔗](https://dailyshot.co/m/item/2526)<br>절약 **−₩45,051 (32%↓)** · 할인 25%→29% |
@@ -41,12 +42,46 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 글렌피딕 21년 700ml | 면세 **₩212,398** · 국내최저 [₩297,000 🔗](https://dailyshot.co/m/item/28392)<br>절약 **−₩84,602 (28%↓)** · 할인 48%→45% |
 | 듀어스 15년 (New Edition) 1000ml | 면세 **₩47,922** · 국내최저 [₩64,000 🔗](https://dailyshot.co/m/item/6778)<br>절약 **−₩16,078 (25%↓)** · 할인 50%→49% |
 | 글렌모렌지 시그넷 700ml | 면세 **₩245,299** · 국내최저 [₩309,000 🔗](https://dailyshot.co/m/item/29615)<br>절약 **−₩63,701 (21%↓)** · 할인 10%→15% |
-| 발베니 Stories Creation Classic 700ml | 면세 **₩88,326** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩19,674 (18%↓)** · 할인 39%→40% |
+| 발베니 Stories Creation Classic 700ml | 면세 **₩88,072** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩19,928 (18%↓)** · 할인 40%→39% |
 | 아드벡 10년 1000ml | 면세 **₩74,333** · 국내최저 [₩90,000 🔗](https://dailyshot.co/m/item/3195)<br>절약 **−₩15,667 (17%↓)** · 할인 25%→29% |
 | 글렌알라키 8년 700ml | 면세 **₩63,888** · 국내최저 [₩72,000 🔗](https://dailyshot.co/m/item/7639)<br>절약 **−₩8,112 (11%↓)** · 할인 62%→52% |
 | 글렌피딕 15년 Vat3 Perpetual 700ml | 면세 **₩79,649** · 국내최저 [₩89,000 🔗](https://dailyshot.co/m/item/1650)<br>절약 **−₩9,351 (11%↓)** · 할인 47%→45% |
 | 발베니 21년 포트우드 700ml | 면세 **₩421,285** · 국내최저 [₩459,000 🔗](https://dailyshot.co/m/item/3222)<br>절약 **−₩37,715 (8%↓)** · 할인 25%→20% |
 | 글렌피딕 Vat 1 Perpetual Collection 1000ml | 면세 **₩62,754** · 국내최저 [₩66,000 🔗](https://dailyshot.co/m/item/6338)<br>절약 **−₩3,246 (5%↓)** · 할인 51%→45% |
+
+---
+
+## 🕰️ 신라면세 오랜만의 큰 인하 (1종)
+
+_원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진** 위스키입니다. 늘 할인하거나 잔잔히 오르내리는 건 제외 · 낙폭 큰 순._
+
+| 🕰️ 위스키 | 상세 |
+|---|---|
+| 듀어스 DEWARS 18년 1000ml | 면세 **₩75,764** · 국내최저 [₩118,000 🔗](https://dailyshot.co/m/item/4781)<br>**−47% 인하** · 그동안 ₩143,952 거의 정상가(5% 할인)로 56일째 → 50% 할인 · 8/1 첫 인하 |
+
+---
+
+## 📅 8월 1일 (토) — 돌파 2건
+
+*직전 2026-07-31 → 최신 2026-08-01* · *환율 ₩1,429.51 (기준일 2026-07-31)*
+
+### 📊 한눈에 — 할인율 변동 요약
+
+_각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><div style="margin:5px 0">듀어스 DEWARS 18년 1000ml: 48%→50% (₩75,764)</div></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 2건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 12년 1000ml: 51%→50% (₩69,817)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 (Royal Brackla) · 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 버번 캐스크 숙성 후 올로로소 셰리 캐스크 피니시 · 논칠필터<br><b>맛</b> 토피·무화과·프루트케이크 향에 육두구·계피·호두. 입안엔 잘 익은 복숭아·블랙체리·초콜릿·아몬드, 무스코바도 설탕의 따뜻한 단맛 피니시.<br><b>스토리</b> 1812년 설립, 1835년 윌리엄 4세에게 'The King's Own Whisky' 칭호를 받은 첫 증류소. 현재 듀어스(바카디) 소유. 12년은 올로로소 셰리 피니시 코어레인지.<br><span style="color:#8a8f98">출처: 공식 royalbrackla.com · Master of Malt · The Whiskey Wash (2026-06-12 리서치) · 수집일 2026-06-12</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">발베니 Stories Creation Classic 700ml: 40%→39% (₩88,072)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 발베니 (The Balvenie) · 스코틀랜드 스페이사이드<br><b>도수</b> 43%<br><b>캐스크</b> 아메리칸 오크(엑스버번) 숙성 후 올로로소 셰리 캐스크 피니시 (NAS)<br><b>맛</b> 바닐라·생강·캐러멜·정향·차이 스파이스의 향긋한 향, 오트시럽·캐러멜·은은한 스파이스에 셰리 유래 다크프루트가 겹치고 드라이한 오크로 마무리.<br><b>스토리</b> 발베니 'Stories' 컬렉션의 'The Creation of a Classic'(무연산·글로벌 면세 전용). 1983년 세계 최초 캐스크 피니시를 창안한 몰트 마스터 데이비드 스튜어트를 기린다. ⚠️ 같은 Stories 라인 'A Day of Dark Barley'와는 다른 제품이니 라벨 확인 권장.<br><span style="color:#8a8f98">출처: The Balvenie 공식 · The Whisky Exchange · Drinkhacker (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details></div></details>
+
+### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
+
+| 🏆 위스키 | 상세 |
+|---|---|
+| 듀어스 DEWARS 18년 1000ml | 면세 **₩75,764** · 국내최저 [₩118,000 🔗](https://dailyshot.co/m/item/4781)<br>절약 **−₩42,236 (36%↓)** · 할인 48%→50% |
+| 발베니 Stories Creation Classic 700ml | 면세 **₩88,072** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩19,928 (18%↓)** · 할인 40%→39% |
+
+*국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
+
 
 ---
 
