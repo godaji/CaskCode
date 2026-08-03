@@ -5,17 +5,17 @@ date: "2026-08-03 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 11
+breakthroughs: 1
 prev_date: "2026-08-02"
-latest_date: "2026-08-03"
+latest_date: "2026-08-04"
 weekly_start: "2026-08-03"
 weekly_end: "2026-08-09"
-days: 1
+days: 2
 hotdeals: ["보모어 22년 700ml — 면세 ₩315,613 · 75%↓", "부쉬밀 18년 트리플 캐스크 700ml — 면세 ₩110,741 · 57%↓", "조니워커 킹조지 5세 500ml — 면세 ₩404,997 · 55%↓", "조니워커 XR 21년 750ml — 면세 ₩108,728 · 51%↓", "보모어 14년 700ml — 면세 ₩53,789 · 47%↓"]
 hotdeals_count: 11
 rare_drops: []
 rare_drops_count: 0
-description: "면세 위스키 가격 주간 로그 8/3~8/9 — 이번주 핫딜 11종 · 오랜만의 큰 인하 0종 · 최신 2026-08-03. CaskCode"
+description: "면세 위스키 가격 주간 로그 8/3~8/9 — 이번주 핫딜 11종 · 오랜만의 큰 인하 0종 · 최신 2026-08-04. CaskCode"
 robots: "noindex,nofollow"
 ---
 
@@ -35,9 +35,32 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 보모어 16년 700ml | 면세 **₩87,011** · 국내최저 [₩159,000 🔗](https://dailyshot.co/m/item/25812)<br>절약 **−₩71,989 (45%↓)** · 할인 50%→45% |
 | 글렌파클라스 15년 700ml | 면세 **₩106,786** · 국내최저 [₩179,900 🔗](https://dailyshot.co/m/item/4312)<br>절약 **−₩73,114 (41%↓)** · 할인 50%→45% |
 | 발베니 12년 Golden Cask 700ml | 면세 **₩70,184** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩37,816 (35%↓)** · 할인 40%→39% |
-| 글렌피딕 26년 GC 700ml | 면세 **₩588,914** · 국내최저 [₩840,000 🔗](https://dailyshot.co/m/item/12615)<br>절약 **−₩251,086 (30%↓)** · 할인 40%→42% |
 | 발렌타인 40년 마스터 콜렉션 챕터 2 700ml | 면세 **₩13,283,933** · 국내최저 [₩18,500,000 🔗](https://dailyshot.co/m/item/7991)<br>절약 **−₩5,216,067 (28%↓)** · 할인 30% |
+| 글렌피딕 26년 GC 700ml | 면세 **₩610,207** · 국내최저 [₩840,000 🔗](https://dailyshot.co/m/item/12615)<br>절약 **−₩229,793 (27%↓)** · 할인 42%→40% |
 | 라가불린 16년 700ml | 면세 **₩103,346** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩38,654 (27%↓)** · 할인 44%→41% |
+
+---
+
+## 📅 8월 4일 (화) — 돌파 1건
+
+*직전 2026-08-03 → 최신 2026-08-04* · *환율 ₩1,440.53 (기준일 2026-08-03)*
+
+### 📊 한눈에 — 할인율 변동 요약
+
+_각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 21년 700ml: 49%→50% (₩250,651)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 증류소 · 스코틀랜드 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 올로로소·팔로 코르타도·PX 셰리 캐스크 피니시<br><b>맛</b> 크렘 브륄레와 신선한 베리, 바닐라 빈의 향. 크리미하고 매끄러운 입안에 잉글리시 토피·잘 익은 무화과·가죽·정향. 코냑과 초콜릿 케이크를 연상시키는 길고 진한 피니시.<br><b>스토리</b> 나폴레옹 시대 윌리엄 4세로부터 'Royal' 칭호를 받은 하이랜드 증류소. 21년은 세 가지 셰리 캐스크(올로로소·팔로 코르타도·PX)로 피니시한 셰리 풍미 중심 표현으로, 무착색·논칠필터.<br><span style="color:#8a8f98">출처: TheWhiskeyWash·Whisky Magazine·Drinkhacker (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌피딕 26년 GC 700ml: 42%→40% (₩610,207)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌피딕 (Glenfiddich) · 스페이사이드<br><b>도수</b> 43.8%<br><b>캐스크</b> 엑스-버번·올로로소 셰리 오크에서 약 24년 숙성 후 프렌치 코냑 캐스크 2년 이상 피니시<br><b>맛</b> 노즈: 프렌치 파티세리·타르트 타탱·버터 슈 패스트리·꿀·오렌지 필·로스티드 아몬드. 팔렛: 깊고 벨벳 같은 카페 크렘·브라운 슈거·은은한 스파이스. 피니시: 길고 감미로운 토스티드 오크·카페 크렘·소프트 스파이스.<br><b>스토리</b> 그랑드 쿠론(Grande Couronne=위대한 왕관)은 글렌피딕 그랜드 시리즈의 럭셔리 표현으로 몰트 마스터 브라이언 킨스만이 기획. 스코틀랜드·프랑스 증류 전통을 결합해 26년 숙성+코냑 캐스크 장기 피니시로 우아한 패스트리 풍미를 구현.<br><span style="color:#8a8f98">출처: 공식 glenfiddich.com · The Whisky Exchange · The Whiskey Wash (2026-08-03 리서치) · 수집일 2026-08-03</span></div></details></div></details>
+
+### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
+
+| 🏆 위스키 | 상세 |
+|---|---|
+| 글렌피딕 26년 GC 700ml | 면세 **₩610,207** · 국내최저 [₩840,000 🔗](https://dailyshot.co/m/item/12615)<br>절약 **−₩229,793 (27%↓)** · 할인 42%→40% |
+
+*국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
+
 
 ---
 
