@@ -5,17 +5,17 @@ date: "2026-08-03 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 10
+breakthroughs: 0
 prev_date: "2026-08-02"
-latest_date: "2026-08-04"
+latest_date: "2026-08-05"
 weekly_start: "2026-08-03"
 weekly_end: "2026-08-09"
-days: 2
+days: 3
 hotdeals: ["보모어 22년 700ml — 면세 ₩315,613 · 75%↓", "부쉬밀 18년 트리플 캐스크 700ml — 면세 ₩110,741 · 57%↓", "조니워커 킹조지 5세 500ml — 면세 ₩386,637 · 57%↓", "조니워커 XR 21년 750ml — 면세 ₩108,728 · 51%↓", "보모어 14년 700ml — 면세 ₩53,789 · 47%↓"]
 hotdeals_count: 19
 rare_drops: []
 rare_drops_count: 0
-description: "면세 위스키 가격 주간 로그 8/3~8/9 — 이번주 핫딜 19종 · 오랜만의 큰 인하 0종 · 최신 2026-08-04. CaskCode"
+description: "면세 위스키 가격 주간 로그 8/3~8/9 — 이번주 핫딜 19종 · 오랜만의 큰 인하 0종 · 최신 2026-08-05. CaskCode"
 robots: "noindex,nofollow"
 ---
 
@@ -46,6 +46,37 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 라가불린 16년 700ml | 면세 **₩103,346** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩38,654 (27%↓)** · 할인 44%→41% |
 | 듀어스 12년 1000ml | 면세 **₩39,851** · 국내최저 [₩48,000 🔗](https://dailyshot.co/m/item/3695)<br>절약 **−₩8,149 (17%↓)** · 할인 49%→47% |
 | 발베니 Stories Creation Classic 700ml | 면세 **₩90,206** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩17,794 (16%↓)** · 할인 39%→38% |
+
+---
+
+## 📅 8월 5일 (수)
+
+*직전 2026-08-04 → 최신 2026-08-05* · *환율 ₩1,429.59 (기준일 2026-08-04)*
+
+### 📊 한눈에 — 할인율 변동 요약
+
+_각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌피딕 23년 Grand Cru 700ml: 40%→42% (₩292,694)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌피딕 (Glenfiddich) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 아메리칸 오크 + 유러피안 오크 캐스크에서 23년 숙성 후 프랑스 그랑 크뤼 큐베(샴페인 전단계 와인) 캐스크에서 피니싱<br><b>맛</b> 사과꽃·갓 구운 빵·캔디드 레몬·무스캇 포도 향. 풍부한 바닐라 오크·달콤한 브리오슈·샌달우드·배 소르베·화이트 그레이프·토스티드 코코넛. 길고 풍성하며 달콤한 여운에 정향·빈티지 오크·몰트 잔향.<br><b>스토리</b> 글렌피딕은 1886년 윌리엄 그랜트가 스페이사이드에 설립하고 1887년 크리스마스에 첫 증류한 증류소이다. Grand Cru는 프랑스 그랑 크뤼 등급 포도원의 큐베 캐스크로 피니싱한 유일한 글렌피딕 싱글 몰트로 스코틀랜드 위스키와 프랑스 와인 문화의 만남을 표방한다.<br><span style="color:#8a8f98">출처: glenfiddich.com 공식 · Master of Malt · Drinkhacker (2026-07-17 리서치) · 수집일 2026-07-17</span></div></details></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 3건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 달 기프트팩 700ml: 38%→35% (₩62,259)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 약 35% 표기 소매 리스팅 있으나 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크 사용, 한국 기후로 빠른 숙성.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반(달 개별 노트는 불명).<br><b>스토리</b> '달'은 기원의 면세 전용 '해·달·별' 라인 중 하나로 알려짐(2025 출시). 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동, 마스터 디스틸러 앤드류 샌드·창업자 도정한 주도. 호랑이·유니콘·배치 등 시리즈 출시, 2025 IWSC 수상. 기프트팩 구성품은 불명.<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 나무위키 '기원(위스키)' · threesocieties.co.kr · 88bamboo.co (2026-06-15 리서치) · 수집일 2026-06-15</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 해 700ml: 38%→35% (₩57,612)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 '해·달·별' 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크를 사용하고 한국 기후로 빠르게 숙성한다.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반이나 '해' 개별 노트는 불명.<br><b>스토리</b> '해'는 기원의 면세 전용 '해·달·별' 라인 중 하나로, 국내 정식 시그니처 라인(호랑이·독수리·유니콘)과는 별개의 면세 전용 제품이다. 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동했고 마스터 디스틸러 앤드류 샌드·창업자 도정한이 주도한다. (면세 전용이라 도수·캐스크 등 사양 일부 불명)<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 듀티풀(dutyful.co.kr) · threesocieties.co.kr (2026-06-26 리서치) · 수집일 2026-06-26</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 21년 700ml: 50%→48% (₩259,942)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 증류소 · 스코틀랜드 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 올로로소·팔로 코르타도·PX 셰리 캐스크 피니시<br><b>맛</b> 크렘 브륄레와 신선한 베리, 바닐라 빈의 향. 크리미하고 매끄러운 입안에 잉글리시 토피·잘 익은 무화과·가죽·정향. 코냑과 초콜릿 케이크를 연상시키는 길고 진한 피니시.<br><b>스토리</b> 나폴레옹 시대 윌리엄 4세로부터 'Royal' 칭호를 받은 하이랜드 증류소. 21년은 세 가지 셰리 캐스크(올로로소·팔로 코르타도·PX)로 피니시한 셰리 풍미 중심 표현으로, 무착색·논칠필터.<br><span style="color:#8a8f98">출처: TheWhiskeyWash·Whisky Magazine·Drinkhacker (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details></div></details>
+
+### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
+
+이번 패치엔 국내최저 돌파 항목이 없습니다.
+
+### 🆕 신규 입고 (1)
+
+| 위스키 | 현재 KRW |
+|---|--:|
+| 이에이치 테일러 스몰배치 750ml | ₩114,081 |
+
+### 🆕 신규 술 설명 — 이름을 눌러 펼치기
+
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">🥃 이에이치 테일러 스몰배치 750ml · 50% (100 proof · Bottled-in-Bond)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 버팔로 트레이스 (Buffalo Trace) · 미국 켄터키<br><b>도수</b> 50% (100 proof · Bottled-in-Bond)<br><b>캐스크</b> 신축 차링 아메리칸 화이트 오크 버번 캐스크 · 테일러가 지은 100년 된 워런하우스 C 숙성 · 칠필터 · 단일 증류시즌 4년 이상(BiB)<br><b>맛</b> 캐러멜콘·버터스카치 향. 입안은 말린 과일·은은한 리코리스에 부드러운 질감, 후추·담뱃잎의 절제된 스파이스. 바닐라 파운드케이크·블랙체리·다크 레드프루트가 이어지고, 혀끝의 크리미함이 입 뒤쪽으로 퍼지는 스파이스와 가슴이 따뜻해지는 긴 피니시로 마무리.<br><b>스토리</b> 버번 산업의 '아버지'로 불리는 에드먼드 헤인스 테일러 주니어 대령(Col. E.H. Taylor Jr.)을 기리는 버팔로 트레이스의 프리미엄 라인. 테일러가 직접 지은 100년 된 석조 워런하우스에서 숙성하고, 단일 증류시즌·단일 증류자가 만든 술만 100proof로 병입하는 Bottled-in-Bond(1897년 보틀드인본드법) 켄터키 스트레이트 버번. 통상 7~8년 숙성분으로 알려져 있으며 병입 전 칠필터.<br><span style="color:#8a8f98">출처: 공식 buffalotracedistillery.com · Sazerac · The Bourbon Culture (2026-06-29 리서치) · 수집일 2026-06-29</span></div></details>
+
+*국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
+
 
 ---
 
