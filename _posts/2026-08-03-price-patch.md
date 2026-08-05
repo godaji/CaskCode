@@ -5,17 +5,17 @@ date: "2026-08-03 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 0
+breakthroughs: 1
 prev_date: "2026-08-02"
-latest_date: "2026-08-05"
+latest_date: "2026-08-06"
 weekly_start: "2026-08-03"
 weekly_end: "2026-08-09"
-days: 3
+days: 4
 hotdeals: ["보모어 22년 700ml — 면세 ₩315,613 · 75%↓", "부쉬밀 18년 트리플 캐스크 700ml — 면세 ₩110,741 · 57%↓", "조니워커 킹조지 5세 500ml — 면세 ₩386,637 · 57%↓", "조니워커 XR 21년 750ml — 면세 ₩108,728 · 51%↓", "보모어 14년 700ml — 면세 ₩53,789 · 47%↓"]
 hotdeals_count: 19
 rare_drops: []
 rare_drops_count: 0
-description: "면세 위스키 가격 주간 로그 8/3~8/9 — 이번주 핫딜 19종 · 오랜만의 큰 인하 0종 · 최신 2026-08-05. CaskCode"
+description: "면세 위스키 가격 주간 로그 8/3~8/9 — 이번주 핫딜 19종 · 오랜만의 큰 인하 0종 · 최신 2026-08-06. CaskCode"
 robots: "noindex,nofollow"
 ---
 
@@ -41,11 +41,40 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 발베니 12년 Golden Cask 700ml | 면세 **₩70,184** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩37,816 (35%↓)** · 할인 40%→39% |
 | 발베니12년 골든캐스크 IGL 700ml | 면세 **₩70,298** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩37,702 (35%↓)** · 할인 40%→39% |
 | 발베니 18년 페드로 히메네즈(PX) 셰리 캐스크 빅토 응아이 에디션 700ml | 면세 **₩255,376** · 국내최저 [₩389,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩133,624 (34%↓)** · 할인 37%→36% |
+| 라가불린 16년 700ml | 면세 **₩101,021** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩40,979 (29%↓)** · 할인 41%→42% |
 | 발렌타인 40년 마스터 콜렉션 챕터 2 700ml | 면세 **₩13,283,933** · 국내최저 [₩18,500,000 🔗](https://dailyshot.co/m/item/7991)<br>절약 **−₩5,216,067 (28%↓)** · 할인 30% |
 | 글렌피딕 26년 GC 700ml | 면세 **₩610,207** · 국내최저 [₩840,000 🔗](https://dailyshot.co/m/item/12615)<br>절약 **−₩229,793 (27%↓)** · 할인 42%→40% |
-| 라가불린 16년 700ml | 면세 **₩103,346** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩38,654 (27%↓)** · 할인 44%→41% |
 | 듀어스 12년 1000ml | 면세 **₩39,851** · 국내최저 [₩48,000 🔗](https://dailyshot.co/m/item/3695)<br>절약 **−₩8,149 (17%↓)** · 할인 49%→47% |
 | 발베니 Stories Creation Classic 700ml | 면세 **₩90,206** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩17,794 (16%↓)** · 할인 39%→38% |
+
+---
+
+## 📅 8월 6일 (목) — 돌파 1건
+
+*직전 2026-08-05 → 최신 2026-08-06* · *환율 ₩1,428.89 (기준일 2026-08-05)*
+
+### 📊 한눈에 — 할인율 변동 요약
+
+_각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">라가불린 16년 700ml: 41%→42% (₩101,021)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 라가불린 (Lagavulin) · 아일라 (Islay)<br><b>도수</b> 43%<br><b>캐스크</b> 엑스-버번 및 셰리 캐스크에서 최소 16년 숙성<br><b>맛</b> 코: 아일라 특유의 강렬한 피트 스모크에 요오드, 달콤한 스파이스, 잘 익은 셰리, 크리미한 바닐라. 입: 오일리하면서 진하고 풍부하며, 짭짤한 브라인과 묵직한 피트·오크, 과일의 단맛. 피니시: 무화과·대추야자·피트 스모크·바닐라의 길고 스파이시한 여운.<br><b>스토리</b> 1816년 설립된 라가불린은 아일라 남부를 대표하는 증류소로, 강력한 피트 스모크 캐릭터로 유명하다. 16년은 디아지오 'Classic Malts'의 일원이자 아일라 싱글몰트의 벤치마크로 평가받는 클래식 제품이다.<br><span style="color:#8a8f98">출처: Malts.com (Diageo 공식), Whisky Magazine, Caskers (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌피딕 23년 Grand Cru 700ml: 42%→40% (₩302,639)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌피딕 (Glenfiddich) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 아메리칸 오크 + 유러피안 오크 캐스크에서 23년 숙성 후 프랑스 그랑 크뤼 큐베(샴페인 전단계 와인) 캐스크에서 피니싱<br><b>맛</b> 사과꽃·갓 구운 빵·캔디드 레몬·무스캇 포도 향. 풍부한 바닐라 오크·달콤한 브리오슈·샌달우드·배 소르베·화이트 그레이프·토스티드 코코넛. 길고 풍성하며 달콤한 여운에 정향·빈티지 오크·몰트 잔향.<br><b>스토리</b> 글렌피딕은 1886년 윌리엄 그랜트가 스페이사이드에 설립하고 1887년 크리스마스에 첫 증류한 증류소이다. Grand Cru는 프랑스 그랑 크뤼 등급 포도원의 큐베 캐스크로 피니싱한 유일한 글렌피딕 싱글 몰트로 스코틀랜드 위스키와 프랑스 와인 문화의 만남을 표방한다.<br><span style="color:#8a8f98">출처: glenfiddich.com 공식 · Master of Malt · Drinkhacker (2026-07-17 리서치) · 수집일 2026-07-17</span></div></details></div></details>
+
+### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
+
+| 🏆 위스키 | 상세 |
+|---|---|
+| 라가불린 16년 700ml | 면세 **₩101,021** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩40,979 (29%↓)** · 할인 41%→42% |
+
+### 📦 품절/내림 (1)
+
+| 위스키 |
+|---|
+| 이에이치 테일러 스몰배치 750ml |
+
+*국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
+
 
 ---
 
