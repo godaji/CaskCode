@@ -59,7 +59,7 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 
 <details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">라가불린 16년 700ml: 41%→42% (₩101,021)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 라가불린 (Lagavulin) · 아일라 (Islay)<br><b>도수</b> 43%<br><b>캐스크</b> 엑스-버번 및 셰리 캐스크에서 최소 16년 숙성<br><b>맛</b> 코: 아일라 특유의 강렬한 피트 스모크에 요오드, 달콤한 스파이스, 잘 익은 셰리, 크리미한 바닐라. 입: 오일리하면서 진하고 풍부하며, 짭짤한 브라인과 묵직한 피트·오크, 과일의 단맛. 피니시: 무화과·대추야자·피트 스모크·바닐라의 길고 스파이시한 여운.<br><b>스토리</b> 1816년 설립된 라가불린은 아일라 남부를 대표하는 증류소로, 강력한 피트 스모크 캐릭터로 유명하다. 16년은 디아지오 'Classic Malts'의 일원이자 아일라 싱글몰트의 벤치마크로 평가받는 클래식 제품이다.<br><span style="color:#8a8f98">출처: Malts.com (Diageo 공식), Whisky Magazine, Caskers (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details></div></details>
 
-<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌피딕 23년 Grand Cru 700ml: 42%→40% (₩302,639)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌피딕 (Glenfiddich) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 아메리칸 오크 + 유러피안 오크 캐스크에서 23년 숙성 후 프랑스 그랑 크뤼 큐베(샴페인 전단계 와인) 캐스크에서 피니싱<br><b>맛</b> 사과꽃·갓 구운 빵·캔디드 레몬·무스캇 포도 향. 풍부한 바닐라 오크·달콤한 브리오슈·샌달우드·배 소르베·화이트 그레이프·토스티드 코코넛. 길고 풍성하며 달콤한 여운에 정향·빈티지 오크·몰트 잔향.<br><b>스토리</b> 글렌피딕은 1886년 윌리엄 그랜트가 스페이사이드에 설립하고 1887년 크리스마스에 첫 증류한 증류소이다. Grand Cru는 프랑스 그랑 크뤼 등급 포도원의 큐베 캐스크로 피니싱한 유일한 글렌피딕 싱글 몰트로 스코틀랜드 위스키와 프랑스 와인 문화의 만남을 표방한다.<br><span style="color:#8a8f98">출처: glenfiddich.com 공식 · Master of Malt · Drinkhacker (2026-07-17 리서치) · 수집일 2026-07-17</span></div></details></div></details>
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 2건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌피딕 22년 그랑 코르테스 700ml: 35%→33% (₩296,781)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌피딕 (Glenfiddich) · 스페이사이드<br><b>도수</b> 44.3%<br><b>캐스크</b> 여러 캐스크 매링 후 팔로 코르타도(Palo Cortado) 셰리 캐스크 피니시 · 면세 전용<br><b>맛</b> 대추야자·다크초콜릿·건포도 향에서 스위트 오크·바닐라·마지팬, 시트러스·프루트케이크·은은한 시나몬의 피니시.<br><b>스토리</b> 'Gran Cortes(XXII)'는 글렌피딕의 면세 전용 22년 표현으로 희귀한 팔로 코르타도 셰리 캐스크 피니시가 특징. 럼 캐스크 피니시인 21년 Gran Reserva와는 다른 제품(혼동 주의).<br><span style="color:#8a8f98">출처: 공식 glenfiddich.com · The Whisky Exchange (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌피딕 23년 Grand Cru 700ml: 42%→40% (₩302,639)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌피딕 (Glenfiddich) · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 아메리칸 오크 + 유러피안 오크 캐스크에서 23년 숙성 후 프랑스 그랑 크뤼 큐베(샴페인 전단계 와인) 캐스크에서 피니싱<br><b>맛</b> 사과꽃·갓 구운 빵·캔디드 레몬·무스캇 포도 향. 풍부한 바닐라 오크·달콤한 브리오슈·샌달우드·배 소르베·화이트 그레이프·토스티드 코코넛. 길고 풍성하며 달콤한 여운에 정향·빈티지 오크·몰트 잔향.<br><b>스토리</b> 글렌피딕은 1886년 윌리엄 그랜트가 스페이사이드에 설립하고 1887년 크리스마스에 첫 증류한 증류소이다. Grand Cru는 프랑스 그랑 크뤼 등급 포도원의 큐베 캐스크로 피니싱한 유일한 글렌피딕 싱글 몰트로 스코틀랜드 위스키와 프랑스 와인 문화의 만남을 표방한다.<br><span style="color:#8a8f98">출처: glenfiddich.com 공식 · Master of Malt · Drinkhacker (2026-07-17 리서치) · 수집일 2026-07-17</span></div></details></div></details>
 
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
@@ -67,11 +67,12 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 |---|---|
 | 라가불린 16년 700ml | 면세 **₩101,021** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩40,979 (29%↓)** · 할인 41%→42% |
 
-### 📦 품절/내림 (1)
+### 📦 품절/내림 (2)
 
 | 위스키 |
 |---|
 | 이에이치 테일러 스몰배치 750ml |
+| 잭다니엘 보틀 인 본드 1000ml |
 
 *국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
 
