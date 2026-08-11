@@ -5,17 +5,17 @@ date: "2026-08-10 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 9
+breakthroughs: 0
 prev_date: "2026-08-09"
-latest_date: "2026-08-11"
+latest_date: "2026-08-12"
 weekly_start: "2026-08-10"
 weekly_end: "2026-08-16"
-days: 2
+days: 3
 hotdeals: ["발베니 Balvenie 15년 Madeira Cask 700ml — 면세 ₩127,150 · 49%↓", "보모어 14년 700ml — 면세 ₩52,721 · 48%↓", "보모어 16년 700ml — 면세 ₩85,283 · 46%↓", "글렌파클라스 25년 700ml — 면세 ₩314,378 · 44%↓", "발베니 15년 마데이라 캐스크 빅토 응아이 에디션 700ml — 면세 ₩150,268 · 40%↓"]
 hotdeals_count: 11
 rare_drops: []
 rare_drops_count: 0
-description: "면세 위스키 가격 주간 로그 8/10~8/16 — 이번주 핫딜 11종 · 오랜만의 큰 인하 0종 · 최신 2026-08-11. CaskCode"
+description: "면세 위스키 가격 주간 로그 8/10~8/16 — 이번주 핫딜 11종 · 오랜만의 큰 인하 0종 · 최신 2026-08-12. CaskCode"
 robots: "noindex,nofollow"
 ---
 
@@ -38,6 +38,39 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 듀어스 15년 (New Edition) 1000ml | 면세 **₩47,995** · 국내최저 [₩68,000 🔗](https://dailyshot.co/m/item/6778)<br>절약 **−₩20,005 (29%↓)** · 할인 49%→47% |
 | 글렌알라키 15년 (24RB) 700ml | 면세 **₩123,879** · 국내최저 [₩163,000 🔗](https://dailyshot.co/m/item/21704)<br>절약 **−₩39,121 (24%↓)** · 할인 50%→48% |
 | 글렌피딕 Vat 1 Perpetual Collection 1000ml | 면세 **₩60,474** · 국내최저 [₩66,000 🔗](https://dailyshot.co/m/item/6338)<br>절약 **−₩5,526 (8%↓)** · 할인 47%→45% |
+
+---
+
+## 📅 8월 12일 (수)
+
+*직전 2026-08-11 → 최신 2026-08-12* · *환율 ₩1,417.00 (기준일 2026-08-11)*
+
+### 📊 한눈에 — 할인율 변동 요약
+
+_각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
+
+**🔥 오늘의 핫딜 — 면세가가 더 싸짐 (10%p↑)**
+
+<div style="margin:5px 0">시그나토리 스페이사이드 (M) 2005 CS 20년 #22 700ml: 0%→10% (₩611,906)</div>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 킹조지 5세 500ml: 35%→39% (₩380,323)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 (Johnnie Walker) · 블렌디드(스코틀랜드)<br><b>도수</b> 43%<br><b>캐스크</b> 다양한 캐스크(킹조지 5세 시대 가동 증류소 원액 블렌드)<br><b>맛</b> 옅은 스모크에 신선한 과일·맥아·건포도·무화과·시나몬, 그리고 바닐라·잘 익은 사과·구운 아몬드·밀크초콜릿이 더해진 향. 팔레트는 다크초콜릿·샌달우드·절제된 피트 스모크·단 말린 과일이 층층이 쌓이고 후추·생강·넛맥 스파이스가 따른다. 벨벳처럼 풍성한 질감, 메이플 시럽 뉘앙스의 길고 따뜻한 피니시.<br><b>스토리</b> 블루라벨 프레스티지 라인(500ml). 조지 5세가 조니워커에 로열 워런트를 수여한 1934년을 기려 그 시대 가동 증류소들의 희소 원액으로 블렌딩한다.<br><span style="color:#8a8f98">출처: 공식 사이트 · Difford's Guide · Whiskybase · 수집일 2026-06-20</span></div></details></div></details>
+
+### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
+
+이번 패치엔 국내최저 돌파 항목이 없습니다.
+
+### 🆕 신규 입고 (1)
+
+| 위스키 | 현재 KRW |
+|---|--:|
+| 이에이치 테일러 스몰배치 750ml | ₩113,077 |
+
+### 🆕 신규 술 설명 — 이름을 눌러 펼치기
+
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">🥃 이에이치 테일러 스몰배치 750ml · 50% (100 proof · Bottled-in-Bond)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 버팔로 트레이스 (Buffalo Trace) · 미국 켄터키<br><b>도수</b> 50% (100 proof · Bottled-in-Bond)<br><b>캐스크</b> 신축 차링 아메리칸 화이트 오크 버번 캐스크 · 테일러가 지은 100년 된 워런하우스 C 숙성 · 칠필터 · 단일 증류시즌 4년 이상(BiB)<br><b>맛</b> 캐러멜콘·버터스카치 향. 입안은 말린 과일·은은한 리코리스에 부드러운 질감, 후추·담뱃잎의 절제된 스파이스. 바닐라 파운드케이크·블랙체리·다크 레드프루트가 이어지고, 혀끝의 크리미함이 입 뒤쪽으로 퍼지는 스파이스와 가슴이 따뜻해지는 긴 피니시로 마무리.<br><b>스토리</b> 버번 산업의 '아버지'로 불리는 에드먼드 헤인스 테일러 주니어 대령(Col. E.H. Taylor Jr.)을 기리는 버팔로 트레이스의 프리미엄 라인. 테일러가 직접 지은 100년 된 석조 워런하우스에서 숙성하고, 단일 증류시즌·단일 증류자가 만든 술만 100proof로 병입하는 Bottled-in-Bond(1897년 보틀드인본드법) 켄터키 스트레이트 버번. 통상 7~8년 숙성분으로 알려져 있으며 병입 전 칠필터.<br><span style="color:#8a8f98">출처: 공식 buffalotracedistillery.com · Sazerac · The Bourbon Culture (2026-06-29 리서치) · 수집일 2026-06-29</span></div></details>
+
+*국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
+
 
 ---
 
