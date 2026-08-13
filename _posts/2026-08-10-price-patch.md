@@ -5,38 +5,40 @@ date: "2026-08-10 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 0
+breakthroughs: 3
 prev_date: "2026-08-09"
 latest_date: "2026-08-13"
 weekly_start: "2026-08-10"
 weekly_end: "2026-08-16"
 days: 4
-hotdeals: ["발베니 Balvenie 15년 Madeira Cask 700ml — 면세 ₩127,150 · 49%↓", "보모어 14년 700ml — 면세 ₩52,721 · 48%↓", "보모어 16년 700ml — 면세 ₩85,283 · 46%↓", "글렌파클라스 25년 700ml — 면세 ₩314,378 · 44%↓", "벤리악 40년 700ml — 면세 ₩4,443,713 · 41%↓"]
-hotdeals_count: 12
+hotdeals: ["글렌파클라스 30년 700ml — 면세 ₩767,434 · 55%↓", "발베니 Balvenie 15년 Madeira Cask 700ml — 면세 ₩127,150 · 49%↓", "보모어 14년 700ml — 면세 ₩52,721 · 48%↓", "보모어 16년 700ml — 면세 ₩85,283 · 46%↓", "글렌파클라스 25년 700ml — 면세 ₩321,322 · 42%↓"]
+hotdeals_count: 14
 rare_drops: ["NEW 올트모어 21년 (깔바도스) 500ml → ₩140,992 (−47%)"]
 rare_drops_count: 1
-description: "면세 위스키 가격 주간 로그 8/10~8/16 — 이번주 핫딜 12종 · 오랜만의 큰 인하 1종 · 최신 2026-08-13. CaskCode"
+description: "면세 위스키 가격 주간 로그 8/10~8/16 — 이번주 핫딜 14종 · 오랜만의 큰 인하 1종 · 최신 2026-08-13. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-08-10 ~ 2026-08-16.
 
-## 🔥 이번주 핫딜 (12종)
+## 🔥 이번주 핫딜 (14종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
 | 🏆 위스키 | 상세 |
 |---|---|
+| 글렌파클라스 30년 700ml | 면세 **₩767,434** · 국내최저 [₩1,700,000 🔗](https://dailyshot.co/m/item/5500)<br>절약 **−₩932,566 (55%↓)** · 할인 35%→39% |
 | 발베니 Balvenie 15년 Madeira Cask 700ml | 면세 **₩127,150** · 국내최저 [₩249,000 🔗](https://dailyshot.co/m/item/7409)<br>절약 **−₩121,850 (49%↓)** · 할인 47%→45% |
 | 보모어 14년 700ml | 면세 **₩52,721** · 국내최저 [₩102,000 🔗](https://dailyshot.co/m/item/25811)<br>절약 **−₩49,279 (48%↓)** · 할인 50%→45% |
 | 보모어 16년 700ml | 면세 **₩85,283** · 국내최저 [₩159,000 🔗](https://dailyshot.co/m/item/25812)<br>절약 **−₩73,717 (46%↓)** · 할인 50%→45% |
-| 글렌파클라스 25년 700ml | 면세 **₩314,378** · 국내최저 [₩557,000 🔗](https://dailyshot.co/m/item/4348)<br>절약 **−₩242,622 (44%↓)** · 할인 42%→41% |
+| 글렌파클라스 25년 700ml | 면세 **₩321,322** · 국내최저 [₩557,000 🔗](https://dailyshot.co/m/item/4348)<br>절약 **−₩235,678 (42%↓)** · 할인 41%→40% |
 | 벤리악 40년 700ml | 면세 **₩4,443,713** · 국내최저 [₩7,500,000 🔗](https://dailyshot.co/m/item/31393)<br>절약 **−₩3,056,287 (41%↓)** · 할인 38%→36% |
 | 발베니 15년 마데이라 캐스크 빅토 응아이 에디션 700ml | 면세 **₩150,268** · 국내최저 [₩249,000 🔗](https://dailyshot.co/m/item/7409)<br>절약 **−₩98,732 (40%↓)** · 할인 36%→35% |
 | 라가불린 16년 700ml | 면세 **₩91,147** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩50,853 (36%↓)** · 할인 41%→47% |
 | 발베니 12년 Golden Cask 700ml | 면세 **₩69,918** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩38,082 (35%↓)** · 할인 39%→38% |
 | 발베니 18년 페드로 히메네즈(PX) 셰리 캐스크 빅토 응아이 에디션 700ml | 면세 **₩253,806** · 국내최저 [₩389,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩135,194 (35%↓)** · 할인 36%→35% |
 | 듀어스 15년 (New Edition) 1000ml | 면세 **₩47,995** · 국내최저 [₩68,000 🔗](https://dailyshot.co/m/item/6778)<br>절약 **−₩20,005 (29%↓)** · 할인 49%→47% |
+| 글렌파클라스 15년 700ml | 면세 **₩99,457** · 국내최저 [₩138,000 🔗](https://dailyshot.co/m/item/4312)<br>절약 **−₩38,543 (28%↓)** · 할인 45%→48% |
 | 글렌알라키 15년 (24RB) 700ml | 면세 **₩123,879** · 국내최저 [₩163,000 🔗](https://dailyshot.co/m/item/21704)<br>절약 **−₩39,121 (24%↓)** · 할인 50%→48% |
 | 글렌피딕 Vat 1 Perpetual Collection 1000ml | 면세 **₩60,474** · 국내최저 [₩66,000 🔗](https://dailyshot.co/m/item/6338)<br>절약 **−₩5,526 (8%↓)** · 할인 47%→45% |
 
@@ -48,27 +50,37 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 
 | 🕰️ 위스키 | 상세 |
 |---|---|
-| NEW 올트모어 21년 (깔바도스) 500ml | 면세 **₩140,992**<br>**−47% 인하** · 그동안 ₩267,103 거의 정상가(5% 할인)로 67일째 → 50% 할인 · 8/12 첫 인하 |
+| NEW 올트모어 21년 (깔바도스) 500ml | 면세 **₩140,992**<br>**−47% 인하** · 그동안 ₩267,840 거의 정상가(5% 할인)로 67일째 → 50% 할인 · 8/12 첫 인하 |
 
 ---
 
-## 📅 8월 13일 (목)
+## 📅 8월 13일 (목) — 돌파 3건
 
-*직전 2026-08-12 → 최신 2026-08-13* · *환율 ₩1,412.87 (기준일 2026-08-11) ⚠️ (환율 미갱신·stale 가능)*
+*직전 2026-08-12 → 최신 2026-08-13* · *환율 ₩1,416.77 (기준일 2026-08-13)*
 
 ### 📊 한눈에 — 할인율 변동 요약
 
 _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
 
+**🔥 오늘의 핫딜 — 면세가가 더 싸짐 (10%p↑)**
+
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">이에이치 테일러 스몰배치 750ml: 5%→37% (₩74,618)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 버팔로 트레이스 (Buffalo Trace) · 미국 켄터키<br><b>도수</b> 50% (100 proof · Bottled-in-Bond)<br><b>캐스크</b> 신축 차링 아메리칸 화이트 오크 버번 캐스크 · 테일러가 지은 100년 된 워런하우스 C 숙성 · 칠필터 · 단일 증류시즌 4년 이상(BiB)<br><b>맛</b> 캐러멜콘·버터스카치 향. 입안은 말린 과일·은은한 리코리스에 부드러운 질감, 후추·담뱃잎의 절제된 스파이스. 바닐라 파운드케이크·블랙체리·다크 레드프루트가 이어지고, 혀끝의 크리미함이 입 뒤쪽으로 퍼지는 스파이스와 가슴이 따뜻해지는 긴 피니시로 마무리.<br><b>스토리</b> 버번 산업의 '아버지'로 불리는 에드먼드 헤인스 테일러 주니어 대령(Col. E.H. Taylor Jr.)을 기리는 버팔로 트레이스의 프리미엄 라인. 테일러가 직접 지은 100년 된 석조 워런하우스에서 숙성하고, 단일 증류시즌·단일 증류자가 만든 술만 100proof로 병입하는 Bottled-in-Bond(1897년 보틀드인본드법) 켄터키 스트레이트 버번. 통상 7~8년 숙성분으로 알려져 있으며 병입 전 칠필터.<br><span style="color:#8a8f98">출처: 공식 buffalotracedistillery.com · Sazerac · The Bourbon Culture (2026-06-29 리서치) · 수집일 2026-06-29</span></div></details>
+
 **🔺 할증 심화 — 할인 축소·가격 상승 (10%p↑)**
 
-<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">시그나토리 스페이사이드 (M) 2005 CS 20년 #22 700ml: 10%→0% (₩678,180)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 언디스클로즈드 스페이사이드 "(M)" · 독립병입 시그나토리 빈티지 (M=비공개 증류소 코드, 업계선 맥캘란으로 추정) · 스페이사이드<br><b>도수</b> 58.4% (캐스크 스트렝스 · 자매캐스크 #21 실측 기준 — 단일 캐스크라 병별 상이)<br><b>캐스크</b> 퍼스트필 올로로소 셰리 버트 단일 캐스크(DRU17/A106 계열 #22) · 2005 증류 20년 숙성 · 비냉각여과·무착색 (자매캐스크 #21 = 611병)<br><b>맛</b> 건포도·말린 오크·초콜릿 오렌지 향에 넛맥·계피·스튜드 프룻의 부드러운 스파이스. 다크초콜릿·커피·자두·무화과·가죽·진한 오크가 층을 이루는 진한 셰리 풍미. (맛 노트는 동 빈티지 자매캐스크 #20/#21 기준 — 싱글캐스크라 병별 편차)<br><b>스토리</b> 시그나토리 빈티지의 캐스크 스트렝스 컬렉션. 이름을 밝히지 않은 스페이사이드 증류소("(M)")의 2005년 증류 원액을 퍼스트필 올로로소 셰리 버트에서 20년 숙성해 2026년 캐스크 스트렝스로 병입한 싱글캐스크. 업계에서는 "(M)"을 맥캘란으로 널리 추정한다. 도수·풍미는 자매캐스크(#21, 58.4%·611병) 기준이며 병별 편차 가능.<br><span style="color:#8a8f98">출처: Royal Mile Whiskies · Whiskybase · CaskCartel · K&amp;L Wines (2026-08-12 리서치) · 수집일 2026-08-12</span></div></details>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">시그나토리 스페이사이드 (M) 2005 CS 20년 #22 700ml: 10%→0% (₩680,047)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 언디스클로즈드 스페이사이드 "(M)" · 독립병입 시그나토리 빈티지 (M=비공개 증류소 코드, 업계선 맥캘란으로 추정) · 스페이사이드<br><b>도수</b> 58.4% (캐스크 스트렝스 · 자매캐스크 #21 실측 기준 — 단일 캐스크라 병별 상이)<br><b>캐스크</b> 퍼스트필 올로로소 셰리 버트 단일 캐스크(DRU17/A106 계열 #22) · 2005 증류 20년 숙성 · 비냉각여과·무착색 (자매캐스크 #21 = 611병)<br><b>맛</b> 건포도·말린 오크·초콜릿 오렌지 향에 넛맥·계피·스튜드 프룻의 부드러운 스파이스. 다크초콜릿·커피·자두·무화과·가죽·진한 오크가 층을 이루는 진한 셰리 풍미. (맛 노트는 동 빈티지 자매캐스크 #20/#21 기준 — 싱글캐스크라 병별 편차)<br><b>스토리</b> 시그나토리 빈티지의 캐스크 스트렝스 컬렉션. 이름을 밝히지 않은 스페이사이드 증류소("(M)")의 2005년 증류 원액을 퍼스트필 올로로소 셰리 버트에서 20년 숙성해 2026년 캐스크 스트렝스로 병입한 싱글캐스크. 업계에서는 "(M)"을 맥캘란으로 널리 추정한다. 도수·풍미는 자매캐스크(#21, 58.4%·611병) 기준이며 병별 편차 가능.<br><span style="color:#8a8f98">출처: Royal Mile Whiskies · Whiskybase · CaskCartel · K&amp;L Wines (2026-08-12 리서치) · 수집일 2026-08-12</span></div></details>
 
-<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">카노스케 싱글몰트 2026 리미티드 700ml: 20%→27% (₩155,028)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 카노스케 (Kanosuke · 코마사 양조) · 일본 가고시마현<br><b>도수</b> 57%<br><b>캐스크</b> 멀티 캐스크 베이팅 — 버번 배럴 숙성 후 애플 브랜디 캐스크 피니시 + 재차링 엑스-쇼추(소주) 캐스크 숙성 후 화이트 와인 캐스크 피니시를 키 몰트로 사용(셰리·레드와인 캐스크 등 혼합) · 비냉각여과<br><b>맛</b> 오렌지 블로섬·사과 껍질·청포도의 산뜻한 향, 입안에서는 바닐라·유자페이스트·꿀·애플 브랜디의 단맛이 이어진다. 자몽과 사과 껍질, 봄 바닷바람을 연상시키는 가벼운 피니시.<br><b>스토리</b> 카노스케는 가고시마에서 140년간 쇼추를 빚어온 코마사 양조가 2017년 설립한 위스키 증류소로, 후키아게하마 해변 옆에 있다. 이 제품은 증류소 인근 해변의 봄 풍경에서 영감을 받은 연간 리미티드 에디션으로, 3종 증류기 원액을 여러 캐스크에서 숙성한 뒤 애플 브랜디·화이트 와인 캐스크로 피니시했다. 물을 천천히 더하는 '슬로우 딜루션'으로 부드러운 질감을 냈다.<br><span style="color:#8a8f98">출처: Kanosuke Distillery 공식 · Japanese Whisky Dictionary(jpwhisky.net) · Mizunara The Shop (2026-06-24 리서치) · 수집일 2026-06-24</span></div></details></div></details>
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 4건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">카노스케 싱글몰트 2026 리미티드 700ml: 20%→27% (₩155,455)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 카노스케 (Kanosuke · 코마사 양조) · 일본 가고시마현<br><b>도수</b> 57%<br><b>캐스크</b> 멀티 캐스크 베이팅 — 버번 배럴 숙성 후 애플 브랜디 캐스크 피니시 + 재차링 엑스-쇼추(소주) 캐스크 숙성 후 화이트 와인 캐스크 피니시를 키 몰트로 사용(셰리·레드와인 캐스크 등 혼합) · 비냉각여과<br><b>맛</b> 오렌지 블로섬·사과 껍질·청포도의 산뜻한 향, 입안에서는 바닐라·유자페이스트·꿀·애플 브랜디의 단맛이 이어진다. 자몽과 사과 껍질, 봄 바닷바람을 연상시키는 가벼운 피니시.<br><b>스토리</b> 카노스케는 가고시마에서 140년간 쇼추를 빚어온 코마사 양조가 2017년 설립한 위스키 증류소로, 후키아게하마 해변 옆에 있다. 이 제품은 증류소 인근 해변의 봄 풍경에서 영감을 받은 연간 리미티드 에디션으로, 3종 증류기 원액을 여러 캐스크에서 숙성한 뒤 애플 브랜디·화이트 와인 캐스크로 피니시했다. 물을 천천히 더하는 '슬로우 딜루션'으로 부드러운 질감을 냈다.<br><span style="color:#8a8f98">출처: Kanosuke Distillery 공식 · Japanese Whisky Dictionary(jpwhisky.net) · Mizunara The Shop (2026-06-24 리서치) · 수집일 2026-06-24</span></div></details><div style="margin:5px 0">글렌파클라스 30년 700ml: 35%→39% (₩767,434)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌파클라스 15년 700ml: 45%→48% (₩99,457)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌파클라스 (Glenfarclas) · 스페이사이드<br><b>도수</b> 46%<br><b>캐스크</b> 올로로소 셰리 캐스크 숙성 · 천연색<br><b>맛</b> 올로로소 셰리의 건포도·토피·몰트·오렌지 향. 풀바디 셰리 단맛에 견과·다크초콜릿·오크 스파이스, 따뜻하고 긴 피니시. 46% 도수로 응집력 있는 풍미.<br><b>스토리</b> 글렌파클라스 15년은 그랜트 가문 증류소의 사실상 '플래그십'으로 꼽히는 표현. 전량 올로로소 셰리 캐스크 숙성에 46% 병입으로 가성비 셰리 몰트의 대명사.<br><span style="color:#8a8f98">출처: 공식 glenfarclas.com · Whisky Magazine (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><div style="margin:5px 0">글렌파클라스 105 1000ml: 46%→47% (₩94,612)</div></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 7건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">사제락 라이 위스키 750ml: 54%→50% (₩32,586)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 사제락(Sazerac / 버팔로 트레이스) · 미국(켄터키)<br><b>도수</b> 45%<br><b>캐스크</b> 새 차드 오크 배럴 숙성 (스트레이트 라이)<br><b>맛</b> 클로브·바닐라·아니스·후추의 향에 캔디드 스파이스와 시트러스가 더해지고, 리코리스의 힌트가 감도는 부드럽고 큰 피니시가 특징이다.<br><b>스토리</b> 사제락 스트레이트 라이는 1800년대 뉴올리언스의 라이 위스키 전통을 잇는 버팔로 트레이스 증류소 제품이다. 로열 스트리트의 사제락 커피 하우스에서 라이 위스키와 페이쇼 비터스로 만든 '사제락' 칵테일은 미국 최초의 브랜드 칵테일로 불린다.<br><span style="color:#8a8f98">출처: buffalotracedistillery.com·breakingbourbon.com·whiskyadvocate.com (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 패밀리 캐스크스 2008_S24 700ml: 45%→42% (₩327,046)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌파클라스 (Glenfarclas) · The Family Casks 싱글캐스크 · 스페이사이드<br><b>도수</b> 캐스크 스트렝스 (싱글캐스크 — 캐스크별 상이)<br><b>캐스크</b> 2008 빈티지 싱글 셰리 캐스크 · S(여름) 릴리스 · 캐스크 스트렝스 · 논칠필터<br><b>맛</b> 글렌파클라스 특유의 진한 올로로소 셰리 — 건포도·무화과·다크초콜릿·크리스마스 케이크·가죽/스파이스. (싱글캐스크라 캐스크별 편차 있음 — 시리즈 기준)<br><b>스토리</b> 글렌파클라스 'The Family Casks'는 2007년 시작된 빈티지별 싱글캐스크 시리즈로, 가족 경영(그랜트가) 증류소가 매년 빈티지를 캐스크 스트렝스로 병입한다. 2008 빈티지 여름 릴리스 단일 캐스크. (도수·풍미는 캐스크별 상이 — 시리즈/자매캐스크 기준)<br><span style="color:#8a8f98">출처: Glenfarclas The Family Casks · Whisky Marketplace (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">웰러 스페셜 리저브 750ml: 43%→40% (₩81,606)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> W.L. 웰러(W.L. Weller / 버팔로 트레이스) · 미국(켄터키)<br><b>도수</b> 45%<br><b>캐스크</b> 새 차드 오크 배럴 숙성 (휘티드 버번)<br><b>맛</b> 바닐라 웨이퍼·꿀의 달콤한 향에 캐러멜·바닐라·가벼운 과일이 이어지고, 체리와 부드러운 오크, 시나몬·사과·흑후추의 다소 타닉한 피니시가 난다.<br><b>스토리</b> 웰러 스페셜 리저브는 버팔로 트레이스 증류소의 휘티드 버번으로, 호밀 대신 밀(옥수수 70%·밀 16%·맥아 보리 14%)을 사용해 부드러운 단맛이 특징이다. 접근성 좋고 마시기 편한 휘티드 버번의 대표 격이다.<br><span style="color:#8a8f98">출처: thewhiskeyshelf.com·breakingbourbon.com·nestorliquor.com (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><div style="margin:5px 0">글렌파클라스 35년 700ml: 33%→31% (₩1,315,807)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌파클라스 25년 700ml: 41%→40% (₩321,322)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌파클라스 (Glenfarclas) · 스페이사이드<br><b>도수</b> 43%<br><b>캐스크</b> 올로로소 셰리 캐스크 장기 숙성 · 천연색<br><b>맛</b> 진한 올로로소 셰리의 건포도·무화과·다크초콜릿·오렌지필·몰트 토피 향. 풀바디에 크리스마스 케이크·가죽·오크 스파이스, 길고 따뜻한 셰리 피니시.<br><b>스토리</b> 글렌파클라스는 1836년 설립, 그랜트 가문이 6대째 독립 운영하는 스페이사이드의 대표 셰리 몰트 증류소. 25년은 장기 셰리 숙성 코어레인지로 가성비 셰리 위스키의 기준으로 꼽힌다.<br><span style="color:#8a8f98">출처: 공식 glenfarclas.com · Whisky Magazine (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 블랙 루비 1000ml: 55%→54% (₩46,272)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 (Johnnie Walker) · 블렌디드 스카치 · 블렌디드(스코틀랜드)<br><b>도수</b> 40%<br><b>캐스크</b> 레드와인 + 올로로소 셰리 + 버번 캐스크 숙성 원액 블렌드<br><b>맛</b> 블랙라벨을 잇는 과일 중심의 풍부한 베리 — 달콤한 붉은 과일·베리 향에 부드럽고 풍성한 질감. 기존 블랙라벨보다 프루티·스위트.<br><b>스토리</b> 2025년 출시된 조니워커 신제품. 마스터 블렌더 엠마 워커가 블랙라벨의 유산 위에 레드와인·올로로소 셰리·버번 캐스크 숙성 원액을 더해 과일향을 강조한 블렌디드 스카치.<br><span style="color:#8a8f98">출처: The Spirits Business · Hard To Find Whisky (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><div style="margin:5px 0">파이어볼 시나몬 위스키 1000ml: 48%→47% (₩15,769)</div></div></details>
 
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
-이번 패치엔 국내최저 돌파 항목이 없습니다.
+| 🏆 위스키 | 상세 |
+|---|---|
+| 글렌파클라스 30년 700ml | 면세 **₩767,434** · 국내최저 [₩1,700,000 🔗](https://dailyshot.co/m/item/5500)<br>절약 **−₩932,566 (55%↓)** · 할인 35%→39% |
+| 글렌파클라스 25년 700ml | 면세 **₩321,322** · 국내최저 [₩557,000 🔗](https://dailyshot.co/m/item/4348)<br>절약 **−₩235,678 (42%↓)** · 할인 41%→40% |
+| 글렌파클라스 15년 700ml | 면세 **₩99,457** · 국내최저 [₩138,000 🔗](https://dailyshot.co/m/item/4312)<br>절약 **−₩38,543 (28%↓)** · 할인 45%→48% |
 
 ### 📦 품절/내림 (8)
 
