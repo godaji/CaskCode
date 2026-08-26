@@ -5,34 +5,37 @@ date: "2026-08-24 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 0
+breakthroughs: 3
 prev_date: "2026-08-23"
 latest_date: "2026-08-26"
 weekly_start: "2026-08-24"
 weekly_end: "2026-08-30"
 days: 3
-hotdeals: ["보모어 14년 700ml — 면세 ₩51,781 · 49%↓", "보모어 16년 700ml — 면세 ₩83,763 · 47%↓", "글렌피딕 18년 Vat4 Perpetual 700ml — 면세 ₩124,468 · 41%↓", "발베니 Balvenie 18년 Sherry Cask 700ml — 면세 ₩237,942 · 39%↓", "라가불린 16년 700ml — 면세 ₩89,523 · 37%↓"]
-hotdeals_count: 13
-rare_drops: ["라프로익 PX Cask 1000ml → ₩83,129 (−47%)", "카발란 이엑스버번 솔리스트 1000ml → ₩127,800 (−25%)", "카발란 포트 솔리스트 1000ml → ₩180,912 (−25%)"]
-rare_drops_count: 3
-description: "면세 위스키 가격 주간 로그 8/24~8/30 — 이번주 핫딜 13종 · 오랜만의 큰 인하 3종 · 최신 2026-08-26. CaskCode"
+hotdeals: ["발렌타인 18년 GLENBURGIE 700ml — 면세 ₩99,654 · 61%↓", "보모어 14년 700ml — 면세 ₩51,781 · 49%↓", "보모어 16년 700ml — 면세 ₩83,763 · 47%↓", "글렌피딕 18년 Vat4 Perpetual 700ml — 면세 ₩124,468 · 41%↓", "발베니 Balvenie 18년 Sherry Cask 700ml — 면세 ₩237,942 · 39%↓"]
+hotdeals_count: 16
+rare_drops: ["라프로익 PX Cask 1000ml → ₩83,129 (−47%)", "카발란 이엑스버번 솔리스트 1000ml → ₩127,800 (−25%)", "카발란 포트 솔리스트 1000ml → ₩180,912 (−25%)", "브룩라디 옥토모어 15.1 700ml → ₩184,785 (−20%)", "옥토모어 14.2 700ml → ₩210,234 (−20%)"]
+rare_drops_count: 5
+description: "면세 위스키 가격 주간 로그 8/24~8/30 — 이번주 핫딜 16종 · 오랜만의 큰 인하 5종 · 최신 2026-08-26. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-08-24 ~ 2026-08-30.
 
-## 🔥 이번주 핫딜 (13종)
+## 🔥 이번주 핫딜 (16종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
 | 🏆 위스키 | 상세 |
 |---|---|
+| 발렌타인 18년 GLENBURGIE 700ml | 면세 **₩99,654** · 국내최저 [₩258,800 🔗](https://dailyshot.co/m/item/25809)<br>절약 **−₩159,146 (61%↓)** · 할인 49%→45% |
 | 보모어 14년 700ml | 면세 **₩51,781** · 국내최저 [₩102,000 🔗](https://dailyshot.co/m/item/25811)<br>절약 **−₩50,219 (49%↓)** · 할인 50%→45% |
 | 보모어 16년 700ml | 면세 **₩83,763** · 국내최저 [₩159,000 🔗](https://dailyshot.co/m/item/25812)<br>절약 **−₩75,237 (47%↓)** · 할인 50%→45% |
 | 글렌피딕 18년 Vat4 Perpetual 700ml | 면세 **₩124,468** · 국내최저 [₩209,900 🔗](https://dailyshot.co/m/item/3164)<br>절약 **−₩85,432 (41%↓)** · 할인 39%→38% |
 | 발베니 Balvenie 18년 Sherry Cask 700ml | 면세 **₩237,942** · 국내최저 [₩389,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩151,058 (39%↓)** · 할인 40%→38% |
 | 라가불린 16년 700ml | 면세 **₩89,523** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩52,477 (37%↓)** · 할인 48%→47% |
 | 발베니 12년 Golden Cask 700ml | 면세 **₩69,779** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩38,221 (35%↓)** · 할인 39%→37% |
+| 발렌타인 15년 GLENBURGIE 700ml | 면세 **₩62,738** · 국내최저 [₩95,000 🔗](https://dailyshot.co/m/item/25654)<br>절약 **−₩32,262 (34%↓)** · 할인 51%→44% |
+| 아벨라워 아부나흐 700ml | 면세 **₩102,752** · 국내최저 [₩150,000 🔗](https://dailyshot.co/m/item/31966)<br>절약 **−₩47,248 (31%↓)** · 할인 40%→35% |
 | 글렌피딕 21년 그랑 리제르바 700ml | 면세 **₩226,617** · 국내최저 [₩319,000 🔗](https://dailyshot.co/m/item/28392)<br>절약 **−₩92,383 (29%↓)** · 할인 45%→38% |
 | 글렌피딕 26년 GC 700ml | 면세 **₩596,254** · 국내최저 [₩830,000 🔗](https://dailyshot.co/m/item/12615)<br>절약 **−₩233,746 (28%↓)** · 할인 40%→39% |
 | 글렌알라키 15년 (24RB) 700ml | 면세 **₩121,671** · 국내최저 [₩163,000 🔗](https://dailyshot.co/m/item/21704)<br>절약 **−₩41,329 (25%↓)** · 할인 49%→48% |
@@ -43,7 +46,7 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 
 ---
 
-## 🕰️ 신라면세 오랜만의 큰 인하 (3종)
+## 🕰️ 신라면세 오랜만의 큰 인하 (5종)
 
 _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진** 위스키입니다. 늘 할인하거나 잔잔히 오르내리는 건 제외 · 낙폭 큰 순._
 
@@ -52,10 +55,12 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 | 라프로익 PX Cask 1000ml | 면세 **₩83,129** · 국내최저 [₩48,000 🔗](https://dailyshot.co/m/item/26316)<br>**−47% 인하** · 그동안 ₩157,676 거의 정상가(5% 할인)로 80일째 → 50% 할인 · 8/25 첫 인하 |
 | 카발란 이엑스버번 솔리스트 1000ml | 면세 **₩127,800**<br>**−25% 인하** · 그동안 ₩170,400 거의 정상가(20% 할인)로 79일째 → 40% 할인 · 8/24 첫 인하 |
 | 카발란 포트 솔리스트 1000ml | 면세 **₩180,912**<br>**−25% 인하** · 그동안 ₩241,216 거의 정상가(20% 할인)로 79일째 → 40% 할인 · 8/24 첫 인하 |
+| 브룩라디 옥토모어 15.1 700ml | 면세 **₩184,785**<br>**−20% 인하** · 그동안 ₩230,981 거의 정상가(0% 할인)로 81일째 → 20% 할인 · 8/26 첫 인하 |
+| 옥토모어 14.2 700ml | 면세 **₩210,234**<br>**−20% 인하** · 그동안 ₩262,793 거의 정상가(0% 할인)로 81일째 → 20% 할인 · 8/26 첫 인하 |
 
 ---
 
-## 📅 8월 26일 (수)
+## 📅 8월 26일 (수) — 돌파 3건
 
 *직전 2026-08-25 → 최신 2026-08-26* · *환율 ₩1,383.12 (기준일 2026-08-25)*
 
@@ -63,11 +68,23 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 
 _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
 
-<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 18년 700ml: 52%→51% (₩148,422)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 (Royal Brackla) · 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 팔로 코르타도 셰리 캐스크 피니시 · 논칠필터<br><b>맛</b> 파인애플·구아바·꿀 시리얼·라이트 시트러스 향. 부드럽고 크리미한 입안에 바닐라·캔디드 프루트·밀크 초콜릿·아니스·카시아. 데메라라 슈거에서 루바브·구스베리 타르트와 스파이스의 상큼한 피니시.<br><b>스토리</b> 1812년 설립, 윌리엄 4세로부터 최초의 'Royal' 칭호를 받은 하이랜드 증류소. 18년은 팔로 코르타도 셰리 캐스크로 피니시해 트로피컬·꿀·크리미한 풍미를 더한 코어레인지 표현. 무착색·논칠필터.<br><span style="color:#8a8f98">출처: Whisky Advocate · The Whiskey Wash · Whisky Magazine (2026-07-20 리서치) · 수집일 2026-07-20</span></div></details></div></details>
+**🔥 오늘의 핫딜 — 면세가가 더 싸짐 (10%p↑)**
+
+<div style="margin:5px 0">브룩라디 옥토모어 15.1 700ml: 0%→20% (₩184,785)</div>
+<div style="margin:5px 0">옥토모어 14.2 700ml: 0%→20% (₩210,234)</div>
+<div style="margin:5px 0">옥토모어 16.1 700ml: 0%→10% (₩207,883)</div>
+<div style="margin:5px 0">옥토모어 16.2 700ml: 0%→10% (₩236,513)</div>
+<div style="margin:5px 0">옥토모어 16.3 700ml: 0%→10% (₩286,306)</div>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 6건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">발렌타인 15년 GLENBURGIE 700ml: 51%→44% (₩62,738)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌버기 증류소 · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 주로 버번(아메리칸 오크) 캐스크 숙성<br><b>맛</b> 골든시럽·청포도·풋사과에 몰트와 마지팬, 붉은 사과·배·복숭아, 꿀과 신선한 베리가 어우러진 과일·플로럴 향. 입에서는 바닐라 캔디·카라멜·오렌지에 약간의 스파이스와 생강이 더해지고, 짧지만 강렬하고 달콤한 과일 여운이 남는다.<br><b>스토리</b> 발렌타인 블렌드의 심장이 되는 글렌버기 증류소 원액을 단일 몰트로 병입한 '발렌타인 시리즈 No.001'의 15년 표현. 평소 블렌드에 숨어 있던 글렌버기 싱글몰트의 개성을 보여주는 라인업이다.<br><span style="color:#8a8f98">출처: Ballantine's 공식·Master of Malt·Words of Whisky (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">아벨라워 아부나흐 700ml: 40%→35% (₩102,752)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 아벨라워 (Aberlour) · 스페이사이드 (Speyside)<br><b>도수</b> 캐스크 스트렝스 (배치별 상이 · 통상 59~61%)<br><b>캐스크</b> 100% 퍼스트필 올로로소 셰리 버트 단독 숙성 · NAS · 비냉각여과 · 무착색<br><b>맛</b> 진한 셰리 폭탄 — 건포도·무화과·다크초콜릿·크리스마스 케이크·오렌지필에 정향 등 스파이스. 풀바디에 캐스크 스트렝스 특유의 강렬하고 오일리한 질감, 길고 진한 셰리 여운.<br><b>스토리</b> 아벨라워는 1879년 스페이사이드에 설립된 증류소다. 아부나흐(A'bunadh, 게일어로 '기원')는 19세기 방식대로 퍼스트필 올로로소 셰리 버트에서만 숙성해 물을 타지 않고 캐스크 스트렝스로 병입하는 NAS 배치 릴리스로, 배치마다 도수·풍미가 조금씩 다르다.<br><span style="color:#8a8f98">출처: Aberlour 공식 · Master of Malt · Whiskybase (2026-08-15 리서치) · 수집일 2026-08-15</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">발렌타인 18년 GLENBURGIE 700ml: 49%→45% (₩99,654)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌버기 증류소 · 스코틀랜드 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 주로 버번(아메리칸 오크) 캐스크 숙성<br><b>맛</b> 부드러운 붉은 사과와 붉은 베리, 허니콤 캔디 단맛이 빼어나게 균형 잡힌 향. 입에서는 과일 단맛의 오렌지와 달콤한 블랙커런트가 꿀처럼 벨벳 같은 질감으로 퍼지고, 버터스카치 힌트에서 풍부한 스파이스와 과일 풍미로 발전하는 크리미한 여운을 남긴다.<br><b>스토리</b> 발렌타인 시리즈 싱글몰트 라인업의 18년 표현으로, 발렌타인 블렌드의 핵심 원액인 글렌버기 증류소(스페이사이드) 싱글몰트를 병입한 것. 전통적으로 버번 캐스크에서 숙성된다.<br><span style="color:#8a8f98">출처: Ballantine's 공식·The Whisky Exchange·IWSC (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 18년 700ml: 52%→51% (₩148,422)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 (Royal Brackla) · 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 팔로 코르타도 셰리 캐스크 피니시 · 논칠필터<br><b>맛</b> 파인애플·구아바·꿀 시리얼·라이트 시트러스 향. 부드럽고 크리미한 입안에 바닐라·캔디드 프루트·밀크 초콜릿·아니스·카시아. 데메라라 슈거에서 루바브·구스베리 타르트와 스파이스의 상큼한 피니시.<br><b>스토리</b> 1812년 설립, 윌리엄 4세로부터 최초의 'Royal' 칭호를 받은 하이랜드 증류소. 18년은 팔로 코르타도 셰리 캐스크로 피니시해 트로피컬·꿀·크리미한 풍미를 더한 코어레인지 표현. 무착색·논칠필터.<br><span style="color:#8a8f98">출처: Whisky Advocate · The Whiskey Wash · Whisky Magazine (2026-07-20 리서치) · 수집일 2026-07-20</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">시그나토리 글렌리벳 2006 CS 19년 #901018 700ml: 25%→24% (₩253,332)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌리벳 (The Glenlivet) · 독립병입 시그나토리 빈티지 · 스페이사이드<br><b>도수</b> 캐스크 스트렝스 (병별 상이 · #901018 정확 도수 미확인 → 동 2006 빈티지·동 시리즈 자매캐스크 #901016/#901017/#901028 ≈58~61% 기준 근사 · 자매캐스크 근사치)<br><b>캐스크</b> 퍼스트필 올로로소 셰리 버트(추정 · 동 시리즈 자매캐스크 모두 1st fill Oloroso butt) · 단일 캐스크 #901018 · 2006 증류 19년 숙성 · 비냉각여과 · 무착색<br><b>맛</b> 글렌리벳의 부드러운 과일 향에 올로로소 셰리에서 오는 건과일·견과·다크초콜릿의 진한 단맛이 더해진다. (단일 캐스크 특성상 병별 편차 가능 · 자매캐스크 기준 근사)<br><b>스토리</b> 글렌리벳은 1824년 정부 면허를 받은 최초의 합법 증류소 중 하나로, 부드럽고 우아한 스페이사이드 스타일로 알려져 있다. 이 병은 시그나토리 빈티지가 2006년 증류 원액을 단일 셰리 캐스크(#901018)에서 19년 숙성해 캐스크 스트렝스로 병입한 독립병입 제품이며, 같은 빈티지 자매캐스크들은 모두 퍼스트필 올로로소 셰리 버트로 병입됐다(맛·도수는 자매캐스크 기준 근사).<br><span style="color:#8a8f98">출처: Master of Malt · The Whisky Exchange · Maison du Whisky(자매캐스크 기준) (2026-06-24 리서치) · 수집일 2026-06-24</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">토마틴 16년 700ml: 59%→58% (₩55,186)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 토마틴 (Tomatin) · 스코틀랜드 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 버번/셰리 오크 숙성 후 포르투갈 모스카텔 와인 바리크 추가 숙성 (천연색·논칠필터)<br><b>맛</b> 오렌지 마멀레이드·햇볕에 말린 과일·다크 초콜릿에 신선한 생강 힌트, 길고 왁스 같은 피니시.<br><b>스토리</b> 2022년 출시된 면세(travel retail) 전용 에디션으로 모스카텔 와인 캐스크 숙성이 핵심 캐릭터를 만든다. 명칭에 에디션 표기가 없어 면세 전용 16년으로 확정.<br><span style="color:#8a8f98">출처: Tomatin 공식 · Whisky Magazine (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details></div></details>
 
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
-이번 패치엔 국내최저 돌파 항목이 없습니다.
+| 🏆 위스키 | 상세 |
+|---|---|
+| 발렌타인 18년 GLENBURGIE 700ml | 면세 **₩99,654** · 국내최저 [₩258,800 🔗](https://dailyshot.co/m/item/25809)<br>절약 **−₩159,146 (61%↓)** · 할인 49%→45% |
+| 아벨라워 아부나흐 700ml | 면세 **₩102,752** · 국내최저 [₩150,000 🔗](https://dailyshot.co/m/item/31966)<br>절약 **−₩47,248 (31%↓)** · 할인 40%→35% |
+| 발렌타인 15년 GLENBURGIE 700ml | 면세 **₩62,738** · 국내최저 [₩95,000 🔗](https://dailyshot.co/m/item/25654)<br>절약 **−₩32,262 (34%↓)** · 할인 51%→44% |
 
 ### 🆕 신규 입고 (1)
 
