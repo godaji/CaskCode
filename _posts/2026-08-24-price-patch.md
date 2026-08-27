@@ -5,7 +5,7 @@ date: "2026-08-24 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 1
+breakthroughs: 2
 prev_date: "2026-08-23"
 latest_date: "2026-08-27"
 weekly_start: "2026-08-24"
@@ -33,7 +33,7 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 보모어 16년 700ml | 면세 **₩83,763** · 국내최저 [₩159,000 🔗](https://dailyshot.co/m/item/25812)<br>절약 **−₩75,237 (47%↓)** · 할인 50%→45% |
 | 글렌피딕 18년 Vat4 Perpetual 700ml | 면세 **₩124,468** · 국내최저 [₩209,900 🔗](https://dailyshot.co/m/item/3164)<br>절약 **−₩85,432 (41%↓)** · 할인 39%→38% |
 | 발베니 Balvenie 18년 Sherry Cask 700ml | 면세 **₩237,942** · 국내최저 [₩389,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩151,058 (39%↓)** · 할인 40%→38% |
-| 라가불린 16년 700ml | 면세 **₩89,523** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩52,477 (37%↓)** · 할인 48%→47% |
+| 라가불린 16년 700ml | 면세 **₩91,120** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩50,880 (36%↓)** · 할인 47%→46% |
 | 발베니 12년 Golden Cask 700ml | 면세 **₩69,779** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩38,221 (35%↓)** · 할인 39%→37% |
 | 발렌타인 15년 GLENBURGIE 700ml | 면세 **₩62,738** · 국내최저 [₩95,000 🔗](https://dailyshot.co/m/item/25654)<br>절약 **−₩32,262 (34%↓)** · 할인 51%→44% |
 | 아벨라워 아부나흐 700ml | 면세 **₩102,752** · 국내최저 [₩150,000 🔗](https://dailyshot.co/m/item/31966)<br>절약 **−₩47,248 (31%↓)** · 할인 40%→35% |
@@ -61,7 +61,7 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 
 ---
 
-## 📅 8월 27일 (목) — 돌파 1건
+## 📅 8월 27일 (목) — 돌파 2건
 
 *직전 2026-08-26 → 최신 2026-08-27* · *환율 ₩1,383.12 (기준일 2026-08-26)*
 
@@ -75,11 +75,20 @@ _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니
 
 <details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">보모어 22년 700ml: 48%→50% (₩275,932)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 보모어 (Bowmore) · 아일라 (Islay)<br><b>도수</b> 48%<br><b>캐스크</b> 엑스-버번 숙성 후 소테른(귀부 스위트와인) 캐스크 피니시 · GTR 면세 전용(Appellations)<br><b>맛</b> 소테른의 꿀·살구·열대과일 단맛에 보모어 22년의 깊은 오크·은은한 피트 스모크, 풍부하고 긴 피니시.<br><b>스토리</b> Appellations 컬렉션 최상위 22년은 프랑스 소테른 스위트와인 캐스크 피니시로 48% 병입. 보모어는 1779년 설립된 아일라 最古 증류소.<br><span style="color:#8a8f98">출처: 공식 bowmore.com · Moodie Davitt Report · Whisky Advocate (2026-06-12 리서치) · 수집일 2026-06-12</span></div></details></div></details>
 
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">라가불린 16년 700ml: 47%→46% (₩91,120)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 라가불린 (Lagavulin) · 아일라 (Islay)<br><b>도수</b> 43%<br><b>캐스크</b> 엑스-버번 및 셰리 캐스크에서 최소 16년 숙성<br><b>맛</b> 코: 아일라 특유의 강렬한 피트 스모크에 요오드, 달콤한 스파이스, 잘 익은 셰리, 크리미한 바닐라. 입: 오일리하면서 진하고 풍부하며, 짭짤한 브라인과 묵직한 피트·오크, 과일의 단맛. 피니시: 무화과·대추야자·피트 스모크·바닐라의 길고 스파이시한 여운.<br><b>스토리</b> 1816년 설립된 라가불린은 아일라 남부를 대표하는 증류소로, 강력한 피트 스모크 캐릭터로 유명하다. 16년은 디아지오 'Classic Malts'의 일원이자 아일라 싱글몰트의 벤치마크로 평가받는 클래식 제품이다.<br><span style="color:#8a8f98">출처: Malts.com (Diageo 공식), Whisky Magazine, Caskers (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details></div></details>
+
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
 | 🏆 위스키 | 상세 |
 |---|---|
 | 보모어 22년 700ml | 면세 **₩275,932** · 국내최저 [₩1,200,000 🔗](https://dailyshot.co/m/item/19707)<br>절약 **−₩924,068 (77%↓)** · 할인 48%→50% |
+| 라가불린 16년 700ml | 면세 **₩91,120** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩50,880 (36%↓)** · 할인 47%→46% |
+
+### 🆕 신규 입고 (1)
+
+| 위스키 | 현재 KRW |
+|---|--:|
+| 기원 배치8 CS 페일에일 700ml | ₩82,987 |
 
 ### 📦 품절/내림 (1)
 
