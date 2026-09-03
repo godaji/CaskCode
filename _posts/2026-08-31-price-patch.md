@@ -5,23 +5,23 @@ date: "2026-08-31 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 0
+breakthroughs: 2
 prev_date: "2026-08-30"
 latest_date: "2026-09-03"
 weekly_start: "2026-08-31"
 weekly_end: "2026-09-06"
 days: 4
 hotdeals: ["글렌피딕 22년 그랑 코르테스 700ml — 면세 ₩284,242 · 67%↓", "조니워커 XR 21년 750ml — 면세 ₩95,415 · 57%↓", "듀어스 25년 750ml — 면세 ₩221,396 · 50%↓", "보모어 14년 700ml — 면세 ₩51,533 · 49%↓", "조니워커 18년 750ml — 면세 ₩77,185 · 48%↓"]
-hotdeals_count: 26
+hotdeals_count: 28
 rare_drops: ["탈리스커 10년 1L → ₩65,689 (−21%)"]
 rare_drops_count: 1
-description: "면세 위스키 가격 주간 로그 8/31~9/6 — 이번주 핫딜 26종 · 오랜만의 큰 인하 1종 · 최신 2026-09-03. CaskCode"
+description: "면세 위스키 가격 주간 로그 8/31~9/6 — 이번주 핫딜 28종 · 오랜만의 큰 인하 1종 · 최신 2026-09-03. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-08-31 ~ 2026-09-06.
 
-## 🔥 이번주 핫딜 (26종)
+## 🔥 이번주 핫딜 (28종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
@@ -45,10 +45,12 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 글렌피딕 18년 Vat4 Perpetual 700ml | 면세 **₩125,752** · 국내최저 [₩185,000 🔗](https://dailyshot.co/m/item/3164)<br>절약 **−₩59,248 (32%↓)** · 할인 38%→37% |
 | 글렌파클라스 25년 700ml | 면세 **₩384,801** · 국내최저 [₩557,000 🔗](https://dailyshot.co/m/item/4348)<br>절약 **−₩172,199 (31%↓)** · 할인 40%→26% |
 | 듀어스 15년 (New Edition) 1000ml | 면세 **₩47,707** · 국내최저 [₩68,000 🔗](https://dailyshot.co/m/item/6778)<br>절약 **−₩20,293 (30%↓)** · 할인 47%→46% |
+| 발베니 40년 레어 메리지 Y3 700ml | 면세 **₩9,137,652** · 국내최저 [₩13,000,000 🔗](https://dailyshot.co/m/item/10693)<br>절약 **−₩3,862,348 (30%↓)** · 할인 24%→34% |
 | 글렌피딕 15년 Vat3 Perpetual 700ml | 면세 **₩80,407** · 국내최저 [₩109,000 🔗](https://dailyshot.co/m/item/1650)<br>절약 **−₩28,593 (26%↓)** · 할인 42%→41% |
 | 발베니 21년 포트우드 700ml | 면세 **₩394,135** · 국내최저 [₩509,000 🔗](https://dailyshot.co/m/item/3222)<br>절약 **−₩114,865 (23%↓)** · 할인 30%→20% |
 | 듀어스 더블더블 21년 스톤 토스티드 프렌치 오크 750ml | 면세 **₩143,271** · 국내최저 [₩174,000 🔗](https://dailyshot.co/m/item/17432)<br>절약 **−₩30,729 (18%↓)** · 할인 15%→45% |
 | 발베니 Stories Creation Classic 700ml | 면세 **₩88,983** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩19,017 (18%↓)** · 할인 38%→36% |
+| 더 글렌그란트 12년 1000ml | 면세 **₩50,363** · 국내최저 [₩59,900 🔗](https://dailyshot.co/m/item/3155)<br>절약 **−₩9,537 (16%↓)** · 할인 55%→53% |
 | 듀어스 12년 1000ml | 면세 **₩38,762** · 국내최저 [₩43,800 🔗](https://dailyshot.co/m/item/3695)<br>절약 **−₩5,038 (12%↓)** · 할인 47%→46% |
 | 조니워커 블랙 1000ml | 면세 **₩39,413** · 국내최저 [₩44,000 🔗](https://dailyshot.co/m/item/2460)<br>절약 **−₩4,587 (10%↓)** · 할인 39%→40% |
 | 탈리스커 10년 1L | 면세 **₩65,689** · 국내최저 [₩69,000 🔗](https://dailyshot.co/m/item/1961)<br>절약 **−₩3,311 (5%↓)** · 할인 39%→40% |
@@ -66,7 +68,7 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 
 ---
 
-## 📅 9월 3일 (목)
+## 📅 9월 3일 (목) — 돌파 2건
 
 *직전 2026-09-02 → 최신 2026-09-03* · *환율 ₩1,373.78 (기준일 2026-09-02)*
 
@@ -74,11 +76,35 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 
 _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
 
-<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 1건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 달 기프트팩 700ml: 40%→43% (₩56,380)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 약 35% 표기 소매 리스팅 있으나 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크 사용, 한국 기후로 빠른 숙성.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반(달 개별 노트는 불명).<br><b>스토리</b> '달'은 기원의 면세 전용 '해·달·별' 라인 중 하나로 알려짐(2025 출시). 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동, 마스터 디스틸러 앤드류 샌드·창업자 도정한 주도. 호랑이·유니콘·배치 등 시리즈 출시, 2025 IWSC 수상. 기프트팩 구성품은 불명.<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 나무위키 '기원(위스키)' · threesocieties.co.kr · 88bamboo.co (2026-06-15 리서치) · 수집일 2026-06-15</span></div></details></div></details>
+**🔥 오늘의 핫딜 — 면세가가 더 싸짐 (10%p↑)**
+
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌데브론 40년 700ml: 42%→52% (₩3,231,124)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 맥더프 (Macduff / Glen Deveron) · 스코틀랜드-하이랜드<br><b>도수</b> 43%<br><b>캐스크</b> 올로로소 셰리 스패니시 오크 버트<br><b>맛</b> 계피 스파이스·크리미한 바닐라·구운 사과에 허브와 다크 초콜릿·건포도·시트러스가 더해지고, 토스트한 곡물과 과일향 뒤로 쌉쌀한 커피가 드라이한 피니시를 만든다.<br><b>스토리</b> 맥더프 증류소의 글렌데브론 1980 빈티지(11월 28일 증류) 40년. Exceptional Cask 시리즈로 2022년 12월부터 글로벌 면세(GTR) 한정 출시됐다.<br><span style="color:#8a8f98">출처: Whiskybase·Duty Free Hunter·Bacardi (2026-08-11 리서치) · 수집일 2026-08-11</span></div></details>
+<div style="margin:5px 0">발베니 40년 레어 메리지 Y3 700ml: 24%→34% (₩9,137,652)</div>
+
+**🔺 할증 심화 — 할인 축소·가격 상승 (10%p↑)**
+
+<div style="margin:5px 0">발베니 15 홈몰트 700ml: 37%→0% (₩292,615)</div>
+<div style="margin:5px 0">더 레이크 레스페베르 700ml: 55%→31% (₩104,799)</div>
+<div style="margin:5px 0">더 레이크 카이로스 700ml: 55%→31% (₩104,799)</div>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">젠틀맨스 컷 버번 750ml: 55%→31% (₩174,347)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 젠틀맨스 컷(Gentleman's Cut) · 미국(켄터키)<br><b>도수</b> 45%<br><b>캐스크</b> 새 차드 화이트 오크 배럴 5~7년 숙성<br><b>맛</b> 꿀·바닐라빈·캐러멜의 단맛에 호밀에서 온 흙내·후추 향신료와 맥아 보리의 코코아·토스트 풍미가 더해지고, 부드럽고 길게 가는 피니시가 난다.<br><b>스토리</b> 젠틀맨스 컷은 NBA 스타 스테픈 커리가 선보인 켄터키 스트레이트 버번이다. 옥수수 75%·호밀 21%·맥아 보리 4%의 매시빌로 500갤런 구리 팟 스틸에서 증류해 5~7년 숙성했다.<br><span style="color:#8a8f98">출처: gentlemanscutbourbon.com·thebourboncentral.com·sipmightily.substack.com (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 4건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><div style="margin:5px 0">글렌피딕 39년 1985 캐스크 700ml: 36%→45% (₩3,740,109)</div><div style="margin:5px 0">발베니 30년 레어 메리지 700ml: 37%→46% (₩4,307,864)</div><div style="margin:5px 0">보모어 36년 FQ 2023 700ml: 45%→50% (₩2,747,555)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 달 기프트팩 700ml: 40%→43% (₩56,380)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 약 35% 표기 소매 리스팅 있으나 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크 사용, 한국 기후로 빠른 숙성.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반(달 개별 노트는 불명).<br><b>스토리</b> '달'은 기원의 면세 전용 '해·달·별' 라인 중 하나로 알려짐(2025 출시). 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동, 마스터 디스틸러 앤드류 샌드·창업자 도정한 주도. 호랑이·유니콘·배치 등 시리즈 출시, 2025 IWSC 수상. 기프트팩 구성품은 불명.<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 나무위키 '기원(위스키)' · threesocieties.co.kr · 88bamboo.co (2026-06-15 리서치) · 수집일 2026-06-15</span></div></details></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 8건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><div style="margin:5px 0">글렌카담 10년 700ml: 40%→35% (₩55,023)</div><div style="margin:5px 0">글렌카담 13년 700ml: 40%→35% (₩84,309)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌카담 25년 700ml: 40%→35% (₩619,447)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌카담 (Glencadam) · 스코틀랜드 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 엑스-버번(논칠필터·무착색, 1,600병 한정)<br><b>맛</b> 스톤프루트·사과꽃·아카시아 꿀·달콤한 케이크 스파이스의 밝고 향긋한 노즈. 팔레트는 새콤한 배·복숭아에 부서지는 토피·구운 헤이즐넛·데니쉬 페이스트리가 어우러지고 후추 스파이스가 받친다. 피니시는 따뜻하고 고소하며 오트 비스킷·레몬커드·시트러스 제스트가 길게 남는다.<br><b>스토리</b> 'The Remarkable' 글렌카담의 25년 한정 릴리즈. 개별 넘버링, 무착색·논칠필터로 본연의 캐릭터를 보존했다.<br><span style="color:#8a8f98">출처: 공식 사이트 · Master of Malt · The Whiskey Wash · 수집일 2026-06-20</span></div></details><div style="margin:5px 0">글렌카담 아메리칸 오크 리저브 700ml: 40%→35% (₩39,936)</div><div style="margin:5px 0">더 레이크 더 위스키 메이커스 리저브 No.6 700ml: 35%→31% (₩107,657)</div><div style="margin:5px 0">더 레이크 더 위스키 메이커스 리저브 No.7 700ml: 35%→31% (₩107,657)</div><div style="margin:5px 0">더 레이크 이쿼녹스 700ml: 35%→31% (₩112,420)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 글렌그란트 12년 1000ml: 55%→53% (₩50,363)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌 그란트 (Glen Grant) · 스코틀랜드 스페이사이드<br><b>도수</b> 43%<br><b>캐스크</b> 버번 + 셰리 캐스크 숙성<br><b>맛</b> 꿀·배·사과에 아몬드와 시트러스 힌트가 어우러진 부드러운 과수원 과일 향, 입에서는 애플파이 크러스트·캐러멜·바닐라의 크리미한 단맛에 은은한 스파이스가 여운으로 남는다.<br><b>스토리</b> 스페이사이드 로시스의 글렌 그란트 증류소(1840년 설립) 12년 싱글몰트로, 맑고 과일향 위주의 클래식한 스페이사이드 스타일을 보여주는 1L 표현.<br><span style="color:#8a8f98">출처: The Whisky Exchange · The Whiskey Wash · Flaviar (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details></div></details>
 
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
-이번 패치엔 국내최저 돌파 항목이 없습니다.
+| 🏆 위스키 | 상세 |
+|---|---|
+| 발베니 40년 레어 메리지 Y3 700ml | 면세 **₩9,137,652** · 국내최저 [₩13,000,000 🔗](https://dailyshot.co/m/item/10693)<br>절약 **−₩3,862,348 (30%↓)** · 할인 24%→34% |
+| 더 글렌그란트 12년 1000ml | 면세 **₩50,363** · 국내최저 [₩59,900 🔗](https://dailyshot.co/m/item/3155)<br>절약 **−₩9,537 (16%↓)** · 할인 55%→53% |
+
+### 🆕 신규 입고 (2)
+
+| 위스키 | 현재 KRW |
+|---|--:|
+| 기원 배치7 CS 700ml | ₩86,548 |
+| 고든앤맥패일 디스커버리 부나하벤 11년 700ml | ₩73,659 |
 
 ### 📦 품절/내림 (3)
 
