@@ -5,23 +5,23 @@ date: "2026-09-07 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 0
+breakthroughs: 7
 prev_date: "2026-09-06"
 latest_date: "2026-09-08"
 weekly_start: "2026-09-07"
 weekly_end: "2026-09-13"
 days: 2
-hotdeals: ["보모어 22년 700ml — 면세 ₩280,064 · 77%↓", "더 글렌리벳 그라운드브레이커 700ml — 면세 ₩63,172 · 61%↓", "글렌드로낙 10년 1000ml — 면세 ₩57,449 · 59%↓", "발베니 19년 위크 오프 피트 700ml — 면세 ₩259,371 · 58%↓", "보모어 19년 700ml — 면세 ₩143,191 · 51%↓"]
-hotdeals_count: 18
+hotdeals: ["보모어 22년 700ml — 면세 ₩280,064 · 77%↓", "더 글렌리벳 그라운드브레이커 700ml — 면세 ₩63,172 · 61%↓", "글렌드로낙 10년 1000ml — 면세 ₩57,449 · 59%↓", "발베니 19년 위크 오프 피트 700ml — 면세 ₩259,371 · 58%↓", "발렌타인 40년 마스터 콜렉션 챕터 2 700ml — 면세 ₩10,660,754 · 55%↓"]
+hotdeals_count: 25
 rare_drops: ["하이랜드 파크 EAGLE 16년 700ml → ₩101,238 (−25%)"]
 rare_drops_count: 1
-description: "면세 위스키 가격 주간 로그 9/7~9/13 — 이번주 핫딜 18종 · 오랜만의 큰 인하 1종 · 최신 2026-09-08. CaskCode"
+description: "면세 위스키 가격 주간 로그 9/7~9/13 — 이번주 핫딜 25종 · 오랜만의 큰 인하 1종 · 최신 2026-09-08. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-09-07 ~ 2026-09-13.
 
-## 🔥 이번주 핫딜 (18종)
+## 🔥 이번주 핫딜 (25종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
@@ -31,18 +31,25 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 더 글렌리벳 그라운드브레이커 700ml | 면세 **₩63,172** · 국내최저 [₩163,000 🔗](https://dailyshot.co/m/item/32902)<br>절약 **−₩99,828 (61%↓)** · 할인 56%→53% |
 | 글렌드로낙 10년 1000ml | 면세 **₩57,449** · 국내최저 [₩139,000 🔗](https://dailyshot.co/m/item/5138)<br>절약 **−₩81,551 (59%↓)** · 할인 48%→47% |
 | 발베니 19년 위크 오프 피트 700ml | 면세 **₩259,371** · 국내최저 [₩620,000 🔗](https://dailyshot.co/m/item/13773)<br>절약 **−₩360,629 (58%↓)** · 할인 45%→39% |
+| 발렌타인 40년 마스터 콜렉션 챕터 2 700ml | 면세 **₩10,660,754** · 국내최저 [₩23,900,000 🔗](https://dailyshot.co/m/item/7991)<br>절약 **−₩13,239,246 (55%↓)** · 할인 30%→40% |
+| 조니워커 XR 21년 750ml | 면세 **₩99,166** · 국내최저 [₩220,000 🔗](https://dailyshot.co/m/item/31545)<br>절약 **−₩120,834 (55%↓)** · 할인 38%→35% |
 | 보모어 19년 700ml | 면세 **₩143,191** · 국내최저 [₩295,000 🔗](https://dailyshot.co/m/item/25813)<br>절약 **−₩151,809 (51%↓)** · 할인 49%→48% |
 | 보모어 16년 700ml | 면세 **₩81,665** · 국내최저 [₩159,000 🔗](https://dailyshot.co/m/item/25812)<br>절약 **−₩77,335 (49%↓)** · 할인 49%→45% |
+| 조니워커 18년 750ml | 면세 **₩81,769** · 국내최저 [₩148,900 🔗](https://dailyshot.co/m/item/29934)<br>절약 **−₩67,131 (45%↓)** · 할인 40%→35% |
 | 글렌피딕 18년 벳4 퍼페추얼 컬렉션 700ml | 면세 **₩125,265** · 국내최저 [₩210,000 🔗](https://dailyshot.co/m/item/3164)<br>절약 **−₩84,735 (40%↓)** · 할인 37%→36% |
+| 글렌알라키 35년 700mL | 면세 **₩2,030,620** · 국내최저 [₩3,400,000 🔗](https://dailyshot.co/m/item/25041)<br>절약 **−₩1,369,380 (40%↓)** · 할인 53%→48% |
 | 듀어스 25년 750ml | 면세 **₩265,522** · 국내최저 [₩439,000 🔗](https://dailyshot.co/m/item/6772)<br>절약 **−₩173,478 (40%↓)** · 할인 55%→45% |
 | 글렌피딕 18년 벳4 퍼페츄얼 IGL CNY 700ml | 면세 **₩127,222** · 국내최저 [₩210,000 🔗](https://dailyshot.co/m/item/3164)<br>절약 **−₩82,778 (39%↓)** · 할인 45%→35% |
 | 발베니12년 골든캐스크 IGL 700ml | 면세 **₩69,112** · 국내최저 [₩108,000 🔗](https://dailyshot.co/m/item/3190)<br>절약 **−₩38,888 (36%↓)** · 할인 39%→36% |
 | 라가불린 16년 700ml | 면세 **₩92,675** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩49,325 (35%↓)** · 할인 33%→31% |
 | 글렌피딕 21년 그랑 리제르바 700ml | 면세 **₩224,505** · 국내최저 [₩319,000 🔗](https://dailyshot.co/m/item/28392)<br>절약 **−₩94,495 (30%↓)** · 할인 38%→37% |
+| 조니워커 레드 1L | 면세 **₩25,227** · 국내최저 [₩35,000 🔗](https://dailyshot.co/m/item/3181)<br>절약 **−₩9,773 (28%↓)** · 할인 40%→35% |
 | 글렌피딕 21년 CNY 2026 리미티드 에디션 700ml | 면세 **₩231,632** · 국내최저 [₩319,000 🔗](https://dailyshot.co/m/item/28392)<br>절약 **−₩87,368 (27%↓)** · 할인 45%→35% |
 | 글렌피딕 15년 벳3 퍼페추얼 컬렉션 700ml | 면세 **₩80,180** · 국내최저 [₩109,000 🔗](https://dailyshot.co/m/item/1650)<br>절약 **−₩28,820 (26%↓)** · 할인 41%→40% |
+| 조니워커 블루 750ml | 면세 **₩214,015** · 국내최저 [₩259,000 🔗](https://dailyshot.co/m/item/3183)<br>절약 **−₩44,985 (17%↓)** · 할인 35%→30% |
 | 발베니 클래식 VAP 700ml | 면세 **₩88,617** · 국내최저 [₩104,000 🔗](https://dailyshot.co/m/item/10151)<br>절약 **−₩15,383 (15%↓)** · 할인 41%→35% |
 | 듀어스 12년 1000ml | 면세 **₩38,676** · 국내최저 [₩43,800 🔗](https://dailyshot.co/m/item/3695)<br>절약 **−₩5,124 (12%↓)** · 할인 46%→45% |
+| 조니워커 블랙 1000ml | 면세 **₩41,754** · 국내최저 [₩44,000 🔗](https://dailyshot.co/m/item/2460)<br>절약 **−₩2,246 (5%↓)** · 할인 40%→35% |
 | 조니워커 더블 블랙 1000ml | 면세 **₩46,164** · 국내최저 [₩48,000 🔗](https://dailyshot.co/m/item/3249)<br>절약 **−₩1,836 (4%↓)** · 할인 41%→40% |
 | 더 글렌그란트 21년 700ml | 면세 **₩367,156** · 국내최저 [₩380,000 🔗](https://dailyshot.co/m/item/9807)<br>절약 **−₩12,844 (3%↓)** · 할인 50%→20% |
 
@@ -58,19 +65,49 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 
 ---
 
-## 📅 9월 8일 (화)
+## 📅 9월 8일 (화) — 돌파 7건
 
 *직전 2026-09-07 → 최신 2026-09-08* · *환율 ₩1,346.56 (기준일 2026-09-07)*
 
+### 📊 한눈에 — 할인율 변동 요약
+
+_각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
+
+**🔥 오늘의 핫딜 — 면세가가 더 싸짐 (10%p↑)**
+
+<div style="margin:5px 0">발렌타인 40년 마스터 콜렉션 챕터 2 700ml: 30%→40% (₩10,660,754)</div>
+
+**🔺 할증 심화 — 할인 축소·가격 상승 (10%p↑)**
+
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">싱글톤 더프타운 21년 700ml: 55%→35% (₩249,656)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 더프타운 (Dufftown) · 스코틀랜드 스페이사이드<br><b>도수</b> 43%<br><b>캐스크</b> 리필·엑스버번·엑스셰리 3종 캐스크 결합 숙성(트리니티 캐스크 하모니), 21년 이상, 논칠필터<br><b>맛</b> 셰리에 절인 복숭아·생강·꿀에 잰 맥아와 말린 과일·캐러멜·다크초콜릿·무화과, 길고 부드러운 마무리. 더프타운 특유의 둥근 부드러움이 특징.<br><b>스토리</b> 디아지오가 더프타운 증류소 원액으로 내는 싱글톤 더프타운 라인의 고연산 표현. 셰리 영향이 짙은 스페이사이드 싱글몰트로 21년 장기 숙성품이다.<br><span style="color:#8a8f98">출처: Diageo Rare &amp; Exceptional · The Whisky Exchange · Best Whiskey Guide (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details>
+<details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">싱글톤 더프타운 25년 700ml: 50%→35% (₩521,929)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 더프타운 증류소 · 스코틀랜드 스페이사이드<br><b>도수</b> 43%<br><b>캐스크</b> 유러피언 오크 + 리필 엑스버번 숙성 후 아메리칸 오크 결합 (트리니티 캐스크)<br><b>맛</b> 열대 과일·베이킹 스파이스·꿀의 향에 살구·복숭아·구운 사과·건포도, 계피·후추. 잘 익은 사과·배·살구·블러드 오렌지·패션프루트에 캐러멜·토피·꿀 단맛. 바닐라·생강·꿀이 길게 남는 피니시.<br><b>스토리</b> 디아지오 싱글톤 브랜드의 더프타운 증류소 25년. 유러피언 오크와 리필 엑스버번 캐스크에서 25년 이상 숙성 후 아메리칸 오크에서 결합(트리니티 캐스크)한 표현으로 43%로 병입된다.<br><span style="color:#8a8f98">출처: Diageo Rare &amp; Exceptional·maltspedia.com·The Whisky Shop (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details>
+<div style="margin:5px 0">달위니 15년 1000ml: 48%→35% (₩110,475)</div>
+<div style="margin:5px 0">쿨일라 12년 750ml: 48%→35% (₩89,598)</div>
+<div style="margin:5px 0">몰트락 20년 750ml: 45%→35% (₩239,217)</div>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 9건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><div style="margin:5px 0">로얄살루트 55년 타임시리즈 700ml: 30%→36% (₩43,736,429)</div><div style="margin:5px 0">로얄살루트 찰스 3세 대관식 에디션 700ml: 30%→35% (₩22,209,905)</div><div style="margin:5px 0">발베니 21 포트우드 빅토 응아이 700ml: 15%→20% (₩387,811)</div><div style="margin:5px 0">씨앤씨 뀌베 캐스크 750ml: 44%→48% (₩87,527)</div><div style="margin:5px 0">씨앤씨 쉐리 캐스크 750ml: 44%→48% (₩78,424)</div><div style="margin:5px 0">씨앤씨 아메리칸 싱글 몰트 750ml: 44%→48% (₩69,321)</div><div style="margin:5px 0">카이요 재패니즈 미즈나라 CS 700ml: 45%→49% (₩111,940)</div><div style="margin:5px 0">카이요 재패니즈 미즈나라 시그니처 700ml: 45%→49% (₩78,976)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">패터캐른 14년 700ml: 48%→49% (₩57,000)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 패터캐른 증류소 · 스코틀랜드 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 아메리칸 화이트 오크 엑스버번 배럴<br><b>맛</b> 열대·과수원 과일에 블라썸 꿀·브리오슈·은은한 향신료의 향. 잘 익은 파인애플·바닐라·옅은 카카오·계피의 맛. 향신료 살구·토피·구운 아몬드·달콤한 베이킹 스파이스 피니시.<br><b>스토리</b> 패터캐른(Fettercairn)의 면세 전용 14년. 아메리칸 화이트 오크 엑스버번 배럴에서 14년 숙성한 열대 과일풍 하이랜드 싱글몰트로, 논칠필터·무착색·46%.<br><span style="color:#8a8f98">출처: FettercairnWhisky.com·onemoredram.com·Dramface (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 22건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><div style="margin:5px 0">몰트락 16년 750ml: 43%→35% (₩112,215)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">클라이넬리시 10년 SR FY24 700ml (2023 Special Release): 43%→35% (₩172,236)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 클라이넬리시 (Clynelish) · 하이랜드 (노던 하이랜드)<br><b>도수</b> 캐스크 스트렝스 57.5% (일부 출처 54.9%로 상이 표기)<br><b>캐스크</b> 100% 퍼스트필 엑스-버번 캐스크 · 10년 · 자연 캐스크 스트렝스<br><b>맛</b> 캐러멜·바닐라 빈·허니콤 향에 클라이넬리시 특유의 왁시(밀랍)한 캐릭터. 입안은 바닐라의 달콤하고 강렬한 풍미에 은은한 짭짤함과 솟구치는 후추 스파이스, 길고 스파이시한 여운.<br><b>스토리</b> 디아지오 스페셜 릴리스 2023(부제 'The Jazz Crescendo')의 클라이넬리시 10년으로, 퍼스트필 엑스-버번 캐스크에서만 숙성해 자연 캐스크 스트렝스로 병입했다. 클라이넬리시는 왁시한 질감으로 유명한 노던 하이랜드 증류소이며, 조니워커 골드의 핵심 몰트로도 쓰인다. (SR FY24 = 디아지오 회계연도 표기)<br><span style="color:#8a8f98">출처: The Whisky Exchange · Whiskybase(The Jazz Crescendo) · Girl With Cask Strength 리뷰 (2026-08-15 리서치) · 수집일 2026-08-15</span></div></details><div style="margin:5px 0">글렌알라키 35년 700mL: 53%→48% (₩2,030,620)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">씨앤씨 버번 캐스크 750ml: 53%→48% (₩78,424)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 버지니아 디스틸러리 컴퍼니 (Virginia Distillery Co.) · 미국 버지니아 (러빙스턴, Lovingston)<br><b>도수</b> 46% (공식 사이트 기준, 92 proof)<br><b>캐스크</b> 켄터키산 퍼스트필 버번 캐스크 숙성 (최소 4년)<br><b>맛</b> 코: 바닐라, 쇼트브레드, 은은한 삼나무. 입: 오렌지 오일, 토스트한 코코넛, 그레이엄 크래커에 실키한 바디. 피니시: 시나몬과 부드러운 오크 스파이스.<br><b>스토리</b> '씨앤씨(C&amp;C)'는 버지니아 디스틸러리 컴퍼니의 아메리칸 싱글몰트 라인 '커리지 앤 컨빅션(Courage &amp; Conviction)'의 약칭이다. 라인 이름은 창립자 故 조지 G. 무어 박사의 신조 'Have the courage of your convictions'에서 따왔다. 블루리지 산맥의 샘물과 100% 맥아 보리로 빚어 버지니아의 큰 일교차 기후 속에서 숙성하며, 버번 캐스크 버전은 켄터키산 퍼스트필 버번 캐스크에서 최소 4년 숙성한 핵심 코어 제품이다.<br><span style="color:#8a8f98">출처: Virginia Distillery Co. 공식 제품 페이지(vadistillery.com/products/courage-conviction-bourbon-cask), courageandconviction.com (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">씨앤씨 버지니아 하이랜드 위스키 포트 캐스크 피니시 750ml: 53%→48% (₩51,816)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 버지니아 디스틸러리 컴퍼니 (Virginia Distillery Co.) · 미국 버지니아 (러빙스턴) — 버지니아산 몰트 위스키와 스코틀랜드산 숙성 몰트 위스키를 블렌딩<br><b>도수</b> 46% (공식 사이트 기준, 92 proof)<br><b>캐스크</b> 버지니아산 포트 스타일 와인 캐스크 + 전통 토니 포트 캐스크에서 최소 12개월 피니시<br><b>맛</b> 코: 허니드 피그(꿀에 절인 무화과), 호두, 사과. 입: 배럴 스모크와 과일의 단맛이 어우러지며 코코아로, 이어 시나몬·클로브로 전개. 피니시: 캐러멜라이즈드 슈거의 여운.<br><b>스토리</b> 버지니아 디스틸러리 컴퍼니의 '버지니아-하이랜드 위스키(Virginia-Highland Whisky, VHW)' 시리즈로, 버지니아 현지에서 증류한 아메리칸 싱글몰트와 스코틀랜드에서 숙성된 몰트 위스키를 결합한 블렌디드 몰트다. 포트 캐스크 피니시 버전은 2017~2021년 5년 연속 World Whiskies Awards 'Best American Blended Malt'를 수상한 대표작이다.<br><span style="color:#8a8f98">출처: Virginia Distillery Co. 공식 제품 페이지(vadistillery.com/products/vhw-port-cask-finished-whisky), Virginia ABC, Drinkhacker 리뷰 (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><div style="margin:5px 0">조니워커 18년 750ml: 40%→35% (₩81,769)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 골드 리저브 1000ml: 40%→35% (₩66,111)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 (Johnnie Walker) · 블렌디드 · 블렌디드(스코틀랜드)<br><b>도수</b> 40%<br><b>캐스크</b> 다양한 원산지 몰트·그레인 블렌드 (NAS · 구 골드라벨 18년의 후속)<br><b>맛</b> 부드럽고 크리미한 질감에 꿀·바닐라·붉은 과일의 단맛, 은은한 스모크. 클라이넬리시 등 왁시한 몰트가 중심을 이뤄 실키하게 마무리된다.<br><b>스토리</b> 조니워커 골드 라벨 리저브는 과거 '골드 라벨 18년'을 잇는 NAS 프리미엄 블렌디드 스카치로, 창립자 존 워커가 꿈꾼 '금빛' 블렌드를 표방한다. 클라이넬리시 등 왁시하고 크리미한 몰트를 핵심으로 구성한다.<br><span style="color:#8a8f98">출처: Johnnie Walker 공식 · Master of Malt (2026-08-15 리서치) · 수집일 2026-08-15</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 더블 블랙 1000ml: 40%→35% (₩49,583)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 (Johnnie Walker) · 블렌디드 스카치 · 블렌디드(스코틀랜드)<br><b>도수</b> 40%<br><b>캐스크</b> 강하게 그을린(차링) 오크 캐스크 비중을 높인 원액 블렌드 · 피티드 몰트 강조<br><b>맛</b> 블랙라벨보다 짙은 스모크·피트. 그을린 오크·정향·후추 스파이스에 말린 과일 단맛, 풍부하고 강렬한 스모키 피니시.<br><b>스토리</b> 조니워커 더블 블랙은 블랙라벨의 더 스모키·강렬한 버전으로, 피티드 몰트 비중과 깊게 차링한 캐스크 숙성 원액을 늘려 만든다. 면세·여행 소매에서 흔한 1L 포맷.<br><span style="color:#8a8f98">출처: 공식 Johnnie Walker · Master of Malt (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><div style="margin:5px 0">조니워커 레드 1L: 40%→35% (₩25,227)</div><div style="margin:5px 0">조니워커 블랙 1000ml: 40%→35% (₩41,754)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 블랙 루비 1000ml: 40%→35% (₩49,583)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 (Johnnie Walker) · 블렌디드 스카치 · 블렌디드(스코틀랜드)<br><b>도수</b> 40%<br><b>캐스크</b> 레드와인 + 올로로소 셰리 + 버번 캐스크 숙성 원액 블렌드<br><b>맛</b> 블랙라벨을 잇는 과일 중심의 풍부한 베리 — 달콤한 붉은 과일·베리 향에 부드럽고 풍성한 질감. 기존 블랙라벨보다 프루티·스위트.<br><b>스토리</b> 2025년 출시된 조니워커 신제품. 마스터 블렌더 엠마 워커가 블랙라벨의 유산 위에 레드와인·올로로소 셰리·버번 캐스크 숙성 원액을 더해 과일향을 강조한 블렌디드 스카치.<br><span style="color:#8a8f98">출처: The Spirits Business · Hard To Find Whisky (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><div style="margin:5px 0">조니워커 블랙 트리플 캐스크 1000ml: 40%→35% (₩49,583)</div><div style="margin:5px 0">조니워커 블루 1000ml: 35%→30% (₩284,725)</div><div style="margin:5px 0">조니워커 블루 750ml: 35%→30% (₩214,015)</div><div style="margin:5px 0">조니워커 블루라벨 500ml: 35%→30% (₩150,848)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 아일랜드 그린 1000ml: 40%→35% (₩66,111)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 (Johnnie Walker · 블렌디드 몰트) · 블렌디드 몰트(스코틀랜드)<br><b>도수</b> 43%<br><b>캐스크</b> NAS(숙성연수 미표기) 블렌디드 몰트 — 카올 일라 중심 + 클라이넬리시·글렌킨치·카듀<br><b>맛</b> 스모키하고 약간 메디시널한 페놀 피트에 헤더·구운 파인애플·바닐라·옅은 오크 향. 팔레트는 스모키하고 오일리하며 붉은 사과·복숭아의 과일감에 카라멜 캔디·헤더·오크가 더해진다. 길고 스모키한 피니시에 헤더 힌트.<br><b>스토리</b> 2016년 면세(트래블 리테일) 전용으로 출시된 블렌디드 몰트. 카올 일라(아일라 피트)를 골격으로 클라이넬리시(하이랜드 과일감)·글렌킨치(로우랜드)·카듀(스페이사이드 단맛)를 결합해, '그린 라벨 15년'보다 아일라 피트 쪽으로 무게를 둔 NAS 블렌디드 몰트.<br><span style="color:#8a8f98">출처: The Scotch Noob · WhiskyCast · Whisky of the Week (2026-06-22 리서치) · 수집일 2026-06-22</span></div></details><div style="margin:5px 0">조니워커 엑스오디네어 750ml: 35%→30% (₩247,013)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 킹조지 5세 500ml: 40%→35% (₩382,748)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 (Johnnie Walker) · 블렌디드(스코틀랜드)<br><b>도수</b> 43%<br><b>캐스크</b> 다양한 캐스크(킹조지 5세 시대 가동 증류소 원액 블렌드)<br><b>맛</b> 옅은 스모크에 신선한 과일·맥아·건포도·무화과·시나몬, 그리고 바닐라·잘 익은 사과·구운 아몬드·밀크초콜릿이 더해진 향. 팔레트는 다크초콜릿·샌달우드·절제된 피트 스모크·단 말린 과일이 층층이 쌓이고 후추·생강·넛맥 스파이스가 따른다. 벨벳처럼 풍성한 질감, 메이플 시럽 뉘앙스의 길고 따뜻한 피니시.<br><b>스토리</b> 블루라벨 프레스티지 라인(500ml). 조지 5세가 조니워커에 로열 워런트를 수여한 1934년을 기려 그 시대 가동 증류소들의 희소 원액으로 블렌딩한다.<br><span style="color:#8a8f98">출처: 공식 사이트 · Difford's Guide · Whiskybase · 수집일 2026-06-20</span></div></details><div style="margin:5px 0">탈리스커 10년 1L: 40%→35% (₩69,590)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">탈리스커 써지 700ml: 58%→53% (₩78,673)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 탈리스커 (Talisker) · 스카이섬<br><b>도수</b> 45.8%<br><b>캐스크</b> 아메리칸 엑스버번 캐스크 숙성 (NAS)<br><b>맛</b> 노즈는 숲속 베리, 크렘 브륄레, 바나나 스플릿, 버터스카치에 칠리의 힌트가 어우러진다. 팔레트는 브리오슈 같은 단맛, 바노피 파이, 통조림 복숭아의 달콤한 해양 풍미에 생강의 알싸함과 오크 스모크, 후추 스파이스가 따른다. 피니시는 짭조름한 스모크와 페퍼리한 여운.<br><b>스토리</b> 탈리스커는 1830년 설립된 스카이섬 유일의 증류소로, 해양적이고 페퍼리한 스모키 캐릭터로 유명하다. 써지(Surge)는 2022년 8월 출시된 트래블 리테일(면세) 전용 NAS 에디션으로, 영국·유럽·미국 주요 공항에서 70cl 병으로 판매되었다. 이름처럼 파도가 밀려드는 듯한 에너지를 표현한 표현이다.<br><span style="color:#8a8f98">출처: Words of Whisky (wordsofwhisky.com), Dramface, Moodie Davitt Report, The Whiskey Wash (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">사가모어 Cask Strength Whiskey 750ml: 55%→52% (₩61,403)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 사가모어 스피릿 (Sagamore Spirit) · 미국 메릴랜드<br><b>도수</b> 56.1% (약 112proof·배럴별 상이)<br><b>캐스크</b> 뉴 아메리칸 오크 스트레이트 라이(고·저 라이 매시빌 블렌드, 4~7년 숙성)<br><b>맛</b> 계피·정향·바닐라 향에 다크초콜릿·흑후추·흑설탕·꿀의 풍미가 진하게 이어지고, 마른 베이킹 스파이스·허브 뉘앙스가 길게 남는다.<br><b>스토리</b> 메릴랜드 볼티모어 사가모어 스피릿의 캐스크 스트렝스 스트레이트 라이로, 1909년 지은 샘물(석회암 여과수)을 더해 병입. 배럴마다 도수가 달라 병별 고유 프루프.<br><span style="color:#8a8f98">출처: Breaking Bourbon · Sagamore Spirit 공식 (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">조니워커 XR 21년 750ml: 38%→35% (₩99,166)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 조니워커 / 존 워커 앤 선즈 (Johnnie Walker / John Walker &amp; Sons, 블렌디드) · 스카치 블렌드<br><b>도수</b> 40%<br><b>캐스크</b> 21년 이상 숙성된 희귀 위스키 원액을 블렌딩 (블렌디드 스카치, 최소 숙성연수 21년)<br><b>맛</b> 코: 향신료 곁들인 사과 크루아상, 따뜻한 오크, 꿀과 바닐라, 건포도, 설탕 입힌 오렌지 껍질, 은은한 꽃향. 입안: 오렌지·레몬 제스트, 버터스카치, 파이프 담배, 건포도, 카라멜과 열대과일. 피니시: 길게 이어지며 뒤끝에 의외의 피트 힌트.<br><b>스토리</b> 조니워커는 1860년 존 워커가 에어셔의 식료품점에서 위스키를 블렌딩하며 시작했고, 아들 알렉산더가 대영제국 전역으로 수출하며 세계적 브랜드로 키웠다. XR 21년('XR'=eXtra Rare)은 알렉산더 경이 프리미엄 블렌드 제조에 관해 손수 남긴 노트에서 영감을 받은 럭셔리 라인으로, 21년 이상 숙성한 희귀 원액만을 사용한다.<br><span style="color:#8a8f98">출처: Flaviar, The Whiskey Wash, Connosr, CellarTracker 리뷰 DB (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details></div></details>
+
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
-이번 패치엔 국내최저 돌파 항목이 없습니다.
+| 🏆 위스키 | 상세 |
+|---|---|
+| 발렌타인 40년 마스터 콜렉션 챕터 2 700ml | 면세 **₩10,660,754** · 국내최저 [₩23,900,000 🔗](https://dailyshot.co/m/item/7991)<br>절약 **−₩13,239,246 (55%↓)** · 할인 30%→40% |
+| 글렌알라키 35년 700mL | 면세 **₩2,030,620** · 국내최저 [₩3,400,000 🔗](https://dailyshot.co/m/item/25041)<br>절약 **−₩1,369,380 (40%↓)** · 할인 53%→48% |
+| 조니워커 XR 21년 750ml | 면세 **₩99,166** · 국내최저 [₩220,000 🔗](https://dailyshot.co/m/item/31545)<br>절약 **−₩120,834 (55%↓)** · 할인 38%→35% |
+| 조니워커 18년 750ml | 면세 **₩81,769** · 국내최저 [₩148,900 🔗](https://dailyshot.co/m/item/29934)<br>절약 **−₩67,131 (45%↓)** · 할인 40%→35% |
+| 조니워커 블루 750ml | 면세 **₩214,015** · 국내최저 [₩259,000 🔗](https://dailyshot.co/m/item/3183)<br>절약 **−₩44,985 (17%↓)** · 할인 35%→30% |
+| 조니워커 레드 1L | 면세 **₩25,227** · 국내최저 [₩35,000 🔗](https://dailyshot.co/m/item/3181)<br>절약 **−₩9,773 (28%↓)** · 할인 40%→35% |
+| 조니워커 블랙 1000ml | 면세 **₩41,754** · 국내최저 [₩44,000 🔗](https://dailyshot.co/m/item/2460)<br>절약 **−₩2,246 (5%↓)** · 할인 40%→35% |
 
-### 🆕 신규 입고 (1)
+### 🆕 신규 입고 (3)
 
 | 위스키 | 현재 KRW |
 |---|--:|
+| 1792 15년 1000ml | ₩336,641 |
 | 메이커스마크 셀러에이지드 2025 700ml | ₩215,450 |
+| 1792 스위트 위트 750ml | ₩91,566 |
 
 *국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
 
