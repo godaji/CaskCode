@@ -5,28 +5,29 @@ date: "2026-09-14 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 2
+breakthroughs: 4
 prev_date: "2026-09-13"
 latest_date: "2026-09-16"
 weekly_start: "2026-09-14"
 weekly_end: "2026-09-20"
 days: 3
-hotdeals: ["벤리악 25년 1997 캐스크 에디션 700ml — 면세 ₩385,826 · 51%↓", "로얄살루트 25년 700ml — 면세 ₩254,309 · 48%↓", "더 글렌그란트 캐스크 헤이븐 1000ml — 면세 ₩54,917 · 45%↓", "더 글렌그란트 21년 700ml — 면세 ₩274,829 · 43%↓", "잭다니엘 싱글배럴 100프루프 700ml — 면세 ₩50,306 · 41%↓"]
-hotdeals_count: 11
-rare_drops: []
-rare_drops_count: 0
-description: "면세 위스키 가격 주간 로그 9/14~9/20 — 이번주 핫딜 11종 · 오랜만의 큰 인하 0종 · 최신 2026-09-16. CaskCode"
+hotdeals: ["폴 존 피티드 1000ml — 면세 ₩66,013 · 60%↓", "벤리악 25년 1997 캐스크 에디션 700ml — 면세 ₩385,826 · 51%↓", "로얄살루트 25년 700ml — 면세 ₩254,309 · 48%↓", "더 글렌그란트 캐스크 헤이븐 1000ml — 면세 ₩54,917 · 45%↓", "더 글렌그란트 21년 700ml — 면세 ₩274,829 · 43%↓"]
+hotdeals_count: 13
+rare_drops: ["에버펠디 16년 마데이라 700ml → ₩87,568 (−45%)"]
+rare_drops_count: 1
+description: "면세 위스키 가격 주간 로그 9/14~9/20 — 이번주 핫딜 13종 · 오랜만의 큰 인하 1종 · 최신 2026-09-16. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-09-14 ~ 2026-09-20.
 
-## 🔥 이번주 핫딜 (11종)
+## 🔥 이번주 핫딜 (13종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
 | 🏆 위스키 | 상세 |
 |---|---|
+| 폴 존 피티드 1000ml | 면세 **₩66,013** · 국내최저 [₩165,000 🔗](https://dailyshot.co/m/item/9458)<br>절약 **−₩98,987 (60%↓)** · 할인 55%→51% |
 | 벤리악 25년 1997 캐스크 에디션 700ml | 면세 **₩385,826** · 국내최저 [₩780,000 🔗](https://dailyshot.co/m/item/9889)<br>절약 **−₩394,174 (51%↓)** · 할인 48%→40% |
 | 로얄살루트 25년 700ml | 면세 **₩254,309** · 국내최저 [₩490,000 🔗](https://dailyshot.co/m/item/5997)<br>절약 **−₩235,691 (48%↓)** · 할인 24%→28% |
 | 더 글렌그란트 캐스크 헤이븐 1000ml | 면세 **₩54,917** · 국내최저 [₩99,000 🔗](https://dailyshot.co/m/item/38706)<br>절약 **−₩44,083 (45%↓)** · 할인 55%→53% |
@@ -34,6 +35,7 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 | 잭다니엘 싱글배럴 100프루프 700ml | 면세 **₩50,306** · 국내최저 [₩85,900 🔗](https://dailyshot.co/m/item/4343)<br>절약 **−₩35,594 (41%↓)** · 할인 49%→45% |
 | 잭다니엘 블랙 맥라렌 에디션 1000ml | 면세 **₩28,759** · 국내최저 [₩45,900 🔗](https://dailyshot.co/m/item/38577)<br>절약 **−₩17,141 (37%↓)** · 할인 51%→49% |
 | 라가불린 16년 700ml | 면세 **₩92,208** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩49,792 (35%↓)** · 할인 32%→31% |
+| 글렌알라키 18년(24RB) 700mL | 면세 **₩235,849** · 국내최저 [₩351,000 🔗](https://dailyshot.co/m/item/21708)<br>절약 **−₩115,151 (33%↓)** · 할인 34%→35% |
 | 벤리악 트리플 디스틸드 10년 1000ml | 면세 **₩56,981** · 국내최저 [₩76,800 🔗](https://dailyshot.co/m/item/4221)<br>절약 **−₩19,819 (26%↓)** · 할인 51%→45% |
 | 로얄살루트 21년 1000ml | 면세 **₩236,021** · 국내최저 [₩312,800 🔗](https://dailyshot.co/m/item/9704)<br>절약 **−₩76,779 (25%↓)** · 할인 25%→30% |
 | 듀어스 12년 1000ml | 면세 **₩37,014** · 국내최저 [₩43,800 🔗](https://dailyshot.co/m/item/3695)<br>절약 **−₩6,786 (15%↓)** · 할인 48%→47% |
@@ -41,7 +43,17 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 
 ---
 
-## 📅 9월 16일 (수) — 돌파 2건
+## 🕰️ 신라면세 오랜만의 큰 인하 (1종)
+
+_원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진** 위스키입니다. 늘 할인하거나 잔잔히 오르내리는 건 제외 · 낙폭 큰 순._
+
+| 🕰️ 위스키 | 상세 |
+|---|---|
+| 에버펠디 16년 마데이라 700ml | 면세 **₩87,568**<br>**−45% 인하** · 그동안 ₩159,980 거의 정상가(5% 할인)로 101일째 → 48% 할인 · 9/16 첫 인하 |
+
+---
+
+## 📅 9월 16일 (수) — 돌파 4건
 
 *직전 2026-09-15 → 최신 2026-09-16* · *환율 ₩1,347.20 (기준일 2026-09-15)*
 
@@ -49,16 +61,46 @@ _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다.
 
 _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
 
-<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 2건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌알라키 2007 17년 올로로소 쉐리 펀천 싱글캐스크#2777 700ml: 40%→42% (₩261,761)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌알라키 (GlenAllachie) · 스코틀랜드 스페이사이드<br><b>도수</b> 캐스크 스트렝스 (병 표기 기준 · 2007 올로로소 푼천 자매캐스크 ≈58%: #800179 58.0% / #800184 58.3% · 캐스크별 상이, 과신 주의)<br><b>캐스크</b> 올로로소 셰리 푼천(puncheon) 싱글캐스크 #2777 · 2007 증류 17년 숙성 · 캐스크스트렝스 · 논칠필터 · 무착색<br><b>맛</b> 건포도·말린 무화과·대추야자의 진한 올로로소 셰리 향에 다크초콜릿·오렌지 껍질·호두, 흑설탕·베이킹 스파이스(계피·정향)·가죽으로 이어지는 묵직하고 긴 피니시. (단일 캐스크라 자매 캐스크 기준 근사 — 병별 차이 가능)<br><b>스토리</b> 글렌알라키는 1967년 설립된 스페이사이드 증류소로, 2017년 빌리 워커(전 벤리악·글렌드로낙) 팀이 인수해 셰리 캐스크 중심으로 재편했다. #2777은 2007년 증류 원액을 올로로소 셰리 푼천(대형 셰리 통) 단일 캐스크에서 17년 장기 숙성해 캐스크스트렝스·논칠필터·무착색으로 병입한 싱글캐스크. ⚠️ 싱글캐스크는 도수·풍미가 통별로 달라 동 2007 올로로소 푼천 자매캐스크(예: #800179 58.0%) 기준 근사치이며 병별 차이 가능(과신 주의).<br><span style="color:#8a8f98">출처: Royal Mile Whiskies · The Whisky Stock · Whiskybase · theglenallachie.com (2026-06-21 리서치) · 수집일 2026-06-21</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 18년 700ml: 50%→51% (₩144,568)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 (Royal Brackla) · 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 팔로 코르타도 셰리 캐스크 피니시 · 논칠필터<br><b>맛</b> 파인애플·구아바·꿀 시리얼·라이트 시트러스 향. 부드럽고 크리미한 입안에 바닐라·캔디드 프루트·밀크 초콜릿·아니스·카시아. 데메라라 슈거에서 루바브·구스베리 타르트와 스파이스의 상큼한 피니시.<br><b>스토리</b> 1812년 설립, 윌리엄 4세로부터 최초의 'Royal' 칭호를 받은 하이랜드 증류소. 18년은 팔로 코르타도 셰리 캐스크로 피니시해 트로피컬·꿀·크리미한 풍미를 더한 코어레인지 표현. 무착색·논칠필터.<br><span style="color:#8a8f98">출처: Whisky Advocate · The Whiskey Wash · Whisky Magazine (2026-07-20 리서치) · 수집일 2026-07-20</span></div></details></div></details>
+**🔺 할증 심화 — 할인 축소·가격 상승 (10%p↑)**
 
-<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 3건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 글렌그란트 21년 700ml: 45%→40% (₩274,829)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌그란트 (Glen Grant) · 스페이사이드<br><b>도수</b> 46%<br><b>캐스크</b> 엑스-올로로소 셰리 + 버번 배럴 매링 · 논칠필터 · 천연색<br><b>맛</b> 잘 익은 복숭아·토피·건포도 향. 부드러운 입안에서 트로피컬 프루트와 크리미 버터, 카라멜라이즈드 크렘브륄레의 긴 피니시.<br><b>스토리</b> 1840년 스페이사이드 로시스에 설립. 키 큰 슬림 증류기와 정류기(purifier)로 가볍고 깨끗한 꽃향 스피릿을 만드는 스페이사이드 대표 증류소. 마스터 디스틸러 데니스 말콤이 캐스크를 직접 선별해 소규모 배치로 매링한 코어레인지 21년 표현.<br><span style="color:#8a8f98">출처: 공식 theglengrant.com · Berry Bros &amp; Rudd · Whisky Magazine (2026-06-07 리서치) · 수집일 2026-06-07</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">BLADNOCH 16YO 700ml: 48%→47% (₩132,093)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 블라드노흐 (Bladnoch) · 스코틀랜드 로우랜드<br><b>도수</b> 46.7%<br><b>캐스크</b> 올로로소 셰리 캐스크 숙성<br><b>맛</b> 올로로소 셰리가 뚜렷해 건과일·향신료·다크초콜릿·태운 캐러멜·무화과·건포도가 풍부하고, 바디는 비교적 가벼우며 실키한 질감에 오렌지 제스트·담뱃잎 뉘앙스가 이어진다.<br><b>스토리</b> 로우랜드 최남단 갤러웨이의 블라드노흐 증류소(1817년 설립, 현존 최고령급)에서 만든 16년 싱글몰트로, 올로로소 셰리 캐스크에서만 숙성한 셰리 중심 표현.<br><span style="color:#8a8f98">출처: Bladnoch 공식 · Hard To Find Whisky · A Scot on Scotch (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">우드포드 리저브 더블 오크 1000ml: 47%→46% (₩54,713)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 우드포드 리저브 (Woodford Reserve) · 미국 켄터키<br><b>도수</b> 45.2%<br><b>캐스크</b> 1차 차콜 처리 오크 배럴 숙성 후 딥 토스트·라이트 차 2차 오크 배럴 추가 숙성 (Double Oaked)<br><b>맛</b> 다크 프루트·카라멜·꿀·초콜릿·마지판의 달콤한 아로마. 풀바디의 바닐라·다크 카라멜·헤이즐넛·사과·스파이스가 어우러지고 길고 크리미하며 꿀사과 향의 피니시.<br><b>스토리</b> 우드포드 리저브 증류소는 1812년 가동을 시작해 Brown-Forman이 소유한 켄터키 버사이유 소재 증류소다. 더블 오크는 두 번의 서로 다른 오크 배럴을 거쳐 기존 버번보다 풍부하고 부드러운 오크 캐릭터를 구현한 익스프레션으로 2023년 샌프란시스코 세계 스피리츠 경연대회 더블 골드 메달을 수상했다.<br><span style="color:#8a8f98">출처: 공식 woodfordreserve.com · en.wikipedia.org (Woodford Reserve) (2026-07-06 리서치) · 수집일 2026-07-06</span></div></details></div></details>
+<div style="margin:5px 0">글렌알라키 8년 700ml: 52%→30% (₩86,184)</div>
+<div style="margin:5px 0">듀어스 더블더블 20년 500ml: 50%→30% (₩102,285)</div>
+<div style="margin:5px 0">류카 뉴본 2026 700ml: 10%→0% (₩161,664)</div>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 5건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌알라키 2007 17년 올로로소 쉐리 펀천 싱글캐스크#2777 700ml: 40%→42% (₩261,761)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌알라키 (GlenAllachie) · 스코틀랜드 스페이사이드<br><b>도수</b> 캐스크 스트렝스 (병 표기 기준 · 2007 올로로소 푼천 자매캐스크 ≈58%: #800179 58.0% / #800184 58.3% · 캐스크별 상이, 과신 주의)<br><b>캐스크</b> 올로로소 셰리 푼천(puncheon) 싱글캐스크 #2777 · 2007 증류 17년 숙성 · 캐스크스트렝스 · 논칠필터 · 무착색<br><b>맛</b> 건포도·말린 무화과·대추야자의 진한 올로로소 셰리 향에 다크초콜릿·오렌지 껍질·호두, 흑설탕·베이킹 스파이스(계피·정향)·가죽으로 이어지는 묵직하고 긴 피니시. (단일 캐스크라 자매 캐스크 기준 근사 — 병별 차이 가능)<br><b>스토리</b> 글렌알라키는 1967년 설립된 스페이사이드 증류소로, 2017년 빌리 워커(전 벤리악·글렌드로낙) 팀이 인수해 셰리 캐스크 중심으로 재편했다. #2777은 2007년 증류 원액을 올로로소 셰리 푼천(대형 셰리 통) 단일 캐스크에서 17년 장기 숙성해 캐스크스트렝스·논칠필터·무착색으로 병입한 싱글캐스크. ⚠️ 싱글캐스크는 도수·풍미가 통별로 달라 동 2007 올로로소 푼천 자매캐스크(예: #800179 58.0%) 기준 근사치이며 병별 차이 가능(과신 주의).<br><span style="color:#8a8f98">출처: Royal Mile Whiskies · The Whisky Stock · Whiskybase · theglenallachie.com (2026-06-21 리서치) · 수집일 2026-06-21</span></div></details><div style="margin:5px 0">에버펠디 16년 마데이라 700ml: 46%→48% (₩87,568)</div><div style="margin:5px 0">글렌알라키 18년(24RB) 700mL: 34%→35% (₩235,849)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 18년 700ml: 50%→51% (₩144,568)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 (Royal Brackla) · 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 팔로 코르타도 셰리 캐스크 피니시 · 논칠필터<br><b>맛</b> 파인애플·구아바·꿀 시리얼·라이트 시트러스 향. 부드럽고 크리미한 입안에 바닐라·캔디드 프루트·밀크 초콜릿·아니스·카시아. 데메라라 슈거에서 루바브·구스베리 타르트와 스파이스의 상큼한 피니시.<br><b>스토리</b> 1812년 설립, 윌리엄 4세로부터 최초의 'Royal' 칭호를 받은 하이랜드 증류소. 18년은 팔로 코르타도 셰리 캐스크로 피니시해 트로피컬·꿀·크리미한 풍미를 더한 코어레인지 표현. 무착색·논칠필터.<br><span style="color:#8a8f98">출처: Whisky Advocate · The Whiskey Wash · Whisky Magazine (2026-07-20 리서치) · 수집일 2026-07-20</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 21년 700ml: 47%→48% (₩243,789)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 증류소 · 스코틀랜드 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 올로로소·팔로 코르타도·PX 셰리 캐스크 피니시<br><b>맛</b> 크렘 브륄레와 신선한 베리, 바닐라 빈의 향. 크리미하고 매끄러운 입안에 잉글리시 토피·잘 익은 무화과·가죽·정향. 코냑과 초콜릿 케이크를 연상시키는 길고 진한 피니시.<br><b>스토리</b> 나폴레옹 시대 윌리엄 4세로부터 'Royal' 칭호를 받은 하이랜드 증류소. 21년은 세 가지 셰리 캐스크(올로로소·팔로 코르타도·PX)로 피니시한 셰리 풍미 중심 표현으로, 무착색·논칠필터.<br><span style="color:#8a8f98">출처: TheWhiskeyWash·Whisky Magazine·Drinkhacker (2026-06-09 리서치) · 수집일 2026-06-09</span></div></details></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 5건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">더 글렌그란트 21년 700ml: 45%→40% (₩274,829)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌그란트 (Glen Grant) · 스페이사이드<br><b>도수</b> 46%<br><b>캐스크</b> 엑스-올로로소 셰리 + 버번 배럴 매링 · 논칠필터 · 천연색<br><b>맛</b> 잘 익은 복숭아·토피·건포도 향. 부드러운 입안에서 트로피컬 프루트와 크리미 버터, 카라멜라이즈드 크렘브륄레의 긴 피니시.<br><b>스토리</b> 1840년 스페이사이드 로시스에 설립. 키 큰 슬림 증류기와 정류기(purifier)로 가볍고 깨끗한 꽃향 스피릿을 만드는 스페이사이드 대표 증류소. 마스터 디스틸러 데니스 말콤이 캐스크를 직접 선별해 소규모 배치로 매링한 코어레인지 21년 표현.<br><span style="color:#8a8f98">출처: 공식 theglengrant.com · Berry Bros &amp; Rudd · Whisky Magazine (2026-06-07 리서치) · 수집일 2026-06-07</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">폴 존 피티드 1000ml: 55%→51% (₩66,013)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 폴 존 (Paul John) · 인도 고아<br><b>도수</b> 55.5% (캐스크 스트렝스·배치별 상이)<br><b>캐스크</b> 엑스버번 배럴 숙성·캐스크 스트렝스<br><b>맛</b> 피트 스모크·꿀·바나나·다크초콜릿·후추 스파이스의 다층적 향, 달콤하게 시작해 드라이하고 날카로운 피트·재 같은 스모크가 입을 코팅하며 토피 단맛이 받쳐주는 긴 피니시.<br><b>스토리</b> 인도 고아 폴 존 증류소의 'Peated Select Cask'. 엑스버번 배럴 숙성 후 캐스크 스트렝스 병입하며 더운 기후의 빠른 숙성이 특징. ⚠️ 캐스크 스트렝스라 도수는 배치별 상이(대표 55.5%).<br><span style="color:#8a8f98">출처: The Whisky Exchange · Master of Malt · Paul John 공식 (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">BLADNOCH 16YO 700ml: 48%→47% (₩132,093)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 블라드노흐 (Bladnoch) · 스코틀랜드 로우랜드<br><b>도수</b> 46.7%<br><b>캐스크</b> 올로로소 셰리 캐스크 숙성<br><b>맛</b> 올로로소 셰리가 뚜렷해 건과일·향신료·다크초콜릿·태운 캐러멜·무화과·건포도가 풍부하고, 바디는 비교적 가벼우며 실키한 질감에 오렌지 제스트·담뱃잎 뉘앙스가 이어진다.<br><b>스토리</b> 로우랜드 최남단 갤러웨이의 블라드노흐 증류소(1817년 설립, 현존 최고령급)에서 만든 16년 싱글몰트로, 올로로소 셰리 캐스크에서만 숙성한 셰리 중심 표현.<br><span style="color:#8a8f98">출처: Bladnoch 공식 · Hard To Find Whisky · A Scot on Scotch (2026-06-10 리서치) · 수집일 2026-06-10</span></div></details><div style="margin:5px 0">에버펠디 21년 마데이라 캐스크 700ml: 47%→46% (₩180,918)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">우드포드 리저브 더블 오크 1000ml: 47%→46% (₩54,713)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 우드포드 리저브 (Woodford Reserve) · 미국 켄터키<br><b>도수</b> 45.2%<br><b>캐스크</b> 1차 차콜 처리 오크 배럴 숙성 후 딥 토스트·라이트 차 2차 오크 배럴 추가 숙성 (Double Oaked)<br><b>맛</b> 다크 프루트·카라멜·꿀·초콜릿·마지판의 달콤한 아로마. 풀바디의 바닐라·다크 카라멜·헤이즐넛·사과·스파이스가 어우러지고 길고 크리미하며 꿀사과 향의 피니시.<br><b>스토리</b> 우드포드 리저브 증류소는 1812년 가동을 시작해 Brown-Forman이 소유한 켄터키 버사이유 소재 증류소다. 더블 오크는 두 번의 서로 다른 오크 배럴을 거쳐 기존 버번보다 풍부하고 부드러운 오크 캐릭터를 구현한 익스프레션으로 2023년 샌프란시스코 세계 스피리츠 경연대회 더블 골드 메달을 수상했다.<br><span style="color:#8a8f98">출처: 공식 woodfordreserve.com · en.wikipedia.org (Woodford Reserve) (2026-07-06 리서치) · 수집일 2026-07-06</span></div></details></div></details>
 
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
 | 🏆 위스키 | 상세 |
 |---|---|
 | 더 글렌그란트 21년 700ml | 면세 **₩274,829** · 국내최저 [₩479,000 🔗](https://dailyshot.co/m/item/13568)<br>절약 **−₩204,171 (43%↓)** · 할인 45%→40% |
+| 글렌알라키 18년(24RB) 700mL | 면세 **₩235,849** · 국내최저 [₩351,000 🔗](https://dailyshot.co/m/item/21708)<br>절약 **−₩115,151 (33%↓)** · 할인 34%→35% |
+| 폴 존 피티드 1000ml | 면세 **₩66,013** · 국내최저 [₩165,000 🔗](https://dailyshot.co/m/item/9458)<br>절약 **−₩98,987 (60%↓)** · 할인 55%→51% |
 | 우드포드 리저브 더블 오크 1000ml | 면세 **₩54,713** · 국내최저 [₩58,000 🔗](https://dailyshot.co/m/item/10438)<br>절약 **−₩3,287 (6%↓)** · 할인 47%→46% |
+
+### 🆕 신규 입고 (5)
+
+| 위스키 | 현재 KRW |
+|---|--:|
+| 달모어 40년 700ML | ₩19,453,564 |
+| 시그나토리 글렌알라키 2005 CS 21년 #900273 700ml | ₩575,928 |
+| 고든앤맥패일 코노세어초이스 몰트락 2000 23년 700ml | ₩402,945 |
+| 시그나토리 오크니(HP) 2005 CS 21년 700ml | ₩383,952 |
+| 시그나토리 주라 2009 CS 16년 #15 700ml | ₩230,371 |
+
+### 📦 품절/내림 (7)
+
+| 위스키 |
+|---|
+| 올트모어 23년 CS 한정판 (화이트포트) 700ml |
+| 올트모어 21년 (COLHEITA)700ml |
+| NEW 올트모어 25년 (1st Fill 올로로소 쉐리) 500ml |
+| 올트모어 21년 700ml |
+| 올트모어 18년 700ml |
+| NEW 올트모어 18년 (마데이라) 500ml |
+| 올트모어 12년 1000ml |
 
 *국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
 
