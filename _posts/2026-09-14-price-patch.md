@@ -5,17 +5,17 @@ date: "2026-09-14 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 4
+breakthroughs: 0
 prev_date: "2026-09-13"
-latest_date: "2026-09-16"
+latest_date: "2026-09-17"
 weekly_start: "2026-09-14"
 weekly_end: "2026-09-20"
-days: 3
+days: 4
 hotdeals: ["폴 존 피티드 1000ml — 면세 ₩66,013 · 60%↓", "벤리악 25년 1997 캐스크 에디션 700ml — 면세 ₩385,826 · 51%↓", "로얄살루트 25년 700ml — 면세 ₩254,309 · 48%↓", "더 글렌그란트 캐스크 헤이븐 1000ml — 면세 ₩54,917 · 45%↓", "더 글렌그란트 21년 700ml — 면세 ₩274,829 · 43%↓"]
 hotdeals_count: 13
 rare_drops: ["에버펠디 16년 마데이라 700ml → ₩87,568 (−45%)"]
 rare_drops_count: 1
-description: "면세 위스키 가격 주간 로그 9/14~9/20 — 이번주 핫딜 13종 · 오랜만의 큰 인하 1종 · 최신 2026-09-16. CaskCode"
+description: "면세 위스키 가격 주간 로그 9/14~9/20 — 이번주 핫딜 13종 · 오랜만의 큰 인하 1종 · 최신 2026-09-17. CaskCode"
 robots: "noindex,nofollow"
 ---
 
@@ -49,7 +49,28 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 
 | 🕰️ 위스키 | 상세 |
 |---|---|
-| 에버펠디 16년 마데이라 700ml | 면세 **₩87,568**<br>**−45% 인하** · 그동안 ₩159,980 거의 정상가(5% 할인)로 101일째 → 48% 할인 · 9/16 첫 인하 |
+| 에버펠디 16년 마데이라 700ml | 면세 **₩87,568**<br>**−45% 인하** · 그동안 ₩161,543 거의 정상가(5% 할인)로 101일째 → 48% 할인 · 9/16 첫 인하 |
+
+---
+
+## 📅 9월 17일 (목)
+
+*직전 2026-09-16 → 최신 2026-09-17* · *환율 ₩1,360.36 (기준일 2026-09-16)*
+
+### 📊 한눈에 — 할인율 변동 요약
+
+_각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
+
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 2건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 달 기프트팩 700ml: 40%→43% (₩58,155)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 약 35% 표기 소매 리스팅 있으나 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크 사용, 한국 기후로 빠른 숙성.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반(달 개별 노트는 불명).<br><b>스토리</b> '달'은 기원의 면세 전용 '해·달·별' 라인 중 하나로 알려짐(2025 출시). 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동, 마스터 디스틸러 앤드류 샌드·창업자 도정한 주도. 호랑이·유니콘·배치 등 시리즈 출시, 2025 IWSC 수상. 기프트팩 구성품은 불명.<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 나무위키 '기원(위스키)' · threesocieties.co.kr · 88bamboo.co (2026-06-15 리서치) · 수집일 2026-06-15</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 해 700ml: 39%→40% (₩55,503)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 '해·달·별' 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크를 사용하고 한국 기후로 빠르게 숙성한다.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반이나 '해' 개별 노트는 불명.<br><b>스토리</b> '해'는 기원의 면세 전용 '해·달·별' 라인 중 하나로, 국내 정식 시그니처 라인(호랑이·독수리·유니콘)과는 별개의 면세 전용 제품이다. 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동했고 마스터 디스틸러 앤드류 샌드·창업자 도정한이 주도한다. (면세 전용이라 도수·캐스크 등 사양 일부 불명)<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 듀티풀(dutyful.co.kr) · threesocieties.co.kr (2026-06-26 리서치) · 수집일 2026-06-26</span></div></details></div></details>
+
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 2건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌알라키 2007 17년 올로로소 쉐리 펀천 싱글캐스크#2777 700ml: 42%→40% (₩273,433)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌알라키 (GlenAllachie) · 스코틀랜드 스페이사이드<br><b>도수</b> 캐스크 스트렝스 (병 표기 기준 · 2007 올로로소 푼천 자매캐스크 ≈58%: #800179 58.0% / #800184 58.3% · 캐스크별 상이, 과신 주의)<br><b>캐스크</b> 올로로소 셰리 푼천(puncheon) 싱글캐스크 #2777 · 2007 증류 17년 숙성 · 캐스크스트렝스 · 논칠필터 · 무착색<br><b>맛</b> 건포도·말린 무화과·대추야자의 진한 올로로소 셰리 향에 다크초콜릿·오렌지 껍질·호두, 흑설탕·베이킹 스파이스(계피·정향)·가죽으로 이어지는 묵직하고 긴 피니시. (단일 캐스크라 자매 캐스크 기준 근사 — 병별 차이 가능)<br><b>스토리</b> 글렌알라키는 1967년 설립된 스페이사이드 증류소로, 2017년 빌리 워커(전 벤리악·글렌드로낙) 팀이 인수해 셰리 캐스크 중심으로 재편했다. #2777은 2007년 증류 원액을 올로로소 셰리 푼천(대형 셰리 통) 단일 캐스크에서 17년 장기 숙성해 캐스크스트렝스·논칠필터·무착색으로 병입한 싱글캐스크. ⚠️ 싱글캐스크는 도수·풍미가 통별로 달라 동 2007 올로로소 푼천 자매캐스크(예: #800179 58.0%) 기준 근사치이며 병별 차이 가능(과신 주의).<br><span style="color:#8a8f98">출처: Royal Mile Whiskies · The Whisky Stock · Whiskybase · theglenallachie.com (2026-06-21 리서치) · 수집일 2026-06-21</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 18년 700ml: 51%→50% (₩148,960)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 (Royal Brackla) · 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 팔로 코르타도 셰리 캐스크 피니시 · 논칠필터<br><b>맛</b> 파인애플·구아바·꿀 시리얼·라이트 시트러스 향. 부드럽고 크리미한 입안에 바닐라·캔디드 프루트·밀크 초콜릿·아니스·카시아. 데메라라 슈거에서 루바브·구스베리 타르트와 스파이스의 상큼한 피니시.<br><b>스토리</b> 1812년 설립, 윌리엄 4세로부터 최초의 'Royal' 칭호를 받은 하이랜드 증류소. 18년은 팔로 코르타도 셰리 캐스크로 피니시해 트로피컬·꿀·크리미한 풍미를 더한 코어레인지 표현. 무착색·논칠필터.<br><span style="color:#8a8f98">출처: Whisky Advocate · The Whiskey Wash · Whisky Magazine (2026-07-20 리서치) · 수집일 2026-07-20</span></div></details></div></details>
+
+### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
+
+이번 패치엔 국내최저 돌파 항목이 없습니다.
+
+*국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
+
 
 ---
 
