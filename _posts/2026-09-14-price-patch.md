@@ -5,37 +5,42 @@ date: "2026-09-14 09:00:00 +0900"
 categories: ["price"]
 kind: "patch"
 cadence: "weekly"
-breakthroughs: 0
+breakthroughs: 5
 prev_date: "2026-09-13"
 latest_date: "2026-09-17"
 weekly_start: "2026-09-14"
 weekly_end: "2026-09-20"
 days: 4
-hotdeals: ["폴 존 피티드 1000ml — 면세 ₩66,013 · 60%↓", "벤리악 25년 1997 캐스크 에디션 700ml — 면세 ₩385,826 · 51%↓", "로얄살루트 25년 700ml — 면세 ₩254,309 · 48%↓", "더 글렌그란트 캐스크 헤이븐 1000ml — 면세 ₩54,917 · 45%↓", "더 글렌그란트 21년 700ml — 면세 ₩274,829 · 43%↓"]
-hotdeals_count: 13
+hotdeals: ["글렌피딕 22년 그랑 코르테스 700ml — 면세 ₩282,547 · 67%↓", "폴 존 피티드 1000ml — 면세 ₩66,013 · 60%↓", "발베니 19년 위크 오프 피트 700ml — 면세 ₩261,394 · 58%↓", "벤리악 25년 1997 캐스크 에디션 700ml — 면세 ₩385,826 · 51%↓", "로얄살루트 25년 700ml — 면세 ₩254,309 · 48%↓"]
+hotdeals_count: 18
 rare_drops: ["에버펠디 16년 마데이라 700ml → ₩87,568 (−45%)"]
 rare_drops_count: 1
-description: "면세 위스키 가격 주간 로그 9/14~9/20 — 이번주 핫딜 13종 · 오랜만의 큰 인하 1종 · 최신 2026-09-17. CaskCode"
+description: "면세 위스키 가격 주간 로그 9/14~9/20 — 이번주 핫딜 18종 · 오랜만의 큰 인하 1종 · 최신 2026-09-17. CaskCode"
 robots: "noindex,nofollow"
 ---
 
 이 글은 신라면세 위스키 가격변동을 **하루 단위로 아래에 쌓는 주간 로그**입니다. 위에 이번주 핫딜을 모았고, 아래는 날짜별 상세(최신이 맨 위) · 기간 2026-09-14 ~ 2026-09-20.
 
-## 🔥 이번주 핫딜 (13종)
+## 🔥 이번주 핫딜 (18종)
 
 _이번 주 면세가가 국내최저가보다 싼 위스키를 모았습니다. 각 항목은 그 주 최신 관측가 기준 · 절약률 높은 순._
 
 | 🏆 위스키 | 상세 |
 |---|---|
+| 글렌피딕 22년 그랑 코르테스 700ml | 면세 **₩282,547** · 국내최저 [₩853,900 🔗](https://dailyshot.co/m/item/14612)<br>절약 **−₩571,353 (67%↓)** · 할인 32%→33% |
 | 폴 존 피티드 1000ml | 면세 **₩66,013** · 국내최저 [₩165,000 🔗](https://dailyshot.co/m/item/9458)<br>절약 **−₩98,987 (60%↓)** · 할인 55%→51% |
+| 발베니 19년 위크 오프 피트 700ml | 면세 **₩261,394** · 국내최저 [₩620,000 🔗](https://dailyshot.co/m/item/13773)<br>절약 **−₩358,606 (58%↓)** · 할인 38%→39% |
 | 벤리악 25년 1997 캐스크 에디션 700ml | 면세 **₩385,826** · 국내최저 [₩780,000 🔗](https://dailyshot.co/m/item/9889)<br>절약 **−₩394,174 (51%↓)** · 할인 48%→40% |
 | 로얄살루트 25년 700ml | 면세 **₩254,309** · 국내최저 [₩490,000 🔗](https://dailyshot.co/m/item/5997)<br>절약 **−₩235,691 (48%↓)** · 할인 24%→28% |
 | 더 글렌그란트 캐스크 헤이븐 1000ml | 면세 **₩54,917** · 국내최저 [₩99,000 🔗](https://dailyshot.co/m/item/38706)<br>절약 **−₩44,083 (45%↓)** · 할인 55%→53% |
 | 더 글렌그란트 21년 700ml | 면세 **₩274,829** · 국내최저 [₩479,000 🔗](https://dailyshot.co/m/item/13568)<br>절약 **−₩204,171 (43%↓)** · 할인 45%→40% |
 | 잭다니엘 싱글배럴 100프루프 700ml | 면세 **₩50,306** · 국내최저 [₩85,900 🔗](https://dailyshot.co/m/item/4343)<br>절약 **−₩35,594 (41%↓)** · 할인 49%→45% |
+| 발베니 18년 쉐리 캐스크 700ml | 면세 **₩237,397** · 국내최저 [₩389,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩151,603 (39%↓)** · 할인 36%→37% |
 | 잭다니엘 블랙 맥라렌 에디션 1000ml | 면세 **₩28,759** · 국내최저 [₩45,900 🔗](https://dailyshot.co/m/item/38577)<br>절약 **−₩17,141 (37%↓)** · 할인 51%→49% |
 | 라가불린 16년 700ml | 면세 **₩92,208** · 국내최저 [₩142,000 🔗](https://dailyshot.co/m/item/1679)<br>절약 **−₩49,792 (35%↓)** · 할인 32%→31% |
+| 글렌피딕 18년 벳4 퍼페추얼 컬렉션 700ml | 면세 **₩126,242** · 국내최저 [₩189,000 🔗](https://dailyshot.co/m/item/3164)<br>절약 **−₩62,758 (33%↓)** · 할인 35%→36% |
 | 글렌알라키 18년(24RB) 700mL | 면세 **₩235,849** · 국내최저 [₩351,000 🔗](https://dailyshot.co/m/item/21708)<br>절약 **−₩115,151 (33%↓)** · 할인 34%→35% |
+| 글렌피딕 21년 그랑 리제르바 700ml | 면세 **₩222,664** · 국내최저 [₩319,000 🔗](https://dailyshot.co/m/item/28392)<br>절약 **−₩96,336 (30%↓)** · 할인 37%→38% |
 | 벤리악 트리플 디스틸드 10년 1000ml | 면세 **₩56,981** · 국내최저 [₩76,800 🔗](https://dailyshot.co/m/item/4221)<br>절약 **−₩19,819 (26%↓)** · 할인 51%→45% |
 | 로얄살루트 21년 1000ml | 면세 **₩236,021** · 국내최저 [₩312,800 🔗](https://dailyshot.co/m/item/9704)<br>절약 **−₩76,779 (25%↓)** · 할인 25%→30% |
 | 듀어스 12년 1000ml | 면세 **₩37,014** · 국내최저 [₩43,800 🔗](https://dailyshot.co/m/item/3695)<br>절약 **−₩6,786 (15%↓)** · 할인 48%→47% |
@@ -53,7 +58,7 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 
 ---
 
-## 📅 9월 17일 (목)
+## 📅 9월 17일 (목) — 돌파 5건
 
 *직전 2026-09-16 → 최신 2026-09-17* · *환율 ₩1,360.36 (기준일 2026-09-16)*
 
@@ -61,13 +66,19 @@ _원래 거의 정상가였다가 **이번 주 처음으로 20% 넘게 떨어진
 
 _각 위스키 이름을 누르면 도수·맛·스토리 설명이 펼쳐집니다._
 
-<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 2건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 달 기프트팩 700ml: 40%→43% (₩58,155)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 약 35% 표기 소매 리스팅 있으나 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크 사용, 한국 기후로 빠른 숙성.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반(달 개별 노트는 불명).<br><b>스토리</b> '달'은 기원의 면세 전용 '해·달·별' 라인 중 하나로 알려짐(2025 출시). 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동, 마스터 디스틸러 앤드류 샌드·창업자 도정한 주도. 호랑이·유니콘·배치 등 시리즈 출시, 2025 IWSC 수상. 기프트팩 구성품은 불명.<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 나무위키 '기원(위스키)' · threesocieties.co.kr · 88bamboo.co (2026-06-15 리서치) · 수집일 2026-06-15</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 해 700ml: 39%→40% (₩55,503)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 '해·달·별' 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크를 사용하고 한국 기후로 빠르게 숙성한다.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반이나 '해' 개별 노트는 불명.<br><b>스토리</b> '해'는 기원의 면세 전용 '해·달·별' 라인 중 하나로, 국내 정식 시그니처 라인(호랑이·독수리·유니콘)과는 별개의 면세 전용 제품이다. 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동했고 마스터 디스틸러 앤드류 샌드·창업자 도정한이 주도한다. (면세 전용이라 도수·캐스크 등 사양 일부 불명)<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 듀티풀(dutyful.co.kr) · threesocieties.co.kr (2026-06-26 리서치) · 수집일 2026-06-26</span></div></details></div></details>
+<details style="margin:8px 0"><summary><strong>미세조정(할인)</strong> 10건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 달 기프트팩 700ml: 40%→43% (₩58,155)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 약 35% 표기 소매 리스팅 있으나 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크 사용, 한국 기후로 빠른 숙성.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반(달 개별 노트는 불명).<br><b>스토리</b> '달'은 기원의 면세 전용 '해·달·별' 라인 중 하나로 알려짐(2025 출시). 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동, 마스터 디스틸러 앤드류 샌드·창업자 도정한 주도. 호랑이·유니콘·배치 등 시리즈 출시, 2025 IWSC 수상. 기프트팩 구성품은 불명.<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 나무위키 '기원(위스키)' · threesocieties.co.kr · 88bamboo.co (2026-06-15 리서치) · 수집일 2026-06-15</span></div></details><div style="margin:5px 0">글렌피딕 21년 그랑 리제르바 700ml: 37%→38% (₩222,664)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌피딕 22년 그랑 코르테스 700ml: 32%→33% (₩282,547)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌피딕 (Glenfiddich) · 스페이사이드<br><b>도수</b> 44.3%<br><b>캐스크</b> 여러 캐스크 매링 후 팔로 코르타도(Palo Cortado) 셰리 캐스크 피니시 · 면세 전용<br><b>맛</b> 대추야자·다크초콜릿·건포도 향에서 스위트 오크·바닐라·마지팬, 시트러스·프루트케이크·은은한 시나몬의 피니시.<br><b>스토리</b> 'Gran Cortes(XXII)'는 글렌피딕의 면세 전용 22년 표현으로 희귀한 팔로 코르타도 셰리 캐스크 피니시가 특징. 럼 캐스크 피니시인 21년 Gran Reserva와는 다른 제품(혼동 주의).<br><span style="color:#8a8f98">출처: 공식 glenfiddich.com · The Whisky Exchange (2026-06-08 리서치) · 수집일 2026-06-08</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌피딕 23년 그랑크뤼 슬림팩 700ml: 43%→44% (₩268,916)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌피딕 (Glenfiddich) · 스페이사이드<br><b>도수</b> 40%<br><b>캐스크</b> 아메리칸·유러피언 오크 23년 숙성 후 희귀한 프랑스 퀴베(cuvée, 샴페인용) 캐스크에서 약 6개월 추가 피니시<br><b>맛</b> 사과꽃·갓 구운 빵·설탕에 절인 레몬 향. 입안에서 진한 바닐라 오크·스위트 브리오슈·샌들우드·서양배 셔벗·청포도가 펼쳐지고, 길고 호화로우며 달콤한 피니시로 마무리된다.<br><b>스토리</b> 글렌피딕 그랑크뤼(Grand Cru)는 샴페인(스파클링 와인) 양조에 쓰인 희귀한 프랑스 퀴베 캐스크에서 약 6개월 추가 피니시한 23년 표현으로, 축하주를 콘셉트로 한 프리미엄 라인이다. '슬림팩'은 면세/선물용 슬림 패키지 사양(원액 동일).<br><span style="color:#8a8f98">출처: 공식 glenfiddich.com · Drinkhacker · Scotch&amp;Sheen (2026-06-26 리서치) · 수집일 2026-06-26</span></div></details><div style="margin:5px 0">글렌피딕 18년 벳4 퍼페추얼 컬렉션 700ml: 35%→36% (₩126,242)</div><div style="margin:5px 0">글렌피딕 23년 그랑 크루 700ml: 37%→38% (₩297,729)</div><div style="margin:5px 0">글렌피딕 30년 타임 시리즈 700ml: 36%→37% (₩1,285,542)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">기원 해 700ml: 39%→40% (₩55,503)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 쓰리 소사이어티스 증류소 (Three Societies · Ki One) · 대한민국 (경기 남양주)<br><b>도수</b> 공식 미확인 (불명 · 과신금지)<br><b>캐스크</b> 면세 전용 '해·달·별' 라인이라 캐스크 사양 미공개(불명). 기원 코어 라인은 통상 버진 아메리칸 오크·엑스버번·STR/와인·셰리 캐스크를 사용하고 한국 기후로 빠르게 숙성한다.<br><b>맛</b> 공식 맛 노트 미공개(불명). 기원 코어 라인 경향은 바닐라·캐러멜·꿀 등 버진오크 단맛 기반이나 '해' 개별 노트는 불명.<br><b>스토리</b> '해'는 기원의 면세 전용 '해·달·별' 라인 중 하나로, 국내 정식 시그니처 라인(호랑이·독수리·유니콘)과는 별개의 면세 전용 제품이다. 기원은 한국 최초 상업 싱글몰트 증류소로 2020년 남양주에서 가동했고 마스터 디스틸러 앤드류 샌드·창업자 도정한이 주도한다. (면세 전용이라 도수·캐스크 등 사양 일부 불명)<br><span style="color:#8a8f98">출처: 신라면세 기원 브랜드관(shilladfs.com) · 듀티풀(dutyful.co.kr) · threesocieties.co.kr (2026-06-26 리서치) · 수집일 2026-06-26</span></div></details><div style="margin:5px 0">발베니 18년 쉐리 캐스크 700ml: 36%→37% (₩237,397)</div><div style="margin:5px 0">발베니 19년 위크 오프 피트 700ml: 38%→39% (₩261,394)</div></div></details>
 
-<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 2건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌알라키 2007 17년 올로로소 쉐리 펀천 싱글캐스크#2777 700ml: 42%→40% (₩273,433)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌알라키 (GlenAllachie) · 스코틀랜드 스페이사이드<br><b>도수</b> 캐스크 스트렝스 (병 표기 기준 · 2007 올로로소 푼천 자매캐스크 ≈58%: #800179 58.0% / #800184 58.3% · 캐스크별 상이, 과신 주의)<br><b>캐스크</b> 올로로소 셰리 푼천(puncheon) 싱글캐스크 #2777 · 2007 증류 17년 숙성 · 캐스크스트렝스 · 논칠필터 · 무착색<br><b>맛</b> 건포도·말린 무화과·대추야자의 진한 올로로소 셰리 향에 다크초콜릿·오렌지 껍질·호두, 흑설탕·베이킹 스파이스(계피·정향)·가죽으로 이어지는 묵직하고 긴 피니시. (단일 캐스크라 자매 캐스크 기준 근사 — 병별 차이 가능)<br><b>스토리</b> 글렌알라키는 1967년 설립된 스페이사이드 증류소로, 2017년 빌리 워커(전 벤리악·글렌드로낙) 팀이 인수해 셰리 캐스크 중심으로 재편했다. #2777은 2007년 증류 원액을 올로로소 셰리 푼천(대형 셰리 통) 단일 캐스크에서 17년 장기 숙성해 캐스크스트렝스·논칠필터·무착색으로 병입한 싱글캐스크. ⚠️ 싱글캐스크는 도수·풍미가 통별로 달라 동 2007 올로로소 푼천 자매캐스크(예: #800179 58.0%) 기준 근사치이며 병별 차이 가능(과신 주의).<br><span style="color:#8a8f98">출처: Royal Mile Whiskies · The Whisky Stock · Whiskybase · theglenallachie.com (2026-06-21 리서치) · 수집일 2026-06-21</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 18년 700ml: 51%→50% (₩148,960)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 (Royal Brackla) · 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 팔로 코르타도 셰리 캐스크 피니시 · 논칠필터<br><b>맛</b> 파인애플·구아바·꿀 시리얼·라이트 시트러스 향. 부드럽고 크리미한 입안에 바닐라·캔디드 프루트·밀크 초콜릿·아니스·카시아. 데메라라 슈거에서 루바브·구스베리 타르트와 스파이스의 상큼한 피니시.<br><b>스토리</b> 1812년 설립, 윌리엄 4세로부터 최초의 'Royal' 칭호를 받은 하이랜드 증류소. 18년은 팔로 코르타도 셰리 캐스크로 피니시해 트로피컬·꿀·크리미한 풍미를 더한 코어레인지 표현. 무착색·논칠필터.<br><span style="color:#8a8f98">출처: Whisky Advocate · The Whiskey Wash · Whisky Magazine (2026-07-20 리서치) · 수집일 2026-07-20</span></div></details></div></details>
+<details style="margin:8px 0"><summary><strong>미세조정(할증)</strong> 5건 · 10%p 미만 (펼치기)</summary><div style="margin-top:6px"><div style="margin:5px 0">시그나토리 글렌알라키 2005 CS 21년 #900273 700ml: 5%→0% (₩612,163)</div><div style="margin:5px 0">시그나토리 오크니(HP) 2005 CS 21년 700ml: 5%→0% (₩408,109)</div><div style="margin:5px 0">시그나토리 주라 2009 CS 16년 #15 700ml: 5%→0% (₩244,865)</div><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">글렌알라키 2007 17년 올로로소 쉐리 펀천 싱글캐스크#2777 700ml: 42%→40% (₩273,433)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 글렌알라키 (GlenAllachie) · 스코틀랜드 스페이사이드<br><b>도수</b> 캐스크 스트렝스 (병 표기 기준 · 2007 올로로소 푼천 자매캐스크 ≈58%: #800179 58.0% / #800184 58.3% · 캐스크별 상이, 과신 주의)<br><b>캐스크</b> 올로로소 셰리 푼천(puncheon) 싱글캐스크 #2777 · 2007 증류 17년 숙성 · 캐스크스트렝스 · 논칠필터 · 무착색<br><b>맛</b> 건포도·말린 무화과·대추야자의 진한 올로로소 셰리 향에 다크초콜릿·오렌지 껍질·호두, 흑설탕·베이킹 스파이스(계피·정향)·가죽으로 이어지는 묵직하고 긴 피니시. (단일 캐스크라 자매 캐스크 기준 근사 — 병별 차이 가능)<br><b>스토리</b> 글렌알라키는 1967년 설립된 스페이사이드 증류소로, 2017년 빌리 워커(전 벤리악·글렌드로낙) 팀이 인수해 셰리 캐스크 중심으로 재편했다. #2777은 2007년 증류 원액을 올로로소 셰리 푼천(대형 셰리 통) 단일 캐스크에서 17년 장기 숙성해 캐스크스트렝스·논칠필터·무착색으로 병입한 싱글캐스크. ⚠️ 싱글캐스크는 도수·풍미가 통별로 달라 동 2007 올로로소 푼천 자매캐스크(예: #800179 58.0%) 기준 근사치이며 병별 차이 가능(과신 주의).<br><span style="color:#8a8f98">출처: Royal Mile Whiskies · The Whisky Stock · Whiskybase · theglenallachie.com (2026-06-21 리서치) · 수집일 2026-06-21</span></div></details><details style="margin:5px 0;border:1px solid #2a2f3a;border-radius:8px;padding:5px 10px"><summary style="cursor:pointer;font-weight:600">로얄브라클라 18년 700ml: 51%→50% (₩148,960)</summary><div style="margin-top:6px;font-size:13px;line-height:1.6"><b>증류소</b> 로얄브라클라 (Royal Brackla) · 하이랜드<br><b>도수</b> 46%<br><b>캐스크</b> 팔로 코르타도 셰리 캐스크 피니시 · 논칠필터<br><b>맛</b> 파인애플·구아바·꿀 시리얼·라이트 시트러스 향. 부드럽고 크리미한 입안에 바닐라·캔디드 프루트·밀크 초콜릿·아니스·카시아. 데메라라 슈거에서 루바브·구스베리 타르트와 스파이스의 상큼한 피니시.<br><b>스토리</b> 1812년 설립, 윌리엄 4세로부터 최초의 'Royal' 칭호를 받은 하이랜드 증류소. 18년은 팔로 코르타도 셰리 캐스크로 피니시해 트로피컬·꿀·크리미한 풍미를 더한 코어레인지 표현. 무착색·논칠필터.<br><span style="color:#8a8f98">출처: Whisky Advocate · The Whiskey Wash · Whisky Magazine (2026-07-20 리서치) · 수집일 2026-07-20</span></div></details></div></details>
 
 ### 🏆 국내최저가(데일리샷·트레이더스·코스트코) 대비 핫딜
 
-이번 패치엔 국내최저 돌파 항목이 없습니다.
+| 🏆 위스키 | 상세 |
+|---|---|
+| 글렌피딕 22년 그랑 코르테스 700ml | 면세 **₩282,547** · 국내최저 [₩853,900 🔗](https://dailyshot.co/m/item/14612)<br>절약 **−₩571,353 (67%↓)** · 할인 32%→33% |
+| 발베니 19년 위크 오프 피트 700ml | 면세 **₩261,394** · 국내최저 [₩620,000 🔗](https://dailyshot.co/m/item/13773)<br>절약 **−₩358,606 (58%↓)** · 할인 38%→39% |
+| 발베니 18년 쉐리 캐스크 700ml | 면세 **₩237,397** · 국내최저 [₩389,000 🔗](https://dailyshot.co/m/item/6323)<br>절약 **−₩151,603 (39%↓)** · 할인 36%→37% |
+| 글렌피딕 21년 그랑 리제르바 700ml | 면세 **₩222,664** · 국내최저 [₩319,000 🔗](https://dailyshot.co/m/item/28392)<br>절약 **−₩96,336 (30%↓)** · 할인 37%→38% |
+| 글렌피딕 18년 벳4 퍼페추얼 컬렉션 700ml | 면세 **₩126,242** · 국내최저 [₩189,000 🔗](https://dailyshot.co/m/item/3164)<br>절약 **−₩62,758 (33%↓)** · 할인 35%→36% |
 
 *국내최저가 = 데일리샷·트레이더스·코스트코 국내 소매가 중 최저(면세·해외 제외) 브랜드+숙성 근사매칭 · 매칭 실패/인디·싱글캐스크는 비움.*
 
