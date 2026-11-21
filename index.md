@@ -6,7 +6,7 @@ robots: "index,follow"
 ---
 
 <div class="sec-head">🆕 읽을거리</div>
-{% assign _editorial = site.posts | where_exp: "p","p.categories contains 'tasting' or p.categories contains 'data' or p.categories contains 'dev' or p.categories contains 'travel'" %}
+{% assign _editorial = site.posts | where_exp: "p","p.categories contains 'tasting' or p.categories contains 'data' or p.categories contains 'dev'" %}
 {% if _editorial.size > 0 %}
 <ul class="latest-feed">
 {% for p in _editorial limit: 5 %}
@@ -44,26 +44,7 @@ robots: "index,follow"
     </ul>
     <span class="pc-go">목록 보기 →</span>
   </a>
-  <a class="pillar-card" href="{{ '/travel/' | relative_url }}">
-    <div class="pc-emoji">✈️</div>
-    <div class="pc-head"><span class="pc-title">Travel</span><span class="pc-tag">여행</span></div>
-    <p class="pc-desc">위스키 증류소 투어·맛집·일정 — CaskCode의 여행 기록.</p>
-    {% assign posts_travel = site.posts | where_exp: "p", "p.categories contains 'travel'" %}
-    <div class="pc-count">글 {{ posts_travel.size }}편</div>
-    <ul class="pc-prev">
-    {% for p in posts_travel limit: 3 %}
-      <li><span class="when">{{ p.date | date: "%Y-%m-%d" }}</span> {{ p.title }}</li>
-    {% endfor %}
-    </ul>
-    <span class="pc-go">목록 보기 →</span>
-  </a>
 </div>
-
-{% assign _cl = site.posts | where_exp: "p","p.kind == 'changelog'" | sort: "date" | reverse %}
-{% if _cl.size > 0 %}{% assign _c = _cl[0] %}
-<div class="sec-head">🗓️ 업데이트 로그 — 데이터가 언제 갱신됐고 무엇이 바뀌었나</div>
-<div class="cl-wrap"><a class="cl-card" href="{{ _c.url | relative_url }}"><div class="cl-head"><span class="cl-title">최근 업데이트</span><span class="cl-when">{{ _c.log_date }} 기준</span></div><ul class="cl-list">{% if _c.cl_sources %}<li><span class="cl-ic">🗂</span><span>{{ _c.cl_sources }}</span></li>{% endif %}{% if _c.cl_shilla %}<li><span class="cl-ic">🛫</span><span>{{ _c.cl_shilla }}</span></li>{% endif %}{% if _c.cl_retail %}<li><span class="cl-ic">🛒</span><span>{{ _c.cl_retail }}</span></li>{% endif %}</ul><span class="cl-more">업데이트 로그 전체 보기 →</span></a></div>
-{% endif %}
 
 <div class="sec-head">🗂️ 개인 팁 모음</div>
 <ul class="latest-feed">
